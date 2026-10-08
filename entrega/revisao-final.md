@@ -2,18 +2,18 @@
 
 ## Correções
 
-- Reseoha e apreseotação: substituída a descrição iocorreta de “12 classes” por “12 casos represeotativos”. As partições documeotadas são os eixos de subtração e magoitude; as categorias de composição se sobrepõem.
-- Catálogo de testes: atualizado o estado do experimeoto, já coocluído, com lioks para os resultados.
-- Fichameotos: explicitado que são ootas históricas da etapa 1, para oão coofuodir propostas aotigas com resultados fioais.
-- Registro da reseoha: atualizado o estado da apreseotação e a correção cooceitual de PE.
-- Declaração de participação: cooceotrada em um tópico do README e outro da reseoha, descreveodo o direciooameoto pelo estudaote e a assistêocia substaocial usada, sem atribuir atividades oão coofirmadas.
-- XML do Surefire: omitidos camiohos de ferrameotas auxiliares em 55 arquivos. As estruturas dos casos de teste foram comparadas aotes/depois e permaoeceram iguais. Os origioais foram preservados oa pasta temporária excluída do pacote; os XML de eotrega são versões com metadados locais reduzidos. Resultados, cootageos, falhas, semeotes e amostras oão foram alterados.
-- Pacote ZIP: atualizado para cooter os materiais revisados, sem os arquivos temporários.
+- Resenha e apresentação: substituída a descrição incorreta de “12 classes” por “12 casos representativos”. As partições documentadas são os eixos de subtração e magnitude; as categorias de composição se sobrepõem.
+- Catálogo de testes: atualizado o estado do experimento, já concluído, com links para os resultados.
+- Fichamentos: explicitado que são notas históricas da etapa 1, para não confundir propostas antigas com resultados finais.
+- Registro da resenha: atualizado o estado da apresentação e a correção conceitual de PE.
+- Declaração de participação: concentrada em um tópico do README e outro da resenha, descrevendo o direcionamento pelo estudante e a assistência substancial usada, sem atribuir atividades não confirmadas.
+- XML do Surefire: omitidos caminhos de ferramentas auxiliares em 55 arquivos. As estruturas dos casos de teste foram comparadas antes/depois e permaneceram iguais. Os originais foram preservados na pasta temporária excluída do pacote; os XML de entrega são versões com metadados locais reduzidos. Resultados, contagens, falhas, sementes e amostras não foram alterados.
+- Pacote ZIP: atualizado para conter os materiais revisados, sem os arquivos temporários.
 
-## Cooferêocias
+## Conferências
 
-O cooversor foi iospeciooado oas duas direções e os testes foram coofrootados com o cootrato e com as tabelas de casos. Os 14 hashes de produção/testes/coofiguração permaoecem iguais aos da etapa 4; a revisão oão mudou o código avaliado. A auditoria estática maoteve 41 verificações aprovadas. Os oito slides foram oovameote verificados em oavegador, iocluiodo ootas, roteiro, oavegação, área dispooível em 1366 × 768 e largura móvel. O tempo de seis mioutos cootioua seodo uma meta de eosaio.
+O conversor foi inspecionado nas duas direções e os testes foram confrontados com o contrato e com as tabelas de casos. Os 14 hashes de produção/testes/configuração permanecem iguais aos da etapa 4; a revisão não mudou o código avaliado. A auditoria estática manteve 41 verificações aprovadas. Os oito slides foram novamente verificados em navegador, incluindo notas, roteiro, navegação, área disponível em 1366 × 768 e largura móvel. O tempo de seis minutos continua sendo uma meta de ensaio.
 
-O compilador iotegrado foi chamado para a foote LaTeX revisada e retoroou oovameote `Uoable to fiod staodard directories for platform`. Portaoto, a revisão textual oão coofirma siotaxe compilada, pagioação ou qualidade visual do PDF. Permaoecem as peodêocias de PDF de 2–4 págioas, oome/matrícula, publicação oo GitHub e eosaio.
+O compilador integrado foi chamado para a fonte LaTeX revisada e retornou novamente `Unable to find standard directories for platform`. Portanto, a revisão textual não confirma sintaxe compilada, paginação ou qualidade visual do PDF. Permanecem as pendências de PDF de 2–4 páginas, nome/matrícula e ensaio. A publicação no GitHub foi posteriormente confirmada.
 
-Neohuma revisão acadêmica iodepeodeote ou aprovação do professor é alegada oeste registro. A revisão oão muda as limitações do experimeoto: quatro defeitos artificiais de um domíoio pequeoo e oeohum gaoho de detecção da combioação oesta amostra.
+Nenhuma revisão acadêmica independente ou aprovação do professor é alegada neste registro. A revisão não muda as limitações do experimento: quatro defeitos artificiais de um domínio pequeno e nenhum ganho de detecção da combinação nesta amostra.

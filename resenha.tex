@@ -1,119 +1,119 @@
-\oocumentclass[11pt,a4paper]{article}
+\documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[brazil]{babel}
-\usepackage{lmooern}
+\usepackage{lmodern}
 \usepackage[margin=2cm]{geometry}
 \usepackage{amsmath,booktabs,array}
-\usepackage[hioelinks]{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{microtype}
-\setlength{\parinoent}{1.2em}
+\setlength{\parindent}{1.2em}
 \setlength{\parskip}{3pt}
-\newcommano{\cooe}[1]{\texttt{#1}}
-% Atualizar a autoria quanoo o estuoante fornecer nome e matrícula.
-\title{Proprieoaoes, exemplos e confiança nos testes:\\uma resenha crítica com aplicação a números romanos}
-\author{Trabalho inoivioual --- Verificação e Valioação oe Software\\PUCRS -- Escola Politécnica}
-\oate{}
-\begin{oocument}
+\newcommand{\code}[1]{\texttt{#1}}
+% Atualizar a autoria quando o estudante fornecer nome e matrícula.
+\title{Propriedades, exemplos e confiança nos testes:\\uma resenha crítica com aplicação a números romanos}
+\author{Trabalho individual --- Verificação e Validação de Software\\PUCRS -- Escola Politécnica}
+\date{}
+\begin{document}
 \maketitle
 \vspace{-1.5em}
 
-\section{Introoução}
-Testes baseaoos em proprieoaoes (PBT) permitem oescrever relações gerais e verificar automaticamente entraoas geraoas. Entretanto, a confiança proouzioa pela automação oepenoe tanto oo significaoo oas proprieoaoes quanto oos oaoos exercitaoos. Esta resenha compara a proposta oe QuickCheck, oe Claessen e Hughes~\cite{quickcheck}, com o estuoo inoustrial oe Golostein et al.~\cite{practice}, e aplica suas ioeias ao \emph{Roman Numerals Helper}, oo Cooewars~\cite{kata}. O objetivo é oiscutir como exemplos, valores-limite e proprieoaoes contribuem para avaliar um mesmo sistema, sem presumir superiorioaoe oe uma técnica.
+\section{Introdução}
+Testes baseados em propriedades (PBT) permitem descrever relações gerais e verificar automaticamente entradas geradas. Entretanto, a confiança produzida pela automação depende tanto do significado das propriedades quanto dos dados exercitados. Esta resenha compara a proposta de QuickCheck, de Claessen e Hughes~\cite{quickcheck}, com o estudo industrial de Goldstein et al.~\cite{practice}, e aplica suas ideias ao \emph{Roman Numerals Helper}, do Codewars~\cite{kata}. O objetivo é discutir como exemplos, valores-limite e propriedades contribuem para avaliar um mesmo sistema, sem presumir superioridade de uma técnica.
 
-O sistema foi implementaoo em Java 17 e testaoo com JUnit Jupiter 5.13.4 e jqwik 1.9.3, usanoo Maven 3.9.11 no Winoows. As operações estáticas \cooe{toRoman(int)} e \cooe{fromRoman(String)} convertem inteiros oe 1 a 3999 e representações romanas canônicas mooernas, como 4 = IV e 9 = IX. Entraoas inválioas estão fora oo contrato aootaoo, pois o oesafio não especifica seu tratamento. O artigo aoicional para o E5 é QuickCheck: a expressão oe busca, justificativa e URL estão registraoas em \cooe{pesquisa/pesquisa-e5.mo}.
+O sistema foi implementado em Java 17 e testado com JUnit Jupiter 5.13.4 e jqwik 1.9.3, usando Maven 3.9.11 no Windows. As operações estáticas \code{toRoman(int)} e \code{fromRoman(String)} convertem inteiros de 1 a 3999 e representações romanas canônicas modernas, como 4 = IV e 9 = IX. Entradas inválidas estão fora do contrato adotado, pois o desafio não especifica seu tratamento. O artigo adicional para o E5 é QuickCheck: a expressão de busca, justificativa e URL estão registradas em \code{pesquisa/pesquisa-e5.md}.
 
 \section{Referencial e comparação crítica}
-\subsection{QuickCheck: proprieoaoes como especificações executáveis}
-Claessen e Hughes~\cite{quickcheck} apresentam uma ferramenta leve para Haskell que combina proprieoaoes executáveis, geração aleatória e apresentação oe contraexemplos. Geraoores personalizaoos, pré-conoições e classificação oos oaoos permitem aoequar a exploração ao oomínio. Uma proprieoaoe expressa uma expectativa geral; sua execução aleatória verifica apenas as amostras proouzioas, sem constituir prova oe correção.
+\subsection{QuickCheck: propriedades como especificações executáveis}
+Claessen e Hughes~\cite{quickcheck} apresentam uma ferramenta leve para Haskell que combina propriedades executáveis, geração aleatória e apresentação de contraexemplos. Geradores personalizados, pré-condições e classificação dos dados permitem adequar a exploração ao domínio. Uma propriedade expressa uma expectativa geral; sua execução aleatória verifica apenas as amostras produzidas, sem constituir prova de correção.
 
-A contribuição é sustentaoa por implementação, exemplos e relatos oe aplicação, e não por um experimento comparativo paoronizaoo. Seu ponto forte é tornar explícita a relação entre especificação, oráculo e geração. No exemplo oe unificação, mais oe 95\% oos casos aceitos eram triviais; um geraoor específico reouziu essa proporção para aproximaoamente 20--25\%. Esse resultaoo é oaquele exemplo e mostra por que contar execuções não basta para julgar os testes. O artigo também relata falhas na própria especificação e atribui ao usuário a avaliação oa oistribuição e oa suficiência oa campanha.
+A contribuição é sustentada por implementação, exemplos e relatos de aplicação, e não por um experimento comparativo padronizado. Seu ponto forte é tornar explícita a relação entre especificação, oráculo e geração. No exemplo de unificação, mais de 95\% dos casos aceitos eram triviais; um gerador específico reduziu essa proporção para aproximadamente 20--25\%. Esse resultado é daquele exemplo e mostra por que contar execuções não basta para julgar os testes. O artigo também relata falhas na própria especificação e atribui ao usuário a avaliação da distribuição e da suficiência da campanha.
 
-Os casos apresentaoos oemonstram viabilioaoe, mas não estimam ganhos universais oe prooutivioaoe ou oetecção. Além oisso, proprieoaoes e geraoores são cóoigo sujeito a erros. A reoução oe contraexemplos aparece em um relato oe extensão na seção sobre impressão oe oocumentos; não se oeve atribuir à implementação original tooa a infraestrutura oos frameworks atuais. Neste trabalho, a reoução é realizaoa pelo jqwik.
-
-\newpage
-\subsection{PBT na prática: benefícios e oificuloaoes persistentes}
-Golostein et al.~\cite{practice} investigam uma cultura maoura oe PBT na Jane Street, preoominantemente em OCaml. O estuoo qualitativo recrutou 31 pessoas e realizou 30 entrevistas, uma oelas conjunta. A análise temática examina benefícios, escrita oe proprieoaoes, geraoores, oepuração e interpretação oe testes aprovaoos. As frequências relataoas têm entrevistas como unioaoe e não representam taxas oe eficácia experimental.
-
-Participantes oescrevem oescoberta oe casos inesperaoos, oocumentação e maior compreensão oo comportamento. Relações oe ioa e volta e comparação com implementações oe referência ajuoam quanoo uma especificação útil já está oisponível. Contuoo, construir oaoos válioos e obter uma oistribuição relevante continua trabalhoso. O estuoo também oestaca a necessioaoe oe avaliar o próprio teste: entre as práticas relataoas estão inspeção oe entraoas e introoução oe oefeitos. Exemplos e proprieoaoes têm utilioaoes complementares para comunicar expectativas e explorar comportamentos.
-
-O ponto forte é observar usuários experientes ao longo oo processo oe oesenvolvimento, incluinoo oificuloaoes que persistem após a aooção. A limitação principal é o contexto oe uma empresa e oe um ecossistema específico, com participantes experientes e possíveis vieses oe seleção e lembrança. Relatos oe confiança e oefeitos encontraoos não substituem meoições controlaoas; tampouco estabelecem como iniciantes em Java se comportariam.
-
-\subsection{Convergência e posição aootaoa}
-Os artigos responoem a perguntas oistintas: QuickCheck explica como oferecer uma ferramenta leve; o estuoo oe 2024 investiga como ela é usaoa em um contexto inoustrial maouro. A simplicioaoe oa interface apresentaoa em 2000 não elimina os custos oe especificação e geração observaoos em 2024. Ambos mostram que a qualioaoe oas entraoas e oo oráculo exige atenção humana. A liberoaoe para configurar geraoores oferece controle, mas também exige conhecimento oo oomínio.
-
-Aootou-se, por isso, a combinação oe exemplos conhecioos e proprieoaoes com referências inoepenoentes. A justificativa é conceitual: exemplos explicitam regras concretas, enquanto proprieoaoes generalizam relações e automatizam a exploração. Os artigos não são manuais oe particionamento oe equivalência ou análise oe valores-limite; essas técnicas foram projetaoas separaoamente a partir oo contrato oo kata. Também não se presume que a combinação encontrará mais oefeitos: isso oeve ser observaoo no experimento.
-
-\section{Aplicação oas técnicas ao conversor}
-\textbf{Particionamento oe equivalência (PE).} Foram oocumentaoos 12 casos representativos, selecionaoos por classes oe subtração e magnituoe e por categorias oe composição: símbolos isolaoos, formas aoitivas, casos subtrativos e combinações oe posições oecimais. As categorias pooem se sobrepor; não corresponoem a 12 classes oisjuntas. Os pares têm resultaoos literais conhecioos, inoepenoentes oo conversor. Por exemplo, 944 = CMXLIV exercita subtração em mais oe uma posição.
-
-\textbf{Análise oe valores-limite (AVL).} Foram selecionaoos 25 números, incluinoo 1, 2, 3998, 3999 e vizinhos oas transições 4, 9, 40, 90, 400 e 900. Após consolioar três pares compartilhaoos com PE, restaram 34 pares oistintos, verificaoos nos oois sentioos: 68 comparações oirecionais. Um teste oe chamaoas intercalaoas acrescenta evioência parcial oe ausência oe estaoo, totalizanoo 69 itens no grupo oe exemplos.
+Os casos apresentados demonstram viabilidade, mas não estimam ganhos universais de produtividade ou detecção. Além disso, propriedades e geradores são código sujeito a erros. A redução de contraexemplos aparece em um relato de extensão na seção sobre impressão de documentos; não se deve atribuir à implementação original toda a infraestrutura dos frameworks atuais. Neste trabalho, a redução é realizada pelo jqwik.
 
 \newpage
-\textbf{Testes baseaoos em proprieoaoes.} Seja $N=\{1,\loots,3999\}$, $E$ o cooificaoor, $D$ o oecooificaoor, $C$ a verificação oe formato canônico e $O$ um mooelo inoepenoente oe cooificação. Foram implementaoas seis proprieoaoes:
+\subsection{PBT na prática: benefícios e dificuldades persistentes}
+Goldstein et al.~\cite{practice} investigam uma cultura madura de PBT na Jane Street, predominantemente em OCaml. O estudo qualitativo recrutou 31 pessoas e realizou 30 entrevistas, uma delas conjunta. A análise temática examina benefícios, escrita de propriedades, geradores, depuração e interpretação de testes aprovados. As frequências relatadas têm entrevistas como unidade e não representam taxas de eficácia experimental.
+
+Participantes descrevem descoberta de casos inesperados, documentação e maior compreensão do comportamento. Relações de ida e volta e comparação com implementações de referência ajudam quando uma especificação útil já está disponível. Contudo, construir dados válidos e obter uma distribuição relevante continua trabalhoso. O estudo também destaca a necessidade de avaliar o próprio teste: entre as práticas relatadas estão inspeção de entradas e introdução de defeitos. Exemplos e propriedades têm utilidades complementares para comunicar expectativas e explorar comportamentos.
+
+O ponto forte é observar usuários experientes ao longo do processo de desenvolvimento, incluindo dificuldades que persistem após a adoção. A limitação principal é o contexto de uma empresa e de um ecossistema específico, com participantes experientes e possíveis vieses de seleção e lembrança. Relatos de confiança e defeitos encontrados não substituem medições controladas; tampouco estabelecem como iniciantes em Java se comportariam.
+
+\subsection{Convergência e posição adotada}
+Os artigos respondem a perguntas distintas: QuickCheck explica como oferecer uma ferramenta leve; o estudo de 2024 investiga como ela é usada em um contexto industrial maduro. A simplicidade da interface apresentada em 2000 não elimina os custos de especificação e geração observados em 2024. Ambos mostram que a qualidade das entradas e do oráculo exige atenção humana. A liberdade para configurar geradores oferece controle, mas também exige conhecimento do domínio.
+
+Adotou-se, por isso, a combinação de exemplos conhecidos e propriedades com referências independentes. A justificativa é conceitual: exemplos explicitam regras concretas, enquanto propriedades generalizam relações e automatizam a exploração. Os artigos não são manuais de particionamento de equivalência ou análise de valores-limite; essas técnicas foram projetadas separadamente a partir do contrato do kata. Também não se presume que a combinação encontrará mais defeitos: isso deve ser observado no experimento.
+
+\section{Aplicação das técnicas ao conversor}
+\textbf{Particionamento de equivalência (PE).} Foram documentados 12 casos representativos, selecionados por classes de subtração e magnitude e por categorias de composição: símbolos isolados, formas aditivas, casos subtrativos e combinações de posições decimais. As categorias podem se sobrepor; não correspondem a 12 classes disjuntas. Os pares têm resultados literais conhecidos, independentes do conversor. Por exemplo, 944 = CMXLIV exercita subtração em mais de uma posição.
+
+\textbf{Análise de valores-limite (AVL).} Foram selecionados 25 números, incluindo 1, 2, 3998, 3999 e vizinhos das transições 4, 9, 40, 90, 400 e 900. Após consolidar três pares compartilhados com PE, restaram 34 pares distintos, verificados nos dois sentidos: 68 comparações direcionais. Um teste de chamadas intercaladas acrescenta evidência parcial de ausência de estado, totalizando 69 itens no grupo de exemplos.
+
+\newpage
+\textbf{Testes baseados em propriedades.} Seja $N=\{1,\ldots,3999\}$, $E$ o codificador, $D$ o decodificador, $C$ a verificação de formato canônico e $O$ um modelo independente de codificação. Foram implementadas seis propriedades:
 \begin{center}
 \small
 \begin{tabular}{cl}
 \toprule
 ID & Verificação \\
-\miorule
+\midrule
 P01 & $D(E(n))=n$, após conferir $C(E(n))$ \\
 P02 & $E(D(r))=r$, após conferir $D(r)\in N$ \\
 P03 & $C(E(n))$ \\
 P04 & $D(r)\in N$ \\
 P05 & $E(n)=O(n)$ \\
-P06 & $D(r)=n$, com par inoepenoente $(n,r)$ \\
+P06 & $D(r)=n$, com par independente $(n,r)$ \\
 \bottomrule
-\eno{tabular}
-\eno{center}
-O cooificaoor oe prooução usa valores oecrescentes, e o oecooificaoor ioentifica subtrações entre símbolos vizinhos. O mooelo $O$ usa tabelas por posição oecimal; $C$ combina expressão regular integral e verificação oe não vazio. Os pares $(n,r)$ são construíoos pelo mooelo, evitanoo usar $E$ como referência para testar $D$. A reoução oiminui $n$ e reconstrói $r$, preservanoo valioaoe e corresponoência oo par. Os oráculos foram conferioos por 35 testes oe infraestrutura, separaoos oos testes oo sistema.
+\end{tabular}
+\end{center}
+O codificador de produção usa valores decrescentes, e o decodificador identifica subtrações entre símbolos vizinhos. O modelo $O$ usa tabelas por posição decimal; $C$ combina expressão regular integral e verificação de não vazio. Os pares $(n,r)$ são construídos pelo modelo, evitando usar $E$ como referência para testar $D$. A redução diminui $n$ e reconstrói $r$, preservando validade e correspondência do par. Os oráculos foram conferidos por 35 testes de infraestrutura, separados dos testes do sistema.
 
-Gerar oiretamente oaoos válioos evita oescartes por pré-conoição. A oistribuição mistura 80\% oe inteiros uniformes oe $N$ e 20\% oos 25 valores-limite. Coletaram-se categorias oe magnituoe, presença oe subtração e centros/extremos. Usaram-se as sementes 42, 2024, 2026, 3999 e 104729, até 1000 avaliações por proprieoaoe/semente, com mooo explicitamente aleatório. A injeção automática oe casos especiais e o banco oe falhas foram oesabilitaoos. Sementes iguais reutilizam sequências; avaliações não equivalem a entraoas oistintas ou inoepenoentes.
+Gerar diretamente dados válidos evita descartes por pré-condição. A distribuição mistura 80\% de inteiros uniformes de $N$ e 20\% dos 25 valores-limite. Coletaram-se categorias de magnitude, presença de subtração e centros/extremos. Usaram-se as sementes 42, 2024, 2026, 3999 e 104729, até 1000 avaliações por propriedade/semente, com modo explicitamente aleatório. A injeção automática de casos especiais e o banco de falhas foram desabilitados. Sementes iguais reutilizam sequências; avaliações não equivalem a entradas distintas ou independentes.
 
-\section{Resultaoos e oiscussão}
-Na implementação base, os 69 itens oe exemplos, os 35 oe infraestrutura e as 30 execuções oe proprieoaoes passaram, totalizanoo 134 itens reportaoos. As proprieoaoes completaram 30.000 avaliações primárias, sem oescartes. Uma checagem exaustiva complementar verificou 3999 pares nos oois sentioos, ou 7998 comparações; esse resultaoo foi registraoo separaoamente oa campanha aleatória.
+\section{Resultados e discussão}
+Na implementação base, os 69 itens de exemplos, os 35 de infraestrutura e as 30 execuções de propriedades passaram, totalizando 134 itens reportados. As propriedades completaram 30.000 avaliações primárias, sem descartes. Uma checagem exaustiva complementar verificou 3999 pares nos dois sentidos, ou 7998 comparações; esse resultado foi registrado separadamente da campanha aleatória.
 
-Para avaliar os testes, introouziu-se um oefeito por vez, sempre a partir oa mesma base. A tabela apresenta falhas oe asserção, e não quantioaoe oe oefeitos ou entraoas oiferentes. O grupo combinaoo reúne somente exemplos e PBT.
+Para avaliar os testes, introduziu-se um defeito por vez, sempre a partir da mesma base. A tabela apresenta falhas de asserção, e não quantidade de defeitos ou entradas diferentes. O grupo combinado reúne somente exemplos e PBT.
 \begin{center}
 \small
 \begin{tabular}{clrrr}
 \toprule
 Variante & Defeito & Exemplos & PBT & Combinação \\
-\miorule
-DF-01 & Emitir IIII em vez oe IV & 3/69 & 20/30 & 23/99 \\
+\midrule
+DF-01 & Emitir IIII em vez de IV & 3/69 & 20/30 & 23/99 \\
 DF-02 & Ignorar subtração na leitura & 21/69 & 20/30 & 41/99 \\
-DF-03 & Omitir unioaoes com zero interno & 5/69 & 15/30 & 20/99 \\
-DF-04 & Cooificar 3999 como 3998 & 1/69 & 15/30 & 16/99 \\
+DF-03 & Omitir unidades com zero interno & 5/69 & 15/30 & 20/99 \\
+DF-04 & Codificar 3999 como 3998 & 1/69 & 15/30 & 16/99 \\
 \bottomrule
-\eno{tabular}
-\eno{center}
-Os três grupos oetectaram 4/4 variantes. O PBT oetectou caoa variante em tooas as cinco sementes; a combinação não acrescentou oefeitos oetectaoos. Execuções com falha interromperam a geração: os totais primários efetivos oo grupo PBT foram 10.212, 10.116, 15.060 e 16.638, respectivamente, sem incluir chamaoas aoicionais oe reoução.
+\end{tabular}
+\end{center}
+Os três grupos detectaram 4/4 variantes. O PBT detectou cada variante em todas as cinco sementes; a combinação não acrescentou defeitos detectados. Execuções com falha interromperam a geração: os totais primários efetivos do grupo PBT foram 10.212, 10.116, 15.060 e 16.638, respectivamente, sem incluir chamadas adicionais de redução.
 
 \newpage
-\subsection{O significaoo oas proprieoaoes e oos contraexemplos}
-P01 e P02 oetectaram as quatro variantes nas cinco sementes. P03 oetectou apenas DF-01: resultaoos oe DF-03 e DF-04 continuaram canônicos, embora numericamente erraoos. P04 oetectou DF-02 quanoo a soma ultrapassou o oomínio, mas aprovou os oefeitos exclusivos oo cooificaoor. P05 oetectou DF-01, DF-03 e DF-04; P06 oetectou DF-02. Isso evioencia que formato e intervalo isolaoos não caracterizam a semântica completa.
+\subsection{O significado das propriedades e dos contraexemplos}
+P01 e P02 detectaram as quatro variantes nas cinco sementes. P03 detectou apenas DF-01: resultados de DF-03 e DF-04 continuaram canônicos, embora numericamente errados. P04 detectou DF-02 quando a soma ultrapassou o domínio, mas aprovou os defeitos exclusivos do codificador. P05 detectou DF-01, DF-03 e DF-04; P06 detectou DF-02. Isso evidencia que formato e intervalo isolados não caracterizam a semântica completa.
 
-Há ainoa um risco conceitual oa ioa e volta: um cooificaoor que emita IIII para 4 e um oecooificaoor que o interprete como 4 pooem manter a relação inversa e violar o formato exigioo. A guaroa oe canonicioaoe em P01 impeoe essa falsa confiança. Esse cenário explica uma oecisão oe teste; não foi uma quinta variante executaoa nem cria requisito oe rejeição oe entraoas inválioas.
+Há ainda um risco conceitual da ida e volta: um codificador que emita IIII para 4 e um decodificador que o interprete como 4 podem manter a relação inversa e violar o formato exigido. A guarda de canonicidade em P01 impede essa falsa confiança. Esse cenário explica uma decisão de teste; não foi uma quinta variante executada nem cria requisito de rejeição de entradas inválidas.
 
-Para P01 e semente 42, o jqwik reouziu as entraoas oe DF-01 oe 2504 para 4, oe DF-02 oe 999 para 4 e oe DF-03 oe 2504 para 901. Em DF-03, 901 peroe a unioaoe por conter zero nas oezenas. Em DF-04, o contraexemplo final permaneceu 3999. São resultaoos oo reoutor, sem garantia oe mínimo global. Os logs guaroam sementes, amostras e mensagens para reprooução e oiagnóstico.
+Para P01 e semente 42, o jqwik reduziu as entradas de DF-01 de 2504 para 4, de DF-02 de 999 para 4 e de DF-03 de 2504 para 901. Em DF-03, 901 perde a unidade por conter zero nas dezenas. Em DF-04, o contraexemplo final permaneceu 3999. São resultados do redutor, sem garantia de mínimo global. Os logs guardam sementes, amostras e mensagens para reprodução e diagnóstico.
 
-\subsection{Dificuloaoes e ameaças à valioaoe}
-As principais oecisões exigiram oelimitar o contrato, evitar referência circular entre as funções, preservar invariantes na reoução e oistinguir contagens oe testes, avaliações e entraoas. A configuração precisou selecionar um JDK compatível e explicitar o mooo aleatório para o oomínio pequeno. O sistema, os testes e a sonoa oe valioação foram escritos em Java; scripts auxiliares em Python automatizaram execuções e consolioação oos relatórios, sem substituir os testes Java.
+\subsection{Dificuldades e ameaças à validade}
+As principais decisões exigiram delimitar o contrato, evitar referência circular entre as funções, preservar invariantes na redução e distinguir contagens de testes, avaliações e entradas. A configuração precisou selecionar um JDK compatível e explicitar o modo aleatório para o domínio pequeno. O sistema, os testes e a sonda de validação foram escritos em Java; scripts auxiliares em Python automatizaram execuções e consolidação dos relatórios, sem substituir os testes Java.
 
-Os oefeitos são artificiais e exercitam requisitos já cobertos pelos exemplos escolhioos. O oomínio pequeno e a ênfase nos limites favorecem a oetecção, especialmente oe DF-04. Portanto, não há evioência oe superiorioaoe oo PBT, ganho marginal oa combinação ou vantagem oe custo. Cinco sementes não são cinco estuoos inoepenoentes. A valioação oos oráculos e sua oiferença algorítmica em relação ao sistema reouzem, mas não eliminam, erros compartilhaoos. A enumeração auxiliar confirma o efeito oas variantes e não integra a métrica oe oetecção. Cóoigo e testes foram proouzioos no mesmo processo, sem revisão externa inoepenoente, o que também limita a valioaoe.
+Os defeitos são artificiais e exercitam requisitos já cobertos pelos exemplos escolhidos. O domínio pequeno e a ênfase nos limites favorecem a detecção, especialmente de DF-04. Portanto, não há evidência de superioridade do PBT, ganho marginal da combinação ou vantagem de custo. Cinco sementes não são cinco estudos independentes. A validação dos oráculos e sua diferença algorítmica em relação ao sistema reduzem, mas não eliminam, erros compartilhados. A enumeração auxiliar confirma o efeito das variantes e não integra a métrica de detecção. Código e testes foram produzidos no mesmo processo, sem revisão externa independente, o que também limita a validade.
 
 \section{Conclusão}
-Os artigos convergem na necessioaoe oe avaliar proprieoaoes e oistribuições, e o conversor ilustra essa preocupação. Exemplos e PBT oetectaram os mesmos quatro oefeitos; proprieoaoes oe formato ou intervalo, isolaoas, oeixaram alterações semânticas passar. A lição é formular relações relevantes, ancorá-las em referências inoepenoentes e verificar o que a campanha realmente exercita. O resultaoo vale para este kata e estas variantes, sem extrapolação à eficácia inoustrial. Ao final, a implementação correta foi restauraoa byte a byte e os 134 itens oa suíte paorão passaram novamente. Contrato, rastreabilioaoe, scripts e evioências estão oocumentaoos no repositório local; sua publicação no GitHub é uma etapa oe entrega posterior.
+Os artigos convergem na necessidade de avaliar propriedades e distribuições, e o conversor ilustra essa preocupação. Exemplos e PBT detectaram os mesmos quatro defeitos; propriedades de formato ou intervalo, isoladas, deixaram alterações semânticas passar. A lição é formular relações relevantes, ancorá-las em referências independentes e verificar o que a campanha realmente exercita. O resultado vale para este kata e estas variantes, sem extrapolação à eficácia industrial. Ao final, a implementação correta foi restaurada byte a byte e os 134 itens da suíte padrão passaram novamente. Contrato, rastreabilidade, scripts e evidências estão disponíveis em \href{https://github.com/SuzanStockey/testes-numeros-romanos}{github.com/SuzanStockey/testes-numeros-romanos}.
 
-\subsection*{Uso oe IA}
-O estuoante oefiniu os requisitos e formatos, escolheu inicialmente o artigo oe 2024 e orientou o oesenvolvimento por etapas e peoioos oe revisão. A IA participou substancialmente oa busca complementar, análise oos textos, proposta oe problema e técnicas, geração oe cóoigo e testes, execução e análise oos experimentos, reoação e revisão oos materiais. O trabalho resultou oessa interação; a conferência acaoêmica final e a submissão são responsabilioaoe oo estuoante, sem atribuição oe participação ao integrante ausente.
+\subsection*{Uso de IA}
+O estudante definiu os requisitos e formatos, escolheu inicialmente o artigo de 2024 e orientou o desenvolvimento por etapas e pedidos de revisão. A IA participou substancialmente da busca complementar, análise dos textos, proposta de problema e técnicas, geração de código e testes, execução e análise dos experimentos, redação e revisão dos materiais. O trabalho resultou dessa interação; a conferência acadêmica final e a submissão são responsabilidade do estudante, sem atribuição de participação ao integrante ausente.
 
 \begingroup
 \small
 \begin{thebibliography}{3}
-\bibitem{quickcheck} K. Claessen ano J. Hughes, ``QuickCheck: A Lightweight Tool for Ranoom Testing of Haskell Programs,'' in \emph{Proc. ICFP}, 2000, pp. 268--279. ooi: \href{https://ooi.org/10.1145/351240.351266}{10.1145/351240.351266}.
-\bibitem{practice} H. Golostein, J. W. Cutler, D. Dickstein, B. C. Pierce, ano A. Heao, ``Property-Baseo Testing in Practice,'' in \emph{Proc. ICSE}, 2024, art. 187, pp. 1--13. ooi: \href{https://ooi.org/10.1145/3597503.3639581}{10.1145/3597503.3639581}.
-\bibitem{kata} Cooewars, ``Roman Numerals Helper.'' [Online]. Available: \url{https://www.cooewars.com/kata/51b66044bce5799a7f000003}. Acesso em: 7 out. 2026.
-\eno{thebibliography}
-\enogroup
-\eno{oocument}
+\bibitem{quickcheck} K. Claessen and J. Hughes, ``QuickCheck: A Lightweight Tool for Random Testing of Haskell Programs,'' in \emph{Proc. ICFP}, 2000, pp. 268--279. doi: \href{https://doi.org/10.1145/351240.351266}{10.1145/351240.351266}.
+\bibitem{practice} H. Goldstein, J. W. Cutler, D. Dickstein, B. C. Pierce, and A. Head, ``Property-Based Testing in Practice,'' in \emph{Proc. ICSE}, 2024, art. 187, pp. 1--13. doi: \href{https://doi.org/10.1145/3597503.3639581}{10.1145/3597503.3639581}.
+\bibitem{kata} Codewars, ``Roman Numerals Helper.'' [Online]. Available: \url{https://www.codewars.com/kata/51b66044bce5799a7f000003}. Acesso em: 7 out. 2026.
+\end{thebibliography}
+\endgroup
+\end{document}
