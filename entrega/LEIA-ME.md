@@ -24,7 +24,7 @@ A apresentação foi conferida em Microsoft Edge: oito slides, navegação, nota
 | README com reprodução e participação | Pronto | `README.md` |
 | Resenha PDF de 2–4 páginas | **Pendente** | Fonte pronta; PDF e paginação não validados |
 | Referências ABNT ou IEEE | Estrutura IEEE pronta | Compilação necessária para validar apresentação final |
-| Repositório GitHub | **Pendente** | Sem URL informada ou publicação realizada |
+| Repositório GitHub | Publicado | https://github.com/SuzanStockey/testes-numeros-romanos |
 | Apresentação de 5–7 minutos | Material pronto; ensaio pendente | HTML e roteiro de seis minutos |
 | Identificação do estudante | **Pendente** | Nome e matrícula não informados |
 | Trabalho individual | Declarado | Confirmar com o professor, pois o enunciado prevê duplas/trios |
@@ -33,14 +33,14 @@ A apresentação foi conferida em Microsoft Edge: oito slides, navegação, nota
 
 1. Inserir nome e matrícula no `\author` de `resenha.tex` e na capa do HTML.
 2. Compilar a mesma fonte LaTeX, revisar o PDF visualmente e confirmar 2–4 páginas. A nova tentativa nesta etapa retornou novamente `Unable to find standard directories for platform`. Nenhum PDF foi produzido; três quebras manuais não garantem quatro páginas se houver transbordamento.
-3. Publicar o repositório GitHub e conferir seu acesso. Não há repositório remoto configurado nem publicação nesta sessão. Incluir a URL nos materiais de entrega.
+3. Usar o repositório publicado: https://github.com/SuzanStockey/testes-numeros-romanos. O envio da branch `main` foi confirmado por comparação entre a revisão local e a remota.
 4. Ensaiar a fala usando o roteiro e ajustar ao intervalo de 5–7 minutos.
 5. Confirmar com o professor a entrega individual. A ausência da dupla foi informada pelo estudante; não se deve atribuir participação ao integrante ausente.
 6. Enviar o PDF final e o link do repositório pelo canal da disciplina, com a apresentação conforme solicitado.
 
 ## Pacote para revisão
 
-`trabalho-revisao.zip` reúne fontes, testes, configuração Maven, pesquisa, apresentação, scripts e evidências. É um pacote de revisão, **não uma entrega final pronta**: não contém o PDF obrigatório nem comprova publicação no GitHub. Os PDFs de leitura e do enunciado permanecem na pasta de trabalho e não são incluídos no ZIP; suas referências e links estão na pesquisa. Os diretórios de compilação e temporários, arquivos `.class` e o próprio ZIP também são excluídos.
+`trabalho-revisao.zip` reúne fontes, testes, configuração Maven, pesquisa, apresentação, scripts e evidências. É um pacote de revisão, **não uma entrega final pronta**: não contém o PDF obrigatório. A versão atual dos arquivos está no repositório GitHub acima. Os PDFs de leitura e do enunciado permanecem na pasta de trabalho e não são incluídos no ZIP; suas referências e links estão na pesquisa. Os diretórios de compilação e temporários, arquivos `.class` e o próprio ZIP também são excluídos.
 
 O LaTeX é autossuficiente, com bibliografia incorporada. O HTML funciona localmente sem bibliotecas externas; notas aparecem na mesma janela e devem ficar ocultas durante a projeção. Sistema, testes e sonda são Java; scripts auxiliares PowerShell/Python/Node automatizam execução e verificação. Não houve substituição dos testes Java por scripts.
 

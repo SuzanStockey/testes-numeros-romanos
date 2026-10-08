@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T01:59:36.635Z",
+  "checked_at": "2026-10-08T02:19:51.414Z",
   "kind": "static-delivery-audit",
   "checks": [
     {
@@ -208,10 +208,10 @@
       "detail": "Chaves e duas referências acadêmicas presentes; não substitui compilação."
     }
   ],
+  "repository": "https://github.com/SuzanStockey/testes-numeros-romanos",
   "pending": [
     "Nome e matrícula não informados.",
     "PDF não gerado: compilador integrado indisponível; limite de 2–4 páginas sem validação.",
-    "Repositório GitHub ainda sem URL/publicação.",
     "Ensaio de 5–7 minutos ainda não realizado pelo estudante."
   ],
   "note": "Não houve reexecução da suíte: os hashes confirmam o mesmo código dos resultados aprovados."

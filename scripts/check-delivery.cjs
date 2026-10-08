@@ -23,7 +23,8 @@ const tex=read('resenha.tex');const cites=[...tex.matchAll(/\\cite\{([^}]+)\}/g)
 const bib=[...tex.matchAll(/\\bibitem\{([^}]+)\}/g)].map(m=>m[1]);
 check('citações LaTeX',cites.every(c=>bib.includes(c))&&bib.includes('quickcheck')&&bib.includes('practice'),'Chaves e duas referências acadêmicas presentes; não substitui compilação.');
 const out={checked_at:new Date().toISOString(),kind:'static-delivery-audit',checks,
- pending:['Nome e matrícula não informados.','PDF não gerado: compilador integrado indisponível; limite de 2–4 páginas sem validação.','Repositório GitHub ainda sem URL/publicação.','Ensaio de 5–7 minutos ainda não realizado pelo estudante.'],
+ repository:'https://github.com/SuzanStockey/testes-numeros-romanos',
+ pending:['Nome e matrícula não informados.','PDF não gerado: compilador integrado indisponível; limite de 2–4 páginas sem validação.','Ensaio de 5–7 minutos ainda não realizado pelo estudante.'],
  note:'Não houve reexecução da suíte: os hashes confirmam o mesmo código dos resultados aprovados.'};
 fs.mkdirSync(path.join(root,'entrega'),{recursive:true});fs.writeFileSync(path.join(root,'entrega/verificacao.json'),JSON.stringify(out,null,2)+'\n');
 console.log(checks.length+' verificações aprovadas. Pendências: '+out.pending.length+'.');
