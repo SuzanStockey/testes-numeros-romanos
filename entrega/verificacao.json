@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T02:20:35.039Z",
+  "checked_at": "2026-10-08T21:31:48.849Z",
   "kind": "static-delivery-audit",
   "checks": [
     {
@@ -103,11 +103,6 @@
       "detail": "Presente e não vazio."
     },
     {
-      "name": "arquivo roteiro-apresentacao.md",
-      "status": "approved",
-      "detail": "Presente e não vazio."
-    },
-    {
       "name": "arquivo pesquisa/pesquisa-e5.md",
       "status": "approved",
       "detail": "Presente e não vazio."
@@ -186,21 +181,6 @@
       "name": "slides e tempo",
       "status": "approved",
       "detail": "8 slides; 360 segundos planejados, sem medição da fala."
-    },
-    {
-      "name": "link HTML tests.md",
-      "status": "approved",
-      "detail": "Destino local existente."
-    },
-    {
-      "name": "link HTML resultados/etapa5/resumo.md",
-      "status": "approved",
-      "detail": "Destino local existente."
-    },
-    {
-      "name": "link HTML README.md",
-      "status": "approved",
-      "detail": "Destino local existente."
     },
     {
       "name": "citações LaTeX",

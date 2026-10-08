@@ -22,8 +22,7 @@ O sistema oferece `RomanNumerals.toRoman(int)` e `RomanNumerals.fromRoman(String
 | `tests.md` | Técnicas, casos, geradores e rastreabilidade |
 | `pesquisa/` | Fichamentos, registro do E5 e referências BibTeX |
 | `resenha.tex` | Resenha crítica em LaTeX com referências IEEE incorporadas |
-| `apresentacao.html` | Oito slides com navegação, notas e modo de roteiro; funcionamento local |
-| `roteiro-apresentacao.md` | Orientação de uso e metas de tempo para uma fala de seis minutos |
+| `apresentacao.html` | Oito slides com navegação e visão geral; funcionamento local |
 | `entrega/` | Checklist final, auditoria de integridade e pacote para revisão |
 | `scripts/` | Execução por grupo e extração das evidências |
 | `resultados/etapa4/` | Logs, tabelas de execução, distribuições e hashes do código avaliado |
@@ -120,6 +119,6 @@ O trabalho foi desenvolvido com diretrizes, acompanhamento e revisão do estudan
 
 ## Estado do trabalho
 
-Etapas 1 a 5 concluídas. A resenha da etapa 6 está escrita em `resenha.tex` e aberta no editor LaTeX. A compilação integrada falhou por problema do ambiente; PDF, paginação e revisão visual ainda não foram validados. A autoria precisa receber nome e matrícula. O registro de revisão está em `pesquisa/revisao-resenha.md`. A etapa 7 tem oito slides em `apresentacao.html` e notas para uma fala planejada de seis minutos; abra o HTML em navegador e ensaie com `roteiro-apresentacao.md`. A revisão de entrega está registrada abaixo. Os resultados são da suíte local, sem submissão ao Codewars. O projeto está publicado no repositório GitHub indicado no início deste documento.
+Etapas 1 a 5 concluídas. A resenha da etapa 6 está escrita em `resenha.tex` e aberta no editor LaTeX. A compilação integrada falhou por problema do ambiente; PDF, paginação e revisão visual ainda não foram validados. A autoria precisa receber nome e matrícula. O registro de revisão está em `pesquisa/revisao-resenha.md`. A etapa 7 tem oito slides em `apresentacao.html` para uma fala planejada de seis minutos. O roteiro de fala é um arquivo TXT de uso local, excluído do versionamento. A revisão de entrega está registrada abaixo. Os resultados são da suíte local, sem submissão ao Codewars. O projeto está publicado no repositório GitHub indicado no início deste documento.
 
 A revisão da etapa 8 foi concluída: 41 verificações aprovadas, com código restaurado, resultados coerentes e apresentação conferida. O checklist e as pendências estão em [entrega/LEIA-ME.md](entrega/LEIA-ME.md). O pacote ZIP é para revisão, pois PDF, autoria e ensaio ainda precisam ser finalizados. Para auditar novamente os arquivos e evidências sem reexecutar testes: `node scripts/check-delivery.cjs` (Node.js 18 ou posterior).

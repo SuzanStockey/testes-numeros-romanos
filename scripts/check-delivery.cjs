@@ -6,7 +6,7 @@ const manifest=JSON.parse(read('resultados/etapa4/manifest.json'));
 const experiment=JSON.parse(read('resultados/etapa5/experiment.json'));
 const checks=[];const check=(name,ok,detail)=>{checks.push({name,status:ok?'approved':'failed',detail});if(!ok)throw Error(name+': '+detail)};
 for(const [file,digest] of Object.entries(manifest.source_sha256))check('hash '+file,sha(file)===digest,'Igual à implementação avaliada na etapa 4.');
-for(const file of ['src/RomanNumerals.java','tests.md','README.md','especificacao.md','resenha.tex','apresentacao.html','roteiro-apresentacao.md','pesquisa/pesquisa-e5.md','pesquisa/fichamentos.md'])check('arquivo '+file,fs.statSync(path.join(root,file)).size>0,'Presente e não vazio.');
+for(const file of ['src/RomanNumerals.java','tests.md','README.md','especificacao.md','resenha.tex','apresentacao.html','pesquisa/pesquisa-e5.md','pesquisa/fichamentos.md'])check('arquivo '+file,fs.statSync(path.join(root,file)).size>0,'Presente e não vazio.');
 const restored=experiment.runs.find(r=>r.group==='restored');
 check('restauração',experiment.restored_byte_for_byte&&restored.tests===134&&restored.failures===0,'134 itens aprovados no relatório existente; código preservado.');
 for(const variant of Object.keys(experiment.variant_sha256)){

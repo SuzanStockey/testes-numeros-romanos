@@ -6,7 +6,7 @@ A revisão geral posterior está em `revisao-final.md`, incluindo correções co
 
 Foram aprovadas 41 verificações de arquivos, hashes, detecção de defeitos, links locais da apresentação e chaves de citações LaTeX. O registro verificável está em `verificacao.json`; para repetir a auditoria, execute `node scripts/check-delivery.cjs` na raiz do projeto. A suíte Java não foi reexecutada nesta etapa porque seus 14 arquivos de configuração/produção/testes mantêm os hashes da etapa 4. A execução após restauração, preservada na etapa 5, registra 134 itens aprovados.
 
-A apresentação foi conferida em Microsoft Edge: oito slides, navegação, notas, roteiro e largura móvel; os slides não transbordam a área de apresentação em 1366 × 768. O plano de fala soma seis minutos; é necessário ensaio para confirmar a duração real.
+A apresentação foi conferida em Microsoft Edge: oito slides, navegação, visão geral e largura móvel; os slides não transbordam a área de apresentação em 1366 × 768. O plano de fala soma seis minutos; é necessário ensaio para confirmar a duração real.
 
 ## Checklist do enunciado
 
@@ -25,7 +25,7 @@ A apresentação foi conferida em Microsoft Edge: oito slides, navegação, nota
 | Resenha PDF de 2–4 páginas | **Pendente** | Fonte pronta; PDF e paginação não validados |
 | Referências ABNT ou IEEE | Estrutura IEEE pronta | Compilação necessária para validar apresentação final |
 | Repositório GitHub | Publicado | https://github.com/SuzanStockey/testes-numeros-romanos |
-| Apresentação de 5–7 minutos | Material pronto; ensaio pendente | HTML e roteiro de seis minutos |
+| Apresentação de 5–7 minutos | Material pronto; ensaio pendente | HTML e roteiro local de seis minutos |
 | Identificação do estudante | **Pendente** | Nome e matrícula não informados |
 | Trabalho individual | Declarado | Confirmar com o professor, pois o enunciado prevê duplas/trios |
 
@@ -42,6 +42,6 @@ A apresentação foi conferida em Microsoft Edge: oito slides, navegação, nota
 
 `trabalho-revisao.zip` reúne fontes, testes, configuração Maven, pesquisa, apresentação, scripts e evidências. É um pacote de revisão, **não uma entrega final pronta**: não contém o PDF obrigatório. A versão atual dos arquivos está no repositório GitHub acima. Os PDFs de leitura e do enunciado permanecem na pasta de trabalho e não são incluídos no ZIP; suas referências e links estão na pesquisa. Os diretórios de compilação e temporários, arquivos `.class` e o próprio ZIP também são excluídos.
 
-O LaTeX é autossuficiente, com bibliografia incorporada. O HTML funciona localmente sem bibliotecas externas; notas aparecem na mesma janela e devem ficar ocultas durante a projeção. Sistema, testes e sonda são Java; scripts auxiliares PowerShell/Python/Node automatizam execução e verificação. Não houve substituição dos testes Java por scripts.
+O LaTeX é autossuficiente, com bibliografia incorporada. O HTML funciona localmente sem bibliotecas externas; o roteiro de fala está somente no TXT local e não integra a apresentação publicada. Sistema, testes e sonda são Java; scripts auxiliares PowerShell/Python/Node automatizam execução e verificação. Não houve substituição dos testes Java por scripts.
 
 **Conclusão da etapa 8:** revisão técnica e organização concluídas; submissão final ainda depende das pendências acima.
