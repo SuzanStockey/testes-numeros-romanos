@@ -6,8 +6,11 @@ public final class RomanNumerals {
     private RomanNumerals() {
     }
 
-    /** Pré-condição: 1 <= n <= 3999. Emite símbolos em ordem decrescente de valor. */
+    /** Emite símbolos em ordem decrescente; rejeita valores fora de 1..3999. */
     public static String toRoman(int n) {
+        if (n < 1 || n > 3999) {
+            throw new IllegalArgumentException("O inteiro deve estar entre 1 e 3999.");
+        }
         StringBuilder result = new StringBuilder();
         int remaining = n;
         for (int i = 0; i < VALUES.length; i++) {
@@ -19,13 +22,21 @@ public final class RomanNumerals {
         return result.toString();
     }
 
-    /** Pré-condição: romanNumeral é uma representação canônica de um valor de 1 a 3999. */
+    /** Rejeita null, texto vazio e representações não canônicas, sem normalização. */
     public static int fromRoman(String romanNumeral) {
+        // O maior comprimento canônico no domínio é 15 (3888 = MMMDCCCLXXXVIII).
+        if (romanNumeral == null || romanNumeral.isEmpty() || romanNumeral.length() > 15) {
+            throw new IllegalArgumentException("Informe um romano canônico de 1 a 3999.");
+        }
         int result = 0;
         for (int i = 0; i < romanNumeral.length(); i++) {
             int current = valueOf(romanNumeral.charAt(i));
             int next = i + 1 < romanNumeral.length() ? valueOf(romanNumeral.charAt(i + 1)) : 0;
             result += current < next ? -current : current;
+        }
+        // A reconstrução evita aceitar somas possíveis com uma grafia inválida, como IC.
+        if (result < 1 || result > 3999 || !romanNumeral.equals(toRoman(result))) {
+            throw new IllegalArgumentException("A representação romana não é canônica.");
         }
         return result;
     }

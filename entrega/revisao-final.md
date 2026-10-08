@@ -1,5 +1,7 @@
 # Revisão geral após a etapa 8
 
+Este registro preserva a revisão anterior à validação de entradas. Posteriormente, o código recebeu RP-03 e foi testado novamente: 181 itens, 32.000 avaliações primárias e 7998 comparações exaustivas aprovados. O código original permanece no snapshot; os hashes atuais estão em `resultados/validacao/manifest.json`.
+
 ## Correções
 
 - Resenha e apresentação: substituída a descrição incorreta de “12 classes” por “12 casos representativos”. As partições documentadas são os eixos de subtração e magnitude; as categorias de composição se sobrepõem.

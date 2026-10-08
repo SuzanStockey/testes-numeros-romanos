@@ -1,76 +1,161 @@
 {
-  "checked_at": "2026-10-08T21:47:50.633Z",
+  "checked_at": "2026-10-08T22:11:46.148Z",
   "kind": "static-delivery-audit",
   "checks": [
     {
-      "name": "hash pom.xml",
+      "name": "hash histórico pom.xml",
       "status": "approved",
-      "detail": "Igual à implementação avaliada na etapa 4."
+      "detail": "Versão original preservada; código de produção consultado no snapshot da etapa 5."
     },
     {
-      "name": "hash src/RomanNumerals.java",
+      "name": "hash histórico src/RomanNumerals.java",
       "status": "approved",
-      "detail": "Igual à implementação avaliada na etapa 4."
+      "detail": "Versão original preservada; código de produção consultado no snapshot da etapa 5."
     },
     {
-      "name": "hash tests/FixedCases.java",
+      "name": "hash histórico tests/FixedCases.java",
       "status": "approved",
-      "detail": "Igual à implementação avaliada na etapa 4."
+      "detail": "Versão original preservada; código de produção consultado no snapshot da etapa 5."
     },
     {
-      "name": "hash tests/resources/junit-platform.properties",
+      "name": "hash histórico tests/resources/junit-platform.properties",
       "status": "approved",
-      "detail": "Igual à implementação avaliada na etapa 4."
+      "detail": "Versão original preservada; código de produção consultado no snapshot da etapa 5."
     },
     {
-      "name": "hash tests/RomanExamplesTest.java",
+      "name": "hash histórico tests/RomanExamplesTest.java",
       "status": "approved",
-      "detail": "Igual à implementação avaliada na etapa 4."
+      "detail": "Versão original preservada; código de produção consultado no snapshot da etapa 5."
     },
     {
-      "name": "hash tests/RomanExhaustiveTest.java",
+      "name": "hash histórico tests/RomanExhaustiveTest.java",
       "status": "approved",
-      "detail": "Igual à implementação avaliada na etapa 4."
+      "detail": "Versão original preservada; código de produção consultado no snapshot da etapa 5."
     },
     {
-      "name": "hash tests/RomanInfrastructureTest.java",
+      "name": "hash histórico tests/RomanInfrastructureTest.java",
       "status": "approved",
-      "detail": "Igual à implementação avaliada na etapa 4."
+      "detail": "Versão original preservada; código de produção consultado no snapshot da etapa 5."
     },
     {
-      "name": "hash tests/RomanPropertyChecks.java",
+      "name": "hash histórico tests/RomanPropertyChecks.java",
       "status": "approved",
-      "detail": "Igual à implementação avaliada na etapa 4."
+      "detail": "Versão original preservada; código de produção consultado no snapshot da etapa 5."
     },
     {
-      "name": "hash tests/RomanReference.java",
+      "name": "hash histórico tests/RomanReference.java",
       "status": "approved",
-      "detail": "Igual à implementação avaliada na etapa 4."
+      "detail": "Versão original preservada; código de produção consultado no snapshot da etapa 5."
     },
     {
-      "name": "hash tests/Seed104729Properties.java",
+      "name": "hash histórico tests/Seed104729Properties.java",
       "status": "approved",
-      "detail": "Igual à implementação avaliada na etapa 4."
+      "detail": "Versão original preservada; código de produção consultado no snapshot da etapa 5."
     },
     {
-      "name": "hash tests/Seed2024Properties.java",
+      "name": "hash histórico tests/Seed2024Properties.java",
       "status": "approved",
-      "detail": "Igual à implementação avaliada na etapa 4."
+      "detail": "Versão original preservada; código de produção consultado no snapshot da etapa 5."
     },
     {
-      "name": "hash tests/Seed2026Properties.java",
+      "name": "hash histórico tests/Seed2026Properties.java",
       "status": "approved",
-      "detail": "Igual à implementação avaliada na etapa 4."
+      "detail": "Versão original preservada; código de produção consultado no snapshot da etapa 5."
     },
     {
-      "name": "hash tests/Seed3999Properties.java",
+      "name": "hash histórico tests/Seed3999Properties.java",
       "status": "approved",
-      "detail": "Igual à implementação avaliada na etapa 4."
+      "detail": "Versão original preservada; código de produção consultado no snapshot da etapa 5."
     },
     {
-      "name": "hash tests/Seed42Properties.java",
+      "name": "hash histórico tests/Seed42Properties.java",
       "status": "approved",
-      "detail": "Igual à implementação avaliada na etapa 4."
+      "detail": "Versão original preservada; código de produção consultado no snapshot da etapa 5."
+    },
+    {
+      "name": "hash atual pom.xml",
+      "status": "approved",
+      "detail": "Versão com validação avaliada em resultados/validacao."
+    },
+    {
+      "name": "hash atual src/RomanNumerals.java",
+      "status": "approved",
+      "detail": "Versão com validação avaliada em resultados/validacao."
+    },
+    {
+      "name": "hash atual tests/FixedCases.java",
+      "status": "approved",
+      "detail": "Versão com validação avaliada em resultados/validacao."
+    },
+    {
+      "name": "hash atual tests/InvalidInputProperties.java",
+      "status": "approved",
+      "detail": "Versão com validação avaliada em resultados/validacao."
+    },
+    {
+      "name": "hash atual tests/RomanExamplesTest.java",
+      "status": "approved",
+      "detail": "Versão com validação avaliada em resultados/validacao."
+    },
+    {
+      "name": "hash atual tests/RomanExhaustiveTest.java",
+      "status": "approved",
+      "detail": "Versão com validação avaliada em resultados/validacao."
+    },
+    {
+      "name": "hash atual tests/RomanInfrastructureTest.java",
+      "status": "approved",
+      "detail": "Versão com validação avaliada em resultados/validacao."
+    },
+    {
+      "name": "hash atual tests/RomanInvalidInputTest.java",
+      "status": "approved",
+      "detail": "Versão com validação avaliada em resultados/validacao."
+    },
+    {
+      "name": "hash atual tests/RomanPropertyChecks.java",
+      "status": "approved",
+      "detail": "Versão com validação avaliada em resultados/validacao."
+    },
+    {
+      "name": "hash atual tests/RomanReference.java",
+      "status": "approved",
+      "detail": "Versão com validação avaliada em resultados/validacao."
+    },
+    {
+      "name": "hash atual tests/Seed104729Properties.java",
+      "status": "approved",
+      "detail": "Versão com validação avaliada em resultados/validacao."
+    },
+    {
+      "name": "hash atual tests/Seed2024Properties.java",
+      "status": "approved",
+      "detail": "Versão com validação avaliada em resultados/validacao."
+    },
+    {
+      "name": "hash atual tests/Seed2026Properties.java",
+      "status": "approved",
+      "detail": "Versão com validação avaliada em resultados/validacao."
+    },
+    {
+      "name": "hash atual tests/Seed3999Properties.java",
+      "status": "approved",
+      "detail": "Versão com validação avaliada em resultados/validacao."
+    },
+    {
+      "name": "hash atual tests/Seed42Properties.java",
+      "status": "approved",
+      "detail": "Versão com validação avaliada em resultados/validacao."
+    },
+    {
+      "name": "hash atual tests/resources/junit-platform.properties",
+      "status": "approved",
+      "detail": "Versão com validação avaliada em resultados/validacao."
+    },
+    {
+      "name": "suíte atual",
+      "status": "approved",
+      "detail": "181 itens aprovados; 32000 avaliações primárias de propriedades e 7998 comparações exaustivas separadas."
     },
     {
       "name": "arquivo src/RomanNumerals.java",
@@ -113,9 +198,9 @@
       "detail": "Presente e não vazio."
     },
     {
-      "name": "restauração",
+      "name": "restauração histórica",
       "status": "approved",
-      "detail": "134 itens aprovados no relatório existente; código preservado."
+      "detail": "134 itens aprovados na versão original, preservada no snapshot."
     },
     {
       "name": "DF-01/examples",
@@ -194,5 +279,5 @@
     "PDF não gerado: compilador integrado indisponível; limite de 2–4 páginas sem validação.",
     "Ensaio de 5–7 minutos ainda não realizado pelo estudante."
   ],
-  "note": "Não houve reexecução da suíte: os hashes confirmam o mesmo código dos resultados aprovados."
+  "note": "A suíte foi reexecutada para a versão com validação; as etapas 4/5 permanecem evidências históricas da versão original."
 }

@@ -4,7 +4,7 @@
 
 A revisão geral posterior está em `revisao-final.md`, incluindo correções conceituais, atualização de estados e redução de metadados locais nos XML, sem alteração dos casos de teste.
 
-Foram aprovadas 41 verificações de arquivos, hashes, detecção de defeitos, links locais da apresentação e chaves de citações LaTeX. O registro verificável está em `verificacao.json`; para repetir a auditoria, execute `node scripts/check-delivery.cjs` na raiz do projeto. A suíte Java não foi reexecutada nesta etapa porque seus 14 arquivos de configuração/produção/testes mantêm os hashes da etapa 4. A execução após restauração, preservada na etapa 5, registra 134 itens aprovados.
+O registro da auditoria está em `verificacao.json`; para repeti-la, execute `node scripts/check-delivery.cjs`. A extensão de rejeição de entradas foi testada novamente: 181 itens e 32.000 avaliações primárias aprovados; 7998 comparações exaustivas também passaram. A auditoria verifica separadamente o código original preservado no snapshot e os hashes da versão atual em `resultados/validacao/manifest.json`. Os 134 itens da restauração da etapa 5 permanecem um resultado histórico.
 
 A apresentação foi conferida em Microsoft Edge: oito slides, navegação, visão geral e largura móvel; os slides não transbordam a área de apresentação em 1366 × 768. O plano de fala soma seis minutos; é necessário ensaio para confirmar a duração real.
 

@@ -1,0 +1,105 @@
+{
+  "version": "validacao-entradas-2026-10-08",
+  "checked_at": "2026-10-08T22:07:44.778Z",
+  "suites": [
+    {
+      "suite": "InvalidInputProperties",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "RomanExamplesTest",
+      "tests": 69,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "RomanInfrastructureTest",
+      "tests": 35,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "RomanInvalidInputTest",
+      "tests": 45,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "Seed104729Properties",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "Seed2024Properties",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "Seed2026Properties",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "Seed3999Properties",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "Seed42Properties",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "standard_tests": 181,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "valid_domain_primary_checks": 30000,
+  "invalid_domain_primary_checks": 2000,
+  "discarded": 0,
+  "exhaustive_suites": [
+    {
+      "suite": "RomanExhaustiveTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "exhaustive_directional_comparisons": 7998,
+  "source_sha256": {
+    "pom.xml": "598986690ef3eae8a74d7a7c5b29c9cae3285d689c9d665e1db58e2249284daf",
+    "src/RomanNumerals.java": "9b6de0785fdf7dcff36b42acca565e2191af4b2d4c1162ba59a9f234f0852c73",
+    "tests/FixedCases.java": "ce952606938132eefdbf82fb188e9c4ab936616ecb0966c5f52eccd01910b9b3",
+    "tests/InvalidInputProperties.java": "1411c17d2b6f8b9304ade30261b64801bb46602512d8e8eb000b9ab689693bdc",
+    "tests/RomanExamplesTest.java": "3a9f1cf19dff9550abf152048fcb0ee350151987917437bfbf4d1e3f5d28fe7e",
+    "tests/RomanExhaustiveTest.java": "fc5cdf5f9f350563c26aefd224684c190017f696b54565b74cc26cdde9db7200",
+    "tests/RomanInfrastructureTest.java": "4e60e9fe6d5fbaff945e6958b4dd7faf7a314d9f4fc0ad8069a637605da5ce97",
+    "tests/RomanInvalidInputTest.java": "0509e46f9a7df9080b944e23233f34ad2caecfcedfd601e87d6eb8e5e4dd4ab7",
+    "tests/RomanPropertyChecks.java": "f72f85a8a7c36616d7ab4dfafe7e42ce1b1744116ac798960ed1dc89c2617879",
+    "tests/RomanReference.java": "c71fec62d2e050e09f808ae319d8d1d1bc21dd42deb46d0f3499b6c3f9ee1419",
+    "tests/Seed104729Properties.java": "e0274bd709455ba6b387fea87d39e9fa82a87224eb6835fd0157c677f016c3ed",
+    "tests/Seed2024Properties.java": "1132e3724f87843c027156f6de6bcfaaab53c5f0473be14b9428650e568c84f3",
+    "tests/Seed2026Properties.java": "2ad012ef5596e38102445c6a948b3e61554d6ec11aa10ff806b7c42a46bda4d4",
+    "tests/Seed3999Properties.java": "390235a2f50e6d4a541b8d7a274e7a5eaffbe8cbd745a0f703ab40affe2fff1a",
+    "tests/Seed42Properties.java": "ebde597747c5c037cb96068a9b78fd07bfba364fd9caeb1c6bfa5beac4270a0d",
+    "tests/resources/junit-platform.properties": "b52005f80e4e4eb92b5dbb1e933b6b29517362a46167c720e10f78c4867ff656"
+  },
+  "note": "Resultados da validação ampliada; o experimento de quatro defeitos das etapas 4/5 pertence à versão anterior."
+}

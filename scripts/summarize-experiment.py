@@ -11,7 +11,8 @@ data = json.loads((OUT / "experiment.json").read_text(encoding="utf-8"))
 assert data["restored_byte_for_byte"]
 manifest = json.loads((ROOT / "resultados/etapa4/manifest.json").read_text(encoding="utf-8"))
 for path, digest in manifest["source_sha256"].items():
-    assert hashlib.sha256((ROOT / path).read_bytes()).hexdigest() == digest, path
+    archived = ROOT / "resultados/etapa5/baseline/RomanNumerals.java" if path == "src/RomanNumerals.java" else ROOT / path
+    assert hashlib.sha256(archived.read_bytes()).hexdigest() == digest, path
 
 
 def write(name, rows):

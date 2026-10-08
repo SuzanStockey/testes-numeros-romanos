@@ -11,6 +11,10 @@ import re
 
 ROOT = Path(__file__).resolve().parent.parent
 EVIDENCE = ROOT / "resultados" / "etapa4"
+historical = json.loads((EVIDENCE / "manifest.json").read_text(encoding="utf-8"))
+for original_path, original_digest in historical["source_sha256"].items():
+    if hashlib.sha256((ROOT / original_path).read_bytes()).hexdigest() != original_digest:
+        raise RuntimeError("Código difere da campanha original. Use a revisão 78399cf em uma cópia separada; não sobrescrever a etapa 4.")
 
 
 def parse_group(group):

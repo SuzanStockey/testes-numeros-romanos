@@ -1,0 +1,11 @@
+suite,tests,failures,errors,skipped
+InvalidInputProperties,2,0,0,0
+RomanExamplesTest,69,0,0,0
+RomanInfrastructureTest,35,0,0,0
+RomanInvalidInputTest,45,0,0,0
+Seed104729Properties,6,0,0,0
+Seed2024Properties,6,0,0,0
+Seed2026Properties,6,0,0,0
+Seed3999Properties,6,0,0,0
+Seed42Properties,6,0,0,0
+RomanExhaustiveTest,2,0,0,0

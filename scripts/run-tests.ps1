@@ -8,6 +8,13 @@ $ErrorActionPreference = 'Stop'
 $OutputEncoding = [System.Text.UTF8Encoding]::new($false)
 [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false)
 $taskRoot = Split-Path -Parent $PSScriptRoot
+$taskManifest = Get-Content -LiteralPath (Join-Path $taskRoot 'resultados/etapa4/manifest.json') -Raw | ConvertFrom-Json
+foreach ($taskProperty in $taskManifest.source_sha256.PSObject.Properties) {
+    $taskDigest = (Get-FileHash -LiteralPath (Join-Path $taskRoot $taskProperty.Name) -Algorithm SHA256).Hash.ToLowerInvariant()
+    if ($taskDigest -ne $taskProperty.Value) {
+        throw 'Este runner preserva a campanha original. Use a revisão 78399cf em uma cópia separada; a versão atual registra resultados em resultados/validacao.'
+    }
+}
 if ($JavaHome) { $env:JAVA_HOME = $JavaHome }
 $selections = @{
     examples = 'RomanExamplesTest'

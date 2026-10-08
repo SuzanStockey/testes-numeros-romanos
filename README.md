@@ -6,7 +6,7 @@ O referencial tem três artigos: Ostrand e Balcer (1988) fundamentam a organiza�
 
 Trabalho de Verificação e Validação de Software: aplicação de particionamento de equivalência, análise de valores-limite e testes baseados em propriedades ao [Roman Numerals Helper do Codewars](https://www.codewars.com/kata/51b66044bce5799a7f000003).
 
-O sistema oferece `RomanNumerals.toRoman(int)` e `RomanNumerals.fromRoman(String)`. O contrato abrange inteiros de 1 a 3999 e suas representações romanas canônicas. O comportamento para entradas inválidas não é definido neste estudo.
+O sistema oferece `RomanNumerals.toRoman(int)` e `RomanNumerals.fromRoman(String)`. Converte inteiros de 1 a 3999 e romanos canônicos; na versão atual, rejeita entradas inválidas com `IllegalArgumentException`, sem normalização. A rejeição é uma extensão própria do projeto, acrescentada depois do experimento original, não uma exigência do Codewars.
 
 ## Organização
 
@@ -20,6 +20,8 @@ O sistema oferece `RomanNumerals.toRoman(int)` e `RomanNumerals.fromRoman(String
 | `tests/RomanPropertyChecks.java` | Geradores e seis verificações de propriedades |
 | `tests/Seed*Properties.java` | Execuções das seis propriedades com cinco sementes fixas |
 | `tests/RomanExhaustiveTest.java` | Checagem exaustiva complementar, fora da suíte padrão |
+| `tests/RomanInvalidInputTest.java` | 45 itens de rejeição e fronteiras válidas |
+| `tests/InvalidInputProperties.java` | Duas propriedades de rejeição, 1000 avaliações cada |
 | `especificacao.md` | Contrato, regras, requisitos e exemplos |
 | `tests.md` | Técnicas, casos, geradores e rastreabilidade |
 | `pesquisa/` | Fichamentos, registro do E5 e referências BibTeX |
@@ -29,6 +31,7 @@ O sistema oferece `RomanNumerals.toRoman(int)` e `RomanNumerals.fromRoman(String
 | `scripts/` | Execução por grupo e extração das evidências |
 | `resultados/etapa4/` | Logs, tabelas de execução, distribuições e hashes do código avaliado |
 | `resultados/etapa5/` | Experimento com quatro defeitos: variantes, relatórios, contraexemplos e comparação |
+| `resultados/validacao/` | Suíte atual com rejeição de entradas: 181 itens, logs e hashes próprios |
 
 ## Ambiente e dependências
 
@@ -49,9 +52,21 @@ Se `mvn` estiver no PATH, execute na raiz:
 mvn --batch-mode --no-transfer-progress test
 ```
 
-A suíte padrão reúne 134 itens reportados pelo framework: 69 testes de exemplos/sequência, 35 de infraestrutura e 30 execuções de propriedades. As 30 execuções correspondem a seis propriedades com cinco sementes, cada uma com 1000 avaliações: **30.000 avaliações primárias aleatórias**. O número 134 não representa o total de entradas exercitadas.
+A suíte padrão atual reúne **181 itens**: 69 exemplos/sequência, 35 de infraestrutura, 30 execuções das propriedades originais, 45 casos de validação e duas novas execuções de propriedades de rejeição. Foram **32.000 avaliações primárias**: 30.000 no domínio válido e 2000 nas novas propriedades. Itens do framework não representam entradas distintas. Os 134 itens das etapas 4/5 pertencem à versão anterior.
 
-## Executar e registrar grupos separados
+Para registrar a versão atual e conferir suas evidências:
+
+```powershell
+mvn --batch-mode --no-transfer-progress test '-Dtest.reports=resultados/validacao/reports'
+mvn --batch-mode --no-transfer-progress test '-Dtest=RomanExhaustiveTest' '-DexcludedGroups=none' '-Dtest.reports=resultados/validacao/exhaustive-reports'
+node scripts/summarize-validation.cjs
+```
+
+Veja [resultados/validacao/resumo.md](resultados/validacao/resumo.md). Reexecutar substitui relatórios dessa pasta; preserve-os antes de avaliar outra alteração.
+
+## Campanha original: grupos separados
+
+Os comandos desta seção e o experimento da etapa 5 são históricos. Devem ser executados com a revisão `78399cf` em uma cópia separada. Os scripts da etapa 4 verificam os hashes e recusam a versão atual com validação, evitando sobrescrever as evidências antigas.
 
 Com Maven disponível no PATH:
 
@@ -102,7 +117,7 @@ O script confere os totais, sementes, modo aleatório, tentativas e estatística
 
 Os logs confirmam zero falhas, erros e descartes na campanha base. As propriedades usam uma mistura 80/20 de inteiros uniformes e valores-limite, com injeção automática de casos especiais desabilitada. O banco de reexecução de falhas do jqwik também está desabilitado para evitar interferência de campanhas anteriores. As mesmas sementes e o mesmo gerador reutilizam sequências entre propriedades; 30.000 avaliações não são 30.000 entradas independentes ou distintas.
 
-O resumo da implementação base está em [resultados/etapa4/resumo.md](resultados/etapa4/resumo.md). O [experimento da etapa 5](resultados/etapa5/resumo.md) comparou quatro variantes isoladas: exemplos, PBT e combinação detectaram 4/4. O conversor correto foi restaurado e os 134 itens passaram novamente. Esses defeitos artificiais não permitem concluir superioridade de uma técnica.
+O resumo da implementação original está em [resultados/etapa4/resumo.md](resultados/etapa4/resumo.md). O [experimento da etapa 5](resultados/etapa5/resumo.md) comparou quatro variantes isoladas: exemplos, PBT e combinação detectaram 4/4. Naquela versão, o conversor foi restaurado e os 134 itens passaram novamente. A campanha de defeitos não foi repetida na versão atual com validação; não se atribui sua matriz de detecção a essa extensão.
 
 ## Experimento com defeitos controlados
 
@@ -123,4 +138,4 @@ O trabalho foi desenvolvido com diretrizes, acompanhamento e revisão do estudan
 
 Etapas 1 a 5 concluídas. A resenha da etapa 6 está escrita em `resenha.tex` e aberta no editor LaTeX. A compilação integrada falhou por problema do ambiente; PDF, paginação e revisão visual ainda não foram validados. A autoria precisa receber nome e matrícula. O registro de revisão está em `pesquisa/revisao-resenha.md`. A etapa 7 tem oito slides em `apresentacao.html` para uma fala planejada de seis minutos. O roteiro de fala é um arquivo TXT de uso local, excluído do versionamento. A revisão de entrega está registrada abaixo. Os resultados são da suíte local, sem submissão ao Codewars. O projeto está publicado no repositório GitHub indicado no início deste documento.
 
-A revisão da etapa 8 foi concluída: 41 verificações aprovadas, com código restaurado, resultados coerentes e apresentação conferida. O checklist e as pendências estão em [entrega/LEIA-ME.md](entrega/LEIA-ME.md). O pacote ZIP é para revisão, pois PDF, autoria e ensaio ainda precisam ser finalizados. Para auditar novamente os arquivos e evidências sem reexecutar testes: `node scripts/check-delivery.cjs` (Node.js 18 ou posterior).
+A revisão e as pendências estão em [entrega/LEIA-ME.md](entrega/LEIA-ME.md). Depois da inclusão da validação de entradas, a suíte foi reexecutada e aprovou 181 itens; o código original e a matriz de defeitos foram preservados como histórico. O pacote ZIP antigo é somente um snapshot de revisão e não inclui necessariamente as alterações posteriores; use o repositório como versão atual. Para auditar arquivos e evidências: `node scripts/check-delivery.cjs` (Node.js 18 ou posterior).

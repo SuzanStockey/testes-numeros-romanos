@@ -22,9 +22,9 @@ O domínio numérico é:
 
 O domínio romano `R` contém as representações canônicas desses números, em letras latinas maiúsculas, construídas pelas regras da seção 4. Há 3999 valores em cada domínio, com correspondência única entre eles.
 
-**Fora do contrato:** zero, negativos, valores a partir de 4000, `null`, texto vazio, minúsculas, espaços, símbolos desconhecidos e representações não canônicas, como `IIII`, `IC` e `VX`. Não será exigida uma exceção, um valor sentinela, normalização ou qualquer outro comportamento para essas entradas. Se a implementação tiver um comportamento defensivo, isso não será apresentado como requisito do Codewars nem contabilizado como obrigação de teste deste estudo.
+**Extensão de projeto, acrescentada em 8/10/2026:** entradas fora de `N` ou `R` devem lançar `IllegalArgumentException`. Isso inclui zero, negativos, valores a partir de 4000, `null`, texto vazio, minúsculas, espaços, símbolos desconhecidos e formas não canônicas, como `IIII`, `IC` e `VX`. Não há normalização, remoção de espaços ou conversão de caixa.
 
-Essa restrição mantém o escopo aprovado e evita transformar ausência de especificação em um requisito de rejeição. A obrigação de produzir saídas canônicas para entradas válidas permanece integral.
+Essa política não foi exigida pelo Codewars. O experimento das etapas 4 e 5 avaliou apenas o contrato original de entradas válidas; a extensão e sua execução são registradas separadamente em `resultados/validacao/`.
 
 ## 3. Interface e contrato das operações
 
@@ -41,8 +41,8 @@ O trecho apenas descreve as assinaturas; não é código compilável nem uma imp
 
 | Operação | Pré-condição | Pós-condição |
 |---|---|---|
-| `toRoman(n)` | `n` pertence a `N` | Retorna a única representação canônica de `n`, pertencente a `R` |
-| `fromRoman(r)` | `r` pertence a `R` | Retorna o valor representado por `r`, pertencente a `N` |
+| `toRoman(n)` | Qualquer inteiro Java | Se `n` pertence a `N`, retorna o romano canônico; caso contrário, lança `IllegalArgumentException` |
+| `fromRoman(r)` | Qualquer string Java, incluindo `null` | Se `r` pertence a `R`, retorna o inteiro; caso contrário, lança `IllegalArgumentException` |
 
 Cada operação deve atender ao seu contrato individualmente. A correção de uma composição não substitui a correção das duas operações.
 
@@ -116,6 +116,7 @@ Essa definição só estabelece o valor para entradas canônicas. Aplicar a mesm
 | RF-07 | Para entradas numéricas válidas, produzir texto não vazio, maiúsculo e canônico | Formalização das seções 4.1-4.3 |
 | RP-01 | Oferecer as assinaturas Java definidas na seção 3 | Projeto |
 | RP-02 | Produzir resultados determinísticos e independentes da ordem das chamadas | Projeto |
+| RP-03 | Rejeitar entradas fora de `N`/`R` com `IllegalArgumentException`, sem normalizar | Extensão de projeto de 8/10/2026 |
 
 Os identificadores serão reutilizados em `tests.md` na etapa 3. A tabela não exige uma implementação específica nem antecipa a quantidade de casos de teste.
 
@@ -165,7 +166,7 @@ Definimos `E(n) = toRoman(n)` e `D(r) = fromRoman(r)`. As seguintes relações d
 
 As propriedades são condições necessárias da correção, mas não devem ser usadas isoladamente como especificação completa. Por exemplo, duas funções que troquem consistentemente os códigos de 4 e 5 podem passar em ambas as relações de ida e volta e produzir strings canônicas. Os pares de referência continuam necessários para ancorar o significado numérico.
 
-De forma semelhante, `E(4) = IIII` e `D(IIII) = 4` poderiam fazer PR-01 passar apesar de uma saída inválida. Aqui o problema é a saída de `E` violar seu contrato; não é uma obrigação adicional de testar a rejeição de `IIII` por `D`.
+De forma semelhante, `E(4) = IIII` e `D(IIII) = 4` poderiam fazer PR-01 passar apesar de uma saída inválida. Esse cenário motivou a guarda de formato da campanha original. A rejeição de `IIII` por `D` passou a ser obrigatória somente na extensão RP-03.
 
 Para PR-02, o domínio deverá ser construído independentemente de `E` quando essa propriedade for usada como evidência adicional. Gerar todas as strings apenas chamando `E` repete a dependência da primeira composição e pode ocultar erros compartilhados.
 
@@ -173,7 +174,7 @@ Para PR-02, o domínio deverá ser construído independentemente de `E` quando e
 
 A implementação será avaliada pela conversão correta nas duas direções, pelo respeito à representação canônica e pelas decisões de projeto RP-01 e RP-02. Na etapa 3, serão planejados exemplos, classes de equivalência, valores-limite e propriedades que rastreiem essas obrigações.
 
-Entradas fora do domínio não terão resultados esperados obrigatórios. Também não há exigência de usar uma estratégia específica, alcançar um percentual de cobertura ou obter um tempo fixo de execução.
+Entradas fora dos domínios válidos têm como resultado esperado `IllegalArgumentException`, por RP-03. Não há exigência de usar uma estratégia específica, alcançar um percentual de cobertura ou obter um tempo fixo de execução.
 
 Na etapa de experimento, o número de execuções e o modo de geração serão registrados. Enumerar os 3999 inteiros verifica exaustivamente uma propriedade nesse domínio; não transforma uma propriedade incompleta em prova de toda a especificação.
 
