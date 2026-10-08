@@ -5,7 +5,7 @@ Fonte: `resenha.tex`, documento autossuficiente, com referências incorporadas e
 ## Conteúdo conferido
 
 - Introdução: kata público, contrato, Java, ferramentas e objetivo.
-- Dois artigos acadêmicos citados, sintetizados e comparados, com pontos fortes e limitações dos métodos de pesquisa.
+- Três artigos acadêmicos citados, sintetizados e comparados, com pontos fortes e limitações dos métodos de pesquisa; Ostrand e Balcer foram incorporados posteriormente para fundamentar a seleção por partições.
 - Aplicação: PE, AVL e PBT; exemplos, seis propriedades, geradores e oráculos.
 - Resultados: campanha base, quatro variantes isoladas, contagens por grupo, redução e restauração.
 - Discussão: dificuldades, limites de propriedades fracas e ameaças à validade.

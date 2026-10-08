@@ -2,6 +2,8 @@
 
 Repositório: [SuzanStockey/testes-numeros-romanos](https://github.com/SuzanStockey/testes-numeros-romanos).
 
+O referencial tem três artigos: Ostrand e Balcer (1988) fundamentam a organização dos casos por partições; Claessen e Hughes (2000) e Goldstein et al. (2024) fundamentam PBT. A incorporação posterior do terceiro texto e sua ligação aos casos estão em [pesquisa/terceiro-artigo.md](pesquisa/terceiro-artigo.md).
+
 Trabalho de Verificação e Validação de Software: aplicação de particionamento de equivalência, análise de valores-limite e testes baseados em propriedades ao [Roman Numerals Helper do Codewars](https://www.codewars.com/kata/51b66044bce5799a7f000003).
 
 O sistema oferece `RomanNumerals.toRoman(int)` e `RomanNumerals.fromRoman(String)`. O contrato abrange inteiros de 1 a 3999 e suas representações romanas canônicas. O comportamento para entradas inválidas não é definido neste estudo.

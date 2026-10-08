@@ -2,6 +2,8 @@
 
 Este documento preserva as notas de leitura da etapa 1, anteriores à implementação e ao experimento. As implicações para o kata registradas aqui são propostas daquele momento; os resultados posteriores estão nos resumos das etapas 4 e 5, e a síntese final está em `resenha.tex`.
 
+O referencial final passou a ter três artigos. O fichamento complementar e a análise posterior de Ostrand e Balcer (1988) estão em [terceiro-artigo.md](terceiro-artigo.md); as notas abaixo preservam os dois textos da seleção inicial.
+
 As sínteses são paráfrases. As seções e páginas indicadas permitem conferir as afirmações nos PDFs locais. A numeração de páginas abaixo corresponde à posição no PDF, começando em 1, e não necessariamente à paginação dos anais.
 
 ## 1. Property-Based Testing in Practice

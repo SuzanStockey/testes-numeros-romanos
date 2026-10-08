@@ -22,6 +22,8 @@ Zero, valores negativos, 4000 ou maiores, `null`, texto vazio e romanos não can
 
 Estas classes agrupam comportamentos relevantes da especificação; não pressupõem que um representante prove toda a classe.
 
+**Fundamentação complementar:** [Ostrand e Balcer (1988)](https://doi.org/10.1145/62959.62964) organizam a seleção por categorias e escolhas. O texto foi acrescentado após o experimento para analisar o projeto existente: CE-S e CE-M correspondem a eixos de seleção, e os casos fixos a representantes concretos. Não foram usados TSL nem geração de todas as combinações. O [registro do terceiro artigo](pesquisa/terceiro-artigo.md) documenta essa ligação e suas limitações.
+
 ### 2.1 Eixo principal: subtração
 
 O número de posições subtrativas é o número de dígitos 4 ou 9 nas centenas, dezenas e unidades. Os milhares não têm representação subtrativa no domínio.

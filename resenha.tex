@@ -19,7 +19,7 @@
 \vspace{-1.5em}
 
 \section{Introdução}
-Testes baseados em propriedades (PBT) permitem descrever relações gerais e verificar automaticamente entradas geradas. Entretanto, a confiança produzida pela automação depende tanto do significado das propriedades quanto dos dados exercitados. Esta resenha compara a proposta de QuickCheck, de Claessen e Hughes~\cite{quickcheck}, com o estudo industrial de Goldstein et al.~\cite{practice}, e aplica suas ideias ao \emph{Roman Numerals Helper}, do Codewars~\cite{kata}. O objetivo é discutir como exemplos, valores-limite e propriedades contribuem para avaliar um mesmo sistema, sem presumir superioridade de uma técnica.
+Esta resenha compara três textos: o método de seleção por categorias de Ostrand e Balcer~\cite{category}, a proposta de QuickCheck de Claessen e Hughes~\cite{quickcheck} e o estudo industrial de Goldstein et al.~\cite{practice}. A aplicação é o \emph{Roman Numerals Helper}, do Codewars~\cite{kata}. O objetivo é discutir como seleção por partições, valores-limite e propriedades contribuem para testar o mesmo sistema, sem presumir superioridade de uma técnica. O terceiro texto foi acrescentado após o experimento para ampliar sua fundamentação; não se atribui a ele o planejamento original.
 
 O sistema foi implementado em Java 17 e testado com JUnit Jupiter 5.13.4 e jqwik 1.9.3, usando Maven 3.9.11 no Windows. As operações estáticas \code{toRoman(int)} e \code{fromRoman(String)} convertem inteiros de 1 a 3999 e representações romanas canônicas modernas, como 4 = IV e 9 = IX. Entradas inválidas estão fora do contrato adotado, pois o desafio não especifica seu tratamento. O artigo adicional para o E5 é QuickCheck: a expressão de busca, justificativa e URL estão registradas em \code{pesquisa/pesquisa-e5.md}.
 
@@ -39,13 +39,16 @@ Participantes descrevem descoberta de casos inesperados, documentação e maior 
 
 O ponto forte é observar usuários experientes ao longo do processo de desenvolvimento, incluindo dificuldades que persistem após a adoção. A limitação principal é o contexto de uma empresa e de um ecossistema específico, com participantes experientes e possíveis vieses de seleção e lembrança. Relatos de confiança e defeitos encontrados não substituem medições controladas; tampouco estabelecem como iniciantes em Java se comportariam.
 
-\subsection{Convergência e posição adotada}
-Os artigos respondem a perguntas distintas: QuickCheck explica como oferecer uma ferramenta leve; o estudo de 2024 investiga como ela é usada em um contexto industrial maduro. A simplicidade da interface apresentada em 2000 não elimina os custos de especificação e geração observados em 2024. Ambos mostram que a qualidade das entradas e do oráculo exige atenção humana. A liberdade para configurar geradores oferece controle, mas também exige conhecimento do domínio.
+\subsection{Category-Partition: seleção a partir da especificação}
+Ostrand e Balcer~\cite{category} apresentam \emph{The Category-Partition Method for Specifying and Generating Functional Tests}: a especificação é organizada em categorias, escolhas e restrições, das quais se obtêm descrições de testes e entradas concretas. Seu ponto forte é explicitar a seleção e evitar combinações incompatíveis. O artigo apresenta a ferramenta TSL, exemplos e experiência de aplicação, sem comparação controlada de superioridade. Categorias e resultados esperados ainda exigem julgamento do testador.
 
-Adotou-se, por isso, a combinação de exemplos conhecidos e propriedades com referências independentes. A justificativa é conceitual: exemplos explicitam regras concretas, enquanto propriedades generalizam relações e automatizam a exploração. Os artigos não são manuais de particionamento de equivalência ou análise de valores-limite; essas técnicas foram projetadas separadamente a partir do contrato do kata. Também não se presume que a combinação encontrará mais defeitos: isso deve ser observado no experimento.
+\subsection{Comparação e posição adotada}
+Os textos têm enfoques complementares: seleção por categorias, propriedades executáveis e experiência industrial. A seleção manual dos exemplos foi relacionada posteriormente aos conceitos de Ostrand e Balcer; não foram usados TSL nem a geração completa de suas combinações. QuickCheck e o estudo de 2024 fundamentam os geradores e as verificações de PBT.
+
+Adotou-se a combinação de exemplos conhecidos e propriedades com referências independentes. A ligação entre literatura e aplicação fica explícita: Ostrand e Balcer sustentam a organização por partições; os dois artigos de PBT sustentam relações e geração; a AVL verifica extremos e transições derivados do contrato. Não se presume que a combinação detecte mais defeitos.
 
 \section{Aplicação das técnicas ao conversor}
-\textbf{Particionamento de equivalência (PE).} Foram documentados 12 casos representativos, selecionados por classes de subtração e magnitude e por categorias de composição: símbolos isolados, formas aditivas, casos subtrativos e combinações de posições decimais. As categorias podem se sobrepor; não correspondem a 12 classes disjuntas. Os pares têm resultados literais conhecidos, independentes do conversor. Por exemplo, 944 = CMXLIV exercita subtração em mais de uma posição.
+\textbf{Particionamento de equivalência (PE).} Os 12 casos representativos foram relacionados às categorias e escolhas de Ostrand e Balcer~\cite{category}: subtração (nenhuma, uma, duas/três posições) e magnitude (quatro faixas) são eixos de partição; composição é um checklist com sobreposição. Não são 12 classes disjuntas, nem foi testado o produto completo das categorias. Os pares usam resultados literais; 944 = CMXLIV exercita três posições subtrativas.
 
 \textbf{Análise de valores-limite (AVL).} Foram selecionados 25 números, incluindo 1, 2, 3998, 3999 e vizinhos das transições 4, 9, 40, 90, 400 e 900. Após consolidar três pares compartilhados com PE, restaram 34 pares distintos, verificados nos dois sentidos: 68 comparações direcionais. Um teste de chamadas intercaladas acrescenta evidência parcial de ausência de estado, totalizando 69 itens no grupo de exemplos.
 
@@ -110,7 +113,8 @@ O trabalho foi desenvolvido com diretrizes, acompanhamento e revisão do estudan
 
 \begingroup
 \small
-\begin{thebibliography}{3}
+\begin{thebibliography}{4}
+\bibitem{category} T. J. Ostrand and M. J. Balcer, ``The Category-Partition Method for Specifying and Generating Functional Tests,'' \emph{Communications of the ACM}, vol. 31, no. 6, pp. 676--686, 1988. doi: \href{https://doi.org/10.1145/62959.62964}{10.1145/62959.62964}.
 \bibitem{quickcheck} K. Claessen and J. Hughes, ``QuickCheck: A Lightweight Tool for Random Testing of Haskell Programs,'' in \emph{Proc. ICFP}, 2000, pp. 268--279. doi: \href{https://doi.org/10.1145/351240.351266}{10.1145/351240.351266}.
 \bibitem{practice} H. Goldstein, J. W. Cutler, D. Dickstein, B. C. Pierce, and A. Head, ``Property-Based Testing in Practice,'' in \emph{Proc. ICSE}, 2024, art. 187, pp. 1--13. doi: \href{https://doi.org/10.1145/3597503.3639581}{10.1145/3597503.3639581}.
 \bibitem{kata} Codewars, ``Roman Numerals Helper.'' [Online]. Available: \url{https://www.codewars.com/kata/51b66044bce5799a7f000003}. Acesso em: 7 out. 2026.

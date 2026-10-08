@@ -12,7 +12,7 @@ A apresentação foi conferida em Microsoft Edge: oito slides, navegação, vis�
 
 | Requisito | Estado | Evidência |
 |---|---|---|
-| 2–3 artigos acadêmicos citados e resenhados | Conteúdo pronto | `resenha.tex`, `pesquisa/fichamentos.md` |
+| 2–3 artigos acadêmicos citados e resenhados | Três artigos | `resenha.tex`, `pesquisa/fichamentos.md`, `pesquisa/terceiro-artigo.md` |
 | Segundo artigo conforme E5 | Pronto | `pesquisa/pesquisa-e5.md`: expressão, motivo e URL |
 | Kata disponível em site de desafios | Pronto | Roman Numerals Helper, Codewars; URL no README |
 | Linguagem e plataforma identificadas | Pronto | Java 17, JUnit, jqwik e Maven |

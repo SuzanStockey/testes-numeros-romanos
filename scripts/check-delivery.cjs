@@ -21,7 +21,7 @@ check('slides e tempo',timings.length===8&&timings.reduce((a,b)=>a+b,0)===360,'8
 for(const [,href] of html.matchAll(/href="([^"]+)"/g))if(!/^(https?:|#)/.test(href))check('link HTML '+href,fs.existsSync(path.join(root,href)),'Destino local existente.');
 const tex=read('resenha.tex');const cites=[...tex.matchAll(/\\cite\{([^}]+)\}/g)].flatMap(m=>m[1].split(','));
 const bib=[...tex.matchAll(/\\bibitem\{([^}]+)\}/g)].map(m=>m[1]);
-check('citações LaTeX',cites.every(c=>bib.includes(c))&&bib.includes('quickcheck')&&bib.includes('practice'),'Chaves e duas referências acadêmicas presentes; não substitui compilação.');
+check('citações LaTeX',cites.every(c=>bib.includes(c))&&['quickcheck','practice','category'].every(c=>bib.includes(c)),'Chaves e três referências acadêmicas presentes; não substitui compilação.');
 const out={checked_at:new Date().toISOString(),kind:'static-delivery-audit',checks,
  repository:'https://github.com/SuzanStockey/testes-numeros-romanos',
  pending:['Nome e matrícula não informados.','PDF não gerado: compilador integrado indisponível; limite de 2–4 páginas sem validação.','Ensaio de 5–7 minutos ainda não realizado pelo estudante.'],

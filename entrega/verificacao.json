@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-08T21:31:48.849Z",
+  "checked_at": "2026-10-08T21:47:50.633Z",
   "kind": "static-delivery-audit",
   "checks": [
     {
@@ -185,7 +185,7 @@
     {
       "name": "citações LaTeX",
       "status": "approved",
-      "detail": "Chaves e duas referências acadêmicas presentes; não substitui compilação."
+      "detail": "Chaves e três referências acadêmicas presentes; não substitui compilação."
     }
   ],
   "repository": "https://github.com/SuzanStockey/testes-numeros-romanos",

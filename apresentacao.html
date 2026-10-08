@@ -29,12 +29,16 @@ h1{font-size:clamp(34px,3.6vw,49px);letter-spacing:0;line-height:1.16}h2{font-si
 <section class="slide" data-seconds="50" aria-labelledby="s3">
 <div class="eyebrow">Verificação e Validação de Software · 3 / 8</div>
 <h2 id="s3">Artigos utilizados e decisões de teste</h2>
-<table><thead><tr><th>Artigo</th><th>Contribuição</th><th>Limitação</th></tr></thead><tbody><tr><td><a href="https://doi.org/10.1145/351240.351266">QuickCheck</a><br>Claessen e Hughes, 2000</td><td>Propriedades executáveis, geração aleatória e controle da distribuição.</td><td>Ferramenta e relatos de aplicação; sem comparação experimental padronizada.</td></tr><tr><td><a href="https://doi.org/10.1145/3597503.3639581">Property-Based Testing in Practice</a><br>Goldstein et al., 2024</td><td>Dificuldades com propriedades, geradores e avaliação dos testes.</td><td>Estudo qualitativo em uma empresa: 31 pessoas e 30 entrevistas.</td></tr></tbody></table><p>Aplicação neste trabalho: usar referências independentes, observar as entradas geradas e avaliar os testes com defeitos controlados.</p>
+<table><thead><tr><th>Artigo</th><th>Base para o trabalho</th><th>Limitação</th></tr></thead><tbody>
+<tr><td><a href="https://doi.org/10.1145/62959.62964">Category-Partition</a><br>Ostrand e Balcer, 1988</td><td>Categorias e escolhas para selecionar casos a partir da especificação.</td><td>Aplicação manual parcial; sem uso de TSL neste trabalho.</td></tr>
+<tr><td><a href="https://doi.org/10.1145/351240.351266">QuickCheck</a><br>Claessen e Hughes, 2000</td><td>Propriedades executáveis e distribuição das entradas.</td><td>Ferramenta e relatos; sem comparação experimental padronizada.</td></tr>
+<tr><td><a href="https://doi.org/10.1145/3597503.3639581">PBT in Practice</a><br>Goldstein et al., 2024</td><td>Construção de geradores e avaliação dos testes.</td><td>Estudo qualitativo em uma empresa.</td></tr>
+</tbody></table><p class="source">O artigo de 1988 foi acrescentado após o experimento para fundamentar a análise dos casos existentes. Os demais fundamentam PBT.</p>
 </section>
 <section class="slide" data-seconds="45" aria-labelledby="s4">
 <div class="eyebrow">Verificação e Validação de Software · 4 / 8</div>
 <h2 id="s4">Particionamento de equivalência e valores-limite</h2>
-<table><thead><tr><th>Técnica</th><th>Seleção dos casos</th><th>Exemplos</th></tr></thead><tbody><tr><td>Particionamento de equivalência</td><td>12 casos por classes de subtração e magnitude e categorias de composição.</td><td>86, 944, 1001 e 3888</td></tr><tr><td>Análise de valores-limite</td><td>25 números: extremos e vizinhos de transições subtrativas.</td><td>1, 2, 3/4/5, 8/9/10, 3998 e 3999</td></tr></tbody></table><ul><li>Após consolidar três casos compartilhados: 34 pares distintos.</li><li>Cada par é verificado nos dois sentidos: 68 comparações.</li><li>Um teste de chamadas intercaladas completa os 69 itens do grupo.</li></ul>
+<table><thead><tr><th>Técnica</th><th>Seleção dos casos</th><th>Exemplos</th></tr></thead><tbody><tr><td>Particionamento de equivalência</td><td>12 casos por subtração, magnitude e composição; ligação com Ostrand e Balcer (1988).</td><td>86, 944, 1001 e 3888</td></tr><tr><td>Análise de valores-limite</td><td>25 números: extremos e vizinhos de transições subtrativas.</td><td>1, 2, 3/4/5, 8/9/10, 3998 e 3999</td></tr></tbody></table><ul><li>Após consolidar três casos compartilhados: 34 pares distintos.</li><li>Cada par é verificado nos dois sentidos: 68 comparações.</li><li>Um teste de chamadas intercaladas completa os 69 itens do grupo.</li></ul>
 </section>
 <section class="slide" data-seconds="55" aria-labelledby="s5">
 <div class="eyebrow">Verificação e Validação de Software · 5 / 8</div>
