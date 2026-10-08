@@ -116,7 +116,7 @@ O parâmetro `--maven` também aceita o caminho completo do `mvn.cmd` mostrado a
 
 ## Uso de IA e participação no trabalho
 
-O estudante definiu os requisitos e o formato dos entregáveis, escolheu inicialmente o artigo de 2024 e orientou o desenvolvimento por etapas, solicitando ajustes e revisões. A IA teve participação substancial na busca do artigo complementar, na análise e comparação dos textos, na proposta de problema e técnicas, na geração do código e dos testes, na execução e análise dos experimentos e na redação e revisão dos documentos e da apresentação. O material foi desenvolvido nessa interação, não integralmente de forma manual pelo estudante. A conferência acadêmica final, a identificação da autoria, o ensaio e a submissão permanecem sob responsabilidade do estudante; não se atribui participação ao integrante ausente nem revisão independente não realizada.
+O trabalho foi desenvolvido com diretrizes, acompanhamento e revisão do estudante em cada etapa. O estudante escolheu inicialmente o artigo de 2024, definiu os requisitos e formatos dos entregáveis e avaliou as propostas, solicitando ajustes ao longo do processo. A IA foi utilizada como ferramenta de colaboração na pesquisa e análise dos artigos, nas propostas de problema e técnicas, na elaboração de código e testes, na execução e análise dos experimentos e na preparação e revisão dos textos e da apresentação. As propostas e os materiais gerados foram acompanhados e revisados pelo estudante, que permanece responsável pelas decisões adotadas e pela entrega.
 
 ## Estado do trabalho
 
