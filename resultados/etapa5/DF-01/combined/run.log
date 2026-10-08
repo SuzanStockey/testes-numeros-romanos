@@ -1,0 +1,2506 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< br.edu.pucrs:roman-numerals-testing >-----------------
+[INFO] Building roman-numerals-testing 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ roman-numerals-testing ---
+[INFO] skip non existing resourceDirectory C:\Users\suzan\Development\Verificação e Validação de Software\veri-val-t1\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ roman-numerals-testing ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ roman-numerals-testing ---
+[INFO] Copying 1 resource from tests\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ roman-numerals-testing ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.5.3:test (default-test) @ roman-numerals-testing ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+out. 07, 2026 9:48:28 PM net.jqwik.engine.DefaultJqwikConfiguration createTestEngineConfiguration
+INFORMAÇÕES: jqwik's test run database has been switched off
+out. 07, 2026 9:48:28 PM net.jqwik.engine.DefaultJqwikConfiguration createTestEngineConfiguration
+INFORMAÇÕES: jqwik's test run database has been switched off
+out. 07, 2026 9:48:28 PM net.jqwik.engine.DefaultJqwikConfiguration createTestEngineConfiguration
+INFORMAÇÕES: jqwik's test run database has been switched off
+out. 07, 2026 9:48:28 PM net.jqwik.engine.DefaultJqwikConfiguration createTestEngineConfiguration
+INFORMAÇÕES: jqwik's test run database has been switched off
+out. 07, 2026 9:48:28 PM net.jqwik.engine.DefaultJqwikConfiguration createTestEngineConfiguration
+INFORMAÇÕES: jqwik's test run database has been switched off
+out. 07, 2026 9:48:28 PM net.jqwik.engine.DefaultJqwikConfiguration createTestEngineConfiguration
+INFORMAÇÕES: jqwik's test run database has been switched off
+out. 07, 2026 9:48:28 PM net.jqwik.engine.DefaultJqwikConfiguration createTestEngineConfiguration
+INFORMAÇÕES: jqwik's test run database has been switched off
+[INFO] Running RomanExamplesTest
+[ERROR] Tests run: 69, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.138 s <<< FAILURE! -- in RomanExamplesTest
+[ERROR] RomanExamplesTest.encodesKnownPairs(String, int, String)[10] -- Time elapsed: 0.006 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: CT-EQ-10-E ==> expected: <CMXLIV> but was: <CMXLIIII>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at RomanExamplesTest.encodesKnownPairs(RomanExamplesTest.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:720)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] RomanExamplesTest.encodesKnownPairs(String, int, String)[18] -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: CT-LIM-06-E ==> expected: <IV> but was: <IIII>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at RomanExamplesTest.encodesKnownPairs(RomanExamplesTest.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:720)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[ERROR] RomanExamplesTest.interleavedCallsDoNotChangeResults -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <IV> but was: <IIII>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at RomanExamplesTest.interleavedCallsDoNotChangeResults(RomanExamplesTest.java:24)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[INFO] Running Seed104729Properties
+timestamp = 2026-10-07T21:48:28.881836400, [Seed104729Properties:CT-PBT-01 seed=104729] (19) subtracao = 
+    CE-S0 (12) : 63 %
+    CE-S1 ( 5) : 26 %
+    CE-S2 ( 2) : 11 %
+
+timestamp = 2026-10-07T21:48:28.882835400, [Seed104729Properties:CT-PBT-01 seed=104729] (19) magnitude = 
+    CE-M4 (8) : 42 %
+    CE-M3 (6) : 32 %
+    CE-M1 (4) : 21 %
+    CE-M2 (1) :  5 %
+
+timestamp = 2026-10-07T21:48:28.883834600, [Seed104729Properties:CT-PBT-01 seed=104729] (19) centro-ou-extremo = 
+    outros (15) : 79 %
+    900    ( 1) :  5 %
+    4      ( 1) :  5 %
+    1      ( 1) :  5 %
+    3999   ( 1) :  5 %
+
+timestamp = 2026-10-07T21:48:28.898354300, Seed104729Properties:CT-PBT-01 seed=104729 = 
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-01: saída intermediária inválida para n=4: IIII ==> expected: <true> but was: <false>
+
+                              |--------------------jqwik--------------------
+tries = 10                    | # of calls to property
+checks = 10                   | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 104729                 | random seed to reproduce generated values
+
+Sample
+------
+  n: 4
+
+
+timestamp = 2026-10-07T21:48:28.921185900, [Seed104729Properties:CT-PBT-02 seed=104729] (19) subtracao = 
+    CE-S0 (12) : 63 %
+    CE-S1 ( 5) : 26 %
+    CE-S2 ( 2) : 11 %
+
+timestamp = 2026-10-07T21:48:28.921185900, [Seed104729Properties:CT-PBT-02 seed=104729] (19) magnitude = 
+    CE-M4 (8) : 42 %
+    CE-M3 (6) : 32 %
+    CE-M1 (4) : 21 %
+    CE-M2 (1) :  5 %
+
+timestamp = 2026-10-07T21:48:28.921185900, [Seed104729Properties:CT-PBT-02 seed=104729] (19) centro-ou-extremo = 
+    outros (15) : 79 %
+    900    ( 1) :  5 %
+    4      ( 1) :  5 %
+    1      ( 1) :  5 %
+    3999   ( 1) :  5 %
+
+timestamp = 2026-10-07T21:48:28.922187300, Seed104729Properties:CT-PBT-02 seed=104729 = 
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <IIII>
+
+                              |--------------------jqwik--------------------
+tries = 10                    | # of calls to property
+checks = 10                   | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 104729                 | random seed to reproduce generated values
+
+Sample
+------
+  pair: Pair[number=4, roman=IV]
+
+
+timestamp = 2026-10-07T21:48:28.929218700, [Seed104729Properties:CT-PBT-03 seed=104729] (19) subtracao = 
+    CE-S0 (12) : 63 %
+    CE-S1 ( 5) : 26 %
+    CE-S2 ( 2) : 11 %
+
+timestamp = 2026-10-07T21:48:28.930219, [Seed104729Properties:CT-PBT-03 seed=104729] (19) magnitude = 
+    CE-M4 (8) : 42 %
+    CE-M3 (6) : 32 %
+    CE-M1 (4) : 21 %
+    CE-M2 (1) :  5 %
+
+timestamp = 2026-10-07T21:48:28.930219, [Seed104729Properties:CT-PBT-03 seed=104729] (19) centro-ou-extremo = 
+    outros (15) : 79 %
+    900    ( 1) :  5 %
+    4      ( 1) :  5 %
+    1      ( 1) :  5 %
+    3999   ( 1) :  5 %
+
+timestamp = 2026-10-07T21:48:28.930219, Seed104729Properties:CT-PBT-03 seed=104729 = 
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-03: n=4, saída=IIII ==> expected: <true> but was: <false>
+
+                              |--------------------jqwik--------------------
+tries = 10                    | # of calls to property
+checks = 10                   | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 104729                 | random seed to reproduce generated values
+
+Sample
+------
+  n: 4
+
+
+timestamp = 2026-10-07T21:48:28.970591700, [Seed104729Properties:CT-PBT-04 seed=104729] (1000) subtracao = 
+    CE-S0 (477) : 48 %
+    CE-S1 (405) : 41 %
+    CE-S2 (118) : 12 %
+
+timestamp = 2026-10-07T21:48:28.971599500, [Seed104729Properties:CT-PBT-04 seed=104729] (1000) magnitude = 
+    CE-M4 (609) : 61 %
+    CE-M3 (250) : 25 %
+    CE-M2 ( 83) :  8 %
+    CE-M1 ( 58) :  6 %
+
+timestamp = 2026-10-07T21:48:28.972600700, [Seed104729Properties:CT-PBT-04 seed=104729] (1000) centro-ou-extremo = 
+    outros (940) : 94.00 %
+    9      ( 11) :  1.10 %
+    90     ( 10) :  1.00 %
+    900    (  8) :  0.80 %
+    4      (  8) :  0.80 %
+    1      (  7) :  0.70 %
+    40     (  7) :  0.70 %
+    3999   (  6) :  0.60 %
+    400    (  3) :  0.30 %
+
+timestamp = 2026-10-07T21:48:28.972600700, Seed104729Properties:CT-PBT-04 seed=104729 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 104729                 | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:48:28.976844100, [Seed104729Properties:CT-PBT-05 seed=104729] (19) subtracao = 
+    CE-S0 (12) : 63 %
+    CE-S1 ( 5) : 26 %
+    CE-S2 ( 2) : 11 %
+
+timestamp = 2026-10-07T21:48:28.976844100, [Seed104729Properties:CT-PBT-05 seed=104729] (19) magnitude = 
+    CE-M4 (8) : 42 %
+    CE-M3 (6) : 32 %
+    CE-M1 (4) : 21 %
+    CE-M2 (1) :  5 %
+
+timestamp = 2026-10-07T21:48:28.977843900, [Seed104729Properties:CT-PBT-05 seed=104729] (19) centro-ou-extremo = 
+    outros (15) : 79 %
+    900    ( 1) :  5 %
+    4      ( 1) :  5 %
+    1      ( 1) :  5 %
+    3999   ( 1) :  5 %
+
+timestamp = 2026-10-07T21:48:28.977843900, Seed104729Properties:CT-PBT-05 seed=104729 = 
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-05: n=4 ==> expected: <IV> but was: <IIII>
+
+                              |--------------------jqwik--------------------
+tries = 10                    | # of calls to property
+checks = 10                   | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 104729                 | random seed to reproduce generated values
+
+Sample
+------
+  n: 4
+
+
+timestamp = 2026-10-07T21:48:28.994357100, [Seed104729Properties:CT-PBT-06 seed=104729] (1000) subtracao = 
+    CE-S0 (477) : 48 %
+    CE-S1 (405) : 41 %
+    CE-S2 (118) : 12 %
+
+timestamp = 2026-10-07T21:48:28.994357100, [Seed104729Properties:CT-PBT-06 seed=104729] (1000) magnitude = 
+    CE-M4 (609) : 61 %
+    CE-M3 (250) : 25 %
+    CE-M2 ( 83) :  8 %
+    CE-M1 ( 58) :  6 %
+
+timestamp = 2026-10-07T21:48:28.994357100, [Seed104729Properties:CT-PBT-06 seed=104729] (1000) centro-ou-extremo = 
+    outros (940) : 94.00 %
+    9      ( 11) :  1.10 %
+    90     ( 10) :  1.00 %
+    900    (  8) :  0.80 %
+    4      (  8) :  0.80 %
+    1      (  7) :  0.70 %
+    40     (  7) :  0.70 %
+    3999   (  6) :  0.60 %
+    400    (  3) :  0.30 %
+
+timestamp = 2026-10-07T21:48:28.994357100, Seed104729Properties:CT-PBT-06 seed=104729 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 104729                 | random seed to reproduce generated values
+
+
+[ERROR] Tests run: 6, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.247 s <<< FAILURE! -- in Seed104729Properties
+[ERROR] Seed104729Properties.CT-PBT-01 seed=104729 -- Time elapsed: 0.145 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: CT-PBT-01: saída intermediária inválida para n=4: IIII ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at RomanPropertyChecks.p01(RomanPropertyChecks.java:38)
+	at Seed104729Properties.p01(Seed104729Properties.java:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$1(CheckedPropertyFactory.java:84)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$2(CheckedPropertyFactory.java:91)
+	at net.jqwik.engine.properties.CheckedFunction.execute(CheckedFunction.java:17)
+	at net.jqwik.api.lifecycle.AroundTryHook.lambda$static$0(AroundTryHook.java:57)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.TryLifecycleMethodsHook.aroundTry(TryLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.BeforeTryMembersHook.aroundTry(BeforeTryMembersHook.java:69)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createTryExecutor$0(CheckedPropertyFactory.java:60)
+	at net.jqwik.engine.execution.lifecycle.AroundTryLifecycle.execute(AroundTryLifecycle.java:23)
+	at net.jqwik.engine.properties.GenericProperty.testPredicate(GenericProperty.java:166)
+	at net.jqwik.engine.properties.GenericProperty.check(GenericProperty.java:68)
+	at net.jqwik.engine.execution.CheckedProperty.check(CheckedProperty.java:67)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.executeProperty(PropertyMethodExecutor.java:90)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.executeMethod(PropertyMethodExecutor.java:69)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.lambda$execute$0(PropertyMethodExecutor.java:49)
+	at net.jqwik.api.lifecycle.AroundPropertyHook.lambda$static$0(AroundPropertyHook.java:46)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.api.lifecycle.PropertyExecutor.executeAndFinally(PropertyExecutor.java:39)
+	at net.jqwik.engine.hooks.lifecycle.PropertyLifecycleMethodsHook.aroundProperty(PropertyLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.engine.hooks.statistics.StatisticsHook.aroundProperty(StatisticsHook.java:37)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.engine.hooks.lifecycle.AutoCloseableHook.aroundProperty(AutoCloseableHook.java:13)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.execute(PropertyMethodExecutor.java:47)
+	at net.jqwik.engine.execution.PropertyTaskCreator.executeTestMethod(PropertyTaskCreator.java:166)
+	at net.jqwik.engine.execution.PropertyTaskCreator.lambda$createTask$1(PropertyTaskCreator.java:51)
+	at net.jqwik.engine.execution.lifecycle.CurrentDomainContext.runWithContext(CurrentDomainContext.java:30)
+	at net.jqwik.engine.execution.PropertyTaskCreator.lambda$createTask$2(PropertyTaskCreator.java:50)
+	at net.jqwik.engine.execution.pipeline.ExecutionTask$1.lambda$execute$0(ExecutionTask.java:31)
+	at net.jqwik.engine.execution.lifecycle.CurrentTestDescriptor.runWithDescriptor(CurrentTestDescriptor.java:18)
+	at net.jqwik.engine.execution.pipeline.ExecutionTask$1.execute(ExecutionTask.java:31)
+	at net.jqwik.engine.execution.pipeline.ExecutionPipeline.runToTermination(ExecutionPipeline.java:82)
+	at net.jqwik.engine.execution.JqwikExecutor.execute(JqwikExecutor.java:46)
+	at net.jqwik.engine.JqwikTestEngine.executeTests(JqwikTestEngine.java:70)
+	at net.jqwik.engine.JqwikTestEngine.execute(JqwikTestEngine.java:53)
+
+[ERROR] Seed104729Properties.CT-PBT-02 seed=104729 -- Time elapsed: 0.023 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <IIII>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at RomanPropertyChecks.p02(RomanPropertyChecks.java:47)
+	at Seed104729Properties.p02(Seed104729Properties.java:21)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$1(CheckedPropertyFactory.java:84)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$2(CheckedPropertyFactory.java:91)
+	at net.jqwik.engine.properties.CheckedFunction.execute(CheckedFunction.java:17)
+	at net.jqwik.api.lifecycle.AroundTryHook.lambda$static$0(AroundTryHook.java:57)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.TryLifecycleMethodsHook.aroundTry(TryLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.BeforeTryMembersHook.aroundTry(BeforeTryMembersHook.java:69)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createTryExecutor$0(CheckedPropertyFactory.java:60)
+	at net.jqwik.engine.execution.lifecycle.AroundTryLifecycle.execute(AroundTryLifecycle.java:23)
+	at net.jqwik.engine.properties.GenericProperty.testPredicate(GenericProperty.java:166)
+	at net.jqwik.engine.properties.GenericProperty.check(GenericProperty.java:68)
+	at net.jqwik.engine.execution.CheckedProperty.check(CheckedProperty.java:67)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.executeProperty(PropertyMethodExecutor.java:90)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.executeMethod(PropertyMethodExecutor.java:69)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.lambda$execute$0(PropertyMethodExecutor.java:49)
+	at net.jqwik.api.lifecycle.AroundPropertyHook.lambda$static$0(AroundPropertyHook.java:46)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.api.lifecycle.PropertyExecutor.executeAndFinally(PropertyExecutor.java:39)
+	at net.jqwik.engine.hooks.lifecycle.PropertyLifecycleMethodsHook.aroundProperty(PropertyLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.engine.hooks.statistics.StatisticsHook.aroundProperty(StatisticsHook.java:37)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.engine.hooks.lifecycle.AutoCloseableHook.aroundProperty(AutoCloseableHook.java:13)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.execute(PropertyMethodExecutor.java:47)
+	at net.jqwik.engine.execution.PropertyTaskCreator.executeTestMethod(PropertyTaskCreator.java:166)
+	at net.jqwik.engine.execution.PropertyTaskCreator.lambda$createTask$1(PropertyTaskCreator.java:51)
+	at net.jqwik.engine.execution.lifecycle.CurrentDomainContext.runWithContext(CurrentDomainContext.java:30)
+	at net.jqwik.engine.execution.PropertyTaskCreator.lambda$createTask$2(PropertyTaskCreator.java:50)
+	at net.jqwik.engine.execution.pipeline.ExecutionTask$1.lambda$execute$0(ExecutionTask.java:31)
+	at net.jqwik.engine.execution.lifecycle.CurrentTestDescriptor.runWithDescriptor(CurrentTestDescriptor.java:18)
+	at net.jqwik.engine.execution.pipeline.ExecutionTask$1.execute(ExecutionTask.java:31)
+	at net.jqwik.engine.execution.pipeline.ExecutionPipeline.runToTermination(ExecutionPipeline.java:82)
+	at net.jqwik.engine.execution.JqwikExecutor.execute(JqwikExecutor.java:46)
+	at net.jqwik.engine.JqwikTestEngine.executeTests(JqwikTestEngine.java:70)
+	at net.jqwik.engine.JqwikTestEngine.execute(JqwikTestEngine.java:53)
+
+[ERROR] Seed104729Properties.CT-PBT-03 seed=104729 -- Time elapsed: 0.008 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: CT-PBT-03: n=4, saída=IIII ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at RomanPropertyChecks.p03(RomanPropertyChecks.java:53)
+	at Seed104729Properties.p03(Seed104729Properties.java:28)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$1(CheckedPropertyFactory.java:84)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$2(CheckedPropertyFactory.java:91)
+	at net.jqwik.engine.properties.CheckedFunction.execute(CheckedFunction.java:17)
+	at net.jqwik.api.lifecycle.AroundTryHook.lambda$static$0(AroundTryHook.java:57)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.TryLifecycleMethodsHook.aroundTry(TryLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.BeforeTryMembersHook.aroundTry(BeforeTryMembersHook.java:69)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createTryExecutor$0(CheckedPropertyFactory.java:60)
+	at net.jqwik.engine.execution.lifecycle.AroundTryLifecycle.execute(AroundTryLifecycle.java:23)
+	at net.jqwik.engine.properties.GenericProperty.testPredicate(GenericProperty.java:166)
+	at net.jqwik.engine.properties.GenericProperty.check(GenericProperty.java:68)
+	at net.jqwik.engine.execution.CheckedProperty.check(CheckedProperty.java:67)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.executeProperty(PropertyMethodExecutor.java:90)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.executeMethod(PropertyMethodExecutor.java:69)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.lambda$execute$0(PropertyMethodExecutor.java:49)
+	at net.jqwik.api.lifecycle.AroundPropertyHook.lambda$static$0(AroundPropertyHook.java:46)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.api.lifecycle.PropertyExecutor.executeAndFinally(PropertyExecutor.java:39)
+	at net.jqwik.engine.hooks.lifecycle.PropertyLifecycleMethodsHook.aroundProperty(PropertyLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.engine.hooks.statistics.StatisticsHook.aroundProperty(StatisticsHook.java:37)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.engine.hooks.lifecycle.AutoCloseableHook.aroundProperty(AutoCloseableHook.java:13)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.execute(PropertyMethodExecutor.java:47)
+	at net.jqwik.engine.execution.PropertyTaskCreator.executeTestMethod(PropertyTaskCreator.java:166)
+	at net.jqwik.engine.execution.PropertyTaskCreator.lambda$createTask$1(PropertyTaskCreator.java:51)
+	at net.jqwik.engine.execution.lifecycle.CurrentDomainContext.runWithContext(CurrentDomainContext.java:30)
+	at net.jqwik.engine.execution.PropertyTaskCreator.lambda$createTask$2(PropertyTaskCreator.java:50)
+	at net.jqwik.engine.execution.pipeline.ExecutionTask$1.lambda$execute$0(ExecutionTask.java:31)
+	at net.jqwik.engine.execution.lifecycle.CurrentTestDescriptor.runWithDescriptor(CurrentTestDescriptor.java:18)
+	at net.jqwik.engine.execution.pipeline.ExecutionTask$1.execute(ExecutionTask.java:31)
+	at net.jqwik.engine.execution.pipeline.ExecutionPipeline.runToTermination(ExecutionPipeline.java:82)
+	at net.jqwik.engine.execution.JqwikExecutor.execute(JqwikExecutor.java:46)
+	at net.jqwik.engine.JqwikTestEngine.executeTests(JqwikTestEngine.java:70)
+	at net.jqwik.engine.JqwikTestEngine.execute(JqwikTestEngine.java:53)
+
+[ERROR] Seed104729Properties.CT-PBT-05 seed=104729 -- Time elapsed: 0.005 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: CT-PBT-05: n=4 ==> expected: <IV> but was: <IIII>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at RomanPropertyChecks.p05(RomanPropertyChecks.java:64)
+	at Seed104729Properties.p05(Seed104729Properties.java:42)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$1(CheckedPropertyFactory.java:84)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$2(CheckedPropertyFactory.java:91)
+	at net.jqwik.engine.properties.CheckedFunction.execute(CheckedFunction.java:17)
+	at net.jqwik.api.lifecycle.AroundTryHook.lambda$static$0(AroundTryHook.java:57)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.TryLifecycleMethodsHook.aroundTry(TryLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.BeforeTryMembersHook.aroundTry(BeforeTryMembersHook.java:69)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createTryExecutor$0(CheckedPropertyFactory.java:60)
+	at net.jqwik.engine.execution.lifecycle.AroundTryLifecycle.execute(AroundTryLifecycle.java:23)
+	at net.jqwik.engine.properties.GenericProperty.testPredicate(GenericProperty.java:166)
+	at net.jqwik.engine.properties.GenericProperty.check(GenericProperty.java:68)
+	at net.jqwik.engine.execution.CheckedProperty.check(CheckedProperty.java:67)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.executeProperty(PropertyMethodExecutor.java:90)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.executeMethod(PropertyMethodExecutor.java:69)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.lambda$execute$0(PropertyMethodExecutor.java:49)
+	at net.jqwik.api.lifecycle.AroundPropertyHook.lambda$static$0(AroundPropertyHook.java:46)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.api.lifecycle.PropertyExecutor.executeAndFinally(PropertyExecutor.java:39)
+	at net.jqwik.engine.hooks.lifecycle.PropertyLifecycleMethodsHook.aroundProperty(PropertyLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.engine.hooks.statistics.StatisticsHook.aroundProperty(StatisticsHook.java:37)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.engine.hooks.lifecycle.AutoCloseableHook.aroundProperty(AutoCloseableHook.java:13)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.execute(PropertyMethodExecutor.java:47)
+	at net.jqwik.engine.execution.PropertyTaskCreator.executeTestMethod(PropertyTaskCreator.java:166)
+	at net.jqwik.engine.execution.PropertyTaskCreator.lambda$createTask$1(PropertyTaskCreator.java:51)
+	at net.jqwik.engine.execution.lifecycle.CurrentDomainContext.runWithContext(CurrentDomainContext.java:30)
+	at net.jqwik.engine.execution.PropertyTaskCreator.lambda$createTask$2(PropertyTaskCreator.java:50)
+	at net.jqwik.engine.execution.pipeline.ExecutionTask$1.lambda$execute$0(ExecutionTask.java:31)
+	at net.jqwik.engine.execution.lifecycle.CurrentTestDescriptor.runWithDescriptor(CurrentTestDescriptor.java:18)
+	at net.jqwik.engine.execution.pipeline.ExecutionTask$1.execute(ExecutionTask.java:31)
+	at net.jqwik.engine.execution.pipeline.ExecutionPipeline.runToTermination(ExecutionPipeline.java:82)
+	at net.jqwik.engine.execution.JqwikExecutor.execute(JqwikExecutor.java:46)
+	at net.jqwik.engine.JqwikTestEngine.executeTests(JqwikTestEngine.java:70)
+	at net.jqwik.engine.JqwikTestEngine.execute(JqwikTestEngine.java:53)
+
+[INFO] Running Seed2024Properties
+timestamp = 2026-10-07T21:48:29.004353900, [Seed2024Properties:CT-PBT-01 seed=2024] (6) subtracao = 
+    CE-S0 (3) : 50 %
+    CE-S2 (2) : 33 %
+    CE-S1 (1) : 17 %
+
+timestamp = 2026-10-07T21:48:29.004353900, [Seed2024Properties:CT-PBT-01 seed=2024] (6) magnitude = 
+    CE-M1 (4) : 67 %
+    CE-M4 (2) : 33 %
+
+timestamp = 2026-10-07T21:48:29.004353900, [Seed2024Properties:CT-PBT-01 seed=2024] (6) centro-ou-extremo = 
+    outros (3) : 50 %
+    3999   (1) : 17 %
+    1      (1) : 17 %
+    4      (1) : 17 %
+
+timestamp = 2026-10-07T21:48:29.005354300, Seed2024Properties:CT-PBT-01 seed=2024 = 
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-01: saída intermediária inválida para n=4: IIII ==> expected: <true> but was: <false>
+
+                              |--------------------jqwik--------------------
+tries = 2                     | # of calls to property
+checks = 2                    | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 2024                   | random seed to reproduce generated values
+
+Shrunk Sample (1 steps)
+-----------------------
+  n: 4
+
+Original Sample
+---------------
+  n: 1094
+
+  Original Error
+  --------------
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-01: saída intermediária inválida para n=1094: MXCIIII ==> expected: <true> but was: <false>
+
+
+timestamp = 2026-10-07T21:48:29.008359600, [Seed2024Properties:CT-PBT-02 seed=2024] (6) subtracao = 
+    CE-S0 (3) : 50 %
+    CE-S2 (2) : 33 %
+    CE-S1 (1) : 17 %
+
+timestamp = 2026-10-07T21:48:29.009359100, [Seed2024Properties:CT-PBT-02 seed=2024] (6) magnitude = 
+    CE-M1 (4) : 67 %
+    CE-M4 (2) : 33 %
+
+timestamp = 2026-10-07T21:48:29.009359100, [Seed2024Properties:CT-PBT-02 seed=2024] (6) centro-ou-extremo = 
+    outros (3) : 50 %
+    3999   (1) : 17 %
+    1      (1) : 17 %
+    4      (1) : 17 %
+
+timestamp = 2026-10-07T21:48:29.009359100, Seed2024Properties:CT-PBT-02 seed=2024 = 
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <IIII>
+
+                              |--------------------jqwik--------------------
+tries = 2                     | # of calls to property
+checks = 2                    | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 2024                   | random seed to reproduce generated values
+
+Shrunk Sample (1 steps)
+-----------------------
+  pair: Pair[number=4, roman=IV]
+
+Original Sample
+---------------
+  pair: Pair[number=1094, roman=MXCIV]
+
+  Original Error
+  --------------
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-02: Pair[number=1094, roman=MXCIV] ==> expected: <MXCIV> but was: <MXCIIII>
+
+
+timestamp = 2026-10-07T21:48:29.012359100, [Seed2024Properties:CT-PBT-03 seed=2024] (6) subtracao = 
+    CE-S0 (3) : 50 %
+    CE-S2 (2) : 33 %
+    CE-S1 (1) : 17 %
+
+timestamp = 2026-10-07T21:48:29.012359100, [Seed2024Properties:CT-PBT-03 seed=2024] (6) magnitude = 
+    CE-M1 (4) : 67 %
+    CE-M4 (2) : 33 %
+
+timestamp = 2026-10-07T21:48:29.012359100, [Seed2024Properties:CT-PBT-03 seed=2024] (6) centro-ou-extremo = 
+    outros (3) : 50 %
+    3999   (1) : 17 %
+    1      (1) : 17 %
+    4      (1) : 17 %
+
+timestamp = 2026-10-07T21:48:29.013358500, Seed2024Properties:CT-PBT-03 seed=2024 = 
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-03: n=4, saída=IIII ==> expected: <true> but was: <false>
+
+                              |--------------------jqwik--------------------
+tries = 2                     | # of calls to property
+checks = 2                    | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 2024                   | random seed to reproduce generated values
+
+Shrunk Sample (1 steps)
+-----------------------
+  n: 4
+
+Original Sample
+---------------
+  n: 1094
+
+  Original Error
+  --------------
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-03: n=1094, saída=MXCIIII ==> expected: <true> but was: <false>
+
+
+timestamp = 2026-10-07T21:48:29.025874800, [Seed2024Properties:CT-PBT-04 seed=2024] (1000) subtracao = 
+    CE-S0 (454) : 45 %
+    CE-S1 (411) : 41 %
+    CE-S2 (135) : 14 %
+
+timestamp = 2026-10-07T21:48:29.025874800, [Seed2024Properties:CT-PBT-04 seed=2024] (1000) magnitude = 
+    CE-M4 (631) : 63 %
+    CE-M3 (236) : 24 %
+    CE-M2 ( 70) :  7 %
+    CE-M1 ( 63) :  6 %
+
+timestamp = 2026-10-07T21:48:29.025874800, [Seed2024Properties:CT-PBT-04 seed=2024] (1000) centro-ou-extremo = 
+    outros (932) : 93.20 %
+    9      ( 13) :  1.30 %
+    3999   ( 12) :  1.20 %
+    900    ( 10) :  1.00 %
+    400    (  8) :  0.80 %
+    4      (  8) :  0.80 %
+    90     (  6) :  0.60 %
+    40     (  6) :  0.60 %
+    1      (  5) :  0.50 %
+
+timestamp = 2026-10-07T21:48:29.026876, Seed2024Properties:CT-PBT-04 seed=2024 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 2024                   | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:48:29.028875300, [Seed2024Properties:CT-PBT-05 seed=2024] (6) subtracao = 
+    CE-S0 (3) : 50 %
+    CE-S2 (2) : 33 %
+    CE-S1 (1) : 17 %
+
+timestamp = 2026-10-07T21:48:29.028875300, [Seed2024Properties:CT-PBT-05 seed=2024] (6) magnitude = 
+    CE-M1 (4) : 67 %
+    CE-M4 (2) : 33 %
+
+timestamp = 2026-10-07T21:48:29.029875700, [Seed2024Properties:CT-PBT-05 seed=2024] (6) centro-ou-extremo = 
+    outros (3) : 50 %
+    3999   (1) : 17 %
+    1      (1) : 17 %
+    4      (1) : 17 %
+
+timestamp = 2026-10-07T21:48:29.029875700, Seed2024Properties:CT-PBT-05 seed=2024 = 
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-05: n=4 ==> expected: <IV> but was: <IIII>
+
+                              |--------------------jqwik--------------------
+tries = 2                     | # of calls to property
+checks = 2                    | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 2024                   | random seed to reproduce generated values
+
+Shrunk Sample (1 steps)
+-----------------------
+  n: 4
+
+Original Sample
+---------------
+  n: 1094
+
+  Original Error
+  --------------
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-05: n=1094 ==> expected: <MXCIV> but was: <MXCIIII>
+
+
+timestamp = 2026-10-07T21:48:29.043871900, [Seed2024Properties:CT-PBT-06 seed=2024] (1000) subtracao = 
+    CE-S0 (454) : 45 %
+    CE-S1 (411) : 41 %
+    CE-S2 (135) : 14 %
+
+timestamp = 2026-10-07T21:48:29.043871900, [Seed2024Properties:CT-PBT-06 seed=2024] (1000) magnitude = 
+    CE-M4 (631) : 63 %
+    CE-M3 (236) : 24 %
+    CE-M2 ( 70) :  7 %
+    CE-M1 ( 63) :  6 %
+
+timestamp = 2026-10-07T21:48:29.043871900, [Seed2024Properties:CT-PBT-06 seed=2024] (1000) centro-ou-extremo = 
+    outros (932) : 93.20 %
+    9      ( 13) :  1.30 %
+    3999   ( 12) :  1.20 %
+    900    ( 10) :  1.00 %
+    400    (  8) :  0.80 %
+    4      (  8) :  0.80 %
+    90     (  6) :  0.60 %
+    40     (  6) :  0.60 %
+    1      (  5) :  0.50 %
+
+timestamp = 2026-10-07T21:48:29.043871900, Seed2024Properties:CT-PBT-06 seed=2024 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 2024                   | random seed to reproduce generated values
+
+
+[ERROR] Tests run: 6, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.047 s <<< FAILURE! -- in Seed2024Properties
+[ERROR] Seed2024Properties.CT-PBT-01 seed=2024 -- Time elapsed: 0.007 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: CT-PBT-01: saída intermediária inválida para n=4: IIII ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at RomanPropertyChecks.p01(RomanPropertyChecks.java:38)
+	at Seed2024Properties.p01(Seed2024Properties.java:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$1(CheckedPropertyFactory.java:84)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$2(CheckedPropertyFactory.java:91)
+	at net.jqwik.engine.properties.CheckedFunction.execute(CheckedFunction.java:17)
+	at net.jqwik.api.lifecycle.AroundTryHook.lambda$static$0(AroundTryHook.java:57)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.TryLifecycleMethodsHook.aroundTry(TryLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.BeforeTryMembersHook.aroundTry(BeforeTryMembersHook.java:69)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createTryExecutor$0(CheckedPropertyFactory.java:60)
+	at net.jqwik.engine.execution.lifecycle.AroundTryLifecycle.execute(AroundTryLifecycle.java:23)
+	at net.jqwik.engine.properties.GenericProperty.lambda$createFalsifier$1(GenericProperty.java:229)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrink$0(PropertyShrinker.java:55)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrinkAsLongAsSampleImproves$6(PropertyShrinker.java:122)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.lambda$falsify$5(AbstractSampleShrinker.java:91)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.falsify(AbstractSampleShrinker.java:91)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.lambda$shrink$2(AbstractSampleShrinker.java:53)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:541)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.tryAdvance(StreamSpliterators.java:300)
+	at net.jqwik.engine.support.StreamConcatenation$ConcatSpliterator.tryAdvance(StreamConcatenation.java:304)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findAny(ReferencePipeline.java:652)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.shrink(AbstractSampleShrinker.java:63)
+	at net.jqwik.engine.properties.shrinking.OneAfterTheOtherParameterShrinker.shrinkSingleParameter(OneAfterTheOtherParameterShrinker.java:45)
+	at net.jqwik.engine.properties.shrinking.OneAfterTheOtherParameterShrinker.shrink(OneAfterTheOtherParameterShrinker.java:27)
+	at net.jqwik.engine.properties.shrinking.ShrinkingAlgorithm.shrinkOneParameterAfterTheOther(ShrinkingAlgorithm.java:52)
+	at net.jqwik.engine.properties.shrinking.ShrinkingAlgorithm.shrink(ShrinkingAlgorithm.java:32)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.shrinkAsLongAsSampleImproves(PropertyShrinker.java:135)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrink$3(PropertyShrinker.java:87)
+	at net.jqwik.engine.execution.lifecycle.CurrentTestDescriptor.runWithDescriptor(CurrentTestDescriptor.java:18)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$withTimeout$4(PropertyShrinker.java:103)
+	at net.jqwik.engine.execution.lifecycle.CurrentDomainContext.runWithContext(CurrentDomainContext.java:30)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$withTimeout$5(PropertyShrinker.java:101)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+[ERROR] Seed2024Properties.CT-PBT-02 seed=2024 -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <IIII>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at RomanPropertyChecks.p02(RomanPropertyChecks.java:47)
+	at Seed2024Properties.p02(Seed2024Properties.java:21)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$1(CheckedPropertyFactory.java:84)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$2(CheckedPropertyFactory.java:91)
+	at net.jqwik.engine.properties.CheckedFunction.execute(CheckedFunction.java:17)
+	at net.jqwik.api.lifecycle.AroundTryHook.lambda$static$0(AroundTryHook.java:57)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.TryLifecycleMethodsHook.aroundTry(TryLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.BeforeTryMembersHook.aroundTry(BeforeTryMembersHook.java:69)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createTryExecutor$0(CheckedPropertyFactory.java:60)
+	at net.jqwik.engine.execution.lifecycle.AroundTryLifecycle.execute(AroundTryLifecycle.java:23)
+	at net.jqwik.engine.properties.GenericProperty.lambda$createFalsifier$1(GenericProperty.java:229)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrink$0(PropertyShrinker.java:55)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrinkAsLongAsSampleImproves$6(PropertyShrinker.java:122)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.lambda$falsify$5(AbstractSampleShrinker.java:91)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.falsify(AbstractSampleShrinker.java:91)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.lambda$shrink$2(AbstractSampleShrinker.java:53)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:541)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.tryAdvance(StreamSpliterators.java:300)
+	at net.jqwik.engine.support.StreamConcatenation$ConcatSpliterator.tryAdvance(StreamConcatenation.java:304)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findAny(ReferencePipeline.java:652)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.shrink(AbstractSampleShrinker.java:63)
+	at net.jqwik.engine.properties.shrinking.OneAfterTheOtherParameterShrinker.shrinkSingleParameter(OneAfterTheOtherParameterShrinker.java:45)
+	at net.jqwik.engine.properties.shrinking.OneAfterTheOtherParameterShrinker.shrink(OneAfterTheOtherParameterShrinker.java:27)
+	at net.jqwik.engine.properties.shrinking.ShrinkingAlgorithm.shrinkOneParameterAfterTheOther(ShrinkingAlgorithm.java:52)
+	at net.jqwik.engine.properties.shrinking.ShrinkingAlgorithm.shrink(ShrinkingAlgorithm.java:32)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.shrinkAsLongAsSampleImproves(PropertyShrinker.java:135)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrink$3(PropertyShrinker.java:87)
+	at net.jqwik.engine.execution.lifecycle.CurrentTestDescriptor.runWithDescriptor(CurrentTestDescriptor.java:18)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$withTimeout$4(PropertyShrinker.java:103)
+	at net.jqwik.engine.execution.lifecycle.CurrentDomainContext.runWithContext(CurrentDomainContext.java:30)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$withTimeout$5(PropertyShrinker.java:101)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+[ERROR] Seed2024Properties.CT-PBT-03 seed=2024 -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: CT-PBT-03: n=4, saída=IIII ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at RomanPropertyChecks.p03(RomanPropertyChecks.java:53)
+	at Seed2024Properties.p03(Seed2024Properties.java:28)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$1(CheckedPropertyFactory.java:84)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$2(CheckedPropertyFactory.java:91)
+	at net.jqwik.engine.properties.CheckedFunction.execute(CheckedFunction.java:17)
+	at net.jqwik.api.lifecycle.AroundTryHook.lambda$static$0(AroundTryHook.java:57)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.TryLifecycleMethodsHook.aroundTry(TryLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.BeforeTryMembersHook.aroundTry(BeforeTryMembersHook.java:69)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createTryExecutor$0(CheckedPropertyFactory.java:60)
+	at net.jqwik.engine.execution.lifecycle.AroundTryLifecycle.execute(AroundTryLifecycle.java:23)
+	at net.jqwik.engine.properties.GenericProperty.lambda$createFalsifier$1(GenericProperty.java:229)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrink$0(PropertyShrinker.java:55)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrinkAsLongAsSampleImproves$6(PropertyShrinker.java:122)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.lambda$falsify$5(AbstractSampleShrinker.java:91)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.falsify(AbstractSampleShrinker.java:91)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.lambda$shrink$2(AbstractSampleShrinker.java:53)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:541)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.tryAdvance(StreamSpliterators.java:300)
+	at net.jqwik.engine.support.StreamConcatenation$ConcatSpliterator.tryAdvance(StreamConcatenation.java:304)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findAny(ReferencePipeline.java:652)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.shrink(AbstractSampleShrinker.java:63)
+	at net.jqwik.engine.properties.shrinking.OneAfterTheOtherParameterShrinker.shrinkSingleParameter(OneAfterTheOtherParameterShrinker.java:45)
+	at net.jqwik.engine.properties.shrinking.OneAfterTheOtherParameterShrinker.shrink(OneAfterTheOtherParameterShrinker.java:27)
+	at net.jqwik.engine.properties.shrinking.ShrinkingAlgorithm.shrinkOneParameterAfterTheOther(ShrinkingAlgorithm.java:52)
+	at net.jqwik.engine.properties.shrinking.ShrinkingAlgorithm.shrink(ShrinkingAlgorithm.java:32)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.shrinkAsLongAsSampleImproves(PropertyShrinker.java:135)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrink$3(PropertyShrinker.java:87)
+	at net.jqwik.engine.execution.lifecycle.CurrentTestDescriptor.runWithDescriptor(CurrentTestDescriptor.java:18)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$withTimeout$4(PropertyShrinker.java:103)
+	at net.jqwik.engine.execution.lifecycle.CurrentDomainContext.runWithContext(CurrentDomainContext.java:30)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$withTimeout$5(PropertyShrinker.java:101)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+[ERROR] Seed2024Properties.CT-PBT-05 seed=2024 -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: CT-PBT-05: n=4 ==> expected: <IV> but was: <IIII>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at RomanPropertyChecks.p05(RomanPropertyChecks.java:64)
+	at Seed2024Properties.p05(Seed2024Properties.java:42)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$1(CheckedPropertyFactory.java:84)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$2(CheckedPropertyFactory.java:91)
+	at net.jqwik.engine.properties.CheckedFunction.execute(CheckedFunction.java:17)
+	at net.jqwik.api.lifecycle.AroundTryHook.lambda$static$0(AroundTryHook.java:57)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.TryLifecycleMethodsHook.aroundTry(TryLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.BeforeTryMembersHook.aroundTry(BeforeTryMembersHook.java:69)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createTryExecutor$0(CheckedPropertyFactory.java:60)
+	at net.jqwik.engine.execution.lifecycle.AroundTryLifecycle.execute(AroundTryLifecycle.java:23)
+	at net.jqwik.engine.properties.GenericProperty.lambda$createFalsifier$1(GenericProperty.java:229)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrink$0(PropertyShrinker.java:55)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrinkAsLongAsSampleImproves$6(PropertyShrinker.java:122)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.lambda$falsify$5(AbstractSampleShrinker.java:91)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.falsify(AbstractSampleShrinker.java:91)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.lambda$shrink$2(AbstractSampleShrinker.java:53)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:541)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.tryAdvance(StreamSpliterators.java:300)
+	at net.jqwik.engine.support.StreamConcatenation$ConcatSpliterator.tryAdvance(StreamConcatenation.java:304)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findAny(ReferencePipeline.java:652)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.shrink(AbstractSampleShrinker.java:63)
+	at net.jqwik.engine.properties.shrinking.OneAfterTheOtherParameterShrinker.shrinkSingleParameter(OneAfterTheOtherParameterShrinker.java:45)
+	at net.jqwik.engine.properties.shrinking.OneAfterTheOtherParameterShrinker.shrink(OneAfterTheOtherParameterShrinker.java:27)
+	at net.jqwik.engine.properties.shrinking.ShrinkingAlgorithm.shrinkOneParameterAfterTheOther(ShrinkingAlgorithm.java:52)
+	at net.jqwik.engine.properties.shrinking.ShrinkingAlgorithm.shrink(ShrinkingAlgorithm.java:32)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.shrinkAsLongAsSampleImproves(PropertyShrinker.java:135)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrink$3(PropertyShrinker.java:87)
+	at net.jqwik.engine.execution.lifecycle.CurrentTestDescriptor.runWithDescriptor(CurrentTestDescriptor.java:18)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$withTimeout$4(PropertyShrinker.java:103)
+	at net.jqwik.engine.execution.lifecycle.CurrentDomainContext.runWithContext(CurrentDomainContext.java:30)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$withTimeout$5(PropertyShrinker.java:101)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+[INFO] Running Seed2026Properties
+timestamp = 2026-10-07T21:48:29.048588300, [Seed2026Properties:CT-PBT-01 seed=2026] (17) subtracao = 
+    CE-S0 (9) : 53 %
+    CE-S1 (7) : 41 %
+    CE-S2 (1) :  6 %
+
+timestamp = 2026-10-07T21:48:29.049595400, [Seed2026Properties:CT-PBT-01 seed=2026] (17) magnitude = 
+    CE-M4 (10) : 59 %
+    CE-M1 ( 5) : 29 %
+    CE-M3 ( 1) :  6 %
+    CE-M2 ( 1) :  6 %
+
+timestamp = 2026-10-07T21:48:29.049595400, [Seed2026Properties:CT-PBT-01 seed=2026] (17) centro-ou-extremo = 
+    outros (14) : 82 %
+    400    ( 1) :  6 %
+    1      ( 1) :  6 %
+    4      ( 1) :  6 %
+
+timestamp = 2026-10-07T21:48:29.049595400, Seed2026Properties:CT-PBT-01 seed=2026 = 
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-01: saída intermediária inválida para n=4: IIII ==> expected: <true> but was: <false>
+
+                              |--------------------jqwik--------------------
+tries = 13                    | # of calls to property
+checks = 13                   | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 2026                   | random seed to reproduce generated values
+
+Shrunk Sample (1 steps)
+-----------------------
+  n: 4
+
+Original Sample
+---------------
+  n: 1174
+
+  Original Error
+  --------------
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-01: saída intermediária inválida para n=1174: MCLXXIIII ==> expected: <true> but was: <false>
+
+
+timestamp = 2026-10-07T21:48:29.053605500, [Seed2026Properties:CT-PBT-02 seed=2026] (17) subtracao = 
+    CE-S0 (9) : 53 %
+    CE-S1 (7) : 41 %
+    CE-S2 (1) :  6 %
+
+timestamp = 2026-10-07T21:48:29.053605500, [Seed2026Properties:CT-PBT-02 seed=2026] (17) magnitude = 
+    CE-M4 (10) : 59 %
+    CE-M1 ( 5) : 29 %
+    CE-M3 ( 1) :  6 %
+    CE-M2 ( 1) :  6 %
+
+timestamp = 2026-10-07T21:48:29.053605500, [Seed2026Properties:CT-PBT-02 seed=2026] (17) centro-ou-extremo = 
+    outros (14) : 82 %
+    400    ( 1) :  6 %
+    1      ( 1) :  6 %
+    4      ( 1) :  6 %
+
+timestamp = 2026-10-07T21:48:29.053605500, Seed2026Properties:CT-PBT-02 seed=2026 = 
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <IIII>
+
+                              |--------------------jqwik--------------------
+tries = 13                    | # of calls to property
+checks = 13                   | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 2026                   | random seed to reproduce generated values
+
+Shrunk Sample (1 steps)
+-----------------------
+  pair: Pair[number=4, roman=IV]
+
+Original Sample
+---------------
+  pair: Pair[number=1174, roman=MCLXXIV]
+
+  Original Error
+  --------------
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-02: Pair[number=1174, roman=MCLXXIV] ==> expected: <MCLXXIV> but was: <MCLXXIIII>
+
+
+timestamp = 2026-10-07T21:48:29.057604100, [Seed2026Properties:CT-PBT-03 seed=2026] (17) subtracao = 
+    CE-S0 (9) : 53 %
+    CE-S1 (7) : 41 %
+    CE-S2 (1) :  6 %
+
+timestamp = 2026-10-07T21:48:29.057604100, [Seed2026Properties:CT-PBT-03 seed=2026] (17) magnitude = 
+    CE-M4 (10) : 59 %
+    CE-M1 ( 5) : 29 %
+    CE-M3 ( 1) :  6 %
+    CE-M2 ( 1) :  6 %
+
+timestamp = 2026-10-07T21:48:29.057604100, [Seed2026Properties:CT-PBT-03 seed=2026] (17) centro-ou-extremo = 
+    outros (14) : 82 %
+    400    ( 1) :  6 %
+    1      ( 1) :  6 %
+    4      ( 1) :  6 %
+
+timestamp = 2026-10-07T21:48:29.057604100, Seed2026Properties:CT-PBT-03 seed=2026 = 
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-03: n=4, saída=IIII ==> expected: <true> but was: <false>
+
+                              |--------------------jqwik--------------------
+tries = 13                    | # of calls to property
+checks = 13                   | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 2026                   | random seed to reproduce generated values
+
+Shrunk Sample (1 steps)
+-----------------------
+  n: 4
+
+Original Sample
+---------------
+  n: 1174
+
+  Original Error
+  --------------
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-03: n=1174, saída=MCLXXIIII ==> expected: <true> but was: <false>
+
+
+timestamp = 2026-10-07T21:48:29.070114500, [Seed2026Properties:CT-PBT-04 seed=2026] (1000) subtracao = 
+    CE-S0 (492) : 49 %
+    CE-S1 (379) : 38 %
+    CE-S2 (129) : 13 %
+
+timestamp = 2026-10-07T21:48:29.070114500, [Seed2026Properties:CT-PBT-04 seed=2026] (1000) magnitude = 
+    CE-M4 (619) : 62 %
+    CE-M3 (244) : 24 %
+    CE-M2 ( 79) :  8 %
+    CE-M1 ( 58) :  6 %
+
+timestamp = 2026-10-07T21:48:29.070114500, [Seed2026Properties:CT-PBT-04 seed=2026] (1000) centro-ou-extremo = 
+    outros (936) : 93.60 %
+    400    ( 13) :  1.30 %
+    9      (  9) :  0.90 %
+    3999   (  9) :  0.90 %
+    40     (  8) :  0.80 %
+    900    (  8) :  0.80 %
+    90     (  7) :  0.70 %
+    1      (  7) :  0.70 %
+    4      (  3) :  0.30 %
+
+timestamp = 2026-10-07T21:48:29.070114500, Seed2026Properties:CT-PBT-04 seed=2026 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 2026                   | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:48:29.073628700, [Seed2026Properties:CT-PBT-05 seed=2026] (17) subtracao = 
+    CE-S0 (9) : 53 %
+    CE-S1 (7) : 41 %
+    CE-S2 (1) :  6 %
+
+timestamp = 2026-10-07T21:48:29.073628700, [Seed2026Properties:CT-PBT-05 seed=2026] (17) magnitude = 
+    CE-M4 (10) : 59 %
+    CE-M1 ( 5) : 29 %
+    CE-M3 ( 1) :  6 %
+    CE-M2 ( 1) :  6 %
+
+timestamp = 2026-10-07T21:48:29.073628700, [Seed2026Properties:CT-PBT-05 seed=2026] (17) centro-ou-extremo = 
+    outros (14) : 82 %
+    400    ( 1) :  6 %
+    1      ( 1) :  6 %
+    4      ( 1) :  6 %
+
+timestamp = 2026-10-07T21:48:29.074627600, Seed2026Properties:CT-PBT-05 seed=2026 = 
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-05: n=4 ==> expected: <IV> but was: <IIII>
+
+                              |--------------------jqwik--------------------
+tries = 13                    | # of calls to property
+checks = 13                   | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 2026                   | random seed to reproduce generated values
+
+Shrunk Sample (1 steps)
+-----------------------
+  n: 4
+
+Original Sample
+---------------
+  n: 1174
+
+  Original Error
+  --------------
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-05: n=1174 ==> expected: <MCLXXIV> but was: <MCLXXIIII>
+
+
+timestamp = 2026-10-07T21:48:29.086131, [Seed2026Properties:CT-PBT-06 seed=2026] (1000) subtracao = 
+    CE-S0 (492) : 49 %
+    CE-S1 (379) : 38 %
+    CE-S2 (129) : 13 %
+
+timestamp = 2026-10-07T21:48:29.086131, [Seed2026Properties:CT-PBT-06 seed=2026] (1000) magnitude = 
+    CE-M4 (619) : 62 %
+    CE-M3 (244) : 24 %
+    CE-M2 ( 79) :  8 %
+    CE-M1 ( 58) :  6 %
+
+timestamp = 2026-10-07T21:48:29.086131, [Seed2026Properties:CT-PBT-06 seed=2026] (1000) centro-ou-extremo = 
+    outros (936) : 93.60 %
+    400    ( 13) :  1.30 %
+    9      (  9) :  0.90 %
+    3999   (  9) :  0.90 %
+    40     (  8) :  0.80 %
+    900    (  8) :  0.80 %
+    90     (  7) :  0.70 %
+    1      (  7) :  0.70 %
+    4      (  3) :  0.30 %
+
+timestamp = 2026-10-07T21:48:29.086131, Seed2026Properties:CT-PBT-06 seed=2026 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 2026                   | random seed to reproduce generated values
+
+
+[ERROR] Tests run: 6, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.042 s <<< FAILURE! -- in Seed2026Properties
+[ERROR] Seed2026Properties.CT-PBT-01 seed=2026 -- Time elapsed: 0.006 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: CT-PBT-01: saída intermediária inválida para n=4: IIII ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at RomanPropertyChecks.p01(RomanPropertyChecks.java:38)
+	at Seed2026Properties.p01(Seed2026Properties.java:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$1(CheckedPropertyFactory.java:84)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$2(CheckedPropertyFactory.java:91)
+	at net.jqwik.engine.properties.CheckedFunction.execute(CheckedFunction.java:17)
+	at net.jqwik.api.lifecycle.AroundTryHook.lambda$static$0(AroundTryHook.java:57)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.TryLifecycleMethodsHook.aroundTry(TryLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.BeforeTryMembersHook.aroundTry(BeforeTryMembersHook.java:69)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createTryExecutor$0(CheckedPropertyFactory.java:60)
+	at net.jqwik.engine.execution.lifecycle.AroundTryLifecycle.execute(AroundTryLifecycle.java:23)
+	at net.jqwik.engine.properties.GenericProperty.lambda$createFalsifier$1(GenericProperty.java:229)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrink$0(PropertyShrinker.java:55)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrinkAsLongAsSampleImproves$6(PropertyShrinker.java:122)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.lambda$falsify$5(AbstractSampleShrinker.java:91)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.falsify(AbstractSampleShrinker.java:91)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.lambda$shrink$2(AbstractSampleShrinker.java:53)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:541)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.tryAdvance(StreamSpliterators.java:300)
+	at net.jqwik.engine.support.StreamConcatenation$ConcatSpliterator.tryAdvance(StreamConcatenation.java:304)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findAny(ReferencePipeline.java:652)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.shrink(AbstractSampleShrinker.java:63)
+	at net.jqwik.engine.properties.shrinking.OneAfterTheOtherParameterShrinker.shrinkSingleParameter(OneAfterTheOtherParameterShrinker.java:45)
+	at net.jqwik.engine.properties.shrinking.OneAfterTheOtherParameterShrinker.shrink(OneAfterTheOtherParameterShrinker.java:27)
+	at net.jqwik.engine.properties.shrinking.ShrinkingAlgorithm.shrinkOneParameterAfterTheOther(ShrinkingAlgorithm.java:52)
+	at net.jqwik.engine.properties.shrinking.ShrinkingAlgorithm.shrink(ShrinkingAlgorithm.java:32)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.shrinkAsLongAsSampleImproves(PropertyShrinker.java:135)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrink$3(PropertyShrinker.java:87)
+	at net.jqwik.engine.execution.lifecycle.CurrentTestDescriptor.runWithDescriptor(CurrentTestDescriptor.java:18)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$withTimeout$4(PropertyShrinker.java:103)
+	at net.jqwik.engine.execution.lifecycle.CurrentDomainContext.runWithContext(CurrentDomainContext.java:30)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$withTimeout$5(PropertyShrinker.java:101)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+[ERROR] Seed2026Properties.CT-PBT-02 seed=2026 -- Time elapsed: 0.004 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <IIII>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at RomanPropertyChecks.p02(RomanPropertyChecks.java:47)
+	at Seed2026Properties.p02(Seed2026Properties.java:21)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$1(CheckedPropertyFactory.java:84)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$2(CheckedPropertyFactory.java:91)
+	at net.jqwik.engine.properties.CheckedFunction.execute(CheckedFunction.java:17)
+	at net.jqwik.api.lifecycle.AroundTryHook.lambda$static$0(AroundTryHook.java:57)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.TryLifecycleMethodsHook.aroundTry(TryLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.BeforeTryMembersHook.aroundTry(BeforeTryMembersHook.java:69)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createTryExecutor$0(CheckedPropertyFactory.java:60)
+	at net.jqwik.engine.execution.lifecycle.AroundTryLifecycle.execute(AroundTryLifecycle.java:23)
+	at net.jqwik.engine.properties.GenericProperty.lambda$createFalsifier$1(GenericProperty.java:229)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrink$0(PropertyShrinker.java:55)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrinkAsLongAsSampleImproves$6(PropertyShrinker.java:122)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.lambda$falsify$5(AbstractSampleShrinker.java:91)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.falsify(AbstractSampleShrinker.java:91)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.lambda$shrink$2(AbstractSampleShrinker.java:53)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:541)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.tryAdvance(StreamSpliterators.java:300)
+	at net.jqwik.engine.support.StreamConcatenation$ConcatSpliterator.tryAdvance(StreamConcatenation.java:304)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findAny(ReferencePipeline.java:652)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.shrink(AbstractSampleShrinker.java:63)
+	at net.jqwik.engine.properties.shrinking.OneAfterTheOtherParameterShrinker.shrinkSingleParameter(OneAfterTheOtherParameterShrinker.java:45)
+	at net.jqwik.engine.properties.shrinking.OneAfterTheOtherParameterShrinker.shrink(OneAfterTheOtherParameterShrinker.java:27)
+	at net.jqwik.engine.properties.shrinking.ShrinkingAlgorithm.shrinkOneParameterAfterTheOther(ShrinkingAlgorithm.java:52)
+	at net.jqwik.engine.properties.shrinking.ShrinkingAlgorithm.shrink(ShrinkingAlgorithm.java:32)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.shrinkAsLongAsSampleImproves(PropertyShrinker.java:135)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrink$3(PropertyShrinker.java:87)
+	at net.jqwik.engine.execution.lifecycle.CurrentTestDescriptor.runWithDescriptor(CurrentTestDescriptor.java:18)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$withTimeout$4(PropertyShrinker.java:103)
+	at net.jqwik.engine.execution.lifecycle.CurrentDomainContext.runWithContext(CurrentDomainContext.java:30)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$withTimeout$5(PropertyShrinker.java:101)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+[ERROR] Seed2026Properties.CT-PBT-03 seed=2026 -- Time elapsed: 0.004 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: CT-PBT-03: n=4, saída=IIII ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at RomanPropertyChecks.p03(RomanPropertyChecks.java:53)
+	at Seed2026Properties.p03(Seed2026Properties.java:28)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$1(CheckedPropertyFactory.java:84)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$2(CheckedPropertyFactory.java:91)
+	at net.jqwik.engine.properties.CheckedFunction.execute(CheckedFunction.java:17)
+	at net.jqwik.api.lifecycle.AroundTryHook.lambda$static$0(AroundTryHook.java:57)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.TryLifecycleMethodsHook.aroundTry(TryLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.BeforeTryMembersHook.aroundTry(BeforeTryMembersHook.java:69)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createTryExecutor$0(CheckedPropertyFactory.java:60)
+	at net.jqwik.engine.execution.lifecycle.AroundTryLifecycle.execute(AroundTryLifecycle.java:23)
+	at net.jqwik.engine.properties.GenericProperty.lambda$createFalsifier$1(GenericProperty.java:229)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrink$0(PropertyShrinker.java:55)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrinkAsLongAsSampleImproves$6(PropertyShrinker.java:122)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.lambda$falsify$5(AbstractSampleShrinker.java:91)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.falsify(AbstractSampleShrinker.java:91)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.lambda$shrink$2(AbstractSampleShrinker.java:53)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:541)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.tryAdvance(StreamSpliterators.java:300)
+	at net.jqwik.engine.support.StreamConcatenation$ConcatSpliterator.tryAdvance(StreamConcatenation.java:304)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findAny(ReferencePipeline.java:652)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.shrink(AbstractSampleShrinker.java:63)
+	at net.jqwik.engine.properties.shrinking.OneAfterTheOtherParameterShrinker.shrinkSingleParameter(OneAfterTheOtherParameterShrinker.java:45)
+	at net.jqwik.engine.properties.shrinking.OneAfterTheOtherParameterShrinker.shrink(OneAfterTheOtherParameterShrinker.java:27)
+	at net.jqwik.engine.properties.shrinking.ShrinkingAlgorithm.shrinkOneParameterAfterTheOther(ShrinkingAlgorithm.java:52)
+	at net.jqwik.engine.properties.shrinking.ShrinkingAlgorithm.shrink(ShrinkingAlgorithm.java:32)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.shrinkAsLongAsSampleImproves(PropertyShrinker.java:135)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrink$3(PropertyShrinker.java:87)
+	at net.jqwik.engine.execution.lifecycle.CurrentTestDescriptor.runWithDescriptor(CurrentTestDescriptor.java:18)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$withTimeout$4(PropertyShrinker.java:103)
+	at net.jqwik.engine.execution.lifecycle.CurrentDomainContext.runWithContext(CurrentDomainContext.java:30)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$withTimeout$5(PropertyShrinker.java:101)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+[ERROR] Seed2026Properties.CT-PBT-05 seed=2026 -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: CT-PBT-05: n=4 ==> expected: <IV> but was: <IIII>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at RomanPropertyChecks.p05(RomanPropertyChecks.java:64)
+	at Seed2026Properties.p05(Seed2026Properties.java:42)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$1(CheckedPropertyFactory.java:84)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$2(CheckedPropertyFactory.java:91)
+	at net.jqwik.engine.properties.CheckedFunction.execute(CheckedFunction.java:17)
+	at net.jqwik.api.lifecycle.AroundTryHook.lambda$static$0(AroundTryHook.java:57)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.TryLifecycleMethodsHook.aroundTry(TryLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.BeforeTryMembersHook.aroundTry(BeforeTryMembersHook.java:69)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createTryExecutor$0(CheckedPropertyFactory.java:60)
+	at net.jqwik.engine.execution.lifecycle.AroundTryLifecycle.execute(AroundTryLifecycle.java:23)
+	at net.jqwik.engine.properties.GenericProperty.lambda$createFalsifier$1(GenericProperty.java:229)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrink$0(PropertyShrinker.java:55)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrinkAsLongAsSampleImproves$6(PropertyShrinker.java:122)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.lambda$falsify$5(AbstractSampleShrinker.java:91)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.falsify(AbstractSampleShrinker.java:91)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.lambda$shrink$2(AbstractSampleShrinker.java:53)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:541)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.tryAdvance(StreamSpliterators.java:300)
+	at net.jqwik.engine.support.StreamConcatenation$ConcatSpliterator.tryAdvance(StreamConcatenation.java:304)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findAny(ReferencePipeline.java:652)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.shrink(AbstractSampleShrinker.java:63)
+	at net.jqwik.engine.properties.shrinking.OneAfterTheOtherParameterShrinker.shrinkSingleParameter(OneAfterTheOtherParameterShrinker.java:45)
+	at net.jqwik.engine.properties.shrinking.OneAfterTheOtherParameterShrinker.shrink(OneAfterTheOtherParameterShrinker.java:27)
+	at net.jqwik.engine.properties.shrinking.ShrinkingAlgorithm.shrinkOneParameterAfterTheOther(ShrinkingAlgorithm.java:52)
+	at net.jqwik.engine.properties.shrinking.ShrinkingAlgorithm.shrink(ShrinkingAlgorithm.java:32)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.shrinkAsLongAsSampleImproves(PropertyShrinker.java:135)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrink$3(PropertyShrinker.java:87)
+	at net.jqwik.engine.execution.lifecycle.CurrentTestDescriptor.runWithDescriptor(CurrentTestDescriptor.java:18)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$withTimeout$4(PropertyShrinker.java:103)
+	at net.jqwik.engine.execution.lifecycle.CurrentDomainContext.runWithContext(CurrentDomainContext.java:30)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$withTimeout$5(PropertyShrinker.java:101)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+[INFO] Running Seed3999Properties
+timestamp = 2026-10-07T21:48:29.090138300, [Seed3999Properties:CT-PBT-01 seed=3999] (35) subtracao = 
+    CE-S1 (16) : 46 %
+    CE-S0 (14) : 40 %
+    CE-S2 ( 5) : 14 %
+
+timestamp = 2026-10-07T21:48:29.090138300, [Seed3999Properties:CT-PBT-01 seed=3999] (35) magnitude = 
+    CE-M4 (21) : 60 %
+    CE-M3 ( 8) : 23 %
+    CE-M1 ( 5) : 14 %
+    CE-M2 ( 1) :  3 %
+
+timestamp = 2026-10-07T21:48:29.090138300, [Seed3999Properties:CT-PBT-01 seed=3999] (35) centro-ou-extremo = 
+    outros (30) : 86 %
+    3999   ( 2) :  6 %
+    400    ( 1) :  3 %
+    4      ( 1) :  3 %
+    1      ( 1) :  3 %
+
+timestamp = 2026-10-07T21:48:29.090138300, Seed3999Properties:CT-PBT-01 seed=3999 = 
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-01: saída intermediária inválida para n=4: IIII ==> expected: <true> but was: <false>
+
+                              |--------------------jqwik--------------------
+tries = 26                    | # of calls to property
+checks = 26                   | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 3999                   | random seed to reproduce generated values
+
+Sample
+------
+  n: 4
+
+
+timestamp = 2026-10-07T21:48:29.094136900, [Seed3999Properties:CT-PBT-02 seed=3999] (35) subtracao = 
+    CE-S1 (16) : 46 %
+    CE-S0 (14) : 40 %
+    CE-S2 ( 5) : 14 %
+
+timestamp = 2026-10-07T21:48:29.094136900, [Seed3999Properties:CT-PBT-02 seed=3999] (35) magnitude = 
+    CE-M4 (21) : 60 %
+    CE-M3 ( 8) : 23 %
+    CE-M1 ( 5) : 14 %
+    CE-M2 ( 1) :  3 %
+
+timestamp = 2026-10-07T21:48:29.094136900, [Seed3999Properties:CT-PBT-02 seed=3999] (35) centro-ou-extremo = 
+    outros (30) : 86 %
+    3999   ( 2) :  6 %
+    400    ( 1) :  3 %
+    4      ( 1) :  3 %
+    1      ( 1) :  3 %
+
+timestamp = 2026-10-07T21:48:29.094136900, Seed3999Properties:CT-PBT-02 seed=3999 = 
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <IIII>
+
+                              |--------------------jqwik--------------------
+tries = 26                    | # of calls to property
+checks = 26                   | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 3999                   | random seed to reproduce generated values
+
+Sample
+------
+  pair: Pair[number=4, roman=IV]
+
+
+timestamp = 2026-10-07T21:48:29.098139500, [Seed3999Properties:CT-PBT-03 seed=3999] (35) subtracao = 
+    CE-S1 (16) : 46 %
+    CE-S0 (14) : 40 %
+    CE-S2 ( 5) : 14 %
+
+timestamp = 2026-10-07T21:48:29.098139500, [Seed3999Properties:CT-PBT-03 seed=3999] (35) magnitude = 
+    CE-M4 (21) : 60 %
+    CE-M3 ( 8) : 23 %
+    CE-M1 ( 5) : 14 %
+    CE-M2 ( 1) :  3 %
+
+timestamp = 2026-10-07T21:48:29.098139500, [Seed3999Properties:CT-PBT-03 seed=3999] (35) centro-ou-extremo = 
+    outros (30) : 86 %
+    3999   ( 2) :  6 %
+    400    ( 1) :  3 %
+    4      ( 1) :  3 %
+    1      ( 1) :  3 %
+
+timestamp = 2026-10-07T21:48:29.098139500, Seed3999Properties:CT-PBT-03 seed=3999 = 
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-03: n=4, saída=IIII ==> expected: <true> but was: <false>
+
+                              |--------------------jqwik--------------------
+tries = 26                    | # of calls to property
+checks = 26                   | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 3999                   | random seed to reproduce generated values
+
+Sample
+------
+  n: 4
+
+
+timestamp = 2026-10-07T21:48:29.109148200, [Seed3999Properties:CT-PBT-04 seed=3999] (1000) subtracao = 
+    CE-S0 (485) : 49 %
+    CE-S1 (399) : 40 %
+    CE-S2 (116) : 12 %
+
+timestamp = 2026-10-07T21:48:29.110147100, [Seed3999Properties:CT-PBT-04 seed=3999] (1000) magnitude = 
+    CE-M4 (640) : 64 %
+    CE-M3 (230) : 23 %
+    CE-M2 ( 77) :  8 %
+    CE-M1 ( 53) :  5 %
+
+timestamp = 2026-10-07T21:48:29.110147100, [Seed3999Properties:CT-PBT-04 seed=3999] (1000) centro-ou-extremo = 
+    outros (935) : 93.50 %
+    400    ( 13) :  1.30 %
+    40     ( 10) :  1.00 %
+    4      (  9) :  0.90 %
+    3999   (  7) :  0.70 %
+    9      (  7) :  0.70 %
+    1      (  7) :  0.70 %
+    90     (  6) :  0.60 %
+    900    (  6) :  0.60 %
+
+timestamp = 2026-10-07T21:48:29.110147100, Seed3999Properties:CT-PBT-04 seed=3999 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 3999                   | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:48:29.112144700, [Seed3999Properties:CT-PBT-05 seed=3999] (35) subtracao = 
+    CE-S1 (16) : 46 %
+    CE-S0 (14) : 40 %
+    CE-S2 ( 5) : 14 %
+
+timestamp = 2026-10-07T21:48:29.113143900, [Seed3999Properties:CT-PBT-05 seed=3999] (35) magnitude = 
+    CE-M4 (21) : 60 %
+    CE-M3 ( 8) : 23 %
+    CE-M1 ( 5) : 14 %
+    CE-M2 ( 1) :  3 %
+
+timestamp = 2026-10-07T21:48:29.113143900, [Seed3999Properties:CT-PBT-05 seed=3999] (35) centro-ou-extremo = 
+    outros (30) : 86 %
+    3999   ( 2) :  6 %
+    400    ( 1) :  3 %
+    4      ( 1) :  3 %
+    1      ( 1) :  3 %
+
+timestamp = 2026-10-07T21:48:29.113143900, Seed3999Properties:CT-PBT-05 seed=3999 = 
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-05: n=4 ==> expected: <IV> but was: <IIII>
+
+                              |--------------------jqwik--------------------
+tries = 26                    | # of calls to property
+checks = 26                   | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 3999                   | random seed to reproduce generated values
+
+Sample
+------
+  n: 4
+
+
+timestamp = 2026-10-07T21:48:29.123658, [Seed3999Properties:CT-PBT-06 seed=3999] (1000) subtracao = 
+    CE-S0 (485) : 49 %
+    CE-S1 (399) : 40 %
+    CE-S2 (116) : 12 %
+
+timestamp = 2026-10-07T21:48:29.124658100, [Seed3999Properties:CT-PBT-06 seed=3999] (1000) magnitude = 
+    CE-M4 (640) : 64 %
+    CE-M3 (230) : 23 %
+    CE-M2 ( 77) :  8 %
+    CE-M1 ( 53) :  5 %
+
+timestamp = 2026-10-07T21:48:29.124658100, [Seed3999Properties:CT-PBT-06 seed=3999] (1000) centro-ou-extremo = 
+    outros (935) : 93.50 %
+    400    ( 13) :  1.30 %
+    40     ( 10) :  1.00 %
+    4      (  9) :  0.90 %
+    3999   (  7) :  0.70 %
+    9      (  7) :  0.70 %
+    1      (  7) :  0.70 %
+    90     (  6) :  0.60 %
+    900    (  6) :  0.60 %
+
+timestamp = 2026-10-07T21:48:29.124658100, Seed3999Properties:CT-PBT-06 seed=3999 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 3999                   | random seed to reproduce generated values
+
+
+[ERROR] Tests run: 6, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.037 s <<< FAILURE! -- in Seed3999Properties
+[ERROR] Seed3999Properties.CT-PBT-01 seed=3999 -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: CT-PBT-01: saída intermediária inválida para n=4: IIII ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at RomanPropertyChecks.p01(RomanPropertyChecks.java:38)
+	at Seed3999Properties.p01(Seed3999Properties.java:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$1(CheckedPropertyFactory.java:84)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$2(CheckedPropertyFactory.java:91)
+	at net.jqwik.engine.properties.CheckedFunction.execute(CheckedFunction.java:17)
+	at net.jqwik.api.lifecycle.AroundTryHook.lambda$static$0(AroundTryHook.java:57)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.TryLifecycleMethodsHook.aroundTry(TryLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.BeforeTryMembersHook.aroundTry(BeforeTryMembersHook.java:69)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createTryExecutor$0(CheckedPropertyFactory.java:60)
+	at net.jqwik.engine.execution.lifecycle.AroundTryLifecycle.execute(AroundTryLifecycle.java:23)
+	at net.jqwik.engine.properties.GenericProperty.testPredicate(GenericProperty.java:166)
+	at net.jqwik.engine.properties.GenericProperty.check(GenericProperty.java:68)
+	at net.jqwik.engine.execution.CheckedProperty.check(CheckedProperty.java:67)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.executeProperty(PropertyMethodExecutor.java:90)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.executeMethod(PropertyMethodExecutor.java:69)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.lambda$execute$0(PropertyMethodExecutor.java:49)
+	at net.jqwik.api.lifecycle.AroundPropertyHook.lambda$static$0(AroundPropertyHook.java:46)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.api.lifecycle.PropertyExecutor.executeAndFinally(PropertyExecutor.java:39)
+	at net.jqwik.engine.hooks.lifecycle.PropertyLifecycleMethodsHook.aroundProperty(PropertyLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.engine.hooks.statistics.StatisticsHook.aroundProperty(StatisticsHook.java:37)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.engine.hooks.lifecycle.AutoCloseableHook.aroundProperty(AutoCloseableHook.java:13)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.execute(PropertyMethodExecutor.java:47)
+	at net.jqwik.engine.execution.PropertyTaskCreator.executeTestMethod(PropertyTaskCreator.java:166)
+	at net.jqwik.engine.execution.PropertyTaskCreator.lambda$createTask$1(PropertyTaskCreator.java:51)
+	at net.jqwik.engine.execution.lifecycle.CurrentDomainContext.runWithContext(CurrentDomainContext.java:30)
+	at net.jqwik.engine.execution.PropertyTaskCreator.lambda$createTask$2(PropertyTaskCreator.java:50)
+	at net.jqwik.engine.execution.pipeline.ExecutionTask$1.lambda$execute$0(ExecutionTask.java:31)
+	at net.jqwik.engine.execution.lifecycle.CurrentTestDescriptor.runWithDescriptor(CurrentTestDescriptor.java:18)
+	at net.jqwik.engine.execution.pipeline.ExecutionTask$1.execute(ExecutionTask.java:31)
+	at net.jqwik.engine.execution.pipeline.ExecutionPipeline.runToTermination(ExecutionPipeline.java:82)
+	at net.jqwik.engine.execution.JqwikExecutor.execute(JqwikExecutor.java:46)
+	at net.jqwik.engine.JqwikTestEngine.executeTests(JqwikTestEngine.java:70)
+	at net.jqwik.engine.JqwikTestEngine.execute(JqwikTestEngine.java:53)
+
+[ERROR] Seed3999Properties.CT-PBT-02 seed=3999 -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <IIII>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at RomanPropertyChecks.p02(RomanPropertyChecks.java:47)
+	at Seed3999Properties.p02(Seed3999Properties.java:21)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$1(CheckedPropertyFactory.java:84)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$2(CheckedPropertyFactory.java:91)
+	at net.jqwik.engine.properties.CheckedFunction.execute(CheckedFunction.java:17)
+	at net.jqwik.api.lifecycle.AroundTryHook.lambda$static$0(AroundTryHook.java:57)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.TryLifecycleMethodsHook.aroundTry(TryLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.BeforeTryMembersHook.aroundTry(BeforeTryMembersHook.java:69)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createTryExecutor$0(CheckedPropertyFactory.java:60)
+	at net.jqwik.engine.execution.lifecycle.AroundTryLifecycle.execute(AroundTryLifecycle.java:23)
+	at net.jqwik.engine.properties.GenericProperty.testPredicate(GenericProperty.java:166)
+	at net.jqwik.engine.properties.GenericProperty.check(GenericProperty.java:68)
+	at net.jqwik.engine.execution.CheckedProperty.check(CheckedProperty.java:67)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.executeProperty(PropertyMethodExecutor.java:90)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.executeMethod(PropertyMethodExecutor.java:69)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.lambda$execute$0(PropertyMethodExecutor.java:49)
+	at net.jqwik.api.lifecycle.AroundPropertyHook.lambda$static$0(AroundPropertyHook.java:46)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.api.lifecycle.PropertyExecutor.executeAndFinally(PropertyExecutor.java:39)
+	at net.jqwik.engine.hooks.lifecycle.PropertyLifecycleMethodsHook.aroundProperty(PropertyLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.engine.hooks.statistics.StatisticsHook.aroundProperty(StatisticsHook.java:37)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.engine.hooks.lifecycle.AutoCloseableHook.aroundProperty(AutoCloseableHook.java:13)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.execute(PropertyMethodExecutor.java:47)
+	at net.jqwik.engine.execution.PropertyTaskCreator.executeTestMethod(PropertyTaskCreator.java:166)
+	at net.jqwik.engine.execution.PropertyTaskCreator.lambda$createTask$1(PropertyTaskCreator.java:51)
+	at net.jqwik.engine.execution.lifecycle.CurrentDomainContext.runWithContext(CurrentDomainContext.java:30)
+	at net.jqwik.engine.execution.PropertyTaskCreator.lambda$createTask$2(PropertyTaskCreator.java:50)
+	at net.jqwik.engine.execution.pipeline.ExecutionTask$1.lambda$execute$0(ExecutionTask.java:31)
+	at net.jqwik.engine.execution.lifecycle.CurrentTestDescriptor.runWithDescriptor(CurrentTestDescriptor.java:18)
+	at net.jqwik.engine.execution.pipeline.ExecutionTask$1.execute(ExecutionTask.java:31)
+	at net.jqwik.engine.execution.pipeline.ExecutionPipeline.runToTermination(ExecutionPipeline.java:82)
+	at net.jqwik.engine.execution.JqwikExecutor.execute(JqwikExecutor.java:46)
+	at net.jqwik.engine.JqwikTestEngine.executeTests(JqwikTestEngine.java:70)
+	at net.jqwik.engine.JqwikTestEngine.execute(JqwikTestEngine.java:53)
+
+[ERROR] Seed3999Properties.CT-PBT-03 seed=3999 -- Time elapsed: 0.004 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: CT-PBT-03: n=4, saída=IIII ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at RomanPropertyChecks.p03(RomanPropertyChecks.java:53)
+	at Seed3999Properties.p03(Seed3999Properties.java:28)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$1(CheckedPropertyFactory.java:84)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$2(CheckedPropertyFactory.java:91)
+	at net.jqwik.engine.properties.CheckedFunction.execute(CheckedFunction.java:17)
+	at net.jqwik.api.lifecycle.AroundTryHook.lambda$static$0(AroundTryHook.java:57)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.TryLifecycleMethodsHook.aroundTry(TryLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.BeforeTryMembersHook.aroundTry(BeforeTryMembersHook.java:69)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createTryExecutor$0(CheckedPropertyFactory.java:60)
+	at net.jqwik.engine.execution.lifecycle.AroundTryLifecycle.execute(AroundTryLifecycle.java:23)
+	at net.jqwik.engine.properties.GenericProperty.testPredicate(GenericProperty.java:166)
+	at net.jqwik.engine.properties.GenericProperty.check(GenericProperty.java:68)
+	at net.jqwik.engine.execution.CheckedProperty.check(CheckedProperty.java:67)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.executeProperty(PropertyMethodExecutor.java:90)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.executeMethod(PropertyMethodExecutor.java:69)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.lambda$execute$0(PropertyMethodExecutor.java:49)
+	at net.jqwik.api.lifecycle.AroundPropertyHook.lambda$static$0(AroundPropertyHook.java:46)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.api.lifecycle.PropertyExecutor.executeAndFinally(PropertyExecutor.java:39)
+	at net.jqwik.engine.hooks.lifecycle.PropertyLifecycleMethodsHook.aroundProperty(PropertyLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.engine.hooks.statistics.StatisticsHook.aroundProperty(StatisticsHook.java:37)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.engine.hooks.lifecycle.AutoCloseableHook.aroundProperty(AutoCloseableHook.java:13)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.execute(PropertyMethodExecutor.java:47)
+	at net.jqwik.engine.execution.PropertyTaskCreator.executeTestMethod(PropertyTaskCreator.java:166)
+	at net.jqwik.engine.execution.PropertyTaskCreator.lambda$createTask$1(PropertyTaskCreator.java:51)
+	at net.jqwik.engine.execution.lifecycle.CurrentDomainContext.runWithContext(CurrentDomainContext.java:30)
+	at net.jqwik.engine.execution.PropertyTaskCreator.lambda$createTask$2(PropertyTaskCreator.java:50)
+	at net.jqwik.engine.execution.pipeline.ExecutionTask$1.lambda$execute$0(ExecutionTask.java:31)
+	at net.jqwik.engine.execution.lifecycle.CurrentTestDescriptor.runWithDescriptor(CurrentTestDescriptor.java:18)
+	at net.jqwik.engine.execution.pipeline.ExecutionTask$1.execute(ExecutionTask.java:31)
+	at net.jqwik.engine.execution.pipeline.ExecutionPipeline.runToTermination(ExecutionPipeline.java:82)
+	at net.jqwik.engine.execution.JqwikExecutor.execute(JqwikExecutor.java:46)
+	at net.jqwik.engine.JqwikTestEngine.executeTests(JqwikTestEngine.java:70)
+	at net.jqwik.engine.JqwikTestEngine.execute(JqwikTestEngine.java:53)
+
+[ERROR] Seed3999Properties.CT-PBT-05 seed=3999 -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: CT-PBT-05: n=4 ==> expected: <IV> but was: <IIII>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at RomanPropertyChecks.p05(RomanPropertyChecks.java:64)
+	at Seed3999Properties.p05(Seed3999Properties.java:42)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$1(CheckedPropertyFactory.java:84)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$2(CheckedPropertyFactory.java:91)
+	at net.jqwik.engine.properties.CheckedFunction.execute(CheckedFunction.java:17)
+	at net.jqwik.api.lifecycle.AroundTryHook.lambda$static$0(AroundTryHook.java:57)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.TryLifecycleMethodsHook.aroundTry(TryLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.BeforeTryMembersHook.aroundTry(BeforeTryMembersHook.java:69)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createTryExecutor$0(CheckedPropertyFactory.java:60)
+	at net.jqwik.engine.execution.lifecycle.AroundTryLifecycle.execute(AroundTryLifecycle.java:23)
+	at net.jqwik.engine.properties.GenericProperty.testPredicate(GenericProperty.java:166)
+	at net.jqwik.engine.properties.GenericProperty.check(GenericProperty.java:68)
+	at net.jqwik.engine.execution.CheckedProperty.check(CheckedProperty.java:67)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.executeProperty(PropertyMethodExecutor.java:90)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.executeMethod(PropertyMethodExecutor.java:69)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.lambda$execute$0(PropertyMethodExecutor.java:49)
+	at net.jqwik.api.lifecycle.AroundPropertyHook.lambda$static$0(AroundPropertyHook.java:46)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.api.lifecycle.PropertyExecutor.executeAndFinally(PropertyExecutor.java:39)
+	at net.jqwik.engine.hooks.lifecycle.PropertyLifecycleMethodsHook.aroundProperty(PropertyLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.engine.hooks.statistics.StatisticsHook.aroundProperty(StatisticsHook.java:37)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$0(HookSupport.java:26)
+	at net.jqwik.engine.hooks.lifecycle.AutoCloseableHook.aroundProperty(AutoCloseableHook.java:13)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$1(HookSupport.java:31)
+	at net.jqwik.engine.execution.PropertyMethodExecutor.execute(PropertyMethodExecutor.java:47)
+	at net.jqwik.engine.execution.PropertyTaskCreator.executeTestMethod(PropertyTaskCreator.java:166)
+	at net.jqwik.engine.execution.PropertyTaskCreator.lambda$createTask$1(PropertyTaskCreator.java:51)
+	at net.jqwik.engine.execution.lifecycle.CurrentDomainContext.runWithContext(CurrentDomainContext.java:30)
+	at net.jqwik.engine.execution.PropertyTaskCreator.lambda$createTask$2(PropertyTaskCreator.java:50)
+	at net.jqwik.engine.execution.pipeline.ExecutionTask$1.lambda$execute$0(ExecutionTask.java:31)
+	at net.jqwik.engine.execution.lifecycle.CurrentTestDescriptor.runWithDescriptor(CurrentTestDescriptor.java:18)
+	at net.jqwik.engine.execution.pipeline.ExecutionTask$1.execute(ExecutionTask.java:31)
+	at net.jqwik.engine.execution.pipeline.ExecutionPipeline.runToTermination(ExecutionPipeline.java:82)
+	at net.jqwik.engine.execution.JqwikExecutor.execute(JqwikExecutor.java:46)
+	at net.jqwik.engine.JqwikTestEngine.executeTests(JqwikTestEngine.java:70)
+	at net.jqwik.engine.JqwikTestEngine.execute(JqwikTestEngine.java:53)
+
+[INFO] Running Seed42Properties
+timestamp = 2026-10-07T21:48:29.127660600, [Seed42Properties:CT-PBT-01 seed=42] (6) subtracao = 
+    CE-S0 (3) : 50 %
+    CE-S1 (2) : 33 %
+    CE-S2 (1) : 17 %
+
+timestamp = 2026-10-07T21:48:29.127660600, [Seed42Properties:CT-PBT-01 seed=42] (6) magnitude = 
+    CE-M1 (4) : 67 %
+    CE-M3 (1) : 17 %
+    CE-M4 (1) : 17 %
+
+timestamp = 2026-10-07T21:48:29.128662400, [Seed42Properties:CT-PBT-01 seed=42] (6) centro-ou-extremo = 
+    outros (4) : 67 %
+    1      (1) : 17 %
+    4      (1) : 17 %
+
+timestamp = 2026-10-07T21:48:29.128662400, Seed42Properties:CT-PBT-01 seed=42 = 
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-01: saída intermediária inválida para n=4: IIII ==> expected: <true> but was: <false>
+
+                              |--------------------jqwik--------------------
+tries = 2                     | # of calls to property
+checks = 2                    | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 42                     | random seed to reproduce generated values
+
+Shrunk Sample (1 steps)
+-----------------------
+  n: 4
+
+Original Sample
+---------------
+  n: 2504
+
+  Original Error
+  --------------
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-01: saída intermediária inválida para n=2504: MMDIIII ==> expected: <true> but was: <false>
+
+
+timestamp = 2026-10-07T21:48:29.132660900, [Seed42Properties:CT-PBT-02 seed=42] (6) subtracao = 
+    CE-S0 (3) : 50 %
+    CE-S1 (2) : 33 %
+    CE-S2 (1) : 17 %
+
+timestamp = 2026-10-07T21:48:29.133659100, [Seed42Properties:CT-PBT-02 seed=42] (6) magnitude = 
+    CE-M1 (4) : 67 %
+    CE-M3 (1) : 17 %
+    CE-M4 (1) : 17 %
+
+timestamp = 2026-10-07T21:48:29.133659100, [Seed42Properties:CT-PBT-02 seed=42] (6) centro-ou-extremo = 
+    outros (4) : 67 %
+    1      (1) : 17 %
+    4      (1) : 17 %
+
+timestamp = 2026-10-07T21:48:29.133659100, Seed42Properties:CT-PBT-02 seed=42 = 
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <IIII>
+
+                              |--------------------jqwik--------------------
+tries = 2                     | # of calls to property
+checks = 2                    | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 42                     | random seed to reproduce generated values
+
+Shrunk Sample (1 steps)
+-----------------------
+  pair: Pair[number=4, roman=IV]
+
+Original Sample
+---------------
+  pair: Pair[number=2504, roman=MMDIV]
+
+  Original Error
+  --------------
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-02: Pair[number=2504, roman=MMDIV] ==> expected: <MMDIV> but was: <MMDIIII>
+
+
+timestamp = 2026-10-07T21:48:29.135658600, [Seed42Properties:CT-PBT-03 seed=42] (6) subtracao = 
+    CE-S0 (3) : 50 %
+    CE-S1 (2) : 33 %
+    CE-S2 (1) : 17 %
+
+timestamp = 2026-10-07T21:48:29.136659900, [Seed42Properties:CT-PBT-03 seed=42] (6) magnitude = 
+    CE-M1 (4) : 67 %
+    CE-M3 (1) : 17 %
+    CE-M4 (1) : 17 %
+
+timestamp = 2026-10-07T21:48:29.136659900, [Seed42Properties:CT-PBT-03 seed=42] (6) centro-ou-extremo = 
+    outros (4) : 67 %
+    1      (1) : 17 %
+    4      (1) : 17 %
+
+timestamp = 2026-10-07T21:48:29.136659900, Seed42Properties:CT-PBT-03 seed=42 = 
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-03: n=4, saída=IIII ==> expected: <true> but was: <false>
+
+                              |--------------------jqwik--------------------
+tries = 2                     | # of calls to property
+checks = 2                    | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 42                     | random seed to reproduce generated values
+
+Shrunk Sample (1 steps)
+-----------------------
+  n: 4
+
+Original Sample
+---------------
+  n: 2504
+
+  Original Error
+  --------------
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-03: n=2504, saída=MMDIIII ==> expected: <true> but was: <false>
+
+
+timestamp = 2026-10-07T21:48:29.149658300, [Seed42Properties:CT-PBT-04 seed=42] (1000) subtracao = 
+    CE-S0 (468) : 47 %
+    CE-S1 (410) : 41 %
+    CE-S2 (122) : 12 %
+
+timestamp = 2026-10-07T21:48:29.149658300, [Seed42Properties:CT-PBT-04 seed=42] (1000) magnitude = 
+    CE-M4 (622) : 62 %
+    CE-M3 (248) : 25 %
+    CE-M2 ( 73) :  7 %
+    CE-M1 ( 57) :  6 %
+
+timestamp = 2026-10-07T21:48:29.149658300, [Seed42Properties:CT-PBT-04 seed=42] (1000) centro-ou-extremo = 
+    outros (954) : 95.40 %
+    9      (  8) :  0.80 %
+    90     (  7) :  0.70 %
+    40     (  6) :  0.60 %
+    3999   (  6) :  0.60 %
+    400    (  5) :  0.50 %
+    4      (  5) :  0.50 %
+    1      (  5) :  0.50 %
+    900    (  4) :  0.40 %
+
+timestamp = 2026-10-07T21:48:29.149658300, Seed42Properties:CT-PBT-04 seed=42 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 42                     | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:48:29.151666200, [Seed42Properties:CT-PBT-05 seed=42] (6) subtracao = 
+    CE-S0 (3) : 50 %
+    CE-S1 (2) : 33 %
+    CE-S2 (1) : 17 %
+
+timestamp = 2026-10-07T21:48:29.151666200, [Seed42Properties:CT-PBT-05 seed=42] (6) magnitude = 
+    CE-M1 (4) : 67 %
+    CE-M3 (1) : 17 %
+    CE-M4 (1) : 17 %
+
+timestamp = 2026-10-07T21:48:29.151666200, [Seed42Properties:CT-PBT-05 seed=42] (6) centro-ou-extremo = 
+    outros (4) : 67 %
+    1      (1) : 17 %
+    4      (1) : 17 %
+
+timestamp = 2026-10-07T21:48:29.152666, Seed42Properties:CT-PBT-05 seed=42 = 
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-05: n=4 ==> expected: <IV> but was: <IIII>
+
+                              |--------------------jqwik--------------------
+tries = 2                     | # of calls to property
+checks = 2                    | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 42                     | random seed to reproduce generated values
+
+Shrunk Sample (1 steps)
+-----------------------
+  n: 4
+
+Original Sample
+---------------
+  n: 2504
+
+  Original Error
+  --------------
+  org.opentest4j.AssertionFailedError:
+    CT-PBT-05: n=2504 ==> expected: <MMDIV> but was: <MMDIIII>
+
+
+timestamp = 2026-10-07T21:48:29.163709100, [Seed42Properties:CT-PBT-06 seed=42] (1000) subtracao = 
+    CE-S0 (468) : 47 %
+    CE-S1 (410) : 41 %
+    CE-S2 (122) : 12 %
+
+timestamp = 2026-10-07T21:48:29.163709100, [Seed42Properties:CT-PBT-06 seed=42] (1000) magnitude = 
+    CE-M4 (622) : 62 %
+    CE-M3 (248) : 25 %
+    CE-M2 ( 73) :  7 %
+    CE-M1 ( 57) :  6 %
+
+timestamp = 2026-10-07T21:48:29.163709100, [Seed42Properties:CT-PBT-06 seed=42] (1000) centro-ou-extremo = 
+    outros (954) : 95.40 %
+    9      (  8) :  0.80 %
+    90     (  7) :  0.70 %
+    40     (  6) :  0.60 %
+    3999   (  6) :  0.60 %
+    400    (  5) :  0.50 %
+    4      (  5) :  0.50 %
+    1      (  5) :  0.50 %
+    900    (  4) :  0.40 %
+
+timestamp = 2026-10-07T21:48:29.163709100, Seed42Properties:CT-PBT-06 seed=42 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 42                     | random seed to reproduce generated values
+
+
+[ERROR] Tests run: 6, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.040 s <<< FAILURE! -- in Seed42Properties
+[ERROR] Seed42Properties.CT-PBT-01 seed=42 -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: CT-PBT-01: saída intermediária inválida para n=4: IIII ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at RomanPropertyChecks.p01(RomanPropertyChecks.java:38)
+	at Seed42Properties.p01(Seed42Properties.java:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$1(CheckedPropertyFactory.java:84)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$2(CheckedPropertyFactory.java:91)
+	at net.jqwik.engine.properties.CheckedFunction.execute(CheckedFunction.java:17)
+	at net.jqwik.api.lifecycle.AroundTryHook.lambda$static$0(AroundTryHook.java:57)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.TryLifecycleMethodsHook.aroundTry(TryLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.BeforeTryMembersHook.aroundTry(BeforeTryMembersHook.java:69)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createTryExecutor$0(CheckedPropertyFactory.java:60)
+	at net.jqwik.engine.execution.lifecycle.AroundTryLifecycle.execute(AroundTryLifecycle.java:23)
+	at net.jqwik.engine.properties.GenericProperty.lambda$createFalsifier$1(GenericProperty.java:229)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrink$0(PropertyShrinker.java:55)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrinkAsLongAsSampleImproves$6(PropertyShrinker.java:122)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.lambda$falsify$5(AbstractSampleShrinker.java:91)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.falsify(AbstractSampleShrinker.java:91)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.lambda$shrink$2(AbstractSampleShrinker.java:53)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:541)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.tryAdvance(StreamSpliterators.java:300)
+	at net.jqwik.engine.support.StreamConcatenation$ConcatSpliterator.tryAdvance(StreamConcatenation.java:304)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findAny(ReferencePipeline.java:652)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.shrink(AbstractSampleShrinker.java:63)
+	at net.jqwik.engine.properties.shrinking.OneAfterTheOtherParameterShrinker.shrinkSingleParameter(OneAfterTheOtherParameterShrinker.java:45)
+	at net.jqwik.engine.properties.shrinking.OneAfterTheOtherParameterShrinker.shrink(OneAfterTheOtherParameterShrinker.java:27)
+	at net.jqwik.engine.properties.shrinking.ShrinkingAlgorithm.shrinkOneParameterAfterTheOther(ShrinkingAlgorithm.java:52)
+	at net.jqwik.engine.properties.shrinking.ShrinkingAlgorithm.shrink(ShrinkingAlgorithm.java:32)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.shrinkAsLongAsSampleImproves(PropertyShrinker.java:135)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrink$3(PropertyShrinker.java:87)
+	at net.jqwik.engine.execution.lifecycle.CurrentTestDescriptor.runWithDescriptor(CurrentTestDescriptor.java:18)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$withTimeout$4(PropertyShrinker.java:103)
+	at net.jqwik.engine.execution.lifecycle.CurrentDomainContext.runWithContext(CurrentDomainContext.java:30)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$withTimeout$5(PropertyShrinker.java:101)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+[ERROR] Seed42Properties.CT-PBT-02 seed=42 -- Time elapsed: 0.004 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <IIII>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at RomanPropertyChecks.p02(RomanPropertyChecks.java:47)
+	at Seed42Properties.p02(Seed42Properties.java:21)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$1(CheckedPropertyFactory.java:84)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$2(CheckedPropertyFactory.java:91)
+	at net.jqwik.engine.properties.CheckedFunction.execute(CheckedFunction.java:17)
+	at net.jqwik.api.lifecycle.AroundTryHook.lambda$static$0(AroundTryHook.java:57)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.TryLifecycleMethodsHook.aroundTry(TryLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.BeforeTryMembersHook.aroundTry(BeforeTryMembersHook.java:69)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createTryExecutor$0(CheckedPropertyFactory.java:60)
+	at net.jqwik.engine.execution.lifecycle.AroundTryLifecycle.execute(AroundTryLifecycle.java:23)
+	at net.jqwik.engine.properties.GenericProperty.lambda$createFalsifier$1(GenericProperty.java:229)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrink$0(PropertyShrinker.java:55)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrinkAsLongAsSampleImproves$6(PropertyShrinker.java:122)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.lambda$falsify$5(AbstractSampleShrinker.java:91)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.falsify(AbstractSampleShrinker.java:91)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.lambda$shrink$2(AbstractSampleShrinker.java:53)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:541)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.tryAdvance(StreamSpliterators.java:300)
+	at net.jqwik.engine.support.StreamConcatenation$ConcatSpliterator.tryAdvance(StreamConcatenation.java:304)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findAny(ReferencePipeline.java:652)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.shrink(AbstractSampleShrinker.java:63)
+	at net.jqwik.engine.properties.shrinking.OneAfterTheOtherParameterShrinker.shrinkSingleParameter(OneAfterTheOtherParameterShrinker.java:45)
+	at net.jqwik.engine.properties.shrinking.OneAfterTheOtherParameterShrinker.shrink(OneAfterTheOtherParameterShrinker.java:27)
+	at net.jqwik.engine.properties.shrinking.ShrinkingAlgorithm.shrinkOneParameterAfterTheOther(ShrinkingAlgorithm.java:52)
+	at net.jqwik.engine.properties.shrinking.ShrinkingAlgorithm.shrink(ShrinkingAlgorithm.java:32)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.shrinkAsLongAsSampleImproves(PropertyShrinker.java:135)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrink$3(PropertyShrinker.java:87)
+	at net.jqwik.engine.execution.lifecycle.CurrentTestDescriptor.runWithDescriptor(CurrentTestDescriptor.java:18)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$withTimeout$4(PropertyShrinker.java:103)
+	at net.jqwik.engine.execution.lifecycle.CurrentDomainContext.runWithContext(CurrentDomainContext.java:30)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$withTimeout$5(PropertyShrinker.java:101)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+[ERROR] Seed42Properties.CT-PBT-03 seed=42 -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: CT-PBT-03: n=4, saída=IIII ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at RomanPropertyChecks.p03(RomanPropertyChecks.java:53)
+	at Seed42Properties.p03(Seed42Properties.java:28)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$1(CheckedPropertyFactory.java:84)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$2(CheckedPropertyFactory.java:91)
+	at net.jqwik.engine.properties.CheckedFunction.execute(CheckedFunction.java:17)
+	at net.jqwik.api.lifecycle.AroundTryHook.lambda$static$0(AroundTryHook.java:57)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.TryLifecycleMethodsHook.aroundTry(TryLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.BeforeTryMembersHook.aroundTry(BeforeTryMembersHook.java:69)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createTryExecutor$0(CheckedPropertyFactory.java:60)
+	at net.jqwik.engine.execution.lifecycle.AroundTryLifecycle.execute(AroundTryLifecycle.java:23)
+	at net.jqwik.engine.properties.GenericProperty.lambda$createFalsifier$1(GenericProperty.java:229)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrink$0(PropertyShrinker.java:55)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrinkAsLongAsSampleImproves$6(PropertyShrinker.java:122)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.lambda$falsify$5(AbstractSampleShrinker.java:91)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.falsify(AbstractSampleShrinker.java:91)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.lambda$shrink$2(AbstractSampleShrinker.java:53)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:541)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.tryAdvance(StreamSpliterators.java:300)
+	at net.jqwik.engine.support.StreamConcatenation$ConcatSpliterator.tryAdvance(StreamConcatenation.java:304)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findAny(ReferencePipeline.java:652)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.shrink(AbstractSampleShrinker.java:63)
+	at net.jqwik.engine.properties.shrinking.OneAfterTheOtherParameterShrinker.shrinkSingleParameter(OneAfterTheOtherParameterShrinker.java:45)
+	at net.jqwik.engine.properties.shrinking.OneAfterTheOtherParameterShrinker.shrink(OneAfterTheOtherParameterShrinker.java:27)
+	at net.jqwik.engine.properties.shrinking.ShrinkingAlgorithm.shrinkOneParameterAfterTheOther(ShrinkingAlgorithm.java:52)
+	at net.jqwik.engine.properties.shrinking.ShrinkingAlgorithm.shrink(ShrinkingAlgorithm.java:32)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.shrinkAsLongAsSampleImproves(PropertyShrinker.java:135)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrink$3(PropertyShrinker.java:87)
+	at net.jqwik.engine.execution.lifecycle.CurrentTestDescriptor.runWithDescriptor(CurrentTestDescriptor.java:18)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$withTimeout$4(PropertyShrinker.java:103)
+	at net.jqwik.engine.execution.lifecycle.CurrentDomainContext.runWithContext(CurrentDomainContext.java:30)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$withTimeout$5(PropertyShrinker.java:101)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+[ERROR] Seed42Properties.CT-PBT-05 seed=42 -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: CT-PBT-05: n=4 ==> expected: <IV> but was: <IIII>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at RomanPropertyChecks.p05(RomanPropertyChecks.java:64)
+	at Seed42Properties.p05(Seed42Properties.java:42)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$1(CheckedPropertyFactory.java:84)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createRawFunction$2(CheckedPropertyFactory.java:91)
+	at net.jqwik.engine.properties.CheckedFunction.execute(CheckedFunction.java:17)
+	at net.jqwik.api.lifecycle.AroundTryHook.lambda$static$0(AroundTryHook.java:57)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.TryLifecycleMethodsHook.aroundTry(TryLifecycleMethodsHook.java:56)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$2(HookSupport.java:48)
+	at net.jqwik.engine.hooks.lifecycle.BeforeTryMembersHook.aroundTry(BeforeTryMembersHook.java:69)
+	at net.jqwik.engine.execution.lifecycle.HookSupport.lambda$wrap$3(HookSupport.java:53)
+	at net.jqwik.engine.execution.CheckedPropertyFactory.lambda$createTryExecutor$0(CheckedPropertyFactory.java:60)
+	at net.jqwik.engine.execution.lifecycle.AroundTryLifecycle.execute(AroundTryLifecycle.java:23)
+	at net.jqwik.engine.properties.GenericProperty.lambda$createFalsifier$1(GenericProperty.java:229)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrink$0(PropertyShrinker.java:55)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrinkAsLongAsSampleImproves$6(PropertyShrinker.java:122)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.lambda$falsify$5(AbstractSampleShrinker.java:91)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1220)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.falsify(AbstractSampleShrinker.java:91)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.lambda$shrink$2(AbstractSampleShrinker.java:53)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$15$1.accept(ReferencePipeline.java:541)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.tryAdvance(StreamSpliterators.java:300)
+	at net.jqwik.engine.support.StreamConcatenation$ConcatSpliterator.tryAdvance(StreamConcatenation.java:304)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findAny(ReferencePipeline.java:652)
+	at net.jqwik.engine.properties.shrinking.AbstractSampleShrinker.shrink(AbstractSampleShrinker.java:63)
+	at net.jqwik.engine.properties.shrinking.OneAfterTheOtherParameterShrinker.shrinkSingleParameter(OneAfterTheOtherParameterShrinker.java:45)
+	at net.jqwik.engine.properties.shrinking.OneAfterTheOtherParameterShrinker.shrink(OneAfterTheOtherParameterShrinker.java:27)
+	at net.jqwik.engine.properties.shrinking.ShrinkingAlgorithm.shrinkOneParameterAfterTheOther(ShrinkingAlgorithm.java:52)
+	at net.jqwik.engine.properties.shrinking.ShrinkingAlgorithm.shrink(ShrinkingAlgorithm.java:32)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.shrinkAsLongAsSampleImproves(PropertyShrinker.java:135)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$shrink$3(PropertyShrinker.java:87)
+	at net.jqwik.engine.execution.lifecycle.CurrentTestDescriptor.runWithDescriptor(CurrentTestDescriptor.java:18)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$withTimeout$4(PropertyShrinker.java:103)
+	at net.jqwik.engine.execution.lifecycle.CurrentDomainContext.runWithContext(CurrentDomainContext.java:30)
+	at net.jqwik.engine.properties.shrinking.PropertyShrinker.lambda$withTimeout$5(PropertyShrinker.java:101)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   RomanExamplesTest.encodesKnownPairs:12 CT-EQ-10-E ==> expected: <CMXLIV> but was: <CMXLIIII>
+[ERROR]   RomanExamplesTest.encodesKnownPairs:12 CT-LIM-06-E ==> expected: <IV> but was: <IIII>
+[ERROR]   RomanExamplesTest.interleavedCallsDoNotChangeResults:24 expected: <IV> but was: <IIII>
+[ERROR]   Seed104729Properties.p01:14 CT-PBT-01: saída intermediária inválida para n=4: IIII ==> expected: <true> but was: <false>
+[ERROR]   Seed104729Properties.p02:21 CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <IIII>
+[ERROR]   Seed104729Properties.p03:28 CT-PBT-03: n=4, saída=IIII ==> expected: <true> but was: <false>
+[ERROR]   Seed104729Properties.p05:42 CT-PBT-05: n=4 ==> expected: <IV> but was: <IIII>
+[ERROR]   Seed2024Properties.p01:14 CT-PBT-01: saída intermediária inválida para n=4: IIII ==> expected: <true> but was: <false>
+[ERROR]   Seed2024Properties.p02:21 CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <IIII>
+[ERROR]   Seed2024Properties.p03:28 CT-PBT-03: n=4, saída=IIII ==> expected: <true> but was: <false>
+[ERROR]   Seed2024Properties.p05:42 CT-PBT-05: n=4 ==> expected: <IV> but was: <IIII>
+[ERROR]   Seed2026Properties.p01:14 CT-PBT-01: saída intermediária inválida para n=4: IIII ==> expected: <true> but was: <false>
+[ERROR]   Seed2026Properties.p02:21 CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <IIII>
+[ERROR]   Seed2026Properties.p03:28 CT-PBT-03: n=4, saída=IIII ==> expected: <true> but was: <false>
+[ERROR]   Seed2026Properties.p05:42 CT-PBT-05: n=4 ==> expected: <IV> but was: <IIII>
+[ERROR]   Seed3999Properties.p01:14 CT-PBT-01: saída intermediária inválida para n=4: IIII ==> expected: <true> but was: <false>
+[ERROR]   Seed3999Properties.p02:21 CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <IIII>
+[ERROR]   Seed3999Properties.p03:28 CT-PBT-03: n=4, saída=IIII ==> expected: <true> but was: <false>
+[ERROR]   Seed3999Properties.p05:42 CT-PBT-05: n=4 ==> expected: <IV> but was: <IIII>
+[ERROR]   Seed42Properties.p01:14 CT-PBT-01: saída intermediária inválida para n=4: IIII ==> expected: <true> but was: <false>
+[ERROR]   Seed42Properties.p02:21 CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <IIII>
+[ERROR]   Seed42Properties.p03:28 CT-PBT-03: n=4, saída=IIII ==> expected: <true> but was: <false>
+[ERROR]   Seed42Properties.p05:42 CT-PBT-05: n=4 ==> expected: <IV> but was: <IIII>
+[INFO] 
+[ERROR] Tests run: 99, Failures: 23, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.911 s
+[INFO] Finished at: 2026-10-07T21:48:29-03:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.5.3:test (default-test) on project roman-numerals-testing: There are test failures.
+[ERROR] 
+[ERROR] See C:\Users\suzan\Development\Verificação e Validação de Software\veri-val-t1\resultados\etapa5\DF-01\combined\reports for the individual test results.
+[ERROR] See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

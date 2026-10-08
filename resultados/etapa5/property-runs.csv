@@ -1,0 +1,271 @@
+variant,group,property,seed,status,tries,checks,discarded,original_sample,final_sample,shrink_steps
+DF-01,properties,CT-PBT-01,104729,failure,10,10,0,,n: 4,
+DF-01,properties,CT-PBT-02,104729,failure,10,10,0,,"pair: Pair[number=4, roman=IV]",
+DF-01,properties,CT-PBT-03,104729,failure,10,10,0,,n: 4,
+DF-01,properties,CT-PBT-04,104729,passed,1000,1000,0,,,
+DF-01,properties,CT-PBT-05,104729,failure,10,10,0,,n: 4,
+DF-01,properties,CT-PBT-06,104729,passed,1000,1000,0,,,
+DF-01,properties,CT-PBT-01,2024,failure,2,2,0,n: 1094,n: 4,1
+DF-01,properties,CT-PBT-02,2024,failure,2,2,0,"pair: Pair[number=1094, roman=MXCIV]","pair: Pair[number=4, roman=IV]",1
+DF-01,properties,CT-PBT-03,2024,failure,2,2,0,n: 1094,n: 4,1
+DF-01,properties,CT-PBT-04,2024,passed,1000,1000,0,,,
+DF-01,properties,CT-PBT-05,2024,failure,2,2,0,n: 1094,n: 4,1
+DF-01,properties,CT-PBT-06,2024,passed,1000,1000,0,,,
+DF-01,properties,CT-PBT-01,2026,failure,13,13,0,n: 1174,n: 4,1
+DF-01,properties,CT-PBT-02,2026,failure,13,13,0,"pair: Pair[number=1174, roman=MCLXXIV]","pair: Pair[number=4, roman=IV]",1
+DF-01,properties,CT-PBT-03,2026,failure,13,13,0,n: 1174,n: 4,1
+DF-01,properties,CT-PBT-04,2026,passed,1000,1000,0,,,
+DF-01,properties,CT-PBT-05,2026,failure,13,13,0,n: 1174,n: 4,1
+DF-01,properties,CT-PBT-06,2026,passed,1000,1000,0,,,
+DF-01,properties,CT-PBT-01,3999,failure,26,26,0,,n: 4,
+DF-01,properties,CT-PBT-02,3999,failure,26,26,0,,"pair: Pair[number=4, roman=IV]",
+DF-01,properties,CT-PBT-03,3999,failure,26,26,0,,n: 4,
+DF-01,properties,CT-PBT-04,3999,passed,1000,1000,0,,,
+DF-01,properties,CT-PBT-05,3999,failure,26,26,0,,n: 4,
+DF-01,properties,CT-PBT-06,3999,passed,1000,1000,0,,,
+DF-01,properties,CT-PBT-01,42,failure,2,2,0,n: 2504,n: 4,1
+DF-01,properties,CT-PBT-02,42,failure,2,2,0,"pair: Pair[number=2504, roman=MMDIV]","pair: Pair[number=4, roman=IV]",1
+DF-01,properties,CT-PBT-03,42,failure,2,2,0,n: 2504,n: 4,1
+DF-01,properties,CT-PBT-04,42,passed,1000,1000,0,,,
+DF-01,properties,CT-PBT-05,42,failure,2,2,0,n: 2504,n: 4,1
+DF-01,properties,CT-PBT-06,42,passed,1000,1000,0,,,
+DF-01,combined,CT-PBT-01,104729,failure,10,10,0,,n: 4,
+DF-01,combined,CT-PBT-02,104729,failure,10,10,0,,"pair: Pair[number=4, roman=IV]",
+DF-01,combined,CT-PBT-03,104729,failure,10,10,0,,n: 4,
+DF-01,combined,CT-PBT-04,104729,passed,1000,1000,0,,,
+DF-01,combined,CT-PBT-05,104729,failure,10,10,0,,n: 4,
+DF-01,combined,CT-PBT-06,104729,passed,1000,1000,0,,,
+DF-01,combined,CT-PBT-01,2024,failure,2,2,0,n: 1094,n: 4,1
+DF-01,combined,CT-PBT-02,2024,failure,2,2,0,"pair: Pair[number=1094, roman=MXCIV]","pair: Pair[number=4, roman=IV]",1
+DF-01,combined,CT-PBT-03,2024,failure,2,2,0,n: 1094,n: 4,1
+DF-01,combined,CT-PBT-04,2024,passed,1000,1000,0,,,
+DF-01,combined,CT-PBT-05,2024,failure,2,2,0,n: 1094,n: 4,1
+DF-01,combined,CT-PBT-06,2024,passed,1000,1000,0,,,
+DF-01,combined,CT-PBT-01,2026,failure,13,13,0,n: 1174,n: 4,1
+DF-01,combined,CT-PBT-02,2026,failure,13,13,0,"pair: Pair[number=1174, roman=MCLXXIV]","pair: Pair[number=4, roman=IV]",1
+DF-01,combined,CT-PBT-03,2026,failure,13,13,0,n: 1174,n: 4,1
+DF-01,combined,CT-PBT-04,2026,passed,1000,1000,0,,,
+DF-01,combined,CT-PBT-05,2026,failure,13,13,0,n: 1174,n: 4,1
+DF-01,combined,CT-PBT-06,2026,passed,1000,1000,0,,,
+DF-01,combined,CT-PBT-01,3999,failure,26,26,0,,n: 4,
+DF-01,combined,CT-PBT-02,3999,failure,26,26,0,,"pair: Pair[number=4, roman=IV]",
+DF-01,combined,CT-PBT-03,3999,failure,26,26,0,,n: 4,
+DF-01,combined,CT-PBT-04,3999,passed,1000,1000,0,,,
+DF-01,combined,CT-PBT-05,3999,failure,26,26,0,,n: 4,
+DF-01,combined,CT-PBT-06,3999,passed,1000,1000,0,,,
+DF-01,combined,CT-PBT-01,42,failure,2,2,0,n: 2504,n: 4,1
+DF-01,combined,CT-PBT-02,42,failure,2,2,0,"pair: Pair[number=2504, roman=MMDIV]","pair: Pair[number=4, roman=IV]",1
+DF-01,combined,CT-PBT-03,42,failure,2,2,0,n: 2504,n: 4,1
+DF-01,combined,CT-PBT-04,42,passed,1000,1000,0,,,
+DF-01,combined,CT-PBT-05,42,failure,2,2,0,n: 2504,n: 4,1
+DF-01,combined,CT-PBT-06,42,passed,1000,1000,0,,,
+DF-02,properties,CT-PBT-01,104729,failure,3,3,0,n: 900,n: 4,3
+DF-02,properties,CT-PBT-02,104729,failure,3,3,0,"pair: Pair[number=900, roman=CM]","pair: Pair[number=4, roman=IV]",3
+DF-02,properties,CT-PBT-03,104729,passed,1000,1000,0,,,
+DF-02,properties,CT-PBT-04,104729,failure,30,30,0,"pair: Pair[number=3934, roman=MMMCMXXXIV]","pair: Pair[number=3900, roman=MMMCM]",1
+DF-02,properties,CT-PBT-05,104729,passed,1000,1000,0,,,
+DF-02,properties,CT-PBT-06,104729,failure,3,3,0,"pair: Pair[number=900, roman=CM]","pair: Pair[number=4, roman=IV]",3
+DF-02,properties,CT-PBT-01,2024,failure,1,1,0,n: 3999,n: 4,3
+DF-02,properties,CT-PBT-02,2024,failure,1,1,0,"pair: Pair[number=3999, roman=MMMCMXCIX]","pair: Pair[number=4, roman=IV]",3
+DF-02,properties,CT-PBT-03,2024,passed,1000,1000,0,,,
+DF-02,properties,CT-PBT-04,2024,failure,1,1,0,"pair: Pair[number=3999, roman=MMMCMXCIX]","pair: Pair[number=3900, roman=MMMCM]",5
+DF-02,properties,CT-PBT-05,2024,passed,1000,1000,0,,,
+DF-02,properties,CT-PBT-06,2024,failure,1,1,0,"pair: Pair[number=3999, roman=MMMCMXCIX]","pair: Pair[number=4, roman=IV]",3
+DF-02,properties,CT-PBT-01,2026,failure,1,1,0,n: 400,n: 4,3
+DF-02,properties,CT-PBT-02,2026,failure,1,1,0,"pair: Pair[number=400, roman=CD]","pair: Pair[number=4, roman=IV]",3
+DF-02,properties,CT-PBT-03,2026,passed,1000,1000,0,,,
+DF-02,properties,CT-PBT-04,2026,failure,39,39,0,"pair: Pair[number=3999, roman=MMMCMXCIX]","pair: Pair[number=3900, roman=MMMCM]",5
+DF-02,properties,CT-PBT-05,2026,passed,1000,1000,0,,,
+DF-02,properties,CT-PBT-06,2026,failure,1,1,0,"pair: Pair[number=400, roman=CD]","pair: Pair[number=4, roman=IV]",3
+DF-02,properties,CT-PBT-01,3999,failure,1,1,0,n: 19,n: 4,1
+DF-02,properties,CT-PBT-02,3999,failure,1,1,0,"pair: Pair[number=19, roman=XIX]","pair: Pair[number=4, roman=IV]",1
+DF-02,properties,CT-PBT-03,3999,passed,1000,1000,0,,,
+DF-02,properties,CT-PBT-04,3999,failure,9,9,0,"pair: Pair[number=3980, roman=MMMCMLXXX]","pair: Pair[number=3900, roman=MMMCM]",4
+DF-02,properties,CT-PBT-05,3999,passed,1000,1000,0,,,
+DF-02,properties,CT-PBT-06,3999,failure,1,1,0,"pair: Pair[number=19, roman=XIX]","pair: Pair[number=4, roman=IV]",1
+DF-02,properties,CT-PBT-01,42,failure,1,1,0,n: 999,n: 4,3
+DF-02,properties,CT-PBT-02,42,failure,1,1,0,"pair: Pair[number=999, roman=CMXCIX]","pair: Pair[number=4, roman=IV]",3
+DF-02,properties,CT-PBT-03,42,passed,1000,1000,0,,,
+DF-02,properties,CT-PBT-04,42,failure,16,16,0,"pair: Pair[number=3902, roman=MMMCMII]","pair: Pair[number=3900, roman=MMMCM]",1
+DF-02,properties,CT-PBT-05,42,passed,1000,1000,0,,,
+DF-02,properties,CT-PBT-06,42,failure,1,1,0,"pair: Pair[number=999, roman=CMXCIX]","pair: Pair[number=4, roman=IV]",3
+DF-02,combined,CT-PBT-01,104729,failure,3,3,0,n: 900,n: 4,3
+DF-02,combined,CT-PBT-02,104729,failure,3,3,0,"pair: Pair[number=900, roman=CM]","pair: Pair[number=4, roman=IV]",3
+DF-02,combined,CT-PBT-03,104729,passed,1000,1000,0,,,
+DF-02,combined,CT-PBT-04,104729,failure,30,30,0,"pair: Pair[number=3934, roman=MMMCMXXXIV]","pair: Pair[number=3900, roman=MMMCM]",1
+DF-02,combined,CT-PBT-05,104729,passed,1000,1000,0,,,
+DF-02,combined,CT-PBT-06,104729,failure,3,3,0,"pair: Pair[number=900, roman=CM]","pair: Pair[number=4, roman=IV]",3
+DF-02,combined,CT-PBT-01,2024,failure,1,1,0,n: 3999,n: 4,3
+DF-02,combined,CT-PBT-02,2024,failure,1,1,0,"pair: Pair[number=3999, roman=MMMCMXCIX]","pair: Pair[number=4, roman=IV]",3
+DF-02,combined,CT-PBT-03,2024,passed,1000,1000,0,,,
+DF-02,combined,CT-PBT-04,2024,failure,1,1,0,"pair: Pair[number=3999, roman=MMMCMXCIX]","pair: Pair[number=3900, roman=MMMCM]",5
+DF-02,combined,CT-PBT-05,2024,passed,1000,1000,0,,,
+DF-02,combined,CT-PBT-06,2024,failure,1,1,0,"pair: Pair[number=3999, roman=MMMCMXCIX]","pair: Pair[number=4, roman=IV]",3
+DF-02,combined,CT-PBT-01,2026,failure,1,1,0,n: 400,n: 4,3
+DF-02,combined,CT-PBT-02,2026,failure,1,1,0,"pair: Pair[number=400, roman=CD]","pair: Pair[number=4, roman=IV]",3
+DF-02,combined,CT-PBT-03,2026,passed,1000,1000,0,,,
+DF-02,combined,CT-PBT-04,2026,failure,39,39,0,"pair: Pair[number=3999, roman=MMMCMXCIX]","pair: Pair[number=3900, roman=MMMCM]",5
+DF-02,combined,CT-PBT-05,2026,passed,1000,1000,0,,,
+DF-02,combined,CT-PBT-06,2026,failure,1,1,0,"pair: Pair[number=400, roman=CD]","pair: Pair[number=4, roman=IV]",3
+DF-02,combined,CT-PBT-01,3999,failure,1,1,0,n: 19,n: 4,1
+DF-02,combined,CT-PBT-02,3999,failure,1,1,0,"pair: Pair[number=19, roman=XIX]","pair: Pair[number=4, roman=IV]",1
+DF-02,combined,CT-PBT-03,3999,passed,1000,1000,0,,,
+DF-02,combined,CT-PBT-04,3999,failure,9,9,0,"pair: Pair[number=3980, roman=MMMCMLXXX]","pair: Pair[number=3900, roman=MMMCM]",4
+DF-02,combined,CT-PBT-05,3999,passed,1000,1000,0,,,
+DF-02,combined,CT-PBT-06,3999,failure,1,1,0,"pair: Pair[number=19, roman=XIX]","pair: Pair[number=4, roman=IV]",1
+DF-02,combined,CT-PBT-01,42,failure,1,1,0,n: 999,n: 4,3
+DF-02,combined,CT-PBT-02,42,failure,1,1,0,"pair: Pair[number=999, roman=CMXCIX]","pair: Pair[number=4, roman=IV]",3
+DF-02,combined,CT-PBT-03,42,passed,1000,1000,0,,,
+DF-02,combined,CT-PBT-04,42,failure,16,16,0,"pair: Pair[number=3902, roman=MMMCMII]","pair: Pair[number=3900, roman=MMMCM]",1
+DF-02,combined,CT-PBT-05,42,passed,1000,1000,0,,,
+DF-02,combined,CT-PBT-06,42,failure,1,1,0,"pair: Pair[number=999, roman=CMXCIX]","pair: Pair[number=4, roman=IV]",3
+DF-03,properties,CT-PBT-01,104729,failure,8,8,0,n: 3085,n: 501,1
+DF-03,properties,CT-PBT-02,104729,failure,8,8,0,"pair: Pair[number=3085, roman=MMMLXXXV]","pair: Pair[number=501, roman=DI]",1
+DF-03,properties,CT-PBT-03,104729,passed,1000,1000,0,,,
+DF-03,properties,CT-PBT-04,104729,passed,1000,1000,0,,,
+DF-03,properties,CT-PBT-05,104729,failure,8,8,0,n: 3085,n: 501,1
+DF-03,properties,CT-PBT-06,104729,passed,1000,1000,0,,,
+DF-03,properties,CT-PBT-01,2024,failure,2,2,0,n: 1094,n: 101,3
+DF-03,properties,CT-PBT-02,2024,failure,2,2,0,"pair: Pair[number=1094, roman=MXCIV]","pair: Pair[number=101, roman=CI]",3
+DF-03,properties,CT-PBT-03,2024,passed,1000,1000,0,,,
+DF-03,properties,CT-PBT-04,2024,passed,1000,1000,0,,,
+DF-03,properties,CT-PBT-05,2024,failure,2,2,0,n: 1094,n: 101,3
+DF-03,properties,CT-PBT-06,2024,passed,1000,1000,0,,,
+DF-03,properties,CT-PBT-01,2026,failure,3,3,0,n: 3606,n: 1001,2
+DF-03,properties,CT-PBT-02,2026,failure,3,3,0,"pair: Pair[number=3606, roman=MMMDCVI]","pair: Pair[number=1001, roman=MI]",2
+DF-03,properties,CT-PBT-03,2026,passed,1000,1000,0,,,
+DF-03,properties,CT-PBT-04,2026,passed,1000,1000,0,,,
+DF-03,properties,CT-PBT-05,2026,failure,3,3,0,n: 3606,n: 1001,2
+DF-03,properties,CT-PBT-06,2026,passed,1000,1000,0,,,
+DF-03,properties,CT-PBT-01,3999,failure,5,5,0,n: 901,n: 401,1
+DF-03,properties,CT-PBT-02,3999,failure,5,5,0,"pair: Pair[number=901, roman=CMI]","pair: Pair[number=401, roman=CDI]",1
+DF-03,properties,CT-PBT-03,3999,passed,1000,1000,0,,,
+DF-03,properties,CT-PBT-04,3999,passed,1000,1000,0,,,
+DF-03,properties,CT-PBT-05,3999,failure,5,5,0,n: 901,n: 401,1
+DF-03,properties,CT-PBT-06,3999,passed,1000,1000,0,,,
+DF-03,properties,CT-PBT-01,42,failure,2,2,0,n: 2504,n: 901,3
+DF-03,properties,CT-PBT-02,42,failure,2,2,0,"pair: Pair[number=2504, roman=MMDIV]","pair: Pair[number=901, roman=CMI]",3
+DF-03,properties,CT-PBT-03,42,passed,1000,1000,0,,,
+DF-03,properties,CT-PBT-04,42,passed,1000,1000,0,,,
+DF-03,properties,CT-PBT-05,42,failure,2,2,0,n: 2504,n: 901,3
+DF-03,properties,CT-PBT-06,42,passed,1000,1000,0,,,
+DF-03,combined,CT-PBT-01,104729,failure,8,8,0,n: 3085,n: 501,1
+DF-03,combined,CT-PBT-02,104729,failure,8,8,0,"pair: Pair[number=3085, roman=MMMLXXXV]","pair: Pair[number=501, roman=DI]",1
+DF-03,combined,CT-PBT-03,104729,passed,1000,1000,0,,,
+DF-03,combined,CT-PBT-04,104729,passed,1000,1000,0,,,
+DF-03,combined,CT-PBT-05,104729,failure,8,8,0,n: 3085,n: 501,1
+DF-03,combined,CT-PBT-06,104729,passed,1000,1000,0,,,
+DF-03,combined,CT-PBT-01,2024,failure,2,2,0,n: 1094,n: 101,3
+DF-03,combined,CT-PBT-02,2024,failure,2,2,0,"pair: Pair[number=1094, roman=MXCIV]","pair: Pair[number=101, roman=CI]",3
+DF-03,combined,CT-PBT-03,2024,passed,1000,1000,0,,,
+DF-03,combined,CT-PBT-04,2024,passed,1000,1000,0,,,
+DF-03,combined,CT-PBT-05,2024,failure,2,2,0,n: 1094,n: 101,3
+DF-03,combined,CT-PBT-06,2024,passed,1000,1000,0,,,
+DF-03,combined,CT-PBT-01,2026,failure,3,3,0,n: 3606,n: 1001,2
+DF-03,combined,CT-PBT-02,2026,failure,3,3,0,"pair: Pair[number=3606, roman=MMMDCVI]","pair: Pair[number=1001, roman=MI]",2
+DF-03,combined,CT-PBT-03,2026,passed,1000,1000,0,,,
+DF-03,combined,CT-PBT-04,2026,passed,1000,1000,0,,,
+DF-03,combined,CT-PBT-05,2026,failure,3,3,0,n: 3606,n: 1001,2
+DF-03,combined,CT-PBT-06,2026,passed,1000,1000,0,,,
+DF-03,combined,CT-PBT-01,3999,failure,5,5,0,n: 901,n: 401,1
+DF-03,combined,CT-PBT-02,3999,failure,5,5,0,"pair: Pair[number=901, roman=CMI]","pair: Pair[number=401, roman=CDI]",1
+DF-03,combined,CT-PBT-03,3999,passed,1000,1000,0,,,
+DF-03,combined,CT-PBT-04,3999,passed,1000,1000,0,,,
+DF-03,combined,CT-PBT-05,3999,failure,5,5,0,n: 901,n: 401,1
+DF-03,combined,CT-PBT-06,3999,passed,1000,1000,0,,,
+DF-03,combined,CT-PBT-01,42,failure,2,2,0,n: 2504,n: 901,3
+DF-03,combined,CT-PBT-02,42,failure,2,2,0,"pair: Pair[number=2504, roman=MMDIV]","pair: Pair[number=901, roman=CMI]",3
+DF-03,combined,CT-PBT-03,42,passed,1000,1000,0,,,
+DF-03,combined,CT-PBT-04,42,passed,1000,1000,0,,,
+DF-03,combined,CT-PBT-05,42,failure,2,2,0,n: 2504,n: 901,3
+DF-03,combined,CT-PBT-06,42,passed,1000,1000,0,,,
+DF-04,properties,CT-PBT-01,104729,failure,60,60,0,n: 3999,n: 3999,1
+DF-04,properties,CT-PBT-02,104729,failure,60,60,0,"pair: Pair[number=3999, roman=MMMCMXCIX]","pair: Pair[number=3999, roman=MMMCMXCIX]",1
+DF-04,properties,CT-PBT-03,104729,passed,1000,1000,0,,,
+DF-04,properties,CT-PBT-04,104729,passed,1000,1000,0,,,
+DF-04,properties,CT-PBT-05,104729,failure,60,60,0,n: 3999,n: 3999,1
+DF-04,properties,CT-PBT-06,104729,passed,1000,1000,0,,,
+DF-04,properties,CT-PBT-01,2024,failure,1,1,0,n: 3999,n: 3999,1
+DF-04,properties,CT-PBT-02,2024,failure,1,1,0,"pair: Pair[number=3999, roman=MMMCMXCIX]","pair: Pair[number=3999, roman=MMMCMXCIX]",1
+DF-04,properties,CT-PBT-03,2024,passed,1000,1000,0,,,
+DF-04,properties,CT-PBT-04,2024,passed,1000,1000,0,,,
+DF-04,properties,CT-PBT-05,2024,failure,1,1,0,n: 3999,n: 3999,1
+DF-04,properties,CT-PBT-06,2024,passed,1000,1000,0,,,
+DF-04,properties,CT-PBT-01,2026,failure,39,39,0,n: 3999,n: 3999,1
+DF-04,properties,CT-PBT-02,2026,failure,39,39,0,"pair: Pair[number=3999, roman=MMMCMXCIX]","pair: Pair[number=3999, roman=MMMCMXCIX]",1
+DF-04,properties,CT-PBT-03,2026,passed,1000,1000,0,,,
+DF-04,properties,CT-PBT-04,2026,passed,1000,1000,0,,,
+DF-04,properties,CT-PBT-05,2026,failure,39,39,0,n: 3999,n: 3999,1
+DF-04,properties,CT-PBT-06,2026,passed,1000,1000,0,,,
+DF-04,properties,CT-PBT-01,3999,failure,17,17,0,n: 3999,n: 3999,1
+DF-04,properties,CT-PBT-02,3999,failure,17,17,0,"pair: Pair[number=3999, roman=MMMCMXCIX]","pair: Pair[number=3999, roman=MMMCMXCIX]",1
+DF-04,properties,CT-PBT-03,3999,passed,1000,1000,0,,,
+DF-04,properties,CT-PBT-04,3999,passed,1000,1000,0,,,
+DF-04,properties,CT-PBT-05,3999,failure,17,17,0,n: 3999,n: 3999,1
+DF-04,properties,CT-PBT-06,3999,passed,1000,1000,0,,,
+DF-04,properties,CT-PBT-01,42,failure,429,429,0,n: 3999,n: 3999,1
+DF-04,properties,CT-PBT-02,42,failure,429,429,0,"pair: Pair[number=3999, roman=MMMCMXCIX]","pair: Pair[number=3999, roman=MMMCMXCIX]",1
+DF-04,properties,CT-PBT-03,42,passed,1000,1000,0,,,
+DF-04,properties,CT-PBT-04,42,passed,1000,1000,0,,,
+DF-04,properties,CT-PBT-05,42,failure,429,429,0,n: 3999,n: 3999,1
+DF-04,properties,CT-PBT-06,42,passed,1000,1000,0,,,
+DF-04,combined,CT-PBT-01,104729,failure,60,60,0,n: 3999,n: 3999,1
+DF-04,combined,CT-PBT-02,104729,failure,60,60,0,"pair: Pair[number=3999, roman=MMMCMXCIX]","pair: Pair[number=3999, roman=MMMCMXCIX]",1
+DF-04,combined,CT-PBT-03,104729,passed,1000,1000,0,,,
+DF-04,combined,CT-PBT-04,104729,passed,1000,1000,0,,,
+DF-04,combined,CT-PBT-05,104729,failure,60,60,0,n: 3999,n: 3999,1
+DF-04,combined,CT-PBT-06,104729,passed,1000,1000,0,,,
+DF-04,combined,CT-PBT-01,2024,failure,1,1,0,n: 3999,n: 3999,1
+DF-04,combined,CT-PBT-02,2024,failure,1,1,0,"pair: Pair[number=3999, roman=MMMCMXCIX]","pair: Pair[number=3999, roman=MMMCMXCIX]",1
+DF-04,combined,CT-PBT-03,2024,passed,1000,1000,0,,,
+DF-04,combined,CT-PBT-04,2024,passed,1000,1000,0,,,
+DF-04,combined,CT-PBT-05,2024,failure,1,1,0,n: 3999,n: 3999,1
+DF-04,combined,CT-PBT-06,2024,passed,1000,1000,0,,,
+DF-04,combined,CT-PBT-01,2026,failure,39,39,0,n: 3999,n: 3999,1
+DF-04,combined,CT-PBT-02,2026,failure,39,39,0,"pair: Pair[number=3999, roman=MMMCMXCIX]","pair: Pair[number=3999, roman=MMMCMXCIX]",1
+DF-04,combined,CT-PBT-03,2026,passed,1000,1000,0,,,
+DF-04,combined,CT-PBT-04,2026,passed,1000,1000,0,,,
+DF-04,combined,CT-PBT-05,2026,failure,39,39,0,n: 3999,n: 3999,1
+DF-04,combined,CT-PBT-06,2026,passed,1000,1000,0,,,
+DF-04,combined,CT-PBT-01,3999,failure,17,17,0,n: 3999,n: 3999,1
+DF-04,combined,CT-PBT-02,3999,failure,17,17,0,"pair: Pair[number=3999, roman=MMMCMXCIX]","pair: Pair[number=3999, roman=MMMCMXCIX]",1
+DF-04,combined,CT-PBT-03,3999,passed,1000,1000,0,,,
+DF-04,combined,CT-PBT-04,3999,passed,1000,1000,0,,,
+DF-04,combined,CT-PBT-05,3999,failure,17,17,0,n: 3999,n: 3999,1
+DF-04,combined,CT-PBT-06,3999,passed,1000,1000,0,,,
+DF-04,combined,CT-PBT-01,42,failure,429,429,0,n: 3999,n: 3999,1
+DF-04,combined,CT-PBT-02,42,failure,429,429,0,"pair: Pair[number=3999, roman=MMMCMXCIX]","pair: Pair[number=3999, roman=MMMCMXCIX]",1
+DF-04,combined,CT-PBT-03,42,passed,1000,1000,0,,,
+DF-04,combined,CT-PBT-04,42,passed,1000,1000,0,,,
+DF-04,combined,CT-PBT-05,42,failure,429,429,0,n: 3999,n: 3999,1
+DF-04,combined,CT-PBT-06,42,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-01,104729,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-02,104729,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-03,104729,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-04,104729,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-05,104729,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-06,104729,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-01,2024,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-02,2024,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-03,2024,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-04,2024,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-05,2024,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-06,2024,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-01,2026,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-02,2026,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-03,2026,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-04,2026,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-05,2026,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-06,2026,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-01,3999,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-02,3999,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-03,3999,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-04,3999,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-05,3999,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-06,3999,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-01,42,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-02,42,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-03,42,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-04,42,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-05,42,passed,1000,1000,0,,,
+baseline,restored,CT-PBT-06,42,passed,1000,1000,0,,,

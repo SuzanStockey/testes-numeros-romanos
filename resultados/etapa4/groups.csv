@@ -1,0 +1,6 @@
+group,tests,failures,errors,skipped,finished_at,maven_total_time
+infrastructure,35,0,0,0,2026-10-07T21:42:04-03:00,1.426 s
+examples,69,0,0,0,2026-10-07T21:42:07-03:00,1.425 s
+properties,30,0,0,0,2026-10-07T21:42:10-03:00,1.909 s
+exhaustive,2,0,0,0,2026-10-07T21:42:12-03:00,1.337 s
+all,134,0,0,0,2026-10-07T21:42:15-03:00,2.123 s

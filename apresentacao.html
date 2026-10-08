@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Propriedades, exemplos e confiança nos testes</title>
+<style>
+:root{color-scheme:dark;--bg:#0c1422;--panel:#162338;--text:#f0f4fb;--muted:#aebdd1;--accent:#73e2c2;--line:#30425b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:clamp(16px,1.6vw,23px)/1.45 system-ui,sans-serif}main{max-width:1240px;margin:auto;padding:clamp(24px,3.5vw,48px) 5vw 110px}.slide{display:none;min-height:65vh}.slide.active{display:block}.eyebrow{color:var(--accent);font-size:.64em;text-transform:uppercase;letter-spacing:.18em;font-weight:700}h1{font-size:clamp(40px,5.5vw,76px);line-height:1.07;max-width:1000px;letter-spacing:-.04em;margin:.5em 0}h2{font-size:clamp(32px,4vw,52px);line-height:1.12;letter-spacing:-.03em;margin:.5em 0 .7em}h3{font-size:1.05em;margin:0 0 .6em}.lead{font-size:1.15em;max-width:900px}.muted,.source{color:var(--muted)}.source{font-size:.63em;margin-top:24px}a{color:var(--accent);text-underline-offset:3px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.card{background:var(--panel);padding:24px;border:1px solid var(--line);border-radius:16px}.card p{margin:.5em 0}.callout{border-left:4px solid var(--accent);padding:12px 20px;margin-top:26px;background:#142a32}.formula{font:1.05em/1.8 ui-monospace,monospace;color:var(--accent)}code{font:.88em ui-monospace,monospace}.metrics{display:flex;gap:36px;flex-wrap:wrap}.metric strong{display:block;font-size:2.8em;color:var(--accent);line-height:1.2}.metric span{font-size:.75em;color:var(--muted)}table{width:100%;border-collapse:collapse;font-size:.85em}th,td{text-align:left;padding:12px 8px;border-bottom:1px solid var(--line)}th{color:var(--accent);font-size:.85em}ul{padding-left:1.2em}li{margin:.6em 0}.notes{display:none;margin-top:28px;padding:20px;border:1px dashed var(--accent);font-size:.72em;color:var(--muted)}body.show-notes .active .notes{display:block}.notes strong{color:var(--accent)}footer{position:fixed;bottom:0;left:0;right:0;background:#0c1422f5;border-top:1px solid var(--line);padding:12px 4vw;display:flex;align-items:center;gap:12px;font-size:14px}.controls{margin-left:auto;display:flex;gap:8px}button{font:inherit;color:var(--text);background:var(--panel);border:1px solid var(--line);padding:9px 12px;border-radius:8px;cursor:pointer}button:hover,button:focus-visible{border-color:var(--accent)}button:disabled{opacity:.35;cursor:default}#progress{position:fixed;bottom:0;left:0;height:3px;background:var(--accent);transition:width .2s}.hint{color:var(--muted)}[hidden]{display:none!important}body.overview .slide{display:block;border-bottom:1px solid var(--line);padding-bottom:40px;margin-bottom:40px}body.overview .notes{display:block}body.overview main{padding-bottom:120px}
+@media(max-width:700px){.grid{grid-template-columns:1fr}.card{padding:18px}.hint{display:none}footer{flex-wrap:wrap;padding:10px}.controls{gap:4px}button{padding:8px}.slide{min-height:0}table{font-size:.7em}th,td{padding:9px 4px}.metric strong{font-size:2.2em}}
+@media print{body{color:#182133;background:white;font-size:15px}main{padding:0;max-width:none}.slide,.slide.active{display:block;min-height:0;break-after:page;padding:20px}.slide:last-child{break-after:auto}footer,#progress,.notes{display:none!important}.card,.callout{background:#f4f6f8;color:#182133;border-color:#ccc}h1{font-size:44px}h2{font-size:32px}.eyebrow,.formula,.metric strong,a,th{color:#166b58}.muted,.source,.metric span{color:#45536a}}
+</style>
+</head>
+<body>
+<main>
+<section class="slide active" data-seconds="30" aria-labelledby="s1">
+<div class="eyebrow">Verificação e Validação de Software · PUCRS</div>
+<h1 id="s1">Propriedades, exemplos e confiança nos testes</h1>
+<p class="lead">Um conversor de números romanos. Três técnicas. Quatro defeitos controlados.</p>
+<p class="muted">Trabalho individual · Java 17 · JUnit + jqwik</p>
+<div class="callout">O que um teste aprovado permite concluir?</div>
+<aside class="notes"><strong>Fala sugerida · 30 s.</strong> Este trabalho compara testes por exemplos e por propriedades no mesmo conversor. A pergunta é como avaliar a confiança nos testes: muitas execuções aprovadas podem esconder uma propriedade fraca. Vou apresentar o contrato, as decisões motivadas pelos artigos e o experimento com quatro defeitos.</aside>
+</section>
+<section class="slide" data-seconds="40" aria-labelledby="s2">
+<div class="eyebrow">01 · Sistema sob teste</div><h2 id="s2">Roman Numerals Helper</h2>
+<div class="grid"><div class="card"><h3>Contrato</h3><p>Inteiros de <strong>1 a 3999</strong> ↔ romanos canônicos.</p><p class="formula">4 ↔ IV<br>944 ↔ CMXLIV<br>3999 ↔ MMMCMXCIX</p></div><div class="card"><h3>Implementação em Java</h3><p><code>toRoman(int)</code><br><code>fromRoman(String)</code></p><p class="muted">Codificação por valores decrescentes; leitura com subtração entre símbolos vizinhos.</p></div></div>
+<p class="source">Entradas inválidas fora do contrato adotado. Desafio: <a href="https://www.codewars.com/kata/51b66044bce5799a7f000003">Codewars · Roman Numerals Helper</a>.</p>
+<aside class="notes"><strong>Fala sugerida · 40 s.</strong> O kata tem duas operações inversas e um domínio pequeno. A forma moderna exige IV, e não IIII. A implementação usa um algoritmo para produzir o texto e outro para lê-lo. Como o desafio não define tratamento de entradas inválidas, o estudo se restringe às entradas válidas. A relação inversa facilita formular propriedades, mas não basta para garantir o formato correto.</aside>
+</section>
+<section class="slide" data-seconds="50" aria-labelledby="s3">
+<div class="eyebrow">02 · Literatura</div><h2 id="s3">A geração é automática.<br>A especificação exige julgamento.</h2>
+<div class="grid"><div class="card"><h3>QuickCheck · 2000</h3><p>Claessen e Hughes</p><p>Propriedades executáveis + geradores personalizados.</p><p class="muted">Ferramenta, exemplos e relatos de aplicação em Haskell.</p></div><div class="card"><h3>PBT in Practice · 2024</h3><p>Goldstein et al.</p><p>Geradores, depuração e avaliação dos próprios testes.</p><p class="muted">31 pessoas, 30 entrevistas na Jane Street; contexto principalmente OCaml.</p></div></div>
+<div class="callout">Convergência: cuidar do oráculo e da distribuição das entradas.</div>
+<p class="source"><a href="https://doi.org/10.1145/351240.351266">QuickCheck · DOI</a> · <a href="https://doi.org/10.1145/3597503.3639581">Property-Based Testing in Practice · DOI</a></p>
+<aside class="notes"><strong>Fala sugerida · 50 s.</strong> QuickCheck explica os fundamentos: escrever relações verificáveis e controlar dados aleatórios. Seus exemplos mostram que muitas entradas triviais podem produzir falsa confiança. O estudo de 2024 observa dificuldades que persistem entre usuários experientes, como criar geradores úteis e avaliar testes aprovados. Os métodos são diferentes: apresentação de ferramenta e estudo qualitativo. Nenhum deles prova uma superioridade universal. A leitura motivou referências independentes, inspeção da geração e defeitos controlados.</aside>
+</section>
+<section class="slide" data-seconds="45" aria-labelledby="s4">
+<div class="eyebrow">03 · Exemplos</div><h2 id="s4">Classes e transições orientam os casos</h2>
+<div class="grid"><div class="card"><h3>Particionamento de equivalência</h3><p>12 casos representativos por subtração, magnitude e composição dos símbolos.</p><p class="formula">944 → CMXLIV</p></div><div class="card"><h3>Análise de valores-limite</h3><p>25 números: extremos e vizinhos das transições subtrativas.</p><p class="formula">3 · 4 · 5 &nbsp; / &nbsp; 8 · 9 · 10</p></div></div>
+<div class="callout"><strong>34 pares distintos</strong> → 68 verificações nos dois sentidos + 1 teste de sequência = <strong>69 itens</strong>.</div>
+<aside class="notes"><strong>Fala sugerida · 45 s.</strong> O particionamento organiza comportamentos representativos. Os limites exploram as mudanças onde o algoritmo pode errar, incluindo 1 e 3999. Os resultados esperados são literais, sem depender da implementação. Há três pares compartilhados entre as técnicas: após consolidá-los, ficam 34 pares, testados em ambas as direções. O teste de sequência verifica chamadas intercaladas e acrescenta uma evidência parcial de ausência de estado.</aside>
+</section>
+<section class="slide" data-seconds="55" aria-labelledby="s5">
+<div class="eyebrow">04 · Propriedades</div><h2 id="s5">Relações gerais + referência independente</h2>
+<div class="grid"><div class="card"><h3>Seis verificações</h3><p>Ida e volta nos dois sentidos.</p><p>Formato e intervalo.</p><p>Codificação e decodificação contra modelo.</p><p class="formula">D(E(n)) = n<br>E(n) = O(n)</p></div><div class="card"><h3>Campanha reproduzível</h3><p>80% uniforme + 20% valores-limite.</p><p>5 sementes × 6 propriedades × até 1000 avaliações.</p><p class="muted">Modelo por posições decimais; redução preserva pares válidos.</p></div></div>
+<p class="source">E: codificador · D: decodificador · O: modelo. Ida e volta inclui guardas de formato e domínio. Sementes: 42, 2024, 2026, 3999 e 104729.</p>
+<aside class="notes"><strong>Fala sugerida · 55 s.</strong> As duas propriedades de ida e volta verificam coerência entre funções. Outras verificam formato e intervalo. As duas restantes comparam com um modelo por posições decimais, diferente do algoritmo de produção. Isso evita a referência circular de usar o codificador para avaliar o decodificador. Geramos dados válidos diretamente, com peso adicional nos limites. Ao reduzir um par, diminuímos o número e reconstruímos seu romano pelo modelo. Na base, foram 30 mil avaliações, sem descartes; valores podem se repetir.</aside>
+</section>
+<section class="slide" data-seconds="55" aria-labelledby="s6">
+<div class="eyebrow">05 · Experimento</div><h2 id="s6">Os dois grupos detectaram os quatro defeitos</h2>
+<table><caption class="source">Falhas de asserção / itens reportados por grupo</caption><thead><tr><th>Defeito isolado</th><th>Exemplos</th><th>PBT</th><th>Combinação</th></tr></thead><tbody><tr><td>DF-01 · IV vira IIII</td><td>3/69</td><td>20/30</td><td>23/99</td></tr><tr><td>DF-02 · subtração ignorada</td><td>21/69</td><td>20/30</td><td>41/99</td></tr><tr><td>DF-03 · unidades omitidas com zero interno</td><td>5/69</td><td>15/30</td><td>20/99</td></tr><tr><td>DF-04 · 3999 vira 3998</td><td>1/69</td><td>15/30</td><td>16/99</td></tr></tbody></table>
+<div class="callout">Detecção: <strong>4/4 em cada grupo</strong>. PBT detectou cada variante nas cinco sementes.</div>
+<p class="source">Combinação sem ganho de detecção nesta amostra. Após restauração: 134 itens aprovados, incluindo 35 da infraestrutura. Enumeração auxiliar separada da métrica de PBT.</p>
+<aside class="notes"><strong>Fala sugerida · 55 s.</strong> Introduzimos um defeito por vez e executamos os mesmos testes. A tabela conta falhas de asserção: vinte falhas de PBT não significam vinte defeitos, porque a mesma alteração viola várias propriedades em diferentes sementes. Exemplos, propriedades e combinação detectaram as quatro variantes. Os exemplos já cobriam os requisitos afetados, então não houve ganho da combinação. Nas falhas, a geração para antes de mil avaliações. Ao terminar, restauramos os bytes corretos e a suíte de 134 itens passou novamente.</aside>
+</section>
+<section class="slide" data-seconds="50" aria-labelledby="s7">
+<div class="eyebrow">06 · Interpretação</div><h2 id="s7">Formato correto pode esconder um valor errado</h2>
+<div class="grid"><div class="card"><h3>DF-03: perda de unidades</h3><p class="formula">1001 → M</p><p>Formato canônico: <strong>passa</strong>.<br>Valor esperado MI: <strong>falha</strong>.</p></div><div class="card"><h3>Redução de contraexemplo</h3><p class="formula">999 → 4</p><p>DF-02 · P01 · semente 42</p><p class="muted">Em IV, a soma incorreta produz 6 em vez de 4.</p></div></div>
+<div class="callout">O significado da propriedade importa mais que sua contagem de execuções.</div>
+<aside class="notes"><strong>Fala sugerida · 50 s.</strong> A propriedade de formato deixou passar os defeitos de unidades omitidas e do máximo, porque a saída continuou sendo um romano válido. A comparação semântica com o modelo os detectou. Já na leitura sem subtração, o jqwik reduziu a entrada 999 a 4, facilitando enxergar IV interpretado como seis. O contraexemplo não tem garantia de mínimo global. As guardas de domínio também impedem que uma função defeituosa faça o teste chamar outra fora do contrato.</aside>
+</section>
+<section class="slide" data-seconds="35" aria-labelledby="s8">
+<div class="eyebrow">07 · Lições e limites</div><h2 id="s8">Confiança exige avaliar o próprio teste</h2>
+<div class="grid"><div class="card"><h3>Lições</h3><ul><li>Explicitar contrato e oráculos.</li><li>Combinar exemplos e propriedades semânticas.</li><li>Inspecionar entradas e registrar contraexemplos.</li></ul></div><div class="card"><h3>Limites deste estudo</h3><ul><li>Um kata pequeno; quatro defeitos artificiais.</li><li>Exemplos já cobriam os defeitos.</li><li>Sem evidência de superioridade ou ganho de custo.</li></ul></div></div>
+<p class="source">Evidências: <a href="tests.md">casos e rastreabilidade</a> · <a href="resultados/etapa5/resumo.md">experimento</a> · <a href="README.md">reprodução</a>. Trabalho individual; revisão externa independente não realizada.</p>
+<aside class="notes"><strong>Fala sugerida · 35 s.</strong> A principal lição é que automatizar entradas não resolve o problema de escolher expectativas relevantes. O experimento mostrou por que formato e intervalo são insuficientes e por que referências independentes ajudam. Os resultados se restringem a este kata e a estes defeitos; não medimos produtividade nem eficácia industrial. Toda a rastreabilidade e os relatórios estão nos arquivos do trabalho. Obrigado.</aside>
+</section>
+</main>
+<footer><span id="position" aria-live="polite">1 / 8</span><span class="hint">← → navegar · N notas · F tela cheia · O roteiro</span><div class="controls"><button id="prev" aria-label="Slide anterior">←</button><button id="next" aria-label="Próximo slide">→</button><button id="notes" aria-pressed="false">Notas</button><button id="overview" aria-pressed="false">Roteiro</button><button id="fullscreen">Tela cheia</button></div></footer><div id="progress" aria-hidden="true"></div>
+<script>
+const slides=[...document.querySelectorAll('.slide')];let current=0;
+const byId=id=>document.getElementById(id);
+function show(index){current=Math.max(0,Math.min(slides.length-1,index));slides.forEach((s,i)=>{s.classList.toggle('active',i===current);s.setAttribute('aria-hidden',String(i!==current&&!document.body.classList.contains('overview')))});byId('position').textContent=`${current+1} / ${slides.length}`;byId('progress').style.width=`${(current+1)/slides.length*100}%`;byId('prev').disabled=current===0;byId('next').disabled=current===slides.length-1;history.replaceState(null,'',`#slide-${current+1}`);if(!document.body.classList.contains('overview'))window.scrollTo(0,0)}
+function toggleNotes(){const active=document.body.classList.toggle('show-notes');byId('notes').setAttribute('aria-pressed',String(active))}
+function toggleOverview(){const active=document.body.classList.toggle('overview');byId('overview').setAttribute('aria-pressed',String(active));show(current)}
+async function fullscreen(){try{if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen()}catch{byId('fullscreen').textContent='Use F11'}}
+byId('prev').onclick=()=>show(current-1);byId('next').onclick=()=>show(current+1);byId('notes').onclick=toggleNotes;byId('overview').onclick=toggleOverview;byId('fullscreen').onclick=fullscreen;
+document.addEventListener('keydown',e=>{if(e.ctrlKey||e.altKey||e.metaKey||e.target.closest('button,a,input,textarea'))return;const key=e.key.toLowerCase();if(['arrowright','pagedown',' '].includes(key)){e.preventDefault();show(current+1)}else if(['arrowleft','pageup'].includes(key)){e.preventDefault();show(current-1)}else if(key==='home'){e.preventDefault();show(0)}else if(key==='end'){e.preventDefault();show(slides.length-1)}else if(key==='n')toggleNotes();else if(key==='o')toggleOverview();else if(key==='f')fullscreen()});
+const initial=Number(location.hash.match(/^#slide-(\d+)$/)?.[1]||1)-1;show(initial);
+</script>
+</body>
+</html>

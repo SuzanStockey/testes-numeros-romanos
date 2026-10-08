@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>br.edu.pucrs</groupId>
+  <artifactId>roman-numerals-testing</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <properties>
+    <maven.compiler.release>17</maven.compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <junit.version>5.13.4</junit.version>
+    <jqwik.version>1.9.3</jqwik.version>
+    <excludedGroups>exhaustive</excludedGroups>
+    <test.reports>${project.build.directory}/surefire-reports</test.reports>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId><artifactId>junit-jupiter</artifactId>
+      <version>${junit.version}</version><scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.jqwik</groupId><artifactId>jqwik</artifactId>
+      <version>${jqwik.version}</version><scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <testSourceDirectory>tests</testSourceDirectory>
+    <testResources><testResource><directory>tests/resources</directory></testResource></testResources>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId><artifactId>maven-compiler-plugin</artifactId><version>3.14.0</version>
+        <configuration><parameters>true</parameters></configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId><artifactId>maven-surefire-plugin</artifactId><version>3.5.3</version>
+        <configuration>
+          <includes><include>**/*Test.java</include><include>**/*Properties.java</include></includes>
+          <excludedGroups>${excludedGroups}</excludedGroups>
+          <reportsDirectory>${test.reports}</reportsDirectory>
+          <failIfNoTests>true</failIfNoTests>
+          <argLine>-Dfile.encoding=UTF-8</argLine>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

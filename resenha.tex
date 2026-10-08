@@ -1,0 +1,119 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{lmodern}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath,booktabs,array}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\setlength{\parindent}{1.2em}
+\setlength{\parskip}{3pt}
+\newcommand{\code}[1]{\texttt{#1}}
+% Atualizar a autoria quando o estudante fornecer nome e matrícula.
+\title{Propriedades, exemplos e confiança nos testes:\\uma resenha crítica com aplicação a números romanos}
+\author{Trabalho individual --- Verificação e Validação de Software\\PUCRS -- Escola Politécnica}
+\date{}
+\begin{document}
+\maketitle
+\vspace{-1.5em}
+
+\section{Introdução}
+Testes baseados em propriedades (PBT) permitem descrever relações gerais e verificar automaticamente entradas geradas. Entretanto, a confiança produzida pela automação depende tanto do significado das propriedades quanto dos dados exercitados. Esta resenha compara a proposta de QuickCheck, de Claessen e Hughes~\cite{quickcheck}, com o estudo industrial de Goldstein et al.~\cite{practice}, e aplica suas ideias ao \emph{Roman Numerals Helper}, do Codewars~\cite{kata}. O objetivo é discutir como exemplos, valores-limite e propriedades contribuem para avaliar um mesmo sistema, sem presumir superioridade de uma técnica.
+
+O sistema foi implementado em Java 17 e testado com JUnit Jupiter 5.13.4 e jqwik 1.9.3, usando Maven 3.9.11 no Windows. As operações estáticas \code{toRoman(int)} e \code{fromRoman(String)} convertem inteiros de 1 a 3999 e representações romanas canônicas modernas, como 4 = IV e 9 = IX. Entradas inválidas estão fora do contrato adotado, pois o desafio não especifica seu tratamento. O artigo adicional para o E5 é QuickCheck: a expressão de busca, justificativa e URL estão registradas em \code{pesquisa/pesquisa-e5.md}.
+
+\section{Referencial e comparação crítica}
+\subsection{QuickCheck: propriedades como especificações executáveis}
+Claessen e Hughes~\cite{quickcheck} apresentam uma ferramenta leve para Haskell que combina propriedades executáveis, geração aleatória e apresentação de contraexemplos. Geradores personalizados, pré-condições e classificação dos dados permitem adequar a exploração ao domínio. Uma propriedade expressa uma expectativa geral; sua execução aleatória verifica apenas as amostras produzidas, sem constituir prova de correção.
+
+A contribuição é sustentada por implementação, exemplos e relatos de aplicação, e não por um experimento comparativo padronizado. Seu ponto forte é tornar explícita a relação entre especificação, oráculo e geração. No exemplo de unificação, mais de 95\% dos casos aceitos eram triviais; um gerador específico reduziu essa proporção para aproximadamente 20--25\%. Esse resultado é daquele exemplo e mostra por que contar execuções não basta para julgar os testes. O artigo também relata falhas na própria especificação e atribui ao usuário a avaliação da distribuição e da suficiência da campanha.
+
+Os casos apresentados demonstram viabilidade, mas não estimam ganhos universais de produtividade ou detecção. Além disso, propriedades e geradores são código sujeito a erros. A redução de contraexemplos aparece em um relato de extensão na seção sobre impressão de documentos; não se deve atribuir à implementação original toda a infraestrutura dos frameworks atuais. Neste trabalho, a redução é realizada pelo jqwik.
+
+\newpage
+\subsection{PBT na prática: benefícios e dificuldades persistentes}
+Goldstein et al.~\cite{practice} investigam uma cultura madura de PBT na Jane Street, predominantemente em OCaml. O estudo qualitativo recrutou 31 pessoas e realizou 30 entrevistas, uma delas conjunta. A análise temática examina benefícios, escrita de propriedades, geradores, depuração e interpretação de testes aprovados. As frequências relatadas têm entrevistas como unidade e não representam taxas de eficácia experimental.
+
+Participantes descrevem descoberta de casos inesperados, documentação e maior compreensão do comportamento. Relações de ida e volta e comparação com implementações de referência ajudam quando uma especificação útil já está disponível. Contudo, construir dados válidos e obter uma distribuição relevante continua trabalhoso. O estudo também destaca a necessidade de avaliar o próprio teste: entre as práticas relatadas estão inspeção de entradas e introdução de defeitos. Exemplos e propriedades têm utilidades complementares para comunicar expectativas e explorar comportamentos.
+
+O ponto forte é observar usuários experientes ao longo do processo de desenvolvimento, incluindo dificuldades que persistem após a adoção. A limitação principal é o contexto de uma empresa e de um ecossistema específico, com participantes experientes e possíveis vieses de seleção e lembrança. Relatos de confiança e defeitos encontrados não substituem medições controladas; tampouco estabelecem como iniciantes em Java se comportariam.
+
+\subsection{Convergência e posição adotada}
+Os artigos respondem a perguntas distintas: QuickCheck explica como oferecer uma ferramenta leve; o estudo de 2024 investiga como ela é usada em um contexto industrial maduro. A simplicidade da interface apresentada em 2000 não elimina os custos de especificação e geração observados em 2024. Ambos mostram que a qualidade das entradas e do oráculo exige atenção humana. A liberdade para configurar geradores oferece controle, mas também exige conhecimento do domínio.
+
+Adotou-se, por isso, a combinação de exemplos conhecidos e propriedades com referências independentes. A justificativa é conceitual: exemplos explicitam regras concretas, enquanto propriedades generalizam relações e automatizam a exploração. Os artigos não são manuais de particionamento de equivalência ou análise de valores-limite; essas técnicas foram projetadas separadamente a partir do contrato do kata. Também não se presume que a combinação encontrará mais defeitos: isso deve ser observado no experimento.
+
+\section{Aplicação das técnicas ao conversor}
+\textbf{Particionamento de equivalência (PE).} Foram documentados 12 casos representativos, selecionados por classes de subtração e magnitude e por categorias de composição: símbolos isolados, formas aditivas, casos subtrativos e combinações de posições decimais. As categorias podem se sobrepor; não correspondem a 12 classes disjuntas. Os pares têm resultados literais conhecidos, independentes do conversor. Por exemplo, 944 = CMXLIV exercita subtração em mais de uma posição.
+
+\textbf{Análise de valores-limite (AVL).} Foram selecionados 25 números, incluindo 1, 2, 3998, 3999 e vizinhos das transições 4, 9, 40, 90, 400 e 900. Após consolidar três pares compartilhados com PE, restaram 34 pares distintos, verificados nos dois sentidos: 68 comparações direcionais. Um teste de chamadas intercaladas acrescenta evidência parcial de ausência de estado, totalizando 69 itens no grupo de exemplos.
+
+\newpage
+\textbf{Testes baseados em propriedades.} Seja $N=\{1,\ldots,3999\}$, $E$ o codificador, $D$ o decodificador, $C$ a verificação de formato canônico e $O$ um modelo independente de codificação. Foram implementadas seis propriedades:
+\begin{center}
+\small
+\begin{tabular}{cl}
+\toprule
+ID & Verificação \\
+\midrule
+P01 & $D(E(n))=n$, após conferir $C(E(n))$ \\
+P02 & $E(D(r))=r$, após conferir $D(r)\in N$ \\
+P03 & $C(E(n))$ \\
+P04 & $D(r)\in N$ \\
+P05 & $E(n)=O(n)$ \\
+P06 & $D(r)=n$, com par independente $(n,r)$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+O codificador de produção usa valores decrescentes, e o decodificador identifica subtrações entre símbolos vizinhos. O modelo $O$ usa tabelas por posição decimal; $C$ combina expressão regular integral e verificação de não vazio. Os pares $(n,r)$ são construídos pelo modelo, evitando usar $E$ como referência para testar $D$. A redução diminui $n$ e reconstrói $r$, preservando validade e correspondência do par. Os oráculos foram conferidos por 35 testes de infraestrutura, separados dos testes do sistema.
+
+Gerar diretamente dados válidos evita descartes por pré-condição. A distribuição mistura 80\% de inteiros uniformes de $N$ e 20\% dos 25 valores-limite. Coletaram-se categorias de magnitude, presença de subtração e centros/extremos. Usaram-se as sementes 42, 2024, 2026, 3999 e 104729, até 1000 avaliações por propriedade/semente, com modo explicitamente aleatório. A injeção automática de casos especiais e o banco de falhas foram desabilitados. Sementes iguais reutilizam sequências; avaliações não equivalem a entradas distintas ou independentes.
+
+\section{Resultados e discussão}
+Na implementação base, os 69 itens de exemplos, os 35 de infraestrutura e as 30 execuções de propriedades passaram, totalizando 134 itens reportados. As propriedades completaram 30.000 avaliações primárias, sem descartes. Uma checagem exaustiva complementar verificou 3999 pares nos dois sentidos, ou 7998 comparações; esse resultado foi registrado separadamente da campanha aleatória.
+
+Para avaliar os testes, introduziu-se um defeito por vez, sempre a partir da mesma base. A tabela apresenta falhas de asserção, e não quantidade de defeitos ou entradas diferentes. O grupo combinado reúne somente exemplos e PBT.
+\begin{center}
+\small
+\begin{tabular}{clrrr}
+\toprule
+Variante & Defeito & Exemplos & PBT & Combinação \\
+\midrule
+DF-01 & Emitir IIII em vez de IV & 3/69 & 20/30 & 23/99 \\
+DF-02 & Ignorar subtração na leitura & 21/69 & 20/30 & 41/99 \\
+DF-03 & Omitir unidades com zero interno & 5/69 & 15/30 & 20/99 \\
+DF-04 & Codificar 3999 como 3998 & 1/69 & 15/30 & 16/99 \\
+\bottomrule
+\end{tabular}
+\end{center}
+Os três grupos detectaram 4/4 variantes. O PBT detectou cada variante em todas as cinco sementes; a combinação não acrescentou defeitos detectados. Execuções com falha interromperam a geração: os totais primários efetivos do grupo PBT foram 10.212, 10.116, 15.060 e 16.638, respectivamente, sem incluir chamadas adicionais de redução.
+
+\newpage
+\subsection{O significado das propriedades e dos contraexemplos}
+P01 e P02 detectaram as quatro variantes nas cinco sementes. P03 detectou apenas DF-01: resultados de DF-03 e DF-04 continuaram canônicos, embora numericamente errados. P04 detectou DF-02 quando a soma ultrapassou o domínio, mas aprovou os defeitos exclusivos do codificador. P05 detectou DF-01, DF-03 e DF-04; P06 detectou DF-02. Isso evidencia que formato e intervalo isolados não caracterizam a semântica completa.
+
+Há ainda um risco conceitual da ida e volta: um codificador que emita IIII para 4 e um decodificador que o interprete como 4 podem manter a relação inversa e violar o formato exigido. A guarda de canonicidade em P01 impede essa falsa confiança. Esse cenário explica uma decisão de teste; não foi uma quinta variante executada nem cria requisito de rejeição de entradas inválidas.
+
+Para P01 e semente 42, o jqwik reduziu as entradas de DF-01 de 2504 para 4, de DF-02 de 999 para 4 e de DF-03 de 2504 para 901. Em DF-03, 901 perde a unidade por conter zero nas dezenas. Em DF-04, o contraexemplo final permaneceu 3999. São resultados do redutor, sem garantia de mínimo global. Os logs guardam sementes, amostras e mensagens para reprodução e diagnóstico.
+
+\subsection{Dificuldades e ameaças à validade}
+As principais decisões exigiram delimitar o contrato, evitar referência circular entre as funções, preservar invariantes na redução e distinguir contagens de testes, avaliações e entradas. A configuração precisou selecionar um JDK compatível e explicitar o modo aleatório para o domínio pequeno. O sistema, os testes e a sonda de validação foram escritos em Java; scripts auxiliares em Python automatizaram execuções e consolidação dos relatórios, sem substituir os testes Java.
+
+Os defeitos são artificiais e exercitam requisitos já cobertos pelos exemplos escolhidos. O domínio pequeno e a ênfase nos limites favorecem a detecção, especialmente de DF-04. Portanto, não há evidência de superioridade do PBT, ganho marginal da combinação ou vantagem de custo. Cinco sementes não são cinco estudos independentes. A validação dos oráculos e sua diferença algorítmica em relação ao sistema reduzem, mas não eliminam, erros compartilhados. A enumeração auxiliar confirma o efeito das variantes e não integra a métrica de detecção. Código e testes foram produzidos no mesmo processo, sem revisão externa independente, o que também limita a validade.
+
+\section{Conclusão}
+Os artigos convergem na necessidade de avaliar propriedades e distribuições, e o conversor ilustra essa preocupação. Exemplos e PBT detectaram os mesmos quatro defeitos; propriedades de formato ou intervalo, isoladas, deixaram alterações semânticas passar. A lição é formular relações relevantes, ancorá-las em referências independentes e verificar o que a campanha realmente exercita. O resultado vale para este kata e estas variantes, sem extrapolação à eficácia industrial. Ao final, a implementação correta foi restaurada byte a byte e os 134 itens da suíte padrão passaram novamente. Contrato, rastreabilidade, scripts e evidências estão documentados no repositório local; sua publicação no GitHub é uma etapa de entrega posterior.
+
+\subsection*{Uso de IA}
+O estudante definiu os requisitos e formatos, escolheu inicialmente o artigo de 2024 e orientou o desenvolvimento por etapas e pedidos de revisão. A IA participou substancialmente da busca complementar, análise dos textos, proposta de problema e técnicas, geração de código e testes, execução e análise dos experimentos, redação e revisão dos materiais. O trabalho resultou dessa interação; a conferência acadêmica final e a submissão são responsabilidade do estudante, sem atribuição de participação ao integrante ausente.
+
+\begingroup
+\small
+\begin{thebibliography}{3}
+\bibitem{quickcheck} K. Claessen and J. Hughes, ``QuickCheck: A Lightweight Tool for Random Testing of Haskell Programs,'' in \emph{Proc. ICFP}, 2000, pp. 268--279. doi: \href{https://doi.org/10.1145/351240.351266}{10.1145/351240.351266}.
+\bibitem{practice} H. Goldstein, J. W. Cutler, D. Dickstein, B. C. Pierce, and A. Head, ``Property-Based Testing in Practice,'' in \emph{Proc. ICSE}, 2024, art. 187, pp. 1--13. doi: \href{https://doi.org/10.1145/3597503.3639581}{10.1145/3597503.3639581}.
+\bibitem{kata} Codewars, ``Roman Numerals Helper.'' [Online]. Available: \url{https://www.codewars.com/kata/51b66044bce5799a7f000003}. Acesso em: 7 out. 2026.
+\end{thebibliography}
+\endgroup
+\end{document}

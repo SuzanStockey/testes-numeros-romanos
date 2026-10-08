@@ -1,0 +1,11 @@
+--- baseline/RomanNumerals.java
++++ DF-04/RomanNumerals.java
+@@ -9,7 +9,7 @@
+     /** Pré-condição: 1 <= n <= 3999. Emite símbolos em ordem decrescente de valor. */
+     public static String toRoman(int n) {
+         StringBuilder result = new StringBuilder();
+-        int remaining = n;
++        int remaining = n == 3999 ? 3998 : n;
+         for (int i = 0; i < VALUES.length; i++) {
+             while (remaining >= VALUES[i]) {
+                 result.append(SYMBOLS[i]);

@@ -1,0 +1,1058 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< br.edu.pucrs:roman-numerals-testing >-----------------
+[INFO] Building roman-numerals-testing 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ roman-numerals-testing ---
+[INFO] skip non existing resourceDirectory C:\Users\suzan\Development\Verificação e Validação de Software\veri-val-t1\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ roman-numerals-testing ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ roman-numerals-testing ---
+[INFO] Copying 1 resource from tests\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ roman-numerals-testing ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 11 source files with javac [debug parameters release 17] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.3:test (default-test) @ roman-numerals-testing ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+out. 07, 2026 9:49:01 PM net.jqwik.engine.DefaultJqwikConfiguration createTestEngineConfiguration
+INFORMAÇÕES: jqwik's test run database has been switched off
+out. 07, 2026 9:49:01 PM net.jqwik.engine.DefaultJqwikConfiguration createTestEngineConfiguration
+INFORMAÇÕES: jqwik's test run database has been switched off
+out. 07, 2026 9:49:01 PM net.jqwik.engine.DefaultJqwikConfiguration createTestEngineConfiguration
+INFORMAÇÕES: jqwik's test run database has been switched off
+out. 07, 2026 9:49:01 PM net.jqwik.engine.DefaultJqwikConfiguration createTestEngineConfiguration
+INFORMAÇÕES: jqwik's test run database has been switched off
+out. 07, 2026 9:49:01 PM net.jqwik.engine.DefaultJqwikConfiguration createTestEngineConfiguration
+INFORMAÇÕES: jqwik's test run database has been switched off
+out. 07, 2026 9:49:01 PM net.jqwik.engine.DefaultJqwikConfiguration createTestEngineConfiguration
+INFORMAÇÕES: jqwik's test run database has been switched off
+out. 07, 2026 9:49:01 PM net.jqwik.engine.DefaultJqwikConfiguration createTestEngineConfiguration
+INFORMAÇÕES: jqwik's test run database has been switched off
+out. 07, 2026 9:49:01 PM net.jqwik.engine.DefaultJqwikConfiguration createTestEngineConfiguration
+INFORMAÇÕES: jqwik's test run database has been switched off
+[INFO] Running RomanExamplesTest
+[INFO] Tests run: 69, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.138 s -- in RomanExamplesTest
+[INFO] Running RomanInfrastructureTest
+[INFO] Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s -- in RomanInfrastructureTest
+[INFO] Running Seed104729Properties
+timestamp = 2026-10-07T21:49:01.648631, [Seed104729Properties:CT-PBT-01 seed=104729] (1000) subtracao = 
+    CE-S0 (477) : 48 %
+    CE-S1 (405) : 41 %
+    CE-S2 (118) : 12 %
+
+timestamp = 2026-10-07T21:49:01.649631500, [Seed104729Properties:CT-PBT-01 seed=104729] (1000) magnitude = 
+    CE-M4 (609) : 61 %
+    CE-M3 (250) : 25 %
+    CE-M2 ( 83) :  8 %
+    CE-M1 ( 58) :  6 %
+
+timestamp = 2026-10-07T21:49:01.650632400, [Seed104729Properties:CT-PBT-01 seed=104729] (1000) centro-ou-extremo = 
+    outros (940) : 94.00 %
+    9      ( 11) :  1.10 %
+    90     ( 10) :  1.00 %
+    900    (  8) :  0.80 %
+    4      (  8) :  0.80 %
+    1      (  7) :  0.70 %
+    40     (  7) :  0.70 %
+    3999   (  6) :  0.60 %
+    400    (  3) :  0.30 %
+
+timestamp = 2026-10-07T21:49:01.655632500, Seed104729Properties:CT-PBT-01 seed=104729 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 104729                 | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:49:01.680635200, [Seed104729Properties:CT-PBT-02 seed=104729] (1000) subtracao = 
+    CE-S0 (477) : 48 %
+    CE-S1 (405) : 41 %
+    CE-S2 (118) : 12 %
+
+timestamp = 2026-10-07T21:49:01.680635200, [Seed104729Properties:CT-PBT-02 seed=104729] (1000) magnitude = 
+    CE-M4 (609) : 61 %
+    CE-M3 (250) : 25 %
+    CE-M2 ( 83) :  8 %
+    CE-M1 ( 58) :  6 %
+
+timestamp = 2026-10-07T21:49:01.680635200, [Seed104729Properties:CT-PBT-02 seed=104729] (1000) centro-ou-extremo = 
+    outros (940) : 94.00 %
+    9      ( 11) :  1.10 %
+    90     ( 10) :  1.00 %
+    900    (  8) :  0.80 %
+    4      (  8) :  0.80 %
+    1      (  7) :  0.70 %
+    40     (  7) :  0.70 %
+    3999   (  6) :  0.60 %
+    400    (  3) :  0.30 %
+
+timestamp = 2026-10-07T21:49:01.680635200, Seed104729Properties:CT-PBT-02 seed=104729 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 104729                 | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:49:01.694652200, [Seed104729Properties:CT-PBT-03 seed=104729] (1000) subtracao = 
+    CE-S0 (477) : 48 %
+    CE-S1 (405) : 41 %
+    CE-S2 (118) : 12 %
+
+timestamp = 2026-10-07T21:49:01.694652200, [Seed104729Properties:CT-PBT-03 seed=104729] (1000) magnitude = 
+    CE-M4 (609) : 61 %
+    CE-M3 (250) : 25 %
+    CE-M2 ( 83) :  8 %
+    CE-M1 ( 58) :  6 %
+
+timestamp = 2026-10-07T21:49:01.694652200, [Seed104729Properties:CT-PBT-03 seed=104729] (1000) centro-ou-extremo = 
+    outros (940) : 94.00 %
+    9      ( 11) :  1.10 %
+    90     ( 10) :  1.00 %
+    900    (  8) :  0.80 %
+    4      (  8) :  0.80 %
+    1      (  7) :  0.70 %
+    40     (  7) :  0.70 %
+    3999   (  6) :  0.60 %
+    400    (  3) :  0.30 %
+
+timestamp = 2026-10-07T21:49:01.694652200, Seed104729Properties:CT-PBT-03 seed=104729 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 104729                 | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:49:01.711159400, [Seed104729Properties:CT-PBT-04 seed=104729] (1000) subtracao = 
+    CE-S0 (477) : 48 %
+    CE-S1 (405) : 41 %
+    CE-S2 (118) : 12 %
+
+timestamp = 2026-10-07T21:49:01.711159400, [Seed104729Properties:CT-PBT-04 seed=104729] (1000) magnitude = 
+    CE-M4 (609) : 61 %
+    CE-M3 (250) : 25 %
+    CE-M2 ( 83) :  8 %
+    CE-M1 ( 58) :  6 %
+
+timestamp = 2026-10-07T21:49:01.711159400, [Seed104729Properties:CT-PBT-04 seed=104729] (1000) centro-ou-extremo = 
+    outros (940) : 94.00 %
+    9      ( 11) :  1.10 %
+    90     ( 10) :  1.00 %
+    900    (  8) :  0.80 %
+    4      (  8) :  0.80 %
+    1      (  7) :  0.70 %
+    40     (  7) :  0.70 %
+    3999   (  6) :  0.60 %
+    400    (  3) :  0.30 %
+
+timestamp = 2026-10-07T21:49:01.711159400, Seed104729Properties:CT-PBT-04 seed=104729 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 104729                 | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:49:01.724166400, [Seed104729Properties:CT-PBT-05 seed=104729] (1000) subtracao = 
+    CE-S0 (477) : 48 %
+    CE-S1 (405) : 41 %
+    CE-S2 (118) : 12 %
+
+timestamp = 2026-10-07T21:49:01.724166400, [Seed104729Properties:CT-PBT-05 seed=104729] (1000) magnitude = 
+    CE-M4 (609) : 61 %
+    CE-M3 (250) : 25 %
+    CE-M2 ( 83) :  8 %
+    CE-M1 ( 58) :  6 %
+
+timestamp = 2026-10-07T21:49:01.724166400, [Seed104729Properties:CT-PBT-05 seed=104729] (1000) centro-ou-extremo = 
+    outros (940) : 94.00 %
+    9      ( 11) :  1.10 %
+    90     ( 10) :  1.00 %
+    900    (  8) :  0.80 %
+    4      (  8) :  0.80 %
+    1      (  7) :  0.70 %
+    40     (  7) :  0.70 %
+    3999   (  6) :  0.60 %
+    400    (  3) :  0.30 %
+
+timestamp = 2026-10-07T21:49:01.724166400, Seed104729Properties:CT-PBT-05 seed=104729 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 104729                 | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:49:01.738310300, [Seed104729Properties:CT-PBT-06 seed=104729] (1000) subtracao = 
+    CE-S0 (477) : 48 %
+    CE-S1 (405) : 41 %
+    CE-S2 (118) : 12 %
+
+timestamp = 2026-10-07T21:49:01.738310300, [Seed104729Properties:CT-PBT-06 seed=104729] (1000) magnitude = 
+    CE-M4 (609) : 61 %
+    CE-M3 (250) : 25 %
+    CE-M2 ( 83) :  8 %
+    CE-M1 ( 58) :  6 %
+
+timestamp = 2026-10-07T21:49:01.738310300, [Seed104729Properties:CT-PBT-06 seed=104729] (1000) centro-ou-extremo = 
+    outros (940) : 94.00 %
+    9      ( 11) :  1.10 %
+    90     ( 10) :  1.00 %
+    900    (  8) :  0.80 %
+    4      (  8) :  0.80 %
+    1      (  7) :  0.70 %
+    40     (  7) :  0.70 %
+    3999   (  6) :  0.60 %
+    400    (  3) :  0.30 %
+
+timestamp = 2026-10-07T21:49:01.739309900, Seed104729Properties:CT-PBT-06 seed=104729 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 104729                 | random seed to reproduce generated values
+
+
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.243 s -- in Seed104729Properties
+[INFO] Running Seed2024Properties
+timestamp = 2026-10-07T21:49:01.753843500, [Seed2024Properties:CT-PBT-01 seed=2024] (1000) subtracao = 
+    CE-S0 (454) : 45 %
+    CE-S1 (411) : 41 %
+    CE-S2 (135) : 14 %
+
+timestamp = 2026-10-07T21:49:01.754844500, [Seed2024Properties:CT-PBT-01 seed=2024] (1000) magnitude = 
+    CE-M4 (631) : 63 %
+    CE-M3 (236) : 24 %
+    CE-M2 ( 70) :  7 %
+    CE-M1 ( 63) :  6 %
+
+timestamp = 2026-10-07T21:49:01.754844500, [Seed2024Properties:CT-PBT-01 seed=2024] (1000) centro-ou-extremo = 
+    outros (932) : 93.20 %
+    9      ( 13) :  1.30 %
+    3999   ( 12) :  1.20 %
+    900    ( 10) :  1.00 %
+    400    (  8) :  0.80 %
+    4      (  8) :  0.80 %
+    90     (  6) :  0.60 %
+    40     (  6) :  0.60 %
+    1      (  5) :  0.50 %
+
+timestamp = 2026-10-07T21:49:01.754844500, Seed2024Properties:CT-PBT-01 seed=2024 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 2024                   | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:49:01.766844500, [Seed2024Properties:CT-PBT-02 seed=2024] (1000) subtracao = 
+    CE-S0 (454) : 45 %
+    CE-S1 (411) : 41 %
+    CE-S2 (135) : 14 %
+
+timestamp = 2026-10-07T21:49:01.766844500, [Seed2024Properties:CT-PBT-02 seed=2024] (1000) magnitude = 
+    CE-M4 (631) : 63 %
+    CE-M3 (236) : 24 %
+    CE-M2 ( 70) :  7 %
+    CE-M1 ( 63) :  6 %
+
+timestamp = 2026-10-07T21:49:01.767844600, [Seed2024Properties:CT-PBT-02 seed=2024] (1000) centro-ou-extremo = 
+    outros (932) : 93.20 %
+    9      ( 13) :  1.30 %
+    3999   ( 12) :  1.20 %
+    900    ( 10) :  1.00 %
+    400    (  8) :  0.80 %
+    4      (  8) :  0.80 %
+    90     (  6) :  0.60 %
+    40     (  6) :  0.60 %
+    1      (  5) :  0.50 %
+
+timestamp = 2026-10-07T21:49:01.767844600, Seed2024Properties:CT-PBT-02 seed=2024 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 2024                   | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:49:01.782168600, [Seed2024Properties:CT-PBT-03 seed=2024] (1000) subtracao = 
+    CE-S0 (454) : 45 %
+    CE-S1 (411) : 41 %
+    CE-S2 (135) : 14 %
+
+timestamp = 2026-10-07T21:49:01.782168600, [Seed2024Properties:CT-PBT-03 seed=2024] (1000) magnitude = 
+    CE-M4 (631) : 63 %
+    CE-M3 (236) : 24 %
+    CE-M2 ( 70) :  7 %
+    CE-M1 ( 63) :  6 %
+
+timestamp = 2026-10-07T21:49:01.783167900, [Seed2024Properties:CT-PBT-03 seed=2024] (1000) centro-ou-extremo = 
+    outros (932) : 93.20 %
+    9      ( 13) :  1.30 %
+    3999   ( 12) :  1.20 %
+    900    ( 10) :  1.00 %
+    400    (  8) :  0.80 %
+    4      (  8) :  0.80 %
+    90     (  6) :  0.60 %
+    40     (  6) :  0.60 %
+    1      (  5) :  0.50 %
+
+timestamp = 2026-10-07T21:49:01.783167900, Seed2024Properties:CT-PBT-03 seed=2024 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 2024                   | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:49:01.794187, [Seed2024Properties:CT-PBT-04 seed=2024] (1000) subtracao = 
+    CE-S0 (454) : 45 %
+    CE-S1 (411) : 41 %
+    CE-S2 (135) : 14 %
+
+timestamp = 2026-10-07T21:49:01.794187, [Seed2024Properties:CT-PBT-04 seed=2024] (1000) magnitude = 
+    CE-M4 (631) : 63 %
+    CE-M3 (236) : 24 %
+    CE-M2 ( 70) :  7 %
+    CE-M1 ( 63) :  6 %
+
+timestamp = 2026-10-07T21:49:01.794187, [Seed2024Properties:CT-PBT-04 seed=2024] (1000) centro-ou-extremo = 
+    outros (932) : 93.20 %
+    9      ( 13) :  1.30 %
+    3999   ( 12) :  1.20 %
+    900    ( 10) :  1.00 %
+    400    (  8) :  0.80 %
+    4      (  8) :  0.80 %
+    90     (  6) :  0.60 %
+    40     (  6) :  0.60 %
+    1      (  5) :  0.50 %
+
+timestamp = 2026-10-07T21:49:01.794187, Seed2024Properties:CT-PBT-04 seed=2024 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 2024                   | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:49:01.803694200, [Seed2024Properties:CT-PBT-05 seed=2024] (1000) subtracao = 
+    CE-S0 (454) : 45 %
+    CE-S1 (411) : 41 %
+    CE-S2 (135) : 14 %
+
+timestamp = 2026-10-07T21:49:01.804694800, [Seed2024Properties:CT-PBT-05 seed=2024] (1000) magnitude = 
+    CE-M4 (631) : 63 %
+    CE-M3 (236) : 24 %
+    CE-M2 ( 70) :  7 %
+    CE-M1 ( 63) :  6 %
+
+timestamp = 2026-10-07T21:49:01.804694800, [Seed2024Properties:CT-PBT-05 seed=2024] (1000) centro-ou-extremo = 
+    outros (932) : 93.20 %
+    9      ( 13) :  1.30 %
+    3999   ( 12) :  1.20 %
+    900    ( 10) :  1.00 %
+    400    (  8) :  0.80 %
+    4      (  8) :  0.80 %
+    90     (  6) :  0.60 %
+    40     (  6) :  0.60 %
+    1      (  5) :  0.50 %
+
+timestamp = 2026-10-07T21:49:01.804694800, Seed2024Properties:CT-PBT-05 seed=2024 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 2024                   | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:49:01.814698, [Seed2024Properties:CT-PBT-06 seed=2024] (1000) subtracao = 
+    CE-S0 (454) : 45 %
+    CE-S1 (411) : 41 %
+    CE-S2 (135) : 14 %
+
+timestamp = 2026-10-07T21:49:01.814698, [Seed2024Properties:CT-PBT-06 seed=2024] (1000) magnitude = 
+    CE-M4 (631) : 63 %
+    CE-M3 (236) : 24 %
+    CE-M2 ( 70) :  7 %
+    CE-M1 ( 63) :  6 %
+
+timestamp = 2026-10-07T21:49:01.815698300, [Seed2024Properties:CT-PBT-06 seed=2024] (1000) centro-ou-extremo = 
+    outros (932) : 93.20 %
+    9      ( 13) :  1.30 %
+    3999   ( 12) :  1.20 %
+    900    ( 10) :  1.00 %
+    400    (  8) :  0.80 %
+    4      (  8) :  0.80 %
+    90     (  6) :  0.60 %
+    40     (  6) :  0.60 %
+    1      (  5) :  0.50 %
+
+timestamp = 2026-10-07T21:49:01.815698300, Seed2024Properties:CT-PBT-06 seed=2024 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 2024                   | random seed to reproduce generated values
+
+
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 s -- in Seed2024Properties
+[INFO] Running Seed2026Properties
+timestamp = 2026-10-07T21:49:01.826209200, [Seed2026Properties:CT-PBT-01 seed=2026] (1000) subtracao = 
+    CE-S0 (492) : 49 %
+    CE-S1 (379) : 38 %
+    CE-S2 (129) : 13 %
+
+timestamp = 2026-10-07T21:49:01.826209200, [Seed2026Properties:CT-PBT-01 seed=2026] (1000) magnitude = 
+    CE-M4 (619) : 62 %
+    CE-M3 (244) : 24 %
+    CE-M2 ( 79) :  8 %
+    CE-M1 ( 58) :  6 %
+
+timestamp = 2026-10-07T21:49:01.826209200, [Seed2026Properties:CT-PBT-01 seed=2026] (1000) centro-ou-extremo = 
+    outros (936) : 93.60 %
+    400    ( 13) :  1.30 %
+    9      (  9) :  0.90 %
+    3999   (  9) :  0.90 %
+    40     (  8) :  0.80 %
+    900    (  8) :  0.80 %
+    90     (  7) :  0.70 %
+    1      (  7) :  0.70 %
+    4      (  3) :  0.30 %
+
+timestamp = 2026-10-07T21:49:01.826209200, Seed2026Properties:CT-PBT-01 seed=2026 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 2026                   | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:49:01.837208800, [Seed2026Properties:CT-PBT-02 seed=2026] (1000) subtracao = 
+    CE-S0 (492) : 49 %
+    CE-S1 (379) : 38 %
+    CE-S2 (129) : 13 %
+
+timestamp = 2026-10-07T21:49:01.837208800, [Seed2026Properties:CT-PBT-02 seed=2026] (1000) magnitude = 
+    CE-M4 (619) : 62 %
+    CE-M3 (244) : 24 %
+    CE-M2 ( 79) :  8 %
+    CE-M1 ( 58) :  6 %
+
+timestamp = 2026-10-07T21:49:01.837208800, [Seed2026Properties:CT-PBT-02 seed=2026] (1000) centro-ou-extremo = 
+    outros (936) : 93.60 %
+    400    ( 13) :  1.30 %
+    9      (  9) :  0.90 %
+    3999   (  9) :  0.90 %
+    40     (  8) :  0.80 %
+    900    (  8) :  0.80 %
+    90     (  7) :  0.70 %
+    1      (  7) :  0.70 %
+    4      (  3) :  0.30 %
+
+timestamp = 2026-10-07T21:49:01.837208800, Seed2026Properties:CT-PBT-02 seed=2026 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 2026                   | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:49:01.846788700, [Seed2026Properties:CT-PBT-03 seed=2026] (1000) subtracao = 
+    CE-S0 (492) : 49 %
+    CE-S1 (379) : 38 %
+    CE-S2 (129) : 13 %
+
+timestamp = 2026-10-07T21:49:01.846788700, [Seed2026Properties:CT-PBT-03 seed=2026] (1000) magnitude = 
+    CE-M4 (619) : 62 %
+    CE-M3 (244) : 24 %
+    CE-M2 ( 79) :  8 %
+    CE-M1 ( 58) :  6 %
+
+timestamp = 2026-10-07T21:49:01.847790900, [Seed2026Properties:CT-PBT-03 seed=2026] (1000) centro-ou-extremo = 
+    outros (936) : 93.60 %
+    400    ( 13) :  1.30 %
+    9      (  9) :  0.90 %
+    3999   (  9) :  0.90 %
+    40     (  8) :  0.80 %
+    900    (  8) :  0.80 %
+    90     (  7) :  0.70 %
+    1      (  7) :  0.70 %
+    4      (  3) :  0.30 %
+
+timestamp = 2026-10-07T21:49:01.847790900, Seed2026Properties:CT-PBT-03 seed=2026 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 2026                   | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:49:01.858788800, [Seed2026Properties:CT-PBT-04 seed=2026] (1000) subtracao = 
+    CE-S0 (492) : 49 %
+    CE-S1 (379) : 38 %
+    CE-S2 (129) : 13 %
+
+timestamp = 2026-10-07T21:49:01.858788800, [Seed2026Properties:CT-PBT-04 seed=2026] (1000) magnitude = 
+    CE-M4 (619) : 62 %
+    CE-M3 (244) : 24 %
+    CE-M2 ( 79) :  8 %
+    CE-M1 ( 58) :  6 %
+
+timestamp = 2026-10-07T21:49:01.858788800, [Seed2026Properties:CT-PBT-04 seed=2026] (1000) centro-ou-extremo = 
+    outros (936) : 93.60 %
+    400    ( 13) :  1.30 %
+    9      (  9) :  0.90 %
+    3999   (  9) :  0.90 %
+    40     (  8) :  0.80 %
+    900    (  8) :  0.80 %
+    90     (  7) :  0.70 %
+    1      (  7) :  0.70 %
+    4      (  3) :  0.30 %
+
+timestamp = 2026-10-07T21:49:01.858788800, Seed2026Properties:CT-PBT-04 seed=2026 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 2026                   | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:49:01.867791700, [Seed2026Properties:CT-PBT-05 seed=2026] (1000) subtracao = 
+    CE-S0 (492) : 49 %
+    CE-S1 (379) : 38 %
+    CE-S2 (129) : 13 %
+
+timestamp = 2026-10-07T21:49:01.867791700, [Seed2026Properties:CT-PBT-05 seed=2026] (1000) magnitude = 
+    CE-M4 (619) : 62 %
+    CE-M3 (244) : 24 %
+    CE-M2 ( 79) :  8 %
+    CE-M1 ( 58) :  6 %
+
+timestamp = 2026-10-07T21:49:01.868792500, [Seed2026Properties:CT-PBT-05 seed=2026] (1000) centro-ou-extremo = 
+    outros (936) : 93.60 %
+    400    ( 13) :  1.30 %
+    9      (  9) :  0.90 %
+    3999   (  9) :  0.90 %
+    40     (  8) :  0.80 %
+    900    (  8) :  0.80 %
+    90     (  7) :  0.70 %
+    1      (  7) :  0.70 %
+    4      (  3) :  0.30 %
+
+timestamp = 2026-10-07T21:49:01.868792500, Seed2026Properties:CT-PBT-05 seed=2026 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 2026                   | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:49:01.882300500, [Seed2026Properties:CT-PBT-06 seed=2026] (1000) subtracao = 
+    CE-S0 (492) : 49 %
+    CE-S1 (379) : 38 %
+    CE-S2 (129) : 13 %
+
+timestamp = 2026-10-07T21:49:01.882300500, [Seed2026Properties:CT-PBT-06 seed=2026] (1000) magnitude = 
+    CE-M4 (619) : 62 %
+    CE-M3 (244) : 24 %
+    CE-M2 ( 79) :  8 %
+    CE-M1 ( 58) :  6 %
+
+timestamp = 2026-10-07T21:49:01.882300500, [Seed2026Properties:CT-PBT-06 seed=2026] (1000) centro-ou-extremo = 
+    outros (936) : 93.60 %
+    400    ( 13) :  1.30 %
+    9      (  9) :  0.90 %
+    3999   (  9) :  0.90 %
+    40     (  8) :  0.80 %
+    900    (  8) :  0.80 %
+    90     (  7) :  0.70 %
+    1      (  7) :  0.70 %
+    4      (  3) :  0.30 %
+
+timestamp = 2026-10-07T21:49:01.883300800, Seed2026Properties:CT-PBT-06 seed=2026 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 2026                   | random seed to reproduce generated values
+
+
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 s -- in Seed2026Properties
+[INFO] Running Seed3999Properties
+timestamp = 2026-10-07T21:49:01.899419800, [Seed3999Properties:CT-PBT-01 seed=3999] (1000) subtracao = 
+    CE-S0 (485) : 49 %
+    CE-S1 (399) : 40 %
+    CE-S2 (116) : 12 %
+
+timestamp = 2026-10-07T21:49:01.899419800, [Seed3999Properties:CT-PBT-01 seed=3999] (1000) magnitude = 
+    CE-M4 (640) : 64 %
+    CE-M3 (230) : 23 %
+    CE-M2 ( 77) :  8 %
+    CE-M1 ( 53) :  5 %
+
+timestamp = 2026-10-07T21:49:01.899419800, [Seed3999Properties:CT-PBT-01 seed=3999] (1000) centro-ou-extremo = 
+    outros (935) : 93.50 %
+    400    ( 13) :  1.30 %
+    40     ( 10) :  1.00 %
+    4      (  9) :  0.90 %
+    3999   (  7) :  0.70 %
+    9      (  7) :  0.70 %
+    1      (  7) :  0.70 %
+    90     (  6) :  0.60 %
+    900    (  6) :  0.60 %
+
+timestamp = 2026-10-07T21:49:01.900420300, Seed3999Properties:CT-PBT-01 seed=3999 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 3999                   | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:49:01.908933, [Seed3999Properties:CT-PBT-02 seed=3999] (1000) subtracao = 
+    CE-S0 (485) : 49 %
+    CE-S1 (399) : 40 %
+    CE-S2 (116) : 12 %
+
+timestamp = 2026-10-07T21:49:01.908933, [Seed3999Properties:CT-PBT-02 seed=3999] (1000) magnitude = 
+    CE-M4 (640) : 64 %
+    CE-M3 (230) : 23 %
+    CE-M2 ( 77) :  8 %
+    CE-M1 ( 53) :  5 %
+
+timestamp = 2026-10-07T21:49:01.908933, [Seed3999Properties:CT-PBT-02 seed=3999] (1000) centro-ou-extremo = 
+    outros (935) : 93.50 %
+    400    ( 13) :  1.30 %
+    40     ( 10) :  1.00 %
+    4      (  9) :  0.90 %
+    3999   (  7) :  0.70 %
+    9      (  7) :  0.70 %
+    1      (  7) :  0.70 %
+    90     (  6) :  0.60 %
+    900    (  6) :  0.60 %
+
+timestamp = 2026-10-07T21:49:01.908933, Seed3999Properties:CT-PBT-02 seed=3999 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 3999                   | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:49:01.916933300, [Seed3999Properties:CT-PBT-03 seed=3999] (1000) subtracao = 
+    CE-S0 (485) : 49 %
+    CE-S1 (399) : 40 %
+    CE-S2 (116) : 12 %
+
+timestamp = 2026-10-07T21:49:01.916933300, [Seed3999Properties:CT-PBT-03 seed=3999] (1000) magnitude = 
+    CE-M4 (640) : 64 %
+    CE-M3 (230) : 23 %
+    CE-M2 ( 77) :  8 %
+    CE-M1 ( 53) :  5 %
+
+timestamp = 2026-10-07T21:49:01.916933300, [Seed3999Properties:CT-PBT-03 seed=3999] (1000) centro-ou-extremo = 
+    outros (935) : 93.50 %
+    400    ( 13) :  1.30 %
+    40     ( 10) :  1.00 %
+    4      (  9) :  0.90 %
+    3999   (  7) :  0.70 %
+    9      (  7) :  0.70 %
+    1      (  7) :  0.70 %
+    90     (  6) :  0.60 %
+    900    (  6) :  0.60 %
+
+timestamp = 2026-10-07T21:49:01.916933300, Seed3999Properties:CT-PBT-03 seed=3999 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 3999                   | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:49:01.925935700, [Seed3999Properties:CT-PBT-04 seed=3999] (1000) subtracao = 
+    CE-S0 (485) : 49 %
+    CE-S1 (399) : 40 %
+    CE-S2 (116) : 12 %
+
+timestamp = 2026-10-07T21:49:01.926935800, [Seed3999Properties:CT-PBT-04 seed=3999] (1000) magnitude = 
+    CE-M4 (640) : 64 %
+    CE-M3 (230) : 23 %
+    CE-M2 ( 77) :  8 %
+    CE-M1 ( 53) :  5 %
+
+timestamp = 2026-10-07T21:49:01.926935800, [Seed3999Properties:CT-PBT-04 seed=3999] (1000) centro-ou-extremo = 
+    outros (935) : 93.50 %
+    400    ( 13) :  1.30 %
+    40     ( 10) :  1.00 %
+    4      (  9) :  0.90 %
+    3999   (  7) :  0.70 %
+    9      (  7) :  0.70 %
+    1      (  7) :  0.70 %
+    90     (  6) :  0.60 %
+    900    (  6) :  0.60 %
+
+timestamp = 2026-10-07T21:49:01.926935800, Seed3999Properties:CT-PBT-04 seed=3999 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 3999                   | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:49:01.936985600, [Seed3999Properties:CT-PBT-05 seed=3999] (1000) subtracao = 
+    CE-S0 (485) : 49 %
+    CE-S1 (399) : 40 %
+    CE-S2 (116) : 12 %
+
+timestamp = 2026-10-07T21:49:01.936985600, [Seed3999Properties:CT-PBT-05 seed=3999] (1000) magnitude = 
+    CE-M4 (640) : 64 %
+    CE-M3 (230) : 23 %
+    CE-M2 ( 77) :  8 %
+    CE-M1 ( 53) :  5 %
+
+timestamp = 2026-10-07T21:49:01.936985600, [Seed3999Properties:CT-PBT-05 seed=3999] (1000) centro-ou-extremo = 
+    outros (935) : 93.50 %
+    400    ( 13) :  1.30 %
+    40     ( 10) :  1.00 %
+    4      (  9) :  0.90 %
+    3999   (  7) :  0.70 %
+    9      (  7) :  0.70 %
+    1      (  7) :  0.70 %
+    90     (  6) :  0.60 %
+    900    (  6) :  0.60 %
+
+timestamp = 2026-10-07T21:49:01.936985600, Seed3999Properties:CT-PBT-05 seed=3999 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 3999                   | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:49:01.945995500, [Seed3999Properties:CT-PBT-06 seed=3999] (1000) subtracao = 
+    CE-S0 (485) : 49 %
+    CE-S1 (399) : 40 %
+    CE-S2 (116) : 12 %
+
+timestamp = 2026-10-07T21:49:01.945995500, [Seed3999Properties:CT-PBT-06 seed=3999] (1000) magnitude = 
+    CE-M4 (640) : 64 %
+    CE-M3 (230) : 23 %
+    CE-M2 ( 77) :  8 %
+    CE-M1 ( 53) :  5 %
+
+timestamp = 2026-10-07T21:49:01.946998800, [Seed3999Properties:CT-PBT-06 seed=3999] (1000) centro-ou-extremo = 
+    outros (935) : 93.50 %
+    400    ( 13) :  1.30 %
+    40     ( 10) :  1.00 %
+    4      (  9) :  0.90 %
+    3999   (  7) :  0.70 %
+    9      (  7) :  0.70 %
+    1      (  7) :  0.70 %
+    90     (  6) :  0.60 %
+    900    (  6) :  0.60 %
+
+timestamp = 2026-10-07T21:49:01.946998800, Seed3999Properties:CT-PBT-06 seed=3999 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 3999                   | random seed to reproduce generated values
+
+
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 s -- in Seed3999Properties
+[INFO] Running Seed42Properties
+timestamp = 2026-10-07T21:49:01.956369600, [Seed42Properties:CT-PBT-01 seed=42] (1000) subtracao = 
+    CE-S0 (468) : 47 %
+    CE-S1 (410) : 41 %
+    CE-S2 (122) : 12 %
+
+timestamp = 2026-10-07T21:49:01.956369600, [Seed42Properties:CT-PBT-01 seed=42] (1000) magnitude = 
+    CE-M4 (622) : 62 %
+    CE-M3 (248) : 25 %
+    CE-M2 ( 73) :  7 %
+    CE-M1 ( 57) :  6 %
+
+timestamp = 2026-10-07T21:49:01.956369600, [Seed42Properties:CT-PBT-01 seed=42] (1000) centro-ou-extremo = 
+    outros (954) : 95.40 %
+    9      (  8) :  0.80 %
+    90     (  7) :  0.70 %
+    40     (  6) :  0.60 %
+    3999   (  6) :  0.60 %
+    400    (  5) :  0.50 %
+    4      (  5) :  0.50 %
+    1      (  5) :  0.50 %
+    900    (  4) :  0.40 %
+
+timestamp = 2026-10-07T21:49:01.956369600, Seed42Properties:CT-PBT-01 seed=42 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 42                     | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:49:01.966374300, [Seed42Properties:CT-PBT-02 seed=42] (1000) subtracao = 
+    CE-S0 (468) : 47 %
+    CE-S1 (410) : 41 %
+    CE-S2 (122) : 12 %
+
+timestamp = 2026-10-07T21:49:01.966374300, [Seed42Properties:CT-PBT-02 seed=42] (1000) magnitude = 
+    CE-M4 (622) : 62 %
+    CE-M3 (248) : 25 %
+    CE-M2 ( 73) :  7 %
+    CE-M1 ( 57) :  6 %
+
+timestamp = 2026-10-07T21:49:01.967373500, [Seed42Properties:CT-PBT-02 seed=42] (1000) centro-ou-extremo = 
+    outros (954) : 95.40 %
+    9      (  8) :  0.80 %
+    90     (  7) :  0.70 %
+    40     (  6) :  0.60 %
+    3999   (  6) :  0.60 %
+    400    (  5) :  0.50 %
+    4      (  5) :  0.50 %
+    1      (  5) :  0.50 %
+    900    (  4) :  0.40 %
+
+timestamp = 2026-10-07T21:49:01.967373500, Seed42Properties:CT-PBT-02 seed=42 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 42                     | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:49:01.975373200, [Seed42Properties:CT-PBT-03 seed=42] (1000) subtracao = 
+    CE-S0 (468) : 47 %
+    CE-S1 (410) : 41 %
+    CE-S2 (122) : 12 %
+
+timestamp = 2026-10-07T21:49:01.975373200, [Seed42Properties:CT-PBT-03 seed=42] (1000) magnitude = 
+    CE-M4 (622) : 62 %
+    CE-M3 (248) : 25 %
+    CE-M2 ( 73) :  7 %
+    CE-M1 ( 57) :  6 %
+
+timestamp = 2026-10-07T21:49:01.975373200, [Seed42Properties:CT-PBT-03 seed=42] (1000) centro-ou-extremo = 
+    outros (954) : 95.40 %
+    9      (  8) :  0.80 %
+    90     (  7) :  0.70 %
+    40     (  6) :  0.60 %
+    3999   (  6) :  0.60 %
+    400    (  5) :  0.50 %
+    4      (  5) :  0.50 %
+    1      (  5) :  0.50 %
+    900    (  4) :  0.40 %
+
+timestamp = 2026-10-07T21:49:01.975373200, Seed42Properties:CT-PBT-03 seed=42 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 42                     | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:49:01.985117100, [Seed42Properties:CT-PBT-04 seed=42] (1000) subtracao = 
+    CE-S0 (468) : 47 %
+    CE-S1 (410) : 41 %
+    CE-S2 (122) : 12 %
+
+timestamp = 2026-10-07T21:49:01.985117100, [Seed42Properties:CT-PBT-04 seed=42] (1000) magnitude = 
+    CE-M4 (622) : 62 %
+    CE-M3 (248) : 25 %
+    CE-M2 ( 73) :  7 %
+    CE-M1 ( 57) :  6 %
+
+timestamp = 2026-10-07T21:49:01.985117100, [Seed42Properties:CT-PBT-04 seed=42] (1000) centro-ou-extremo = 
+    outros (954) : 95.40 %
+    9      (  8) :  0.80 %
+    90     (  7) :  0.70 %
+    40     (  6) :  0.60 %
+    3999   (  6) :  0.60 %
+    400    (  5) :  0.50 %
+    4      (  5) :  0.50 %
+    1      (  5) :  0.50 %
+    900    (  4) :  0.40 %
+
+timestamp = 2026-10-07T21:49:01.985117100, Seed42Properties:CT-PBT-04 seed=42 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 42                     | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:49:01.992116600, [Seed42Properties:CT-PBT-05 seed=42] (1000) subtracao = 
+    CE-S0 (468) : 47 %
+    CE-S1 (410) : 41 %
+    CE-S2 (122) : 12 %
+
+timestamp = 2026-10-07T21:49:01.992116600, [Seed42Properties:CT-PBT-05 seed=42] (1000) magnitude = 
+    CE-M4 (622) : 62 %
+    CE-M3 (248) : 25 %
+    CE-M2 ( 73) :  7 %
+    CE-M1 ( 57) :  6 %
+
+timestamp = 2026-10-07T21:49:01.992116600, [Seed42Properties:CT-PBT-05 seed=42] (1000) centro-ou-extremo = 
+    outros (954) : 95.40 %
+    9      (  8) :  0.80 %
+    90     (  7) :  0.70 %
+    40     (  6) :  0.60 %
+    3999   (  6) :  0.60 %
+    400    (  5) :  0.50 %
+    4      (  5) :  0.50 %
+    1      (  5) :  0.50 %
+    900    (  4) :  0.40 %
+
+timestamp = 2026-10-07T21:49:01.992116600, Seed42Properties:CT-PBT-05 seed=42 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 42                     | random seed to reproduce generated values
+
+
+timestamp = 2026-10-07T21:49:02.001807, [Seed42Properties:CT-PBT-06 seed=42] (1000) subtracao = 
+    CE-S0 (468) : 47 %
+    CE-S1 (410) : 41 %
+    CE-S2 (122) : 12 %
+
+timestamp = 2026-10-07T21:49:02.001807, [Seed42Properties:CT-PBT-06 seed=42] (1000) magnitude = 
+    CE-M4 (622) : 62 %
+    CE-M3 (248) : 25 %
+    CE-M2 ( 73) :  7 %
+    CE-M1 ( 57) :  6 %
+
+timestamp = 2026-10-07T21:49:02.002810100, [Seed42Properties:CT-PBT-06 seed=42] (1000) centro-ou-extremo = 
+    outros (954) : 95.40 %
+    9      (  8) :  0.80 %
+    90     (  7) :  0.70 %
+    40     (  6) :  0.60 %
+    3999   (  6) :  0.60 %
+    400    (  5) :  0.50 %
+    4      (  5) :  0.50 %
+    1      (  5) :  0.50 %
+    900    (  4) :  0.40 %
+
+timestamp = 2026-10-07T21:49:02.002810100, Seed42Properties:CT-PBT-06 seed=42 = 
+                              |--------------------jqwik--------------------
+tries = 1000                  | # of calls to property
+checks = 1000                 | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = RANDOM_SEED   | use a new random seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = NONE        | edge cases are not explicitly generated
+seed = 42                     | random seed to reproduce generated values
+
+
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 s -- in Seed42Properties
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 134, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.663 s
+[INFO] Finished at: 2026-10-07T21:49:02-03:00
+[INFO] ------------------------------------------------------------------------

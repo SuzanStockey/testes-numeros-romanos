@@ -1,0 +1,10 @@
+/target/
+/.jqwik-database*
+/.idea/
+*.iml
+/resultados/etapa5/probe/*.class
+/tmp/
+/entrega/*.zip
+/trabalho_resenha_testes-2026-2.pdf
+/icse24-pbt-in-practice.pdf
+/quick.pdf

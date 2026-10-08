@@ -1,0 +1,218 @@
+{
+  "checked_at": "2026-10-08T01:59:36.635Z",
+  "kind": "static-delivery-audit",
+  "checks": [
+    {
+      "name": "hash pom.xml",
+      "status": "approved",
+      "detail": "Igual à implementação avaliada na etapa 4."
+    },
+    {
+      "name": "hash src/RomanNumerals.java",
+      "status": "approved",
+      "detail": "Igual à implementação avaliada na etapa 4."
+    },
+    {
+      "name": "hash tests/FixedCases.java",
+      "status": "approved",
+      "detail": "Igual à implementação avaliada na etapa 4."
+    },
+    {
+      "name": "hash tests/resources/junit-platform.properties",
+      "status": "approved",
+      "detail": "Igual à implementação avaliada na etapa 4."
+    },
+    {
+      "name": "hash tests/RomanExamplesTest.java",
+      "status": "approved",
+      "detail": "Igual à implementação avaliada na etapa 4."
+    },
+    {
+      "name": "hash tests/RomanExhaustiveTest.java",
+      "status": "approved",
+      "detail": "Igual à implementação avaliada na etapa 4."
+    },
+    {
+      "name": "hash tests/RomanInfrastructureTest.java",
+      "status": "approved",
+      "detail": "Igual à implementação avaliada na etapa 4."
+    },
+    {
+      "name": "hash tests/RomanPropertyChecks.java",
+      "status": "approved",
+      "detail": "Igual à implementação avaliada na etapa 4."
+    },
+    {
+      "name": "hash tests/RomanReference.java",
+      "status": "approved",
+      "detail": "Igual à implementação avaliada na etapa 4."
+    },
+    {
+      "name": "hash tests/Seed104729Properties.java",
+      "status": "approved",
+      "detail": "Igual à implementação avaliada na etapa 4."
+    },
+    {
+      "name": "hash tests/Seed2024Properties.java",
+      "status": "approved",
+      "detail": "Igual à implementação avaliada na etapa 4."
+    },
+    {
+      "name": "hash tests/Seed2026Properties.java",
+      "status": "approved",
+      "detail": "Igual à implementação avaliada na etapa 4."
+    },
+    {
+      "name": "hash tests/Seed3999Properties.java",
+      "status": "approved",
+      "detail": "Igual à implementação avaliada na etapa 4."
+    },
+    {
+      "name": "hash tests/Seed42Properties.java",
+      "status": "approved",
+      "detail": "Igual à implementação avaliada na etapa 4."
+    },
+    {
+      "name": "arquivo src/RomanNumerals.java",
+      "status": "approved",
+      "detail": "Presente e não vazio."
+    },
+    {
+      "name": "arquivo tests.md",
+      "status": "approved",
+      "detail": "Presente e não vazio."
+    },
+    {
+      "name": "arquivo README.md",
+      "status": "approved",
+      "detail": "Presente e não vazio."
+    },
+    {
+      "name": "arquivo especificacao.md",
+      "status": "approved",
+      "detail": "Presente e não vazio."
+    },
+    {
+      "name": "arquivo resenha.tex",
+      "status": "approved",
+      "detail": "Presente e não vazio."
+    },
+    {
+      "name": "arquivo apresentacao.html",
+      "status": "approved",
+      "detail": "Presente e não vazio."
+    },
+    {
+      "name": "arquivo roteiro-apresentacao.md",
+      "status": "approved",
+      "detail": "Presente e não vazio."
+    },
+    {
+      "name": "arquivo pesquisa/pesquisa-e5.md",
+      "status": "approved",
+      "detail": "Presente e não vazio."
+    },
+    {
+      "name": "arquivo pesquisa/fichamentos.md",
+      "status": "approved",
+      "detail": "Presente e não vazio."
+    },
+    {
+      "name": "restauração",
+      "status": "approved",
+      "detail": "134 itens aprovados no relatório existente; código preservado."
+    },
+    {
+      "name": "DF-01/examples",
+      "status": "approved",
+      "detail": "Detecção funcional, sem erros ou testes ignorados."
+    },
+    {
+      "name": "DF-01/properties",
+      "status": "approved",
+      "detail": "Detecção funcional, sem erros ou testes ignorados."
+    },
+    {
+      "name": "DF-01/combined",
+      "status": "approved",
+      "detail": "Detecção funcional, sem erros ou testes ignorados."
+    },
+    {
+      "name": "DF-02/examples",
+      "status": "approved",
+      "detail": "Detecção funcional, sem erros ou testes ignorados."
+    },
+    {
+      "name": "DF-02/properties",
+      "status": "approved",
+      "detail": "Detecção funcional, sem erros ou testes ignorados."
+    },
+    {
+      "name": "DF-02/combined",
+      "status": "approved",
+      "detail": "Detecção funcional, sem erros ou testes ignorados."
+    },
+    {
+      "name": "DF-03/examples",
+      "status": "approved",
+      "detail": "Detecção funcional, sem erros ou testes ignorados."
+    },
+    {
+      "name": "DF-03/properties",
+      "status": "approved",
+      "detail": "Detecção funcional, sem erros ou testes ignorados."
+    },
+    {
+      "name": "DF-03/combined",
+      "status": "approved",
+      "detail": "Detecção funcional, sem erros ou testes ignorados."
+    },
+    {
+      "name": "DF-04/examples",
+      "status": "approved",
+      "detail": "Detecção funcional, sem erros ou testes ignorados."
+    },
+    {
+      "name": "DF-04/properties",
+      "status": "approved",
+      "detail": "Detecção funcional, sem erros ou testes ignorados."
+    },
+    {
+      "name": "DF-04/combined",
+      "status": "approved",
+      "detail": "Detecção funcional, sem erros ou testes ignorados."
+    },
+    {
+      "name": "slides e tempo",
+      "status": "approved",
+      "detail": "8 slides; 360 segundos planejados, sem medição da fala."
+    },
+    {
+      "name": "link HTML tests.md",
+      "status": "approved",
+      "detail": "Destino local existente."
+    },
+    {
+      "name": "link HTML resultados/etapa5/resumo.md",
+      "status": "approved",
+      "detail": "Destino local existente."
+    },
+    {
+      "name": "link HTML README.md",
+      "status": "approved",
+      "detail": "Destino local existente."
+    },
+    {
+      "name": "citações LaTeX",
+      "status": "approved",
+      "detail": "Chaves e duas referências acadêmicas presentes; não substitui compilação."
+    }
+  ],
+  "pending": [
+    "Nome e matrícula não informados.",
+    "PDF não gerado: compilador integrado indisponível; limite de 2–4 páginas sem validação.",
+    "Repositório GitHub ainda sem URL/publicação.",
+    "Ensaio de 5–7 minutos ainda não realizado pelo estudante."
+  ],
+  "note": "Não houve reexecução da suíte: os hashes confirmam o mesmo código dos resultados aprovados."
+}

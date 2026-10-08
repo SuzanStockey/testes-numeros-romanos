@@ -1,0 +1,14 @@
+variant,group,tests,failures,exit_code
+DF-01,examples,69,3,1
+DF-01,properties,30,20,1
+DF-01,combined,99,23,1
+DF-02,examples,69,21,1
+DF-02,properties,30,20,1
+DF-02,combined,99,41,1
+DF-03,examples,69,5,1
+DF-03,properties,30,15,1
+DF-03,combined,99,20,1
+DF-04,examples,69,1,1
+DF-04,properties,30,15,1
+DF-04,combined,99,16,1
+baseline,restored,134,0,0

@@ -1,0 +1,201 @@
+variant,group,class,test,message
+DF-01,examples,RomanExamplesTest,"encodesKnownPairs(String, int, String)[10]",CT-EQ-10-E ==> expected: <CMXLIV> but was: <CMXLIIII>
+DF-01,examples,RomanExamplesTest,"encodesKnownPairs(String, int, String)[18]",CT-LIM-06-E ==> expected: <IV> but was: <IIII>
+DF-01,examples,RomanExamplesTest,interleavedCallsDoNotChangeResults,expected: <IV> but was: <IIII>
+DF-01,properties,Seed104729Properties,CT-PBT-01 seed=104729,CT-PBT-01: saída intermediária inválida para n=4: IIII ==> expected: <true> but was: <false>
+DF-01,properties,Seed104729Properties,CT-PBT-02 seed=104729,"CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <IIII>"
+DF-01,properties,Seed104729Properties,CT-PBT-03 seed=104729,"CT-PBT-03: n=4, saída=IIII ==> expected: <true> but was: <false>"
+DF-01,properties,Seed104729Properties,CT-PBT-05 seed=104729,CT-PBT-05: n=4 ==> expected: <IV> but was: <IIII>
+DF-01,properties,Seed2024Properties,CT-PBT-01 seed=2024,CT-PBT-01: saída intermediária inválida para n=4: IIII ==> expected: <true> but was: <false>
+DF-01,properties,Seed2024Properties,CT-PBT-02 seed=2024,"CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <IIII>"
+DF-01,properties,Seed2024Properties,CT-PBT-03 seed=2024,"CT-PBT-03: n=4, saída=IIII ==> expected: <true> but was: <false>"
+DF-01,properties,Seed2024Properties,CT-PBT-05 seed=2024,CT-PBT-05: n=4 ==> expected: <IV> but was: <IIII>
+DF-01,properties,Seed2026Properties,CT-PBT-01 seed=2026,CT-PBT-01: saída intermediária inválida para n=4: IIII ==> expected: <true> but was: <false>
+DF-01,properties,Seed2026Properties,CT-PBT-02 seed=2026,"CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <IIII>"
+DF-01,properties,Seed2026Properties,CT-PBT-03 seed=2026,"CT-PBT-03: n=4, saída=IIII ==> expected: <true> but was: <false>"
+DF-01,properties,Seed2026Properties,CT-PBT-05 seed=2026,CT-PBT-05: n=4 ==> expected: <IV> but was: <IIII>
+DF-01,properties,Seed3999Properties,CT-PBT-01 seed=3999,CT-PBT-01: saída intermediária inválida para n=4: IIII ==> expected: <true> but was: <false>
+DF-01,properties,Seed3999Properties,CT-PBT-02 seed=3999,"CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <IIII>"
+DF-01,properties,Seed3999Properties,CT-PBT-03 seed=3999,"CT-PBT-03: n=4, saída=IIII ==> expected: <true> but was: <false>"
+DF-01,properties,Seed3999Properties,CT-PBT-05 seed=3999,CT-PBT-05: n=4 ==> expected: <IV> but was: <IIII>
+DF-01,properties,Seed42Properties,CT-PBT-01 seed=42,CT-PBT-01: saída intermediária inválida para n=4: IIII ==> expected: <true> but was: <false>
+DF-01,properties,Seed42Properties,CT-PBT-02 seed=42,"CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <IIII>"
+DF-01,properties,Seed42Properties,CT-PBT-03 seed=42,"CT-PBT-03: n=4, saída=IIII ==> expected: <true> but was: <false>"
+DF-01,properties,Seed42Properties,CT-PBT-05 seed=42,CT-PBT-05: n=4 ==> expected: <IV> but was: <IIII>
+DF-01,combined,RomanExamplesTest,"encodesKnownPairs(String, int, String)[10]",CT-EQ-10-E ==> expected: <CMXLIV> but was: <CMXLIIII>
+DF-01,combined,RomanExamplesTest,"encodesKnownPairs(String, int, String)[18]",CT-LIM-06-E ==> expected: <IV> but was: <IIII>
+DF-01,combined,RomanExamplesTest,interleavedCallsDoNotChangeResults,expected: <IV> but was: <IIII>
+DF-01,combined,Seed104729Properties,CT-PBT-01 seed=104729,CT-PBT-01: saída intermediária inválida para n=4: IIII ==> expected: <true> but was: <false>
+DF-01,combined,Seed104729Properties,CT-PBT-02 seed=104729,"CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <IIII>"
+DF-01,combined,Seed104729Properties,CT-PBT-03 seed=104729,"CT-PBT-03: n=4, saída=IIII ==> expected: <true> but was: <false>"
+DF-01,combined,Seed104729Properties,CT-PBT-05 seed=104729,CT-PBT-05: n=4 ==> expected: <IV> but was: <IIII>
+DF-01,combined,Seed2024Properties,CT-PBT-01 seed=2024,CT-PBT-01: saída intermediária inválida para n=4: IIII ==> expected: <true> but was: <false>
+DF-01,combined,Seed2024Properties,CT-PBT-02 seed=2024,"CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <IIII>"
+DF-01,combined,Seed2024Properties,CT-PBT-03 seed=2024,"CT-PBT-03: n=4, saída=IIII ==> expected: <true> but was: <false>"
+DF-01,combined,Seed2024Properties,CT-PBT-05 seed=2024,CT-PBT-05: n=4 ==> expected: <IV> but was: <IIII>
+DF-01,combined,Seed2026Properties,CT-PBT-01 seed=2026,CT-PBT-01: saída intermediária inválida para n=4: IIII ==> expected: <true> but was: <false>
+DF-01,combined,Seed2026Properties,CT-PBT-02 seed=2026,"CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <IIII>"
+DF-01,combined,Seed2026Properties,CT-PBT-03 seed=2026,"CT-PBT-03: n=4, saída=IIII ==> expected: <true> but was: <false>"
+DF-01,combined,Seed2026Properties,CT-PBT-05 seed=2026,CT-PBT-05: n=4 ==> expected: <IV> but was: <IIII>
+DF-01,combined,Seed3999Properties,CT-PBT-01 seed=3999,CT-PBT-01: saída intermediária inválida para n=4: IIII ==> expected: <true> but was: <false>
+DF-01,combined,Seed3999Properties,CT-PBT-02 seed=3999,"CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <IIII>"
+DF-01,combined,Seed3999Properties,CT-PBT-03 seed=3999,"CT-PBT-03: n=4, saída=IIII ==> expected: <true> but was: <false>"
+DF-01,combined,Seed3999Properties,CT-PBT-05 seed=3999,CT-PBT-05: n=4 ==> expected: <IV> but was: <IIII>
+DF-01,combined,Seed42Properties,CT-PBT-01 seed=42,CT-PBT-01: saída intermediária inválida para n=4: IIII ==> expected: <true> but was: <false>
+DF-01,combined,Seed42Properties,CT-PBT-02 seed=42,"CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <IIII>"
+DF-01,combined,Seed42Properties,CT-PBT-03 seed=42,"CT-PBT-03: n=4, saída=IIII ==> expected: <true> but was: <false>"
+DF-01,combined,Seed42Properties,CT-PBT-05 seed=42,CT-PBT-05: n=4 ==> expected: <IV> but was: <IIII>
+DF-02,examples,RomanExamplesTest,"decodesKnownPairs(String, int, String)[9]",CT-EQ-09-D ==> expected: <49> but was: <71>
+DF-02,examples,RomanExamplesTest,"decodesKnownPairs(String, int, String)[10]",CT-EQ-10-D ==> expected: <944> but was: <1166>
+DF-02,examples,RomanExamplesTest,"decodesKnownPairs(String, int, String)[11]",CT-EQ-11-D ==> expected: <1990> but was: <2210>
+DF-02,examples,RomanExamplesTest,"decodesKnownPairs(String, int, String)[15]",CT-LIM-03-D ==> expected: <3998> but was: <4218>
+DF-02,examples,RomanExamplesTest,"decodesKnownPairs(String, int, String)[16]",CT-LIM-04-D ==> expected: <3999> but was: <4221>
+DF-02,examples,RomanExamplesTest,"decodesKnownPairs(String, int, String)[18]",CT-LIM-06-D ==> expected: <4> but was: <6>
+DF-02,examples,RomanExamplesTest,"decodesKnownPairs(String, int, String)[20]",CT-LIM-09-D ==> expected: <9> but was: <11>
+DF-02,examples,RomanExamplesTest,"decodesKnownPairs(String, int, String)[22]",CT-LIM-11-D ==> expected: <39> but was: <41>
+DF-02,examples,RomanExamplesTest,"decodesKnownPairs(String, int, String)[23]",CT-LIM-12-D ==> expected: <40> but was: <60>
+DF-02,examples,RomanExamplesTest,"decodesKnownPairs(String, int, String)[24]",CT-LIM-13-D ==> expected: <41> but was: <61>
+DF-02,examples,RomanExamplesTest,"decodesKnownPairs(String, int, String)[25]",CT-LIM-14-D ==> expected: <89> but was: <91>
+DF-02,examples,RomanExamplesTest,"decodesKnownPairs(String, int, String)[26]",CT-LIM-15-D ==> expected: <90> but was: <110>
+DF-02,examples,RomanExamplesTest,"decodesKnownPairs(String, int, String)[27]",CT-LIM-16-D ==> expected: <91> but was: <111>
+DF-02,examples,RomanExamplesTest,"decodesKnownPairs(String, int, String)[28]",CT-LIM-17-D ==> expected: <399> but was: <421>
+DF-02,examples,RomanExamplesTest,"decodesKnownPairs(String, int, String)[29]",CT-LIM-18-D ==> expected: <400> but was: <600>
+DF-02,examples,RomanExamplesTest,"decodesKnownPairs(String, int, String)[30]",CT-LIM-19-D ==> expected: <401> but was: <601>
+DF-02,examples,RomanExamplesTest,"decodesKnownPairs(String, int, String)[31]",CT-LIM-20-D ==> expected: <899> but was: <921>
+DF-02,examples,RomanExamplesTest,"decodesKnownPairs(String, int, String)[32]",CT-LIM-21-D ==> expected: <900> but was: <1100>
+DF-02,examples,RomanExamplesTest,"decodesKnownPairs(String, int, String)[33]",CT-LIM-22-D ==> expected: <901> but was: <1101>
+DF-02,examples,RomanExamplesTest,"decodesKnownPairs(String, int, String)[34]",CT-LIM-23-D ==> expected: <999> but was: <1221>
+DF-02,examples,RomanExamplesTest,interleavedCallsDoNotChangeResults,expected: <3999> but was: <4221>
+DF-02,properties,Seed104729Properties,CT-PBT-01 seed=104729,CT-PBT-01: n=4 ==> expected: <4> but was: <6>
+DF-02,properties,Seed104729Properties,CT-PBT-02 seed=104729,"CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <VI>"
+DF-02,properties,Seed104729Properties,CT-PBT-04 seed=104729,"CT-PBT-04: Pair[number=3900, roman=MMMCM], saída=4100 ==> expected: <true> but was: <false>"
+DF-02,properties,Seed104729Properties,CT-PBT-06 seed=104729,"CT-PBT-06: Pair[number=4, roman=IV] ==> expected: <4> but was: <6>"
+DF-02,properties,Seed2024Properties,CT-PBT-01 seed=2024,CT-PBT-01: n=4 ==> expected: <4> but was: <6>
+DF-02,properties,Seed2024Properties,CT-PBT-02 seed=2024,"CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <VI>"
+DF-02,properties,Seed2024Properties,CT-PBT-04 seed=2024,"CT-PBT-04: Pair[number=3900, roman=MMMCM], saída=4100 ==> expected: <true> but was: <false>"
+DF-02,properties,Seed2024Properties,CT-PBT-06 seed=2024,"CT-PBT-06: Pair[number=4, roman=IV] ==> expected: <4> but was: <6>"
+DF-02,properties,Seed2026Properties,CT-PBT-01 seed=2026,CT-PBT-01: n=4 ==> expected: <4> but was: <6>
+DF-02,properties,Seed2026Properties,CT-PBT-02 seed=2026,"CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <VI>"
+DF-02,properties,Seed2026Properties,CT-PBT-04 seed=2026,"CT-PBT-04: Pair[number=3900, roman=MMMCM], saída=4100 ==> expected: <true> but was: <false>"
+DF-02,properties,Seed2026Properties,CT-PBT-06 seed=2026,"CT-PBT-06: Pair[number=4, roman=IV] ==> expected: <4> but was: <6>"
+DF-02,properties,Seed3999Properties,CT-PBT-01 seed=3999,CT-PBT-01: n=4 ==> expected: <4> but was: <6>
+DF-02,properties,Seed3999Properties,CT-PBT-02 seed=3999,"CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <VI>"
+DF-02,properties,Seed3999Properties,CT-PBT-04 seed=3999,"CT-PBT-04: Pair[number=3900, roman=MMMCM], saída=4100 ==> expected: <true> but was: <false>"
+DF-02,properties,Seed3999Properties,CT-PBT-06 seed=3999,"CT-PBT-06: Pair[number=4, roman=IV] ==> expected: <4> but was: <6>"
+DF-02,properties,Seed42Properties,CT-PBT-01 seed=42,CT-PBT-01: n=4 ==> expected: <4> but was: <6>
+DF-02,properties,Seed42Properties,CT-PBT-02 seed=42,"CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <VI>"
+DF-02,properties,Seed42Properties,CT-PBT-04 seed=42,"CT-PBT-04: Pair[number=3900, roman=MMMCM], saída=4100 ==> expected: <true> but was: <false>"
+DF-02,properties,Seed42Properties,CT-PBT-06 seed=42,"CT-PBT-06: Pair[number=4, roman=IV] ==> expected: <4> but was: <6>"
+DF-02,combined,RomanExamplesTest,"decodesKnownPairs(String, int, String)[9]",CT-EQ-09-D ==> expected: <49> but was: <71>
+DF-02,combined,RomanExamplesTest,"decodesKnownPairs(String, int, String)[10]",CT-EQ-10-D ==> expected: <944> but was: <1166>
+DF-02,combined,RomanExamplesTest,"decodesKnownPairs(String, int, String)[11]",CT-EQ-11-D ==> expected: <1990> but was: <2210>
+DF-02,combined,RomanExamplesTest,"decodesKnownPairs(String, int, String)[15]",CT-LIM-03-D ==> expected: <3998> but was: <4218>
+DF-02,combined,RomanExamplesTest,"decodesKnownPairs(String, int, String)[16]",CT-LIM-04-D ==> expected: <3999> but was: <4221>
+DF-02,combined,RomanExamplesTest,"decodesKnownPairs(String, int, String)[18]",CT-LIM-06-D ==> expected: <4> but was: <6>
+DF-02,combined,RomanExamplesTest,"decodesKnownPairs(String, int, String)[20]",CT-LIM-09-D ==> expected: <9> but was: <11>
+DF-02,combined,RomanExamplesTest,"decodesKnownPairs(String, int, String)[22]",CT-LIM-11-D ==> expected: <39> but was: <41>
+DF-02,combined,RomanExamplesTest,"decodesKnownPairs(String, int, String)[23]",CT-LIM-12-D ==> expected: <40> but was: <60>
+DF-02,combined,RomanExamplesTest,"decodesKnownPairs(String, int, String)[24]",CT-LIM-13-D ==> expected: <41> but was: <61>
+DF-02,combined,RomanExamplesTest,"decodesKnownPairs(String, int, String)[25]",CT-LIM-14-D ==> expected: <89> but was: <91>
+DF-02,combined,RomanExamplesTest,"decodesKnownPairs(String, int, String)[26]",CT-LIM-15-D ==> expected: <90> but was: <110>
+DF-02,combined,RomanExamplesTest,"decodesKnownPairs(String, int, String)[27]",CT-LIM-16-D ==> expected: <91> but was: <111>
+DF-02,combined,RomanExamplesTest,"decodesKnownPairs(String, int, String)[28]",CT-LIM-17-D ==> expected: <399> but was: <421>
+DF-02,combined,RomanExamplesTest,"decodesKnownPairs(String, int, String)[29]",CT-LIM-18-D ==> expected: <400> but was: <600>
+DF-02,combined,RomanExamplesTest,"decodesKnownPairs(String, int, String)[30]",CT-LIM-19-D ==> expected: <401> but was: <601>
+DF-02,combined,RomanExamplesTest,"decodesKnownPairs(String, int, String)[31]",CT-LIM-20-D ==> expected: <899> but was: <921>
+DF-02,combined,RomanExamplesTest,"decodesKnownPairs(String, int, String)[32]",CT-LIM-21-D ==> expected: <900> but was: <1100>
+DF-02,combined,RomanExamplesTest,"decodesKnownPairs(String, int, String)[33]",CT-LIM-22-D ==> expected: <901> but was: <1101>
+DF-02,combined,RomanExamplesTest,"decodesKnownPairs(String, int, String)[34]",CT-LIM-23-D ==> expected: <999> but was: <1221>
+DF-02,combined,RomanExamplesTest,interleavedCallsDoNotChangeResults,expected: <3999> but was: <4221>
+DF-02,combined,Seed104729Properties,CT-PBT-01 seed=104729,CT-PBT-01: n=4 ==> expected: <4> but was: <6>
+DF-02,combined,Seed104729Properties,CT-PBT-02 seed=104729,"CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <VI>"
+DF-02,combined,Seed104729Properties,CT-PBT-04 seed=104729,"CT-PBT-04: Pair[number=3900, roman=MMMCM], saída=4100 ==> expected: <true> but was: <false>"
+DF-02,combined,Seed104729Properties,CT-PBT-06 seed=104729,"CT-PBT-06: Pair[number=4, roman=IV] ==> expected: <4> but was: <6>"
+DF-02,combined,Seed2024Properties,CT-PBT-01 seed=2024,CT-PBT-01: n=4 ==> expected: <4> but was: <6>
+DF-02,combined,Seed2024Properties,CT-PBT-02 seed=2024,"CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <VI>"
+DF-02,combined,Seed2024Properties,CT-PBT-04 seed=2024,"CT-PBT-04: Pair[number=3900, roman=MMMCM], saída=4100 ==> expected: <true> but was: <false>"
+DF-02,combined,Seed2024Properties,CT-PBT-06 seed=2024,"CT-PBT-06: Pair[number=4, roman=IV] ==> expected: <4> but was: <6>"
+DF-02,combined,Seed2026Properties,CT-PBT-01 seed=2026,CT-PBT-01: n=4 ==> expected: <4> but was: <6>
+DF-02,combined,Seed2026Properties,CT-PBT-02 seed=2026,"CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <VI>"
+DF-02,combined,Seed2026Properties,CT-PBT-04 seed=2026,"CT-PBT-04: Pair[number=3900, roman=MMMCM], saída=4100 ==> expected: <true> but was: <false>"
+DF-02,combined,Seed2026Properties,CT-PBT-06 seed=2026,"CT-PBT-06: Pair[number=4, roman=IV] ==> expected: <4> but was: <6>"
+DF-02,combined,Seed3999Properties,CT-PBT-01 seed=3999,CT-PBT-01: n=4 ==> expected: <4> but was: <6>
+DF-02,combined,Seed3999Properties,CT-PBT-02 seed=3999,"CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <VI>"
+DF-02,combined,Seed3999Properties,CT-PBT-04 seed=3999,"CT-PBT-04: Pair[number=3900, roman=MMMCM], saída=4100 ==> expected: <true> but was: <false>"
+DF-02,combined,Seed3999Properties,CT-PBT-06 seed=3999,"CT-PBT-06: Pair[number=4, roman=IV] ==> expected: <4> but was: <6>"
+DF-02,combined,Seed42Properties,CT-PBT-01 seed=42,CT-PBT-01: n=4 ==> expected: <4> but was: <6>
+DF-02,combined,Seed42Properties,CT-PBT-02 seed=42,"CT-PBT-02: Pair[number=4, roman=IV] ==> expected: <IV> but was: <VI>"
+DF-02,combined,Seed42Properties,CT-PBT-04 seed=42,"CT-PBT-04: Pair[number=3900, roman=MMMCM], saída=4100 ==> expected: <true> but was: <false>"
+DF-02,combined,Seed42Properties,CT-PBT-06 seed=42,"CT-PBT-06: Pair[number=4, roman=IV] ==> expected: <4> but was: <6>"
+DF-03,examples,RomanExamplesTest,"encodesKnownPairs(String, int, String)[7]",CT-EQ-07-E ==> expected: <MMVIII> but was: <MM>
+DF-03,examples,RomanExamplesTest,"encodesKnownPairs(String, int, String)[8]",CT-EQ-08 / CT-LIM-25-E ==> expected: <MI> but was: <M>
+DF-03,examples,RomanExamplesTest,"encodesKnownPairs(String, int, String)[30]",CT-LIM-19-E ==> expected: <CDI> but was: <CD>
+DF-03,examples,RomanExamplesTest,"encodesKnownPairs(String, int, String)[33]",CT-LIM-22-E ==> expected: <CMI> but was: <CM>
+DF-03,examples,RomanExamplesTest,interleavedCallsDoNotChangeResults,expected: <MMVIII> but was: <MM>
+DF-03,properties,Seed104729Properties,CT-PBT-01 seed=104729,CT-PBT-01: n=501 ==> expected: <501> but was: <500>
+DF-03,properties,Seed104729Properties,CT-PBT-02 seed=104729,"CT-PBT-02: Pair[number=501, roman=DI] ==> expected: <DI> but was: <D>"
+DF-03,properties,Seed104729Properties,CT-PBT-05 seed=104729,CT-PBT-05: n=501 ==> expected: <DI> but was: <D>
+DF-03,properties,Seed2024Properties,CT-PBT-01 seed=2024,CT-PBT-01: n=101 ==> expected: <101> but was: <100>
+DF-03,properties,Seed2024Properties,CT-PBT-02 seed=2024,"CT-PBT-02: Pair[number=101, roman=CI] ==> expected: <CI> but was: <C>"
+DF-03,properties,Seed2024Properties,CT-PBT-05 seed=2024,CT-PBT-05: n=101 ==> expected: <CI> but was: <C>
+DF-03,properties,Seed2026Properties,CT-PBT-01 seed=2026,CT-PBT-01: n=1001 ==> expected: <1001> but was: <1000>
+DF-03,properties,Seed2026Properties,CT-PBT-02 seed=2026,"CT-PBT-02: Pair[number=1001, roman=MI] ==> expected: <MI> but was: <M>"
+DF-03,properties,Seed2026Properties,CT-PBT-05 seed=2026,CT-PBT-05: n=1001 ==> expected: <MI> but was: <M>
+DF-03,properties,Seed3999Properties,CT-PBT-01 seed=3999,CT-PBT-01: n=401 ==> expected: <401> but was: <400>
+DF-03,properties,Seed3999Properties,CT-PBT-02 seed=3999,"CT-PBT-02: Pair[number=401, roman=CDI] ==> expected: <CDI> but was: <CD>"
+DF-03,properties,Seed3999Properties,CT-PBT-05 seed=3999,CT-PBT-05: n=401 ==> expected: <CDI> but was: <CD>
+DF-03,properties,Seed42Properties,CT-PBT-01 seed=42,CT-PBT-01: n=901 ==> expected: <901> but was: <900>
+DF-03,properties,Seed42Properties,CT-PBT-02 seed=42,"CT-PBT-02: Pair[number=901, roman=CMI] ==> expected: <CMI> but was: <CM>"
+DF-03,properties,Seed42Properties,CT-PBT-05 seed=42,CT-PBT-05: n=901 ==> expected: <CMI> but was: <CM>
+DF-03,combined,RomanExamplesTest,"encodesKnownPairs(String, int, String)[7]",CT-EQ-07-E ==> expected: <MMVIII> but was: <MM>
+DF-03,combined,RomanExamplesTest,"encodesKnownPairs(String, int, String)[8]",CT-EQ-08 / CT-LIM-25-E ==> expected: <MI> but was: <M>
+DF-03,combined,RomanExamplesTest,"encodesKnownPairs(String, int, String)[30]",CT-LIM-19-E ==> expected: <CDI> but was: <CD>
+DF-03,combined,RomanExamplesTest,"encodesKnownPairs(String, int, String)[33]",CT-LIM-22-E ==> expected: <CMI> but was: <CM>
+DF-03,combined,RomanExamplesTest,interleavedCallsDoNotChangeResults,expected: <MMVIII> but was: <MM>
+DF-03,combined,Seed104729Properties,CT-PBT-01 seed=104729,CT-PBT-01: n=501 ==> expected: <501> but was: <500>
+DF-03,combined,Seed104729Properties,CT-PBT-02 seed=104729,"CT-PBT-02: Pair[number=501, roman=DI] ==> expected: <DI> but was: <D>"
+DF-03,combined,Seed104729Properties,CT-PBT-05 seed=104729,CT-PBT-05: n=501 ==> expected: <DI> but was: <D>
+DF-03,combined,Seed2024Properties,CT-PBT-01 seed=2024,CT-PBT-01: n=101 ==> expected: <101> but was: <100>
+DF-03,combined,Seed2024Properties,CT-PBT-02 seed=2024,"CT-PBT-02: Pair[number=101, roman=CI] ==> expected: <CI> but was: <C>"
+DF-03,combined,Seed2024Properties,CT-PBT-05 seed=2024,CT-PBT-05: n=101 ==> expected: <CI> but was: <C>
+DF-03,combined,Seed2026Properties,CT-PBT-01 seed=2026,CT-PBT-01: n=1001 ==> expected: <1001> but was: <1000>
+DF-03,combined,Seed2026Properties,CT-PBT-02 seed=2026,"CT-PBT-02: Pair[number=1001, roman=MI] ==> expected: <MI> but was: <M>"
+DF-03,combined,Seed2026Properties,CT-PBT-05 seed=2026,CT-PBT-05: n=1001 ==> expected: <MI> but was: <M>
+DF-03,combined,Seed3999Properties,CT-PBT-01 seed=3999,CT-PBT-01: n=401 ==> expected: <401> but was: <400>
+DF-03,combined,Seed3999Properties,CT-PBT-02 seed=3999,"CT-PBT-02: Pair[number=401, roman=CDI] ==> expected: <CDI> but was: <CD>"
+DF-03,combined,Seed3999Properties,CT-PBT-05 seed=3999,CT-PBT-05: n=401 ==> expected: <CDI> but was: <CD>
+DF-03,combined,Seed42Properties,CT-PBT-01 seed=42,CT-PBT-01: n=901 ==> expected: <901> but was: <900>
+DF-03,combined,Seed42Properties,CT-PBT-02 seed=42,"CT-PBT-02: Pair[number=901, roman=CMI] ==> expected: <CMI> but was: <CM>"
+DF-03,combined,Seed42Properties,CT-PBT-05 seed=42,CT-PBT-05: n=901 ==> expected: <CMI> but was: <CM>
+DF-04,examples,RomanExamplesTest,"encodesKnownPairs(String, int, String)[16]",CT-LIM-04-E ==> expected: <MMMCMXCIX> but was: <MMMCMXCVIII>
+DF-04,properties,Seed104729Properties,CT-PBT-01 seed=104729,CT-PBT-01: n=3999 ==> expected: <3999> but was: <3998>
+DF-04,properties,Seed104729Properties,CT-PBT-02 seed=104729,"CT-PBT-02: Pair[number=3999, roman=MMMCMXCIX] ==> expected: <MMMCMXCIX> but was: <MMMCMXCVIII>"
+DF-04,properties,Seed104729Properties,CT-PBT-05 seed=104729,CT-PBT-05: n=3999 ==> expected: <MMMCMXCIX> but was: <MMMCMXCVIII>
+DF-04,properties,Seed2024Properties,CT-PBT-01 seed=2024,CT-PBT-01: n=3999 ==> expected: <3999> but was: <3998>
+DF-04,properties,Seed2024Properties,CT-PBT-02 seed=2024,"CT-PBT-02: Pair[number=3999, roman=MMMCMXCIX] ==> expected: <MMMCMXCIX> but was: <MMMCMXCVIII>"
+DF-04,properties,Seed2024Properties,CT-PBT-05 seed=2024,CT-PBT-05: n=3999 ==> expected: <MMMCMXCIX> but was: <MMMCMXCVIII>
+DF-04,properties,Seed2026Properties,CT-PBT-01 seed=2026,CT-PBT-01: n=3999 ==> expected: <3999> but was: <3998>
+DF-04,properties,Seed2026Properties,CT-PBT-02 seed=2026,"CT-PBT-02: Pair[number=3999, roman=MMMCMXCIX] ==> expected: <MMMCMXCIX> but was: <MMMCMXCVIII>"
+DF-04,properties,Seed2026Properties,CT-PBT-05 seed=2026,CT-PBT-05: n=3999 ==> expected: <MMMCMXCIX> but was: <MMMCMXCVIII>
+DF-04,properties,Seed3999Properties,CT-PBT-01 seed=3999,CT-PBT-01: n=3999 ==> expected: <3999> but was: <3998>
+DF-04,properties,Seed3999Properties,CT-PBT-02 seed=3999,"CT-PBT-02: Pair[number=3999, roman=MMMCMXCIX] ==> expected: <MMMCMXCIX> but was: <MMMCMXCVIII>"
+DF-04,properties,Seed3999Properties,CT-PBT-05 seed=3999,CT-PBT-05: n=3999 ==> expected: <MMMCMXCIX> but was: <MMMCMXCVIII>
+DF-04,properties,Seed42Properties,CT-PBT-01 seed=42,CT-PBT-01: n=3999 ==> expected: <3999> but was: <3998>
+DF-04,properties,Seed42Properties,CT-PBT-02 seed=42,"CT-PBT-02: Pair[number=3999, roman=MMMCMXCIX] ==> expected: <MMMCMXCIX> but was: <MMMCMXCVIII>"
+DF-04,properties,Seed42Properties,CT-PBT-05 seed=42,CT-PBT-05: n=3999 ==> expected: <MMMCMXCIX> but was: <MMMCMXCVIII>
+DF-04,combined,RomanExamplesTest,"encodesKnownPairs(String, int, String)[16]",CT-LIM-04-E ==> expected: <MMMCMXCIX> but was: <MMMCMXCVIII>
+DF-04,combined,Seed104729Properties,CT-PBT-01 seed=104729,CT-PBT-01: n=3999 ==> expected: <3999> but was: <3998>
+DF-04,combined,Seed104729Properties,CT-PBT-02 seed=104729,"CT-PBT-02: Pair[number=3999, roman=MMMCMXCIX] ==> expected: <MMMCMXCIX> but was: <MMMCMXCVIII>"
+DF-04,combined,Seed104729Properties,CT-PBT-05 seed=104729,CT-PBT-05: n=3999 ==> expected: <MMMCMXCIX> but was: <MMMCMXCVIII>
+DF-04,combined,Seed2024Properties,CT-PBT-01 seed=2024,CT-PBT-01: n=3999 ==> expected: <3999> but was: <3998>
+DF-04,combined,Seed2024Properties,CT-PBT-02 seed=2024,"CT-PBT-02: Pair[number=3999, roman=MMMCMXCIX] ==> expected: <MMMCMXCIX> but was: <MMMCMXCVIII>"
+DF-04,combined,Seed2024Properties,CT-PBT-05 seed=2024,CT-PBT-05: n=3999 ==> expected: <MMMCMXCIX> but was: <MMMCMXCVIII>
+DF-04,combined,Seed2026Properties,CT-PBT-01 seed=2026,CT-PBT-01: n=3999 ==> expected: <3999> but was: <3998>
+DF-04,combined,Seed2026Properties,CT-PBT-02 seed=2026,"CT-PBT-02: Pair[number=3999, roman=MMMCMXCIX] ==> expected: <MMMCMXCIX> but was: <MMMCMXCVIII>"
+DF-04,combined,Seed2026Properties,CT-PBT-05 seed=2026,CT-PBT-05: n=3999 ==> expected: <MMMCMXCIX> but was: <MMMCMXCVIII>
+DF-04,combined,Seed3999Properties,CT-PBT-01 seed=3999,CT-PBT-01: n=3999 ==> expected: <3999> but was: <3998>
+DF-04,combined,Seed3999Properties,CT-PBT-02 seed=3999,"CT-PBT-02: Pair[number=3999, roman=MMMCMXCIX] ==> expected: <MMMCMXCIX> but was: <MMMCMXCVIII>"
+DF-04,combined,Seed3999Properties,CT-PBT-05 seed=3999,CT-PBT-05: n=3999 ==> expected: <MMMCMXCIX> but was: <MMMCMXCVIII>
+DF-04,combined,Seed42Properties,CT-PBT-01 seed=42,CT-PBT-01: n=3999 ==> expected: <3999> but was: <3998>
+DF-04,combined,Seed42Properties,CT-PBT-02 seed=42,"CT-PBT-02: Pair[number=3999, roman=MMMCMXCIX] ==> expected: <MMMCMXCIX> but was: <MMMCMXCVIII>"
+DF-04,combined,Seed42Properties,CT-PBT-05 seed=42,CT-PBT-05: n=3999 ==> expected: <MMMCMXCIX> but was: <MMMCMXCVIII>

@@ -1,0 +1,71 @@
+{
+  "baseline": "etapa4-sem-defeitos-controlados",
+  "source_sha256": {
+    "pom.xml": "598986690ef3eae8a74d7a7c5b29c9cae3285d689c9d665e1db58e2249284daf",
+    "src/RomanNumerals.java": "65a0a227484c990d3bce7399177d59795c5727ce60582d57552f393dbd66ed62",
+    "tests/FixedCases.java": "ce952606938132eefdbf82fb188e9c4ab936616ecb0966c5f52eccd01910b9b3",
+    "tests/resources/junit-platform.properties": "b52005f80e4e4eb92b5dbb1e933b6b29517362a46167c720e10f78c4867ff656",
+    "tests/RomanExamplesTest.java": "3a9f1cf19dff9550abf152048fcb0ee350151987917437bfbf4d1e3f5d28fe7e",
+    "tests/RomanExhaustiveTest.java": "fc5cdf5f9f350563c26aefd224684c190017f696b54565b74cc26cdde9db7200",
+    "tests/RomanInfrastructureTest.java": "4e60e9fe6d5fbaff945e6958b4dd7faf7a314d9f4fc0ad8069a637605da5ce97",
+    "tests/RomanPropertyChecks.java": "f72f85a8a7c36616d7ab4dfafe7e42ce1b1744116ac798960ed1dc89c2617879",
+    "tests/RomanReference.java": "c71fec62d2e050e09f808ae319d8d1d1bc21dd42deb46d0f3499b6c3f9ee1419",
+    "tests/Seed104729Properties.java": "e0274bd709455ba6b387fea87d39e9fa82a87224eb6835fd0157c677f016c3ed",
+    "tests/Seed2024Properties.java": "1132e3724f87843c027156f6de6bcfaaab53c5f0473be14b9428650e568c84f3",
+    "tests/Seed2026Properties.java": "2ad012ef5596e38102445c6a948b3e61554d6ec11aa10ff806b7c42a46bda4d4",
+    "tests/Seed3999Properties.java": "390235a2f50e6d4a541b8d7a274e7a5eaffbe8cbd745a0f703ab40affe2fff1a",
+    "tests/Seed42Properties.java": "ebde597747c5c037cb96068a9b78fd07bfba364fd9caeb1c6bfa5beac4270a0d"
+  },
+  "group_runs": [
+    {
+      "group": "infrastructure",
+      "tests": 35,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "finished_at": "2026-10-07T21:42:04-03:00",
+      "maven_total_time": "1.426 s"
+    },
+    {
+      "group": "examples",
+      "tests": 69,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "finished_at": "2026-10-07T21:42:07-03:00",
+      "maven_total_time": "1.425 s"
+    },
+    {
+      "group": "properties",
+      "tests": 30,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "finished_at": "2026-10-07T21:42:10-03:00",
+      "maven_total_time": "1.909 s"
+    },
+    {
+      "group": "exhaustive",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "finished_at": "2026-10-07T21:42:12-03:00",
+      "maven_total_time": "1.337 s"
+    },
+    {
+      "group": "all",
+      "tests": 134,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "finished_at": "2026-10-07T21:42:15-03:00",
+      "maven_total_time": "2.123 s"
+    }
+  ],
+  "primary_property_evaluations": 30000,
+  "discarded": 0,
+  "integrated_suite_property_evaluations": 30000,
+  "exhaustive_directional_comparisons": 7998,
+  "note": "Execuções separadas e integrada são repetições de validação, não amostras adicionais independentes."
+}
