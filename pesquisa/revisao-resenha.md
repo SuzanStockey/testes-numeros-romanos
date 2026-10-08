@@ -5,7 +5,7 @@ Fonte: `resenha.tex`, documento autossuficiente, com referências incorporadas e
 ## Conteúdo conferido
 
 - Introdução: kata público, contrato, Java, ferramentas e objetivo.
-- Três artigos acadêmicos citados, sintetizados e comparados, com pontos fortes e limitações dos métodos de pesquisa; Ostrand e Balcer foram incorporados posteriormente para fundamentar a seleção por partições.
+- Três artigos acadêmicos citados, sintetizados e comparados, com pontos fortes e limitações dos métodos de pesquisa; Ostrand e Balcer fundamentam a seleção por partições.
 - Aplicação: PE, AVL e PBT; exemplos, seis propriedades, geradores e oráculos.
 - Resultados: campanha base, quatro variantes isoladas, contagens por grupo, redução e restauração.
 - Discussão: dificuldades, limites de propriedades fracas e ameaças à validade.
@@ -20,6 +20,6 @@ As contagens foram confrontadas com `resultados/etapa5/groups.csv`, `detection.c
 1. Inserir nome completo e matrícula do estudante no comando `\author`; esses dados foram solicitados durante a etapa 6. A fonte identifica trabalho individual sem inventar autoria.
 2. Compilar e revisar visualmente o PDF. A tentativa no compilador integrado retornou `compile-failed`, com o diagnóstico `Unable to find standard directories for platform`. A fonte foi preservada e aberta no editor. Não foi gerado um PDF de entrega.
 3. Confirmar 2–4 páginas no PDF compilado e revisar tabelas, referências e quebras. A fonte contém três quebras manuais para organizar quatro páginas, mas esse número ainda não foi verificado e pode variar se houver transbordamento.
-4. O endereço do repositório já foi inserido na conclusão. A extensão de rejeição de entradas foi incorporada posteriormente, com 181 itens aprovados e evidências próprias; a matriz de defeitos continua identificada como original.
+4. O endereço do repositório já foi inserido na conclusão. A validação da rejeição de entradas conta com 181 itens aprovados e evidências próprias; a matriz de defeitos continua identificada como original.
 
 O bloqueio de compilação é do ambiente; não constitui aprovação ou reprovação da sintaxe do documento. Não foi instalado compilador ou plugin adicional.

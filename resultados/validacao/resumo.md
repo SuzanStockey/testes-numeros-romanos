@@ -1,8 +1,8 @@
 # Versão com validação de entradas — 8/10/2026
 
-## Política adicionada
+## Política de rejeição
 
-RP-03 determina `IllegalArgumentException` para inteiros fora de 1–3999 e strings fora do domínio romano canônico. Inclui `null`, vazio, espaços, minúsculas e símbolos ou formas inválidas. Não há normalização. É uma decisão do projeto, acrescentada depois do experimento original, e não uma exigência atribuída ao Codewars.
+RP-03 determina `IllegalArgumentException` para inteiros fora de 1–3999 e strings fora do domínio romano canônico. Inclui `null`, vazio, espaços, minúsculas e símbolos ou formas inválidas. Não há normalização. É uma decisão do projeto, não uma exigência atribuída ao Codewars.
 
 O codificador verifica o intervalo antes de converter. O decodificador rejeita `null`, vazio e comprimento acima de 15 (máximo canônico: 3888 = MMMDCCCLXXXVIII), interpreta os símbolos e compara o texto com a recodificação do resultado. Isso impede aceitar grafias como IC ou IIII. O limite também evita acumulação desnecessária em textos grandes. A validação reutiliza o codificador de produção; esse acoplamento é verificado pelos testes direcionais com modelo posicional independente e pela checagem exaustiva, mas continua sendo uma dependência do projeto.
 

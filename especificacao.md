@@ -22,9 +22,9 @@ O domínio numérico é:
 
 O domínio romano `R` contém as representações canônicas desses números, em letras latinas maiúsculas, construídas pelas regras da seção 4. Há 3999 valores em cada domínio, com correspondência única entre eles.
 
-**Extensão de projeto, acrescentada em 8/10/2026:** entradas fora de `N` ou `R` devem lançar `IllegalArgumentException`. Isso inclui zero, negativos, valores a partir de 4000, `null`, texto vazio, minúsculas, espaços, símbolos desconhecidos e formas não canônicas, como `IIII`, `IC` e `VX`. Não há normalização, remoção de espaços ou conversão de caixa.
+**Política do projeto:** entradas fora de `N` ou `R` devem lançar `IllegalArgumentException`. Isso inclui zero, negativos, valores a partir de 4000, `null`, texto vazio, minúsculas, espaços, símbolos desconhecidos e formas não canônicas, como `IIII`, `IC` e `VX`. Não há normalização, remoção de espaços ou conversão de caixa.
 
-Essa política não foi exigida pelo Codewars. O experimento das etapas 4 e 5 avaliou apenas o contrato original de entradas válidas; a extensão e sua execução são registradas separadamente em `resultados/validacao/`.
+Essa política não foi exigida pelo Codewars. O experimento das etapas 4 e 5 avaliou o snapshot identificado da campanha de defeitos; a validação de entradas e sua execução são registradas separadamente em `resultados/validacao/`.
 
 ## 3. Interface e contrato das operações
 
@@ -116,7 +116,7 @@ Essa definição só estabelece o valor para entradas canônicas. Aplicar a mesm
 | RF-07 | Para entradas numéricas válidas, produzir texto não vazio, maiúsculo e canônico | Formalização das seções 4.1-4.3 |
 | RP-01 | Oferecer as assinaturas Java definidas na seção 3 | Projeto |
 | RP-02 | Produzir resultados determinísticos e independentes da ordem das chamadas | Projeto |
-| RP-03 | Rejeitar entradas fora de `N`/`R` com `IllegalArgumentException`, sem normalizar | Extensão de projeto de 8/10/2026 |
+| RP-03 | Rejeitar entradas fora de `N`/`R` com `IllegalArgumentException`, sem normalizar | Política do projeto |
 
 Os identificadores serão reutilizados em `tests.md` na etapa 3. A tabela não exige uma implementação específica nem antecipa a quantidade de casos de teste.
 
@@ -166,7 +166,7 @@ Definimos `E(n) = toRoman(n)` e `D(r) = fromRoman(r)`. As seguintes relações d
 
 As propriedades são condições necessárias da correção, mas não devem ser usadas isoladamente como especificação completa. Por exemplo, duas funções que troquem consistentemente os códigos de 4 e 5 podem passar em ambas as relações de ida e volta e produzir strings canônicas. Os pares de referência continuam necessários para ancorar o significado numérico.
 
-De forma semelhante, `E(4) = IIII` e `D(IIII) = 4` poderiam fazer PR-01 passar apesar de uma saída inválida. Esse cenário motivou a guarda de formato da campanha original. A rejeição de `IIII` por `D` passou a ser obrigatória somente na extensão RP-03.
+De forma semelhante, `E(4) = IIII` e `D(IIII) = 4` poderiam fazer PR-01 passar apesar de uma saída inválida. Esse cenário motivou a guarda de formato da campanha original. RP-03 exige que `D` rejeite `IIII`.
 
 Para PR-02, o domínio deverá ser construído independentemente de `E` quando essa propriedade for usada como evidência adicional. Gerar todas as strings apenas chamando `E` repete a dependência da primeira composição e pode ocultar erros compartilhados.
 

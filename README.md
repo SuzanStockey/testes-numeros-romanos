@@ -2,11 +2,11 @@
 
 Repositório: [SuzanStockey/testes-numeros-romanos](https://github.com/SuzanStockey/testes-numeros-romanos).
 
-O referencial tem três artigos: Ostrand e Balcer (1988) fundamentam a organização dos casos por partições; Claessen e Hughes (2000) e Goldstein et al. (2024) fundamentam PBT. A incorporação posterior do terceiro texto e sua ligação aos casos estão em [pesquisa/terceiro-artigo.md](pesquisa/terceiro-artigo.md).
+O referencial tem três artigos: Ostrand e Balcer (1988) fundamentam a organização dos casos por partições; Claessen e Hughes (2000) e Goldstein et al. (2024) fundamentam PBT. A síntese do terceiro texto e sua ligação aos casos estão em [pesquisa/terceiro-artigo.md](pesquisa/terceiro-artigo.md).
 
 Trabalho de Verificação e Validação de Software: aplicação de particionamento de equivalência, análise de valores-limite e testes baseados em propriedades ao [Roman Numerals Helper do Codewars](https://www.codewars.com/kata/51b66044bce5799a7f000003).
 
-O sistema oferece `RomanNumerals.toRoman(int)` e `RomanNumerals.fromRoman(String)`. Converte inteiros de 1 a 3999 e romanos canônicos; na versão atual, rejeita entradas inválidas com `IllegalArgumentException`, sem normalização. A rejeição é uma extensão própria do projeto, acrescentada depois do experimento original, não uma exigência do Codewars.
+O sistema oferece `RomanNumerals.toRoman(int)` e `RomanNumerals.fromRoman(String)`. Converte inteiros de 1 a 3999 e romanos canônicos; rejeita entradas inválidas com `IllegalArgumentException`, sem normalização. A rejeição é uma política própria do projeto, não uma exigência do Codewars.
 
 ## Organização
 
@@ -52,7 +52,7 @@ Se `mvn` estiver no PATH, execute na raiz:
 mvn --batch-mode --no-transfer-progress test
 ```
 
-A suíte padrão atual reúne **181 itens**: 69 exemplos/sequência, 35 de infraestrutura, 30 execuções das propriedades originais, 45 casos de validação e duas novas execuções de propriedades de rejeição. Foram **32.000 avaliações primárias**: 30.000 no domínio válido e 2000 nas novas propriedades. Itens do framework não representam entradas distintas. Os 134 itens das etapas 4/5 pertencem à versão anterior.
+A suíte padrão atual reúne **181 itens**: 69 exemplos/sequência, 35 de infraestrutura, 30 execuções das propriedades de conversão, 45 casos de validação e duas novas execuções de propriedades de rejeição. Foram **32.000 avaliações primárias**: 30.000 no domínio válido e 2000 nas novas propriedades. Itens do framework não representam entradas distintas. Os 134 itens das etapas 4/5 pertencem à versão anterior.
 
 Para registrar a versão atual e conferir suas evidências:
 
@@ -117,7 +117,7 @@ O script confere os totais, sementes, modo aleatório, tentativas e estatística
 
 Os logs confirmam zero falhas, erros e descartes na campanha base. As propriedades usam uma mistura 80/20 de inteiros uniformes e valores-limite, com injeção automática de casos especiais desabilitada. O banco de reexecução de falhas do jqwik também está desabilitado para evitar interferência de campanhas anteriores. As mesmas sementes e o mesmo gerador reutilizam sequências entre propriedades; 30.000 avaliações não são 30.000 entradas independentes ou distintas.
 
-O resumo da implementação original está em [resultados/etapa4/resumo.md](resultados/etapa4/resumo.md). O [experimento da etapa 5](resultados/etapa5/resumo.md) comparou quatro variantes isoladas: exemplos, PBT e combinação detectaram 4/4. Naquela versão, o conversor foi restaurado e os 134 itens passaram novamente. A campanha de defeitos não foi repetida na versão atual com validação; não se atribui sua matriz de detecção a essa extensão.
+O resumo da implementação original está em [resultados/etapa4/resumo.md](resultados/etapa4/resumo.md). O [experimento da etapa 5](resultados/etapa5/resumo.md) comparou quatro variantes isoladas: exemplos, PBT e combinação detectaram 4/4. Naquela versão, o conversor foi restaurado e os 134 itens passaram novamente. A campanha de defeitos não foi repetida na versão atual com validação; sua matriz de detecção corresponde ao snapshot 78399cf.
 
 ## Experimento com defeitos controlados
 
@@ -138,4 +138,4 @@ O trabalho foi desenvolvido com diretrizes, acompanhamento e revisão do estudan
 
 Etapas 1 a 5 concluídas. A resenha da etapa 6 está escrita em `resenha.tex` e aberta no editor LaTeX. A compilação integrada falhou por problema do ambiente; PDF, paginação e revisão visual ainda não foram validados. A autoria precisa receber nome e matrícula. O registro de revisão está em `pesquisa/revisao-resenha.md`. A etapa 7 tem oito slides em `apresentacao.html` para uma fala planejada de seis minutos. O roteiro de fala é um arquivo TXT de uso local, excluído do versionamento. A revisão de entrega está registrada abaixo. Os resultados são da suíte local, sem submissão ao Codewars. O projeto está publicado no repositório GitHub indicado no início deste documento.
 
-A revisão e as pendências estão em [entrega/LEIA-ME.md](entrega/LEIA-ME.md). Depois da inclusão da validação de entradas, a suíte foi reexecutada e aprovou 181 itens; o código original e a matriz de defeitos foram preservados como histórico. O pacote ZIP antigo é somente um snapshot de revisão e não inclui necessariamente as alterações posteriores; use o repositório como versão atual. Para auditar arquivos e evidências: `node scripts/check-delivery.cjs` (Node.js 18 ou posterior).
+A revisão e as pendências estão em [entrega/LEIA-ME.md](entrega/LEIA-ME.md). A suíte de validação aprovou 181 itens; o código original e a matriz de defeitos foram preservados como histórico. O pacote ZIP antigo é somente um snapshot de revisão e não inclui necessariamente as alterações posteriores; use o repositório como versão atual. Para auditar arquivos e evidências: `node scripts/check-delivery.cjs` (Node.js 18 ou posterior).

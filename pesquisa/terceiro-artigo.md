@@ -8,7 +8,7 @@ Texto completo: https://faculty.cc.gatech.edu/~harrold/6340/cs6340_fall2010/Read
 
 Expressão de busca: `equivalence partitioning software testing academic paper category partition method Ostrand Balcer 1988`.
 
-O texto foi acrescentado em 8 de outubro de 2026, após a implementação, para ampliar o referencial sobre a seleção de exemplos fixos. Não substitui o QuickCheck escolhido para o E5, nem foi a fonte original do planejamento registrado nas etapas anteriores. A ligação apresentada aqui é uma análise posterior dos casos existentes à luz do artigo.
+O texto fundamenta a discussão sobre a seleção de exemplos fixos por categorias e escolhas. O QuickCheck é o texto escolhido para o E5. A ligação entre as categorias do artigo e os casos do conversor está detalhada abaixo.
 
 ## Síntese e avaliação crítica
 

@@ -16,13 +16,13 @@ JUnit e jqwik são ferramentas de execução, não técnicas de seleção de cas
 
 As técnicas podem exercitar as mesmas entradas. Um caso tem sua técnica principal identificada; não contaremos uma mesma execução duas vezes para inflar o número de testes.
 
-Zero, negativos, 4000 ou maiores, `null`, texto vazio e romanos não canônicos devem lançar `IllegalArgumentException`, sem normalização, por RP-03. Essa extensão foi adicionada depois das campanhas originais; seus casos e resultados estão na seção 15. Os grupos e contagens das etapas 3–5 permanecem históricos.
+Zero, negativos, 4000 ou maiores, `null`, texto vazio e romanos não canônicos devem lançar `IllegalArgumentException`, sem normalização, por RP-03. Os casos e resultados da validação do contrato estão na seção 15. As contagens das etapas 3–5 identificam o snapshot avaliado na campanha de defeitos.
 
 ## 2. Classes de equivalência
 
 Estas classes agrupam comportamentos relevantes da especificação; não pressupõem que um representante prove toda a classe.
 
-**Fundamentação complementar:** [Ostrand e Balcer (1988)](https://doi.org/10.1145/62959.62964) organizam a seleção por categorias e escolhas. O texto foi acrescentado após o experimento para analisar o projeto existente: CE-S e CE-M correspondem a eixos de seleção, e os casos fixos a representantes concretos. Não foram usados TSL nem geração de todas as combinações. O [registro do terceiro artigo](pesquisa/terceiro-artigo.md) documenta essa ligação e suas limitações.
+**Fundamentação complementar:** [Ostrand e Balcer (1988)](https://doi.org/10.1145/62959.62964) organizam a seleção por categorias e escolhas. A aplicação dos conceitos ao projeto é a seguinte: CE-S e CE-M correspondem a eixos de seleção, e os casos fixos a representantes concretos. Não foram usados TSL nem geração de todas as combinações. O [registro do terceiro artigo](pesquisa/terceiro-artigo.md) documenta essa ligação e suas limitações.
 
 ### 2.1 Eixo principal: subtração
 
@@ -94,7 +94,7 @@ A classe CE-S1 é representada pelos centros das transições da tabela AVL. Nã
 
 As transições selecionadas são as seis introduções de pares subtrativos e a mudança para milhares. Para cada centro `b`, verificamos `b-1`, `b` e `b+1`. Essas são fronteiras internas de representação, não limites de aceitação da entrada.
 
-Na campanha original, foram usados os extremos válidos e seus vizinhos internos. Na extensão RP-03, `0` e `4000` têm resultado esperado de rejeição por `IllegalArgumentException`, conforme os casos da seção 15.
+Na seleção de entradas válidas, foram usados os extremos válidos e seus vizinhos internos. Pela política RP-03, `0` e `4000` têm resultado esperado de rejeição por `IllegalArgumentException`, conforme os casos da seção 15.
 
 | ID base | Inteiro `n` | Romano `r` esperado | Fronteira | Regra enfatizada |
 |---|---:|---|---|---|
@@ -224,7 +224,7 @@ Uma execução adicional poderá percorrer os 3999 pares do modelo e verificar a
 | RF-07 | Todas as comparações exatas `-E` | CT-PBT-01, CT-PBT-03, CT-PBT-05 |
 | RP-01 | Chamadas diretas às assinaturas planejadas | CT-API-01 |
 | RP-02 | CT-SEQ-01 | Revisão de dependência de estado; sequência é evidência parcial |
-| RP-03 | CT-INV-N, CT-INV-R, CT-BORDA | CT-INV-P01 e CT-INV-P02; extensão posterior descrita na seção 15 |
+| RP-03 | CT-INV-N, CT-INV-R, CT-BORDA | CT-INV-P01 e CT-INV-P02; validação descrita na seção 15 |
 
 As propriedades PR-01 a PR-04 estão ligadas, respectivamente, a CT-PBT-01 a CT-PBT-04. A ligação teoria -> decisão de teste está registrada nos [fichamentos](pesquisa/fichamentos.md), sobretudo nas seções 3 e 4.
 
@@ -278,9 +278,9 @@ Reprodução por grupo e por método: [README.md](README.md). Horários, tempos,
 
 O protocolo da seção 11 foi executado com quatro variantes isoladas, sem modificar os testes. Exemplos, PBT e combinação detectaram 4/4 variantes; cada variante foi detectada pelo PBT nas cinco sementes. A comparação por propriedade, contraexemplos originais/reduzidos, avaliações efetivamente consumidas e limites de interpretação estão no [resumo da etapa 5](resultados/etapa5/resumo.md).
 
-Cada variante tem snapshot e diferença de código. A checagem exaustiva auxiliar apenas confirma o efeito dos defeitos e não compõe a métrica dos grupos. Ao final daquela campanha, o conversor foi restaurado byte a byte e a suíte original aprovou seus 134 itens. A fonte original está em `resultados/etapa5/baseline/RomanNumerals.java`. O código atual recebeu posteriormente RP-03. Os scripts de execução e consolidação estão em `scripts/run-experiment.py` e `scripts/summarize-experiment.py`; a execução da campanha original exige a revisão histórica do código.
+Cada variante tem snapshot e diferença de código. A checagem exaustiva auxiliar apenas confirma o efeito dos defeitos e não compõe a métrica dos grupos. Ao final daquela campanha, o conversor foi restaurado byte a byte e a suíte original aprovou seus 134 itens. A fonte original está em `resultados/etapa5/baseline/RomanNumerals.java`. O contrato do código atual inclui RP-03. Os scripts de execução e consolidação estão em `scripts/run-experiment.py` e `scripts/summarize-experiment.py`; a execução da campanha original exige a revisão histórica do código.
 
-## 15. Validação de entradas — extensão RP-03
+## 15. Validação de entradas — política RP-03
 
 | Grupo/ID | Seleção | Resultado esperado | Técnica e quantidade |
 |---|---|---|---|
@@ -294,4 +294,4 @@ Cada variante tem snapshot e diferença de código. A checagem exaustiva auxilia
 
 As classes de entradas inválidas podem se sobrepor. São escolhidas por motivo de rejeição, sem alegar uma partição disjunta de todas as strings. A regra de exceção é requisito próprio do projeto, não do Codewars. A análise de limites agora inclui explicitamente 0, 1, 3999 e 4000, distribuídos entre CT-INV-N e CT-BORDA.
 
-**Resultado atual:** 181 itens na suíte padrão (134 anteriores + 45 exemplos de validação + 2 execuções PBT), todos aprovados. Foram 30.000 avaliações primárias das propriedades originais e 2000 das novas, sem descartes. A checagem exaustiva dos 3999 pares foi reexecutada e aprovou 7998 comparações direcionais. Evidências e hashes atuais: [resultados/validacao/resumo.md](resultados/validacao/resumo.md).
+**Resultado atual:** 181 itens na suíte padrão (134 anteriores + 45 exemplos de validação + 2 execuções PBT), todos aprovados. Foram 30.000 avaliações primárias das propriedades de conversão e 2000 das novas, sem descartes. A checagem exaustiva dos 3999 pares foi reexecutada e aprovou 7998 comparações direcionais. Evidências e hashes atuais: [resultados/validacao/resumo.md](resultados/validacao/resumo.md).
