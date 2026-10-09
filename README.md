@@ -131,7 +131,7 @@ O parâmetro `--maven` também aceita o caminho completo do `mvn.cmd` mostrado a
 
 ## Uso de IA e participação no trabalho
 
-A IA auxiliou na pesquisa e análise dos artigos, na elaboração de código e testes e na execução dos experimentos. Sob minhas diretrizes, acompanhamento e revisão, também apoiou a revisão e refatoração do projeto, a inclusão de casos de entradas inválidas e valores-limite e os ajustes na documentação. Revisei as alterações e sou responsável pelas decisões e pela entrega.
+A IA foi utilizada, sob diretrizes, acompanhamento e revisão da autora, como apoio à pesquisa e análise dos artigos, à elaboração de código e testes e à execução dos experimentos. Também auxiliou na revisão e refatoração do projeto, na inclusão de casos de entradas inválidas e valores-limite e nos ajustes da documentação. A autora revisou as alterações e permanece responsável pelas decisões e pela entrega.
 
 ## Estado do trabalho
 
