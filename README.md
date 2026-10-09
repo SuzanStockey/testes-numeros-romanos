@@ -1,10 +1,10 @@
 # Testes de um conversor de números romanos
 
-[![Testes e cobertura](https://github.com/SuzanStockey/testes-numeros-romanos/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/SuzanStockey/testes-numeros-romanos/actions/workflows/tests.yml)
-[![lines](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FSuzanStockey%2Ftestes-numeros-romanos%2Fci-badges%2Flines.json)](https://github.com/SuzanStockey/testes-numeros-romanos/actions/workflows/tests.yml)
-[![branches](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FSuzanStockey%2Ftestes-numeros-romanos%2Fci-badges%2Fbranches.json)](https://github.com/SuzanStockey/testes-numeros-romanos/actions/workflows/tests.yml)
-[![tests](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FSuzanStockey%2Ftestes-numeros-romanos%2Fci-badges%2Ftests.json)](https://github.com/SuzanStockey/testes-numeros-romanos/actions/workflows/tests.yml)
-[![java](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FSuzanStockey%2Ftestes-numeros-romanos%2Fci-badges%2Fjava.json)](https://github.com/SuzanStockey/testes-numeros-romanos/actions/workflows/tests.yml)
+[![Testes e cobertura](https://github.com/SuzanStockey/testes-numeros-romanos/actions/workflows/tests.yml/badge.svg?branch=main&event=push)](https://github.com/SuzanStockey/testes-numeros-romanos/actions/workflows/tests.yml)
+[![lines](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FSuzanStockey%2Ftestes-numeros-romanos%2Fci-badges%2Flines.json&cacheSeconds=300)](https://github.com/SuzanStockey/testes-numeros-romanos/actions/workflows/tests.yml)
+[![branches](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FSuzanStockey%2Ftestes-numeros-romanos%2Fci-badges%2Fbranches.json&cacheSeconds=300)](https://github.com/SuzanStockey/testes-numeros-romanos/actions/workflows/tests.yml)
+[![tests](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FSuzanStockey%2Ftestes-numeros-romanos%2Fci-badges%2Ftests.json&cacheSeconds=300)](https://github.com/SuzanStockey/testes-numeros-romanos/actions/workflows/tests.yml)
+[![java](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FSuzanStockey%2Ftestes-numeros-romanos%2Fci-badges%2Fjava.json&cacheSeconds=300)](https://github.com/SuzanStockey/testes-numeros-romanos/actions/workflows/tests.yml)
 
 **Autora:** Suzan Stockey Pereira. Trabalho de Verificação e Validação de Software.
 
