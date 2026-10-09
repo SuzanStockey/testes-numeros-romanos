@@ -1,6 +1,6 @@
 # Testes de um conversor de números romanos
 
-[![Testes e cobertura](https://github.com/SuzanStockey/testes-numeros-romanos/actions/workflows/tests.yml/badge.svg)](https://github.com/SuzanStockey/testes-numeros-romanos/actions/workflows/tests.yml)
+[![Testes e cobertura](https://github.com/SuzanStockey/testes-numeros-romanos/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/SuzanStockey/testes-numeros-romanos/actions/workflows/tests.yml)
 
 **Autora:** Suzan Stockey Pereira. Trabalho de Verificação e Validação de Software.
 
