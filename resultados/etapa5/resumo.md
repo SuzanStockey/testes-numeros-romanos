@@ -73,4 +73,4 @@ Os modelos e guardas também podem conter erros. Sua validação por exemplos li
 - `baseline/restored`: execução final da implementação correta.
 - `probe/ExperimentProbe.java`: enumeração auxiliar e demonstrações diretas.
 
-Executar `python scripts/summarize-experiment.py` reconstrói os CSV a partir das evidências e verifica os hashes da etapa 4. A campanha completa usa `python scripts/run-experiment.py --java-home CAMINHO_JDK --maven CAMINHO_MVN`; exige os arquivos da etapa 4 intactos e recusa sobrescrever `experiment.json` existente. Para repetir, preserve previamente a pasta de resultados da etapa 5 em outro local. Saída Maven 1 nas variantes é esperada pelas falhas de asserção; erros de compilação não contam como detecção e interrompem a campanha.
+Para reproduzir a campanha, use a revisão 78399cf em uma cópia separada e aplique uma variante por vez, mantendo os testes iguais. Execute com Maven o grupo de exemplos, o grupo de propriedades e a combinação. Os comandos completos utilizados estão em `experiment.json`. Preserve os registros existentes antes de repetir. Falhas de asserção nas variantes são esperadas; erros de compilação não contam como detecção.

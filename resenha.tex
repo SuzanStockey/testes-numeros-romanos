@@ -21,7 +21,7 @@
 \section{Introdução}
 Esta resenha compara três textos: o método de seleção por categorias de Ostrand e Balcer~\cite{category}, a proposta de QuickCheck de Claessen e Hughes~\cite{quickcheck} e o estudo industrial de Goldstein et al.~\cite{practice}. A aplicação é o \emph{Roman Numerals Helper}, do Codewars~\cite{kata}. O objetivo é discutir como seleção por partições, valores-limite e propriedades contribuem para testar o mesmo sistema, sem presumir superioridade de uma técnica.
 
-O sistema usa Java 17, JUnit 5.13.4, jqwik 1.9.3 e Maven 3.9.11. As operações \code{toRoman(int)} e \code{fromRoman(String)} convertem inteiros de 1 a 3999 e romanos canônicos. Após o experimento, acrescentou-se a rejeição de entradas inválidas com \code{IllegalArgumentException}, sem normalização: uma decisão própria, não exigida pelo Codewars. O artigo do E5 é QuickCheck; o registro de busca está em \code{pesquisa/pesquisa-e5.md}.
+O sistema usa Java 17, JUnit 5.13.4, jqwik 1.9.3 e Maven 3.9.11. As operações \code{toRoman(int)} e \code{fromRoman(String)} convertem inteiros de 1 a 3999 e romanos canônicos. O contrato inclui a rejeição de entradas inválidas com \code{IllegalArgumentException}, sem normalização: uma decisão própria, não exigida pelo Codewars. O artigo do E5 é QuickCheck; o registro de busca está em \code{pesquisa-e5.md}.
 
 \section{Referencial e comparação crítica}
 \subsection{QuickCheck: propriedades como especificações executáveis}
@@ -31,7 +31,6 @@ A contribuição é sustentada por implementação, exemplos e relatos de aplica
 
 Os casos apresentados demonstram viabilidade, mas não estimam ganhos universais de produtividade ou detecção. Além disso, propriedades e geradores são código sujeito a erros. A redução de contraexemplos aparece em um relato de extensão na seção sobre impressão de documentos; não se deve atribuir à implementação original toda a infraestrutura dos frameworks atuais. Neste trabalho, a redução é realizada pelo jqwik.
 
-\newpage
 \subsection{PBT na prática: benefícios e dificuldades persistentes}
 Goldstein et al.~\cite{practice} investigam uma cultura madura de PBT na Jane Street, predominantemente em OCaml. O estudo qualitativo recrutou 31 pessoas e realizou 30 entrevistas, uma delas conjunta. A análise temática examina benefícios, escrita de propriedades, geradores, depuração e interpretação de testes aprovados. As frequências relatadas têm entrevistas como unidade e não representam taxas de eficácia experimental.
 
@@ -52,7 +51,6 @@ Adotou-se a combinação de exemplos conhecidos e propriedades com referências 
 
 \textbf{Análise de valores-limite (AVL).} A seleção de entradas válidas contém 25 números: extremos e vizinhos de 4, 9, 40, 90, 400 e 900. Após consolidar três pares compartilhados com PE, ficaram 34 pares nos dois sentidos: 68 comparações e um teste de sequência, totalizando 69 itens. A validação do contrato verifica também 0, 1, 3999 e 4000: os externos devem ser rejeitados, os internos convertidos corretamente.
 
-\newpage
 \textbf{Testes baseados em propriedades.} Seja $N=\{1,\ldots,3999\}$, $E$ o codificador, $D$ o decodificador, $C$ a verificação de formato canônico e $O$ um modelo independente de codificação. Foram implementadas seis propriedades:
 \begin{center}
 \small
@@ -92,7 +90,6 @@ DF-04 & Codificar 3999 como 3998 & 1/69 & 15/30 & 16/99 \\
 \end{center}
 Os três grupos detectaram 4/4 variantes; o PBT detectou cada uma nas cinco sementes, sem ganho da combinação. Os checks primários foram 10.212, 10.116, 15.060 e 16.638, excluídas as avaliações de redução. Na validação do contrato, 45 itens verificam números fora do domínio, textos inválidos e fronteiras válidas; duas propriedades acrescentam 2000 checks de rejeição. A suíte atual aprovou 181 itens e 32.000 checks, sem descartes; a enumeração de 7998 comparações também passou. A campanha de defeitos não foi repetida nessa versão.
 
-\newpage
 \subsection{O significado das propriedades e dos contraexemplos}
 P01 e P02 detectaram as quatro variantes nas cinco sementes. P03 detectou apenas DF-01: resultados de DF-03 e DF-04 continuaram canônicos, embora numericamente errados. P04 detectou DF-02 quando a soma ultrapassou o domínio, mas aprovou os defeitos exclusivos do codificador. P05 detectou DF-01, DF-03 e DF-04; P06 detectou DF-02. Isso evidencia que formato e intervalo isolados não caracterizam a semântica completa.
 
@@ -101,12 +98,12 @@ Um codificador que emita IIII para 4 e um decodificador que o leia como 4 podem 
 Para P01 e semente 42, o jqwik reduziu as entradas de DF-01 de 2504 para 4, de DF-02 de 999 para 4 e de DF-03 de 2504 para 901. Em DF-03, 901 perde a unidade por conter zero nas dezenas. Em DF-04, o contraexemplo final permaneceu 3999. São resultados do redutor, sem garantia de mínimo global. Os logs guardam sementes, amostras e mensagens para reprodução e diagnóstico.
 
 \subsection{Dificuldades e ameaças à validade}
-As decisões exigiram delimitar o contrato, distinguir testes de avaliações e preservar invariantes na redução. A validação rejeita \code{null}, vazio, espaços, minúsculas e formas como IIII ou IC. O decodificador compara a entrada com a recodificação do valor, criando dependência do codificador; testes com modelo posicional independente e enumeração reduzem esse risco. Dois geradores de rejeição cobrem inteiros externos e símbolo desconhecido, não todas as strings inválidas. O código e os testes são Java; scripts auxiliares automatizam execução e consolidação.
+As decisões exigiram delimitar o contrato, distinguir testes de avaliações e preservar invariantes na redução. A validação rejeita \code{null}, vazio, espaços, minúsculas e formas como IIII ou IC. O decodificador compara a entrada com a recodificação do valor, criando dependência do codificador; testes com modelo posicional independente e enumeração reduzem esse risco. Dois geradores de rejeição cobrem inteiros externos e símbolo desconhecido, não todas as strings inválidas. O código e os testes são Java.
 
 Os defeitos são artificiais e exercitam requisitos já cobertos pelos exemplos escolhidos. O domínio pequeno e a ênfase nos limites favorecem a detecção, especialmente de DF-04. Portanto, não há evidência de superioridade do PBT, ganho marginal da combinação ou vantagem de custo. Cinco sementes não são cinco estudos independentes. A validação dos oráculos e sua diferença algorítmica em relação ao sistema reduzem, mas não eliminam, erros compartilhados. A enumeração auxiliar confirma o efeito das variantes e não integra a métrica de detecção. Código e testes foram produzidos no mesmo processo, sem revisão externa independente, o que também limita a validade.
 
 \section{Conclusão}
-Exemplos e PBT detectaram os mesmos quatro defeitos na campanha de defeitos; formato ou intervalo isolados deixaram erros semânticos passar. O contrato inclui rejeição explícita e testes de classes inválidas, mantendo as conversões válidas: 181 itens aprovados. As campanhas têm versões e evidências identificadas, sem extrapolação à eficácia industrial. Contrato, testes e resultados estão em \href{https://github.com/SuzanStockey/testes-numeros-romanos}{github.com/SuzanStockey/testes-numeros-romanos}.
+Exemplos e PBT detectaram os mesmos quatro defeitos na campanha de defeitos; formato ou intervalo isolados deixaram erros semânticos passar. O contrato inclui rejeição explícita e testes de classes inválidas, mantendo as conversões válidas: 181 itens aprovados. As campanhas têm versões e evidências identificadas, sem extrapolação à eficácia industrial.
 
 \subsection*{Uso de IA}
 A IA foi utilizada, sob diretrizes, acompanhamento e revisão da autora, como apoio à pesquisa e análise dos artigos, à elaboração de código e testes e à execução dos experimentos. Também auxiliou na revisão e refatoração do projeto, na inclusão de casos de entradas inválidas e valores-limite e nos ajustes da documentação. A autora revisou as alterações e permanece responsável pelas decisões e pela entrega.

@@ -10,7 +10,7 @@ Implementar duas operações em Java: converter um inteiro para sua representaç
 
 O enunciado foi conferido na API pública, pois a página apresenta a descrição por carregamento dinâmico. Este documento é uma especificação em português, com formalizações próprias identificadas, e não uma reprodução integral do texto do desafio.
 
-A fundamentação das escolhas de teste está em [pesquisa/fichamentos.md](pesquisa/fichamentos.md). As referências acadêmicas não substituem o enunciado como fonte das regras de conversão.
+A fundamentação das escolhas de teste está em [relatório](resenha.tex). As referências acadêmicas não substituem o enunciado como fonte das regras de conversão.
 
 ## 2. Escopo
 

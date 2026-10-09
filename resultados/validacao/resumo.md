@@ -29,7 +29,6 @@ Com JDK 17 e Maven configurados, executar:
 ```powershell
 mvn --batch-mode --no-transfer-progress test '-Dtest.reports=resultados/validacao/reports'
 mvn --batch-mode --no-transfer-progress test '-Dtest=RomanExhaustiveTest' '-DexcludedGroups=none' '-Dtest.reports=resultados/validacao/exhaustive-reports'
-node scripts/summarize-validation.cjs
 ```
 
 Esses comandos sobrescrevem os relatórios da versão atual; preserve-os se for avaliar outra mudança. Os logs `run.log` e `exhaustive.log` registram esta execução. `manifest.json` contém os hashes de produção, testes e configuração; `groups.csv` contém os totais extraídos dos XML. Os metadados de caminhos auxiliares dos XML de entrega podem ser reduzidos sem alterar os casos de teste.

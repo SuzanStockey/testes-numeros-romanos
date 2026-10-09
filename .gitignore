@@ -18,3 +18,7 @@
 /scripts/check-delivery.cjs
 /resultados/**/reports/*.txt
 /resultados/**/exhaustive-reports/*.txt
+
+# Apoio de desenvolvimento fora da entrega
+/scripts/
+/pesquisa/

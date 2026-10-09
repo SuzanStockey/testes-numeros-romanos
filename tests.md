@@ -22,7 +22,7 @@ Zero, negativos, 4000 ou maiores, `null`, texto vazio e romanos não canônicos 
 
 Estas classes agrupam comportamentos relevantes da especificação; não pressupõem que um representante prove toda a classe.
 
-**Fundamentação complementar:** [Ostrand e Balcer (1988)](https://doi.org/10.1145/62959.62964) organizam a seleção por categorias e escolhas. A aplicação dos conceitos ao projeto é a seguinte: CE-S e CE-M correspondem a eixos de seleção, e os casos fixos a representantes concretos. Não foram usados TSL nem geração de todas as combinações. O [registro do terceiro artigo](pesquisa/terceiro-artigo.md) documenta essa ligação e suas limitações.
+**Fundamentação complementar:** [Ostrand e Balcer (1988)](https://doi.org/10.1145/62959.62964) organizam a seleção por categorias e escolhas. A aplicação dos conceitos ao projeto é a seguinte: CE-S e CE-M correspondem a eixos de seleção, e os casos fixos a representantes concretos. Não foram usados TSL nem geração de todas as combinações. O [relatório](resenha.tex) documenta essa ligação e suas limitações.
 
 ### 2.1 Eixo principal: subtração
 
@@ -226,7 +226,7 @@ Uma execução adicional poderá percorrer os 3999 pares do modelo e verificar a
 | RP-02 | CT-SEQ-01 | Revisão de dependência de estado; sequência é evidência parcial |
 | RP-03 | CT-INV-N, CT-INV-R, CT-BORDA | CT-INV-P01 e CT-INV-P02; validação descrita na seção 15 |
 
-As propriedades PR-01 a PR-04 estão ligadas, respectivamente, a CT-PBT-01 a CT-PBT-04. A ligação teoria -> decisão de teste está registrada nos [fichamentos](pesquisa/fichamentos.md), sobretudo nas seções 3 e 4.
+As propriedades PR-01 a PR-04 estão ligadas, respectivamente, a CT-PBT-01 a CT-PBT-04. A ligação teoria -> decisão de teste está registrada no [relatório](resenha.tex), nas seções de referencial e aplicação.
 
 ## 11. Avaliação planejada dos testes
 
@@ -278,7 +278,7 @@ Reprodução por grupo e por método: [README.md](README.md). Horários, tempos,
 
 O protocolo da seção 11 foi executado com quatro variantes isoladas, sem modificar os testes. Exemplos, PBT e combinação detectaram 4/4 variantes; cada variante foi detectada pelo PBT nas cinco sementes. A comparação por propriedade, contraexemplos originais/reduzidos, avaliações efetivamente consumidas e limites de interpretação estão no [resumo da etapa 5](resultados/etapa5/resumo.md).
 
-Cada variante tem snapshot e diferença de código. A checagem exaustiva auxiliar apenas confirma o efeito dos defeitos e não compõe a métrica dos grupos. Ao final daquela campanha, o conversor foi restaurado byte a byte e a suíte original aprovou seus 134 itens. A fonte original está em `resultados/etapa5/baseline/RomanNumerals.java`. O contrato do código atual inclui RP-03. Os scripts de execução e consolidação estão em `scripts/run-experiment.py` e `scripts/summarize-experiment.py`; a execução da campanha original exige a revisão histórica do código.
+Cada variante tem snapshot e diferença de código. A checagem exaustiva auxiliar apenas confirma o efeito dos defeitos e não compõe a métrica dos grupos. Ao final daquela campanha, o conversor foi restaurado byte a byte e a suíte original aprovou seus 134 itens. A fonte original está em `resultados/etapa5/baseline/RomanNumerals.java`. O contrato do código atual inclui RP-03. A reprodução da campanha exige a revisão 78399cf em uma cópia separada, aplicando uma variante por vez sem alterar os testes.
 
 ## 15. Validação de entradas — política RP-03
 
