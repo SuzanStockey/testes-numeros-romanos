@@ -21,7 +21,7 @@
 \section{Introdução}
 Esta resenha compara três textos: o método de seleção por categorias de Ostrand e Balcer~\cite{category}, a proposta de QuickCheck de Claessen e Hughes~\cite{quickcheck} e o estudo industrial de Goldstein et al.~\cite{practice}. A aplicação é o \emph{Roman Numerals Helper}, do Codewars~\cite{kata}. O objetivo é discutir como seleção por partições, valores-limite e propriedades contribuem para testar o mesmo sistema, sem presumir superioridade de uma técnica.
 
-O sistema usa Java 17, JUnit 5.13.4, jqwik 1.9.3 e Maven 3.9.11. As operações \code{toRoman(int)} e \code{fromRoman(String)} convertem inteiros de 1 a 3999 e romanos canônicos. O contrato inclui a rejeição de entradas inválidas com \code{IllegalArgumentException}, sem normalização: uma decisão própria, não exigida pelo Codewars. O artigo do E5 é QuickCheck; a busca e a justificativa estão no \code{README.md}.
+O sistema usa Java 17, JUnit 5.13.4, jqwik 1.9.3 e Maven 3.9.11. As operações \code{toRoman(int)} e \code{fromRoman(String)} convertem inteiros de 1 a 3999 e romanos canônicos. O contrato inclui a rejeição de entradas inválidas com \code{IllegalArgumentException}, sem normalização: uma decisão própria, não exigida pelo Codewars. O artigo do E5 é QuickCheck; a busca e a justificativa estão no \code{README.md}. O GitHub Actions automatiza a suíte padrão e a checagem exaustiva em tarefas separadas; JaCoCo gera a cobertura da suíte padrão.
 
 \section{Referencial e comparação crítica}
 \subsection{QuickCheck: propriedades como especificações executáveis}

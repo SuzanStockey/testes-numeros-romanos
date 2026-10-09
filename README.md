@@ -1,5 +1,7 @@
 # Testes de um conversor de números romanos
 
+[![Testes e cobertura](https://github.com/SuzanStockey/testes-numeros-romanos/actions/workflows/tests.yml/badge.svg)](https://github.com/SuzanStockey/testes-numeros-romanos/actions/workflows/tests.yml)
+
 **Autora:** Suzan Stockey Pereira. Trabalho de Verificação e Validação de Software.
 
 Aplicação de particionamento de equivalência, análise de valores-limite e testes baseados em propriedades ao [Roman Numerals Helper do Codewars](https://www.codewars.com/kata/51b66044bce5799a7f000003).
@@ -12,7 +14,8 @@ O conversor implementa `toRoman(int)` e `fromRoman(String)` para inteiros de 1 a
 |---|---|
 | `src/` | Conversor em Java |
 | `tests/` | Exemplos, propriedades, modelo independente e checagem exaustiva |
-| `pom.xml` | Dependências e configuração Maven |
+| `pom.xml` | Dependências, configuração Maven e perfil de cobertura |
+| `.github/workflows/tests.yml` | Automação dos testes e relatórios no GitHub Actions |
 | `especificacao.md` | Requisitos, regras e exemplos |
 | `tests.md` | Casos de teste, técnicas e rastreabilidade |
 | `resenha.tex` e `resenha.pdf` | Relatório em LaTeX e PDF verificado com quatro páginas |
@@ -51,6 +54,20 @@ mvn --batch-mode --no-transfer-progress test '-Dtest=RomanExhaustiveTest' '-Dexc
 ```
 
 A checagem exaustiva verifica 3999 pares nos dois sentidos, totalizando 7998 comparações. Ela fica fora da suíte padrão. Os arquivos `Seed*Properties.java` registram as cinco sementes usadas.
+
+## Automação e cobertura
+
+O GitHub Actions executa os testes a cada push ou pull request e também permite execução manual na aba **Actions**. Dois jobs independentes verificam a suíte padrão e os 3999 valores nos dois sentidos. Falhas nos testes reprovam a execução.
+
+A suíte padrão gera cobertura de linhas e ramificações do conversor com JaCoCo 0.8.14. O resumo da execução mostra os totais, e os artefatos **testes-e-cobertura** e **checagem-exaustiva** disponibilizam os relatórios para download por 30 dias. No primeiro artefato, abra o arquivo HTML de cobertura em `target/site/jacoco/index.html` (ou `site/jacoco/index.html`, conforme a estrutura extraída).
+
+Para gerar cobertura localmente:
+
+```shell
+mvn --batch-mode --no-transfer-progress -Pcoverage clean verify
+```
+
+Abra `target/site/jacoco/index.html`. A cobertura é medida apenas pela suíte padrão; a checagem exaustiva fica separada. Código exercitado não implica comportamento correto. Os relatórios gerados permanecem fora do versionamento.
 
 ## Resultados
 

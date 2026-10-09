@@ -12,6 +12,7 @@
     <junit.version>5.13.4</junit.version>
     <jqwik.version>1.9.3</jqwik.version>
     <excludedGroups>exhaustive</excludedGroups>
+    <argLine></argLine>
     <test.reports>${project.build.directory}/surefire-reports</test.reports>
   </properties>
   <dependencies>
@@ -40,9 +41,21 @@
           <excludedGroups>${excludedGroups}</excludedGroups>
           <reportsDirectory>${test.reports}</reportsDirectory>
           <failIfNoTests>true</failIfNoTests>
-          <argLine>-Dfile.encoding=UTF-8</argLine>
+          <argLine>@{argLine} -Dfile.encoding=UTF-8</argLine>
         </configuration>
       </plugin>
     </plugins>
   </build>
+  <profiles>
+    <profile>
+      <id>coverage</id>
+      <build><plugins><plugin>
+        <groupId>org.jacoco</groupId><artifactId>jacoco-maven-plugin</artifactId><version>0.8.14</version>
+        <executions>
+          <execution><id>coverage-agent</id><goals><goal>prepare-agent</goal></goals></execution>
+          <execution><id>coverage-report</id><phase>verify</phase><goals><goal>report</goal></goals></execution>
+        </executions>
+      </plugin></plugins></build>
+    </profile>
+  </profiles>
 </project>

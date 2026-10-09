@@ -1,0 +1,85 @@
+name: Testes e cobertura
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    name: Testes e cobertura do conversor
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - name: Configurar Java 17
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+      - name: Executar suíte padrão e gerar cobertura
+        run: mvn --batch-mode --no-transfer-progress -Pcoverage clean verify
+      - name: Resumir testes e cobertura
+        if: always()
+        shell: python
+        run: |
+          import os
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          reports = list(Path('target/surefire-reports').glob('TEST-*.xml'))
+          totals = {key: 0 for key in ('tests', 'failures', 'errors', 'skipped')}
+          for report in reports:
+              root = ET.parse(report).getroot()
+              for key in totals:
+                  totals[key] += int(root.get(key, 0))
+          lines = ['## Suíte padrão', '', '| Itens | Falhas | Erros | Ignorados |', '|---|---|---|---|', '| {tests} | {failures} | {errors} | {skipped} |'.format(**totals)]
+          coverage = Path('target/site/jacoco/jacoco.xml')
+          if coverage.exists():
+              lines += ['', '## Cobertura do conversor', '', '| Métrica | Cobertos | Total | Cobertura |', '|---|---|---|---|']
+              for counter in ET.parse(coverage).getroot().findall('counter'):
+                  if counter.get('type') in ('LINE', 'BRANCH'):
+                      covered, missed = int(counter.get('covered')), int(counter.get('missed'))
+                      total = covered + missed
+                      percent = 100 * covered / total if total else 100
+                      label = {'LINE': 'Linhas', 'BRANCH': 'Ramificações'}[counter.get('type')]
+                      lines.append(f'| {label} | {covered} | {total} | {percent:.1f}% |')
+              lines += ['', 'Cobertura refere-se à suíte padrão, sem a checagem exaustiva. Não constitui prova de correção.']
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as output:
+              output.write('\n'.join(lines) + '\n')
+      - name: Disponibilizar relatórios
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: testes-e-cobertura
+          path: |
+            target/surefire-reports/
+            target/site/jacoco/
+          retention-days: 30
+          if-no-files-found: warn
+
+  exhaustive:
+    name: Checagem exaustiva separada
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - name: Configurar Java 17
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+      - name: Conferir os 3999 valores nos dois sentidos
+        run: mvn --batch-mode --no-transfer-progress test -Dtest=RomanExhaustiveTest -DexcludedGroups=none
+      - name: Disponibilizar relatório exaustivo
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: checagem-exaustiva
+          path: target/surefire-reports/
+          retention-days: 30
+          if-no-files-found: warn
