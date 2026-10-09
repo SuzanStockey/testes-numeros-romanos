@@ -2,6 +2,7 @@ name: Testes e cobertura
 
 on:
   push:
+    branches: [main]
   pull_request:
   workflow_dispatch:
 
@@ -13,6 +14,9 @@ jobs:
     name: Testes e cobertura do conversor
     runs-on: ubuntu-24.04
     timeout-minutes: 10
+    concurrency:
+      group: tests-badges-${{ github.ref }}
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v6
       - name: Configurar Java 17
@@ -60,6 +64,86 @@ jobs:
             target/site/jacoco/
           retention-days: 30
           if-no-files-found: warn
+
+      - name: Gerar dados dos badges
+        if: always()
+        shell: python
+        run: |
+          import json
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          out = Path('.badge-data')
+          out.mkdir(exist_ok=True)
+          def badge(name, label, message, color):
+              (out / (name + '.json')).write_text(json.dumps(dict(schemaVersion=1, label=label, message=message, color=color, cacheSeconds=300)), encoding='utf-8')
+          reports = list(Path('target/surefire-reports').glob('TEST-*.xml'))
+          count = failures = errors = 0
+          for report in reports:
+              root = ET.parse(report).getroot()
+              count += int(root.get('tests', 0))
+              failures += int(root.get('failures', 0))
+              errors += int(root.get('errors', 0))
+          badge('tests', 'testes', f'{count} itens / {failures + errors} falhas' if reports else 'indisponível', 'brightgreen' if reports and not failures + errors else 'red')
+          report = Path('target/site/jacoco/jacoco.xml')
+          counters = {c.get('type'): c for c in ET.parse(report).getroot().findall('counter')} if report.exists() else {}
+          for name, label, metric in [('lines', 'linhas', 'LINE'), ('branches', 'ramificações', 'BRANCH')]:
+              if metric in counters:
+                  c = counters[metric]
+                  covered, missed = int(c.get('covered')), int(c.get('missed'))
+                  value = 100 * covered / (covered + missed) if covered + missed else 100
+                  badge(name, label, f'{value:.1f}%', 'brightgreen' if value >= 90 else 'orange')
+              else:
+                  badge(name, label, 'indisponível', 'lightgrey')
+          ns = {'m': 'http://maven.apache.org/POM/4.0.0'}
+          java = ET.parse('pom.xml').getroot().find('m:properties/m:maven.compiler.release', ns).text
+          badge('java', 'Java', java, 'blue')
+      - name: Disponibilizar dados dos badges
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: badge-data
+          path: .badge-data/*.json
+          include-hidden-files: true
+
+  badges:
+    name: Publicar indicadores automáticos
+    needs: tests
+    if: always() && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    concurrency:
+      group: publish-badges
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: actions/download-artifact@v6
+        with:
+          name: badge-data
+          path: .badge-data
+      - name: Publicar badges da branch principal
+        shell: bash
+        run: |
+          set -euo pipefail
+          badge_dir="$RUNNER_TEMP/badges"
+          if git ls-remote --exit-code origin refs/heads/ci-badges >/dev/null 2>&1; then
+            git fetch origin ci-badges
+            git worktree add --detach "$badge_dir" FETCH_HEAD
+          else
+            git worktree add --detach "$badge_dir" HEAD
+            git -C "$badge_dir" checkout --orphan ci-badges
+            git -C "$badge_dir" rm -r --quiet -- .
+          fi
+          cp .badge-data/*.json "$badge_dir/"
+          git -C "$badge_dir" config user.name "github-actions[bot]"
+          git -C "$badge_dir" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C "$badge_dir" add '*.json'
+          if ! git -C "$badge_dir" diff --cached --quiet; then
+            git -C "$badge_dir" commit -m "Atualiza indicadores automáticos"
+            git -C "$badge_dir" push origin HEAD:ci-badges
+          fi
 
   exhaustive:
     name: Checagem exaustiva separada

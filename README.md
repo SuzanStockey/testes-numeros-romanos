@@ -1,6 +1,10 @@
 # Testes de um conversor de números romanos
 
 [![Testes e cobertura](https://github.com/SuzanStockey/testes-numeros-romanos/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/SuzanStockey/testes-numeros-romanos/actions/workflows/tests.yml)
+[![lines](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FSuzanStockey%2Ftestes-numeros-romanos%2Fci-badges%2Flines.json)](https://github.com/SuzanStockey/testes-numeros-romanos/actions/workflows/tests.yml)
+[![branches](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FSuzanStockey%2Ftestes-numeros-romanos%2Fci-badges%2Fbranches.json)](https://github.com/SuzanStockey/testes-numeros-romanos/actions/workflows/tests.yml)
+[![tests](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FSuzanStockey%2Ftestes-numeros-romanos%2Fci-badges%2Ftests.json)](https://github.com/SuzanStockey/testes-numeros-romanos/actions/workflows/tests.yml)
+[![java](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FSuzanStockey%2Ftestes-numeros-romanos%2Fci-badges%2Fjava.json)](https://github.com/SuzanStockey/testes-numeros-romanos/actions/workflows/tests.yml)
 
 **Autora:** Suzan Stockey Pereira. Trabalho de Verificação e Validação de Software.
 
@@ -67,7 +71,7 @@ Para gerar cobertura localmente:
 mvn --batch-mode --no-transfer-progress -Pcoverage clean verify
 ```
 
-Abra `target/site/jacoco/index.html`. A cobertura é medida apenas pela suíte padrão; a checagem exaustiva fica separada. Código exercitado não implica comportamento correto. Os relatórios gerados permanecem fora do versionamento.
+Abra `target/site/jacoco/index.html`. A cobertura é medida apenas pela suíte padrão; a checagem exaustiva fica separada. Código exercitado não implica comportamento correto. Os relatórios gerados permanecem fora do versionamento. Os badges de testes, cobertura de linhas, ramificações e Java são atualizados automaticamente na branch `ci-badges`, separada dos arquivos da entrega.
 
 ## Resultados
 
