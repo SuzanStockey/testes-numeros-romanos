@@ -15,10 +15,23 @@ O conversor implementa `toRoman(int)` e `fromRoman(String)` para inteiros de 1 a
 | `pom.xml` | Dependências e configuração Maven |
 | `especificacao.md` | Requisitos, regras e exemplos |
 | `tests.md` | Casos de teste, técnicas e rastreabilidade |
-| `pesquisa-e5.md` | Expressão de busca, justificativa e URL exigidas no E5 |
 | `resenha.tex` e `resenha.pdf` | Relatório em LaTeX e PDF verificado com quatro páginas |
 | `apresentacao.html` | Apresentação em HTML |
 | `resultados/` | Evidências de execução, tabelas, variantes e contraexemplos |
+
+## Artigos utilizados e registro do E5
+
+| Artigo | Autores | Aplicação no trabalho |
+|---|---|---|
+| [The Category-Partition Method for Specifying and Generating Functional Tests (1988)](https://doi.org/10.1145/62959.62964) | Ostrand e Balcer | Organização dos casos por categorias e escolhas |
+| [QuickCheck: A Lightweight Tool for Random Testing of Haskell Programs (2000)](https://doi.org/10.1145/351240.351266) — **artigo escolhido para o E5** | Claessen e Hughes | Propriedades executáveis e geração de entradas |
+| [Property-Based Testing in Practice (2024)](https://doi.org/10.1145/3597503.3639581) | Goldstein et al. | Benefícios, dificuldades e avaliação dos testes por propriedades |
+
+**Expressão de busca do E5:** `QuickCheck lightweight tool random testing Haskell Claessen Hughes 2000 pdf Chalmers`.
+
+**Motivo da escolha:** QuickCheck apresenta o uso de propriedades executáveis e geração automática de entradas no teste de software. Discute pré-condições, geradores e distribuição dos dados, oferecendo fundamentos para testar o conversor. Complementa o artigo de 2024, que analisa benefícios e dificuldades de PBT na prática.
+
+**URL do texto escolhido:** [PDF de QuickCheck](https://www.cs.tufts.edu/~nr/cs257/archive/john-hughes/quick.pdf).
 
 ## Executar os testes
 
