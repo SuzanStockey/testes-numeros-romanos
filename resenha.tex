@@ -10,13 +10,13 @@
 \setlength{\parindent}{1.2em}
 \setlength{\parskip}{3pt}
 \newcommand{\code}[1]{\texttt{#1}}
-% Atualizar a autoria quando o estudante fornecer nome e matrícula.
 \title{Propriedades, exemplos e confiança nos testes:\\uma resenha crítica com aplicação a números romanos}
-\author{Trabalho individual --- Verificação e Validação de Software\\PUCRS -- Escola Politécnica}
+\author{Suzan Stockey Pereira\\Verificação e Validação de Software\\PUCRS -- Escola Politécnica}
 \date{}
 \begin{document}
 \maketitle
 \vspace{-1.5em}
+\begin{center}\small Repositório: \url{https://github.com/SuzanStockey/testes-numeros-romanos}\end{center}
 
 \section{Introdução}
 Esta resenha compara três textos: o método de seleção por categorias de Ostrand e Balcer~\cite{category}, a proposta de QuickCheck de Claessen e Hughes~\cite{quickcheck} e o estudo industrial de Goldstein et al.~\cite{practice}. A aplicação é o \emph{Roman Numerals Helper}, do Codewars~\cite{kata}. O objetivo é discutir como seleção por partições, valores-limite e propriedades contribuem para testar o mesmo sistema, sem presumir superioridade de uma técnica.
@@ -109,7 +109,7 @@ Os defeitos são artificiais e exercitam requisitos já cobertos pelos exemplos 
 Exemplos e PBT detectaram os mesmos quatro defeitos na campanha de defeitos; formato ou intervalo isolados deixaram erros semânticos passar. O contrato inclui rejeição explícita e testes de classes inválidas, mantendo as conversões válidas: 181 itens aprovados. As campanhas têm versões e evidências identificadas, sem extrapolação à eficácia industrial. Contrato, testes e resultados estão em \href{https://github.com/SuzanStockey/testes-numeros-romanos}{github.com/SuzanStockey/testes-numeros-romanos}.
 
 \subsection*{Uso de IA}
-O trabalho foi desenvolvido com diretrizes, acompanhamento e revisão do estudante em cada etapa. O estudante escolheu inicialmente o artigo de 2024, definiu requisitos e formatos, avaliou as propostas e solicitou ajustes. A IA foi utilizada como ferramenta de colaboração na pesquisa e análise dos artigos, nas propostas de problema e técnicas, na elaboração de código e testes, na execução e análise dos experimentos e na preparação e revisão dos textos e da apresentação. O estudante acompanhou e revisou os materiais, permanecendo responsável pelas decisões adotadas e pela entrega.
+A IA auxiliou na pesquisa e análise dos artigos, na elaboração de código e testes e na execução dos experimentos. Sob minhas diretrizes, acompanhamento e revisão, também apoiou a revisão e refatoração do projeto, a inclusão de casos de entradas inválidas e valores-limite e os ajustes na documentação. Revisei as alterações e sou responsável pelas decisões e pela entrega.
 
 \begingroup
 \small

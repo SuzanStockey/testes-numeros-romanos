@@ -27,7 +27,6 @@ O sistema oferece `RomanNumerals.toRoman(int)` e `RomanNumerals.fromRoman(String
 | `pesquisa/` | Fichamentos, registro do E5 e referências BibTeX |
 | `resenha.tex` | Resenha crítica em LaTeX com referências IEEE incorporadas |
 | `apresentacao.html` | Oito slides com navegação e visão geral; funcionamento local |
-| `entrega/` | Checklist final, auditoria de integridade e pacote para revisão |
 | `scripts/` | Execução por grupo e extração das evidências |
 | `resultados/etapa4/` | Logs, tabelas de execução, distribuições e hashes do código avaliado |
 | `resultados/etapa5/` | Experimento com quatro defeitos: variantes, relatórios, contraexemplos e comparação |
@@ -132,10 +131,10 @@ O parâmetro `--maven` também aceita o caminho completo do `mvn.cmd` mostrado a
 
 ## Uso de IA e participação no trabalho
 
-O trabalho foi desenvolvido com diretrizes, acompanhamento e revisão do estudante em cada etapa. O estudante escolheu inicialmente o artigo de 2024, definiu os requisitos e formatos dos entregáveis e avaliou as propostas, solicitando ajustes ao longo do processo. A IA foi utilizada como ferramenta de colaboração na pesquisa e análise dos artigos, nas propostas de problema e técnicas, na elaboração de código e testes, na execução e análise dos experimentos e na preparação e revisão dos textos e da apresentação. As propostas e os materiais gerados foram acompanhados e revisados pelo estudante, que permanece responsável pelas decisões adotadas e pela entrega.
+A IA auxiliou na pesquisa e análise dos artigos, na elaboração de código e testes e na execução dos experimentos. Sob minhas diretrizes, acompanhamento e revisão, também apoiou a revisão e refatoração do projeto, a inclusão de casos de entradas inválidas e valores-limite e os ajustes na documentação. Revisei as alterações e sou responsável pelas decisões e pela entrega.
 
 ## Estado do trabalho
 
-Etapas 1 a 5 concluídas. A resenha da etapa 6 está escrita em `resenha.tex` e aberta no editor LaTeX. A compilação integrada falhou por problema do ambiente; PDF, paginação e revisão visual ainda não foram validados. A autoria precisa receber nome e matrícula. O registro de revisão está em `pesquisa/revisao-resenha.md`. A etapa 7 tem oito slides em `apresentacao.html` para uma fala planejada de seis minutos. O roteiro de fala é um arquivo TXT de uso local, excluído do versionamento. A revisão de entrega está registrada abaixo. Os resultados são da suíte local, sem submissão ao Codewars. O projeto está publicado no repositório GitHub indicado no início deste documento.
+Etapas 1 a 5 concluídas. A resenha da etapa 6 está escrita em `resenha.tex` e aberta no editor LaTeX. A compilação integrada falhou por problema do ambiente; PDF, paginação e revisão visual ainda não foram validados. Autoria: Suzan Stockey Pereira. A etapa 7 tem oito slides em `apresentacao.html` para uma fala planejada de seis minutos. O roteiro de fala é um arquivo TXT de uso local, excluído do versionamento. A revisão de entrega está registrada abaixo. Os resultados são da suíte local, sem submissão ao Codewars. O projeto está publicado no repositório GitHub indicado no início deste documento.
 
-A revisão e as pendências estão em [entrega/LEIA-ME.md](entrega/LEIA-ME.md). A suíte de validação aprovou 181 itens; o código original e a matriz de defeitos foram preservados como histórico. O pacote ZIP antigo é somente um snapshot de revisão e não inclui necessariamente as alterações posteriores; use o repositório como versão atual. Para auditar arquivos e evidências: `node scripts/check-delivery.cjs` (Node.js 18 ou posterior).
+O repositório mantém código, testes, especificação, pesquisa acadêmica, relatório, apresentação e evidências de execução. Checklists internos e relatórios TXT duplicados dos XML ficam somente na cópia local. O roteiro TXT também permanece fora do versionamento.

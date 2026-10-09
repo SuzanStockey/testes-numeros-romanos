@@ -11,3 +11,10 @@
 /roteiro-apresentacao.txt
 /roteiro-apresentacao.md
 /pesquisa/ostrand-balcer-1988.pdf
+
+# Materiais internos e relatórios duplicados, preservados localmente
+/entrega/
+/pesquisa/revisao-resenha.md
+/scripts/check-delivery.cjs
+/resultados/**/reports/*.txt
+/resultados/**/exhaustive-reports/*.txt
