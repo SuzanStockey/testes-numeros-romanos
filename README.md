@@ -83,9 +83,9 @@ A matriz de defeitos refere-se à revisão `78399cf`, cujo conversor está prese
 
 Os registros correspondem a execuções locais, sem submissão ao Codewars. Os resultados não estabelecem superioridade geral de uma técnica.
 
-## Relatório e apresentação
+## Resenha e apresentação
 
-Compile `resenha.tex` em um ambiente LaTeX. Abra `apresentacao.html` no navegador: setas para navegar, F para tela cheia e O para visão geral. O roteiro de fala e os materiais internos de apoio ficam apenas na cópia local.
+O resenha se encontra na versão editável `resenha.tex` em um ambiente LaTeX, e na versão PDF em `resenha.pdf`. Abra `apresentacao.html` no navegador: setas para navegar, F para tela cheia e O para visão geral.
 
 ## Uso de IA e participação no trabalho
 
